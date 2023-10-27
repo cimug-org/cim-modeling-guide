@@ -12,8 +12,8 @@ markdown_extensions:
   - pymdownx.details
 nav:
   - 'index.md'
-  - 'section1-artifacts-under-cim-management.md'
-  - 'section2-artifacts-under-cim-management.md'
+  - 'section1-introduction.md'
+  - 'section2-references.md'
   - 'section3-definitions.md'
   - 'section4-cim-overview.md'
   - 'section5-cim-uml-modeling-rules-and-recommendations.md'
