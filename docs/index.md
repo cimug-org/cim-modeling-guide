@@ -33,23 +33,23 @@ THIRD PARTY INTELLECTUAL PROPERTY
 
 In preparing this specification, the UCAIug recognizes the special contributions of the following CIM Subcommittee and their organizations.
 
-- Becky Iverson Siemens
+- Becky Iverson - *Siemens*
 
-- Eric G. Stephan Pacific Northwest National Laboratory
+- Eric G. Stephan - *Pacific Northwest National Laboratory*
 
-- Henry B. Dotson, III Mandla Solutions, Inc.
+- Henry B. Dotson, III - *Mandla Solutions, Inc.*
 
-- Kendall Demaree Ahlstrom
+- Kendall Demaree - *Ahlstrom*
 
-- Kurt Hunter Siemens
+- Kurt Hunter - *Siemens*
 
-- Margaret Goodrich Project Consultants, LLC
+- Margaret Goodrich - *Project Consultants, LLC*
 
-- Martin Milller ABB
+- Martin Milller - *ABB*
 
-- Tatjana Kostic ABB
+- Tatjana Kostic - *ABB*
   
-- Todd Viegut AspenTech
+- Todd Viegut - *AspenTech*
 
 ##  
 
