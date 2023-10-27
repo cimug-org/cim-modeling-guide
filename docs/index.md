@@ -82,7 +82,7 @@ The UCAIug as well as its member groups (the CIM Users Group (CIMug), Open Smart
 
 This document is a work product produced by the CIM Subcommittee with the intent to help accomplish the UCAIug mission.
 
-**Table of Contents**
+# Table of Contents
 
 [Acknowledgements](#acknowledgements)
 
