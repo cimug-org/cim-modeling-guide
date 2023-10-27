@@ -48,7 +48,7 @@ In preparing this specification, the UCAIug recognizes the special contributions
 - Martin Milller - *ABB*
 
 - Tatjana Kostic - *ABB*
-  
+
 - Todd Viegut - *AspenTech*
 
 ##  
@@ -1102,7 +1102,7 @@ The intermediate draft standards submitted to the IEC are produced during the ex
 
 The submission of the draft standards to the IEC takes place during the Artifact Distribution process. The IEC is considered one of the subscribers for the draft standards in the process.
 
-# CIM UML Modeling Rules and Recommendations
+# Section 5 - CIM UML Modeling Rules and Recommendations
 
 ## Overview
 
