@@ -48,7 +48,7 @@ In preparing this specification, the UCAIug recognizes the special contributions
 - Martin Milller ABB
 
 - Tatjana Kostic ABB
-- 
+  
 - Todd Viegut AspenTech
 
 ##  
