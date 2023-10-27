@@ -12,8 +12,16 @@ markdown_extensions:
   - pymdownx.details
 nav:
   - 'index.md'
-  - 'core-concepts.md'
-  - 'getting-started.md'
+  - 'section1-artifacts-under-cim-management.md'
+  - 'section2-artifacts-under-cim-management.md'
+  - 'section3-definitions.md'
+  - 'section4-cim-overview.md'
+  - 'section5-artifacts-under-cim-management.md'
+  - 'section6-cim-uml-extension-rules-and-recommendations.md'
+  - 'section7-cim-uml-transformation-rules-and-recommendations.md'
+  - 'section8-cim-uml-version-control-rules.md'
+  - 'section9-artifacts-under-cim-management.md'
+  - 'section10-cim-management-tools.md'
   - 'Section 1 - Introduction':
     - 'section1/create-a-project.md'
     - 'section1/navigate-workspace.md'
