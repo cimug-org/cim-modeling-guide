@@ -84,279 +84,279 @@ This document is a work product produced by the CIM Subcommittee with the intent
 
 **Table of Contents**
 
-[Acknowledgements [3](#acknowledgements)](#acknowledgements)
+[Acknowledgements](#acknowledgements)
 
-[*Abstract* [4](#abstract)](#abstract)
+[*Abstract*](#abstract)
 
-[Foreword [5](#foreword)](#foreword)
+[Foreword](#foreword)
 
-[About the UCA International Users Group [6](#about-the)](#about-the)
+[About the UCA International Users Group](#about-the)
 
-[1 Introduction [12](#introduction)](#introduction)
+[1 Introduction](#introduction)
 
-[1.1 Document Overview [12](#document-overview)](#document-overview)
+[1.1 Document Overview](#document-overview)
 
-[1.1.1 Document Purpose [12](#document-purpose)](#document-purpose)
+[1.1.1 Document Purpose](#document-purpose)
 
-[1.1.2 Document Scope [12](#document-scope)](#document-scope)
+[1.1.2 Document Scope](#document-scope)
 
-[1.1.3 What this Document Does Not Cover [12](#what-this-document-does-not-cover)](#what-this-document-does-not-cover)
+[1.1.3 What this Document Does Not Cover](#what-this-document-does-not-cover)
 
-[1.1.4 Who this Document Is For [13](#who-this-document-is-for)](#who-this-document-is-for)
+[1.1.4 Who this Document Is For](#who-this-document-is-for)
 
-[1.2 How this Document Is Organized [13](#how-this-document-is-organized)](#how-this-document-is-organized)
+[1.2 How this Document Is Organized](#how-this-document-is-organized)
 
-[1.3 Symbols, Figures, and Style Conventions [14](#symbols-figures-and-style-conventions)](#symbols-figures-and-style-conventions)
+[1.3 Symbols, Figures, and Style Conventions](#symbols-figures-and-style-conventions)
 
-[1.4 Document Control [14](#document-control)](#document-control)
+[1.4 Document Control](#document-control)
 
-[2 References [16](#references)](#references)
+[2 References](#references)
 
-[2.1 Normative References [16](#normative-references)](#normative-references)
+[2.1 Normative References](#normative-references)
 
-[2.2 Informative References [16](#informative-references)](#informative-references)
+[2.2 Informative References](#informative-references)
 
-[3 Definitions [17](#definitions)](#definitions)
+[3 Definitions](#definitions)
 
-[4 CIM Overview [23](#cim-overview)](#cim-overview)
+[4 CIM Overview](#cim-overview)
 
-[4.1 CIM UML Scope [23](#cim-uml-scope)](#cim-uml-scope)
+[4.1 CIM UML Scope](#cim-uml-scope)
 
-[4.2 CIM Management Business Context [24](#cim-management-business-context)](#cim-management-business-context)
+[4.2 CIM Management Business Context](#cim-management-business-context)
 
-[4.3 CIM Management Functions [26](#cim-management-functions)](#cim-management-functions)
+[4.3 CIM Management Functions](#cim-management-functions)
 
-[4.3.1 Model Change Management [26](#model-change-management)](#model-change-management)
+[4.3.1 Model Change Management](#model-change-management)
 
-[4.3.2 Model Change Validation [26](#model-change-validation)](#model-change-validation)
+[4.3.2 Model Change Validation](#model-change-validation)
 
-[4.3.3 Model Change Implementation [26](#model-change-implementation)](#model-change-implementation)
+[4.3.3 Model Change Implementation](#model-change-implementation)
 
-[4.3.4 Configuration Management [26](#configuration-management)](#configuration-management)
+[4.3.4 Configuration Management](#configuration-management)
 
-[4.3.5 Model Distribution [26](#model-distribution)](#model-distribution)
+[4.3.5 Model Distribution](#model-distribution)
 
-[4.3.6 Continuous Process Improvement [26](#continuous-process-improvement)](#continuous-process-improvement)
+[4.3.6 Continuous Process Improvement](#continuous-process-improvement)
 
-[4.3.7 CIM Management Function Mappings [26](#cim-management-function-mappings)](#cim-management-function-mappings)
+[4.3.7 CIM Management Function Mappings](#cim-management-function-mappings)
 
-[4.4 CIM Management Processes [27](#cim-management-processes)](#cim-management-processes)
+[4.4 CIM Management Processes](#cim-management-processes)
 
-[4.4.1 CIM Management Process Mappings [31](#cim-management-process-mappings)](#cim-management-process-mappings)
+[4.4.1 CIM Management Process Mappings](#cim-management-process-mappings)
 
-[4.5 CIM Management Process Integration with the IEC Standards Process [33](#cim-management-process-integration-with-the-iec-standards-process)](#cim-management-process-integration-with-the-iec-standards-process)
+[4.5 CIM Management Process Integration with the IEC Standards Process](#cim-management-process-integration-with-the-iec-standards-process)
 
-[4.5.1 IEC Standards Development Process [33](#iec-standards-development-process)](#iec-standards-development-process)
+[4.5.1 IEC Standards Development Process](#iec-standards-development-process)
 
-[4.5.2 Process Integration Points [35](#process-integration-points)](#process-integration-points)
+[4.5.2 Process Integration Points](#process-integration-points)
 
-[5 CIM UML Modeling Rules and Recommendations [37](#cim-uml-modeling-rules-and-recommendations)](#cim-uml-modeling-rules-and-recommendations)
+[5 CIM UML Modeling Rules and Recommendations](#cim-uml-modeling-rules-and-recommendations)
 
-[5.1 Overview [37](#overview)](#overview)
+[5.1 Overview](#overview)
 
-[5.1.1 UML Concepts Used in the CIM [37](#uml-concepts-used-in-the-cim)](#uml-concepts-used-in-the-cim)
+[5.1.1 UML Concepts Used in the CIM](#uml-concepts-used-in-the-cim)
 
-[5.1.2 UML Static Structure Concepts [37](#uml-static-structure-concepts)](#uml-static-structure-concepts)
+[5.1.2 UML Static Structure Concepts](#uml-static-structure-concepts)
 
-[5.1.3 UML Model Organization Concepts [37](#uml-model-organization-concepts)](#uml-model-organization-concepts)
+[5.1.3 UML Model Organization Concepts](#uml-model-organization-concepts)
 
-[5.2 Model Structure Rules [37](#model-structure-rules)](#model-structure-rules)
+[5.2 Model Structure Rules](#model-structure-rules)
 
-[5.2.1 UML Metamodel Rules [38](#uml-metamodel-rules)](#uml-metamodel-rules)
+[5.2.1 UML Metamodel Rules](#uml-metamodel-rules)
 
-[5.2.2 Package Structure Rules [38](#package-structure-rules)](#package-structure-rules)
+[5.2.2 Package Structure Rules ](#package-structure-rules)
 
-[5.2.3 Package Dependency Rules [40](#package-dependency-rules)](#package-dependency-rules)
+[5.2.3 Package Dependency Rules ](#package-dependency-rules)
 
-[5.2.4 Package Assembly Rules [42](#package-assembly-rules)](#package-assembly-rules)
+[5.2.4 Package Assembly Rules](#package-assembly-rules)
 
-[5.3 Package Rules [42](#package-rules)](#package-rules)
+[5.3 Package Rules](#package-rules)
 
-[5.3.1 Package Naming Rules [42](#package-naming-rules)](#package-naming-rules)
+[5.3.1 Package Naming Rules](#package-naming-rules)
 
-[5.3.2 Package Specification Rules [43](#package-specification-rules)](#package-specification-rules)
+[5.3.2 Package Specification Rules](#package-specification-rules)
 
-[5.4 Class Rules [43](#class-rules)](#class-rules)
+[5.4 Class Rules](#class-rules)
 
-[5.5 Attribute Rules [44](#attribute-rules)](#attribute-rules)
+[5.5 Attribute Rules](#attribute-rules)
 
-[5.6 Association Rules [45](#association-rules)](#association-rules)
+[5.6 Association Rules](#association-rules)
 
-[5.7 Enumeration Rules [46](#enumeration-rules)](#enumeration-rules)
+[5.7 Enumeration Rules](#enumeration-rules)
 
-[5.8 Diagram Rules [47](#diagram-rules)](#diagram-rules)
+[5.8 Diagram Rules](#diagram-rules)
 
-[5.9 Element Description Rules [48](#element-description-rules)](#element-description-rules)
+[5.9 Element Description Rules](#element-description-rules)
 
-[5.10 Inheritance Rules [49](#inheritance-rules)](#inheritance-rules)
+[5.10 Inheritance Rules](#inheritance-rules)
 
-[5.11 Stereotype Rules [49](#stereotype-rules)](#stereotype-rules)
+[5.11 Stereotype Rules](#stereotype-rules)
 
-[5.11.1 General Stereotype Rules [49](#general-and-deprecated-stereotype-rules)](#general-and-deprecated-stereotype-rules)
+[5.11.1 General Stereotype Rules](#general-and-deprecated-stereotype-rules)
 
-[5.11.2 Package Stereotype Rules [50](#package-stereotype-rules)](#package-stereotype-rules)
+[5.11.2 Package Stereotype Rules](#package-stereotype-rules)
 
-[5.11.3 Class Stereotype Rules [50](#class-stereotype-rules)](#class-stereotype-rules)
+[5.11.3 Class Stereotype Rules](#class-stereotype-rules)
 
-[5.12 Namespace Rules [50](#namespace-rules)](#namespace-rules)
+[5.12 Namespace Rules](#namespace-rules)
 
-[5.13 Documentation Rules [52](#documentation-rules)](#documentation-rules)
+[5.13 Documentation Rules](#documentation-rules)
 
-[6 CIM UML Extension Rules and Recommendations [53](#cim-uml-extension-rules-and-recommendations)](#cim-uml-extension-rules-and-recommendations)
+[6 CIM UML Extension Rules and Recommendations](#cim-uml-extension-rules-and-recommendations)
 
-[6.1 Overview [53](#overview-1)](#overview-1)
+[6.1 Overview](#overview-1)
 
-[6.1.1 Application of CIM UML Extension Rules and Recommendations [53](#application-of-cim-uml-extension-rules-and-recommendations)](#application-of-cim-uml-extension-rules-and-recommendations)
+[6.1.1 Application of CIM UML Extension Rules and Recommendations](#application-of-cim-uml-extension-rules-and-recommendations)
 
-[6.2 General Extension Rules [53](#general-extension-rules)](#general-extension-rules)
+[6.2 General Extension Rules](#general-extension-rules)
 
-[6.3 Package Extension Rules [54](#package-extension-rules)](#package-extension-rules)
+[6.3 Package Extension Rules](#package-extension-rules)
 
-[6.4 Class Extension Rules [55](#class-extension-rules)](#class-extension-rules)
+[6.4 Class Extension Rules](#class-extension-rules)
 
-[6.5 Attribute Extension Rules [55](#attribute-extension-rules)](#attribute-extension-rules)
+[6.5 Attribute Extension Rules](#attribute-extension-rules)
 
-[6.6 Association Extension Rules [56](#association-extension-rules)](#association-extension-rules)
+[6.6 Association Extension Rules](#association-extension-rules)
 
-[6.7 Enumeration Extension Rules [58](#enumeration-extension-rules)](#enumeration-extension-rules)
+[6.7 Enumeration Extension Rules](#enumeration-extension-rules)
 
-[7 CIM UML Transformation Rules and Recommendations [59](#cim-uml-transformation-rules-and-recommendations)](#cim-uml-transformation-rules-and-recommendations)
+[7 CIM UML Transformation Rules and Recommendations](#cim-uml-transformation-rules-and-recommendations)
 
-[7.1 Overview [59](#overview-2)](#overview-2)
+[7.1 Overview](#overview-2)
 
-[7.2 General Transformation Rules and Recommendations [59](#general-transformation-rules-and-recommendations)](#general-transformation-rules-and-recommendations)
+[7.2 General Transformation Rules and Recommendations](#general-transformation-rules-and-recommendations)
 
-[7.3 Package Transformation Rules and Recommendations [59](#package-transformation-rules-and-recommendations)](#package-transformation-rules-and-recommendations)
+[7.3 Package Transformation Rules and Recommendations](#package-transformation-rules-and-recommendations)
 
-[7.4 Class Transformation Rules and Recommendations [60](#class-transformation-rules-and-recommendations)](#class-transformation-rules-and-recommendations)
+[7.4 Class Transformation Rules and Recommendations](#class-transformation-rules-and-recommendations)
 
-[7.5 Attribute Transformation Rules and Recommendations [60](#attribute-transformation-rules-and-recommendations)](#attribute-transformation-rules-and-recommendations)
+[7.5 Attribute Transformation Rules and Recommendations](#attribute-transformation-rules-and-recommendations)
 
-[7.6 Association Transformation Rules and Recommendations [60](#association-transformation-rules-and-recommendations)](#association-transformation-rules-and-recommendations)
+[7.6 Association Transformation Rules and Recommendations](#association-transformation-rules-and-recommendations)
 
-[8 CIM UML Version Control Rules [62](#cim-uml-version-control-rules)](#cim-uml-version-control-rules)
+[8 CIM UML Version Control Rules](#cim-uml-version-control-rules)
 
-[8.1 Overview [62](#overview-3)](#overview-3)
+[8.1 Overview](#overview-3)
 
-[8.1.1 The Scope of a Version [62](#the-scope-of-a-version)](#the-scope-of-a-version)
+[8.1.1 The Scope of a Version](#the-scope-of-a-version)
 
-[8.1.2 Versioning and Compatibility [62](#versioning-and-compatibility)](#versioning-and-compatibility)
+[8.1.2 Versioning and Compatibility](#versioning-and-compatibility)
 
-[8.1.3 Version Identifiers [63](#version-identifiers)](#version-identifiers)
+[8.1.3 Version Identifiers](#version-identifiers)
 
-[8.1.4 Versioning Strategies [63](#versioning-strategies)](#versioning-strategies)
+[8.1.4 Versioning Strategies](#versioning-strategies)
 
-[8.2 Version Control Strategy [65](#version-control-strategy)](#version-control-strategy)
+[8.2 Version Control Strategy](#version-control-strategy)
 
-[8.2.1 Version Scope [65](#version-scope)](#version-scope)
+[8.2.1 Version Scope](#version-scope)
 
-[8.2.2 Version Compatibility [66](#version-compatibility)](#version-compatibility)
+[8.2.2 Version Compatibility](#version-compatibility)
 
-[8.2.3 Version Identification [66](#version-identification)](#version-identification)
+[8.2.3 Version Identification](#version-identification)
 
-[9 Artifacts Under CIM Management [69](#artifacts-under-cim-management)](#artifacts-under-cim-management)
+[9 Artifacts Under CIM Management](#artifacts-under-cim-management)
 
-[9.1 Overview [69](#overview-4)](#overview-4)
+[9.1 Overview](#overview-4)
 
-[9.1.1 Draft Standards Artifacts [69](#draft-standards-artifacts)](#draft-standards-artifacts)
+[9.1.1 Draft Standards Artifacts](#draft-standards-artifacts)
 
-[9.2 CIM Artifacts [69](#cim-artifacts)](#cim-artifacts)
+[9.2 CIM Artifacts](#cim-artifacts)
 
-[9.3 Model Documents [70](#model-documents)](#model-documents)
+[9.3 Model Documents](#model-documents)
 
-[9.4 CIM Profiles [70](#cim-profiles)](#cim-profiles)
+[9.4 CIM Profiles](#cim-profiles)
 
-[9.5 CIM Schemas [74](#cim-schemas)](#cim-schemas)
+[9.5 CIM Schemas](#cim-schemas)
 
-[9.5.1 Background [74](#background)](#background)
+[9.5.1 Background](#background)
 
-[9.5.2 RDF Schemas [74](#rdf-schemas)](#rdf-schemas)
+[9.5.2 RDF Schemas](#rdf-schemas)
 
-[9.5.3 XML Schemas [75](#xml-schemas)](#xml-schemas)
+[9.5.3 XML Schemas](#xml-schemas)
 
-[9.5.4 Hybrid Schemas [76](#hybrid-schemas)](#hybrid-schemas)
+[9.5.4 Hybrid Schemas](#hybrid-schemas)
 
-[9.6 CIM Management Documents and Records [76](#cim-management-documents-and-records)](#cim-management-documents-and-records)
+[9.6 CIM Management Documents and Records](#cim-management-documents-and-records)
 
-[9.6.1 CIM Management Documents [76](#cim-management-documents)](#cim-management-documents)
+[9.6.1 CIM Management Documents](#cim-management-documents)
 
-[9.6.2 CIM Records [77](#cim-records)](#cim-records)
+[9.6.2 CIM Records](#cim-records)
 
-[9.7 Tool Customizations [78](#tool-customizations)](#tool-customizations)
+[9.7 Tool Customizations](#tool-customizations)
 
-[10 CIM Management Tools [80](#cim-management-tools)](#cim-management-tools)
+[10 CIM Management Tools](#cim-management-tools)
 
-[10.1 Sparx Enterprise Architect [80](#sparx-enterprise-architect)](#sparx-enterprise-architect)
+[10.1 Sparx Enterprise Architect](#sparx-enterprise-architect)
 
-[10.2 jCleanCIM [80](#jcleancim)](#jcleancim)
+[10.2 jCleanCIM](#jcleancim)
 
-[10.3 CIMug Website [80](#cimug-website)](#cimug-website)
+[10.3 CIMug Website](#cimug-website)
 
 # <span class="smallcaps">List of Figures</span>
 
-[Figure 4‑1. UCA International Users Group Organization Chart [25](#_Ref529901341)](#_Ref529901341)
+[Figure 4‑1. UCA International Users Group Organization Chart](#_Ref529901341)
 
-[Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping [27](#_Ref1988984)](#_Ref1988984)
+[Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping](#_Ref1988984)
 
-[Figure 4‑3. CIM Management Processes [27](#_Ref22556726)](#_Ref22556726)
+[Figure 4‑3. CIM Management Processes](#_Ref22556726)
 
-[Figure 4‑4. Model Development Process Flow [29](#_Ref2079526)](#_Ref2079526)
+[Figure 4‑4. Model Development Process Flow](#_Ref2079526)
 
-[Figure 4‑5. Change Management Process [29](#_Ref1985784)](#_Ref1985784)
+[Figure 4‑5. Change Management Process](#_Ref1985784)
 
-[Figure 4‑6. Document generation from CIM UML [30](#_Ref22563694)](#_Ref22563694)
+[Figure 4‑6. Document generation from CIM UML](#_Ref22563694)
 
-[Figure 4‑7. Artifacts Distribution Process Flow [31](#_Ref2158379)](#_Ref2158379)
+[Figure 4‑7. Artifacts Distribution Process Flow](#_Ref2158379)
 
-[Figure 4‑8. Continuous Process Improvement Process Flow [31](#_Ref1995527)](#_Ref1995527)
+[Figure 4‑8. Continuous Process Improvement Process Flow](#_Ref1995527)
 
-[Figure 4‑9. CIM Management Process-to-CIM Management Functions Mapping [32](#_Ref1994217)](#_Ref1994217)
+[Figure 4‑9. CIM Management Process-to-CIM Management Functions Mapping](#_Ref1994217)
 
-[Figure 4‑10. IEC International Standard Development Process [34](#_Ref22425787)](#_Ref22425787)
+[Figure 4‑10. IEC International Standard Development Process](#_Ref22425787)
 
-[Figure 5‑1 - TC57CIM Package Structure [39](#_Ref8597346)](#_Ref8597346)
+[Figure 5‑1 - TC57CIM Package Structure](#_Ref8597346)
 
-[Figure 5‑2. TC57CIM Top-Level Package Dependencies [41](#_Ref532235977)](#_Ref532235977)
+[Figure 5‑2. TC57CIM Top-Level Package Dependencies](#_Ref532235977)
 
-[Figure 6‑1. Example of two associations between two classes [57](#_Ref22115672)](#_Ref22115672)
+[Figure 6‑1. Example of two associations between two classes](#_Ref22115672)
 
-[Figure 6‑2. Example of self-association [57](#_Ref22115886)](#_Ref22115886)
+[Figure 6‑2. Example of self-association](#_Ref22115886)
 
-[Figure 6‑3. Allowed duplication of association end names [57](#_Ref22115402)](#_Ref22115402)
+[Figure 6‑3. Allowed duplication of association end names](#_Ref22115402)
 
 # <span class="smallcaps">List of Tables</span>
 
-[Table 4‑1. IEC TC57 CIM Working Group Mission Statements [24](#_Ref21669616)](#_Ref21669616)
+[Table 4‑1. IEC TC57 CIM Working Group Mission Statements](#_Ref21669616)
 
-[Table 4‑2. CIM Management Processes [28](#_Ref22556968)](#_Ref22556968)
+[Table 4‑2. CIM Management Processes](#_Ref22556968)
 
-[Table 4‑3. Role-to-CIM Management Process Mapping [33](#_Toc25586011)](#_Toc25586011)
+[Table 4‑3. Role-to-CIM Management Process Mapping](#_Toc25586011)
 
-[Table 4‑4. Description of IEC Standard Development Stages. [34](#_Ref22426512)](#_Ref22426512)
+[Table 4‑4. Description of IEC Standard Development Stages.](#_Ref22426512)
 
-[Table 4‑5. CIM Management Processes-to-IEC Standard Development Stage Mappings [35](#_Ref22569302)](#_Ref22569302)
+[Table 4‑5. CIM Management Processes-to-IEC Standard Development Stage Mappings](#_Ref22569302)
 
-[Table 8‑1. Compatibility Types [63](#_Ref22373775)](#_Ref22373775)
+[Table 8‑1. Compatibility Types](#_Ref22373775)
 
-[Table 8‑2. A general comparison of the three versioning strategies. [65](#_Ref22387240)](#_Ref22387240)
+[Table 8‑2. A general comparison of the three versioning strategies.](#_Ref22387240)
 
-[Table 9‑1. CIM Artifacts Under CIM Management [69](#_Ref22120330)](#_Ref22120330)
+[Table 9‑1. CIM Artifacts Under CIM Management](#_Ref22120330)
 
-[Table 9‑2. Model Documents Under CIM Management [70](#_Ref22125995)](#_Ref22125995)
+[Table 9‑2. Model Documents Under CIM Management](#_Ref22125995)
 
-[Table 9‑3. CIM Profiles Under CIM Management [71](#_Ref25434542)](#_Ref25434542)
+[Table 9‑3. CIM Profiles Under CIM Management](#_Ref25434542)
 
-[Table 9‑4. RDF Schemas Under CIM Management [74](#_Ref25431641)](#_Ref25431641)
+[Table 9‑4. RDF Schemas Under CIM Management](#_Ref25431641)
 
-[Table 9‑5. XML Schemas Under CIM Management [75](#_Ref25431767)](#_Ref25431767)
+[Table 9‑5. XML Schemas Under CIM Management](#_Ref25431767)
 
-[Table 9‑6. Hybrid Schemas Under CIM Management [76](#_Ref25432000)](#_Ref25432000)
+[Table 9‑6. Hybrid Schemas Under CIM Management](#_Ref25432000)
 
-[Table 9‑7. CIM Management Documents [77](#_Ref25435542)](#_Ref25435542)
+[Table 9‑7. CIM Management Documents](#_Ref25435542)
 
-[Table 9‑8. CIM Records [77](#_Ref25435667)](#_Ref25435667)
+[Table 9‑8. CIM Records](#_Ref25435667)
 
-[Table 9‑9. Tool Customizations [78](#_Ref25435838)](#_Ref25435838)
+[Table 9‑9. Tool Customizations](#_Ref25435838)
 
 # Introduction
 
