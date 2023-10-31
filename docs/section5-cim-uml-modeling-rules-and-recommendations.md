@@ -505,7 +505,7 @@ it may happen to create by default a directed association, so ensure that the di
 
 if using aggregation from the toolbox, the diamond may be on unexpected side of relationship, so always create first a simple association.
 
-Furthermore, to facilitate the correct dependency processing (see 2.2.2), draw an association from a class in the depending package (source end) towards a class in the dependent package (target end). For example, an association between a class in IEC61968 and a class within IEC61970 would be drawn from (the source end of) the class defined within IEC61968 towards (the target end of) the class within IEC61970. This since IEC61968 depends upon the IEC61970 package.
+Furthermore, to facilitate the correct dependency processing (see 2.2.2), draw an association from a class in the depending package (source end) towards a class in the dependent package (target end). For example, an association between a class in "Enterprise" (formerly the "IEC61968" package) and a class within "Grid" (formerly the "IEC61970" package) would be drawn from (the source end of) the class defined within "Enterprise" towards (the target end of) the class within "Grid". This since "Enterprise" depends upon the "Grid" package.
 
 There appears to be no clear manner to control the association end ordering (within the context of a class) in the Enterprise Architect tool so this is an unmanaged aspect of the UML model. In fact, UML does not specify association ends are owned by the class, they are by default owned by the association itself.
 
@@ -513,13 +513,13 @@ Association end names should be unique among all specialisations of a class. For
 
 Multiplicities are used to describe the number of expected objects at each end of an association as well as if an attribute is optional or mandatory. The following multiplicities are common for association ends in CIM:
 
- - 0..1 an object may or may not exist,
+-   0..1 an object may or may not exist,
 
- - 1 an object always exists,
+-   1 an object always exists,
 
- - 0..\* any number of objects may exist,
+-   0..\* any number of objects may exist,
 
- - 1..\* at least one object exists.
+-   1..\* at least one object exists.
 
 Multiplicities shall be chosen to specify what can be expected in the domain. Multiplicity minimum does not mean all profiles must include the association, but if a profile does include the association it should respect the minimum. Note that minimum multiplicities are normally not enforced by implementations at all times. For example in the middle of a transaction one may require violation of minimum multiplicities.
 
