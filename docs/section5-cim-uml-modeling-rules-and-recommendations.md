@@ -839,7 +839,7 @@ Inheritance should never create situations where attribute names or role names a
 
 ## 5.11 Stereotype Rules
 
-### 5.11.1 General and \<\<Deprecated\>\> Stereotype Rules
+### 5.11.1 General and \<\<Deprecated>> Stereotype Rules
 
 This stereotype is recognised by the CIM UML validation and document generation tool and can be applied to any of the UML concepts defined below. The typical usage of the \<\<deprecated\>\> stereotype is for the purpose of preserving backwards compatibility for the normative, already published content, during a release or two, while indicating to the users that the item is likely to actually be removed in the future. This is a graceful means of phasing out obsolete or re-factored elements, and leaving some time to the users to provide implementation in terms of the new features replacing those marked with \<\<deprecated\>\>.
 
