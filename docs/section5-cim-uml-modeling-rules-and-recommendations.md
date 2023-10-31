@@ -115,11 +115,11 @@ The TC57CIM package structure is shown in Figure 5‑1.
 <li><p>Working Group 14;</p></li>
 <li><p>Working Group 16.</p></li>
 </ul>
-<p>Each package is also referred to as a “Top Level” package.</p></td>
+<p>Each package is also referred to as a “top-level” package.</p></td>
 </tr>
 <tr class="odd">
 <td>Rule005</td>
-<td>The TC57 working group top level packages and the package that describes their dependencies shall be the only sub-packages within the TC57 CIM information package.</td>
+<td>The TC57 working group top-level packages and the package that describes their dependencies shall be the only sub-packages within the TC57 CIM information package.</td>
 </tr>
 <tr class="even">
 <td>Rule006</td>
@@ -895,7 +895,7 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 
 62325-301 nsprefix=mcim nsuri=htt://iec.ch/ …. Market…
 
-\[Proposed\] The IEC is taking an approach of using a consistent namespace for all standard CIM within one consistent version of total CIM. Thus namespaces are only specified one time at the top level package (i.e. the "CIM" top level package) and version would be bumped when any subpackage changes. Therefore the namespace approach is useful to encode this single namespace in the UML for standard CIM canonical model plus namespace for any extension packages.
+\[Proposed\] The IEC is taking an approach of using a consistent namespace for all standard CIM within one consistent version of total CIM. Thus namespaces are only specified one time at the top-level package (i.e. the "CIM" top-level package) and version would be bumped when any subpackage changes. Therefore the namespace approach is useful to encode this single namespace in the UML for standard CIM canonical model plus namespace for any extension packages.
 
 <table>
 <colgroup>
