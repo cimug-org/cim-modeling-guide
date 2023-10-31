@@ -56,7 +56,7 @@ The detailed tool procedures used to accomplish CIM Management tasks are not in 
 
 *This Document Does Not Cover Tools Used To Create CIM Profiles*
 
-The tools used to create CIM Profiles are not in the purview of CIM Management. This document does provide rules and recommendations for transforming the CIM UML (a semantic information model) into a canoncial data model that can then be used as input to a tool to create CIM Profiles.
+The tools used to create CIM Profiles are not in the purview of CIM Management. This document does provide rules and recommendations for transforming the CIM UML (a semantic information model) into a canonical data model that can then be used as input to a tool to create CIM Profiles.
 
 ### 1.1.4 Who this Document Is For
 

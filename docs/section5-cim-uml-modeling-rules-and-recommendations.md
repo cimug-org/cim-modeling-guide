@@ -473,7 +473,6 @@ The attribute order should normally be alphabetical unless there is some clear r
 | Rule056 | In instances where an attribute of a CIM class has an initial value, it shall denote a constant for all instance of the class to which the attribute belongs. |
 | Rule057 | In instances where an attribute of a CIM class has an initial value, it shall be set as both static and constant. |
 | Rule058 | Attribute multiplicity shall always be \[0..1\] (i.e. all CIM attributes are optional). |
-| Rule059 | Names for attributes shall use the Lower Camel Case naming convention. |
 | Rule060 | Attribute names shall be unique among all levels of specialisation. |
 | Rule061 | The scope of a CIM attribute shall be "Public".  |
 | Rule062 | Datatypes used for attributes in cross-working group dependencies shall be coordinated among the affected working groups. |

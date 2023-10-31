@@ -156,7 +156,7 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 
 ## 6.4 Class Extension Rules
 
-Class names start with upper case (UpperCamelCase rule). Class names should use singular form. Class names must be unique across the whole CIM. Be aware there is a potential conflict of profile names and class names that may occur from the 62321-100 standard for XSD naming rules, so the choice of profile names and class names should be made with this consideration.
+Class names start with upper case (UpperCamelCase rule). Class names should use singular form. Class names must be unique across the whole CIM. Be aware there is a potential conflict of profile names and class names that may occur from the 62361-100 NDR standard for XSD naming rules, so the choice of profile names and class names should be made with this consideration.
 
 | **RuleID** | **Description**                                                                                                                                                                                                     |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
