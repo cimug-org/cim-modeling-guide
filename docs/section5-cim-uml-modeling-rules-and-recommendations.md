@@ -405,17 +405,17 @@ The following UML class features are used in CIM:
 
 In CIM, a class is used to describe either domain entities or various data types specific to the CIM domain:
 
- - **&lt;&lt;Primitivegt;&gt;** Primitive data types as Booleans, Float, String etc. Primitive cannot have attributes.
+ - **&lt;&lt;Primitive&gt;&gt;** Primitive data types as Booleans, Float, String etc. Primitive cannot have attributes.
 
- - **&lt;&lt;CIMDatatypegt;&gt;** Simple data types specific for the CIM, e.g. ActivePower, Resistance etc. CIMDatatype has at least three attributes: value, unit and multiplier. The “value” attribute is of Primitive type, and unit and multiplier are of an enumeration type. When required additional attributes can be defined to describe for example “demoninatorUnit” and “denominatorMultiplier”, but only one “value” attribute is allowed.
+ - **&lt;&lt;CIMDatatype&gt;&gt;** Simple data types specific for the CIM, e.g. ActivePower, Resistance etc. CIMDatatype has at least three attributes: value, unit and multiplier. The “value” attribute is of Primitive type, and unit and multiplier are of an enumeration type. When required additional attributes can be defined to describe for example “demoninatorUnit” and “denominatorMultiplier”, but only one “value” attribute is allowed.
 
- - **&lt;&lt;Compoundgt;&gt;** Compound data types specific for the CIM, e.g.StreetAddress etc. Compound has no identity and is a simple group of related attributes, Compound may have attributes whose types are Primitive, enumeration, CIMDatatype or Compound. A circular dependency among Compound types is to be avoided.
+ - **&lt;&lt;Compound&gt;&gt;** Compound data types specific for the CIM, e.g.StreetAddress etc. Compound has no identity and is a simple group of related attributes, Compound may have attributes whose types are Primitive, enumeration, CIMDatatype or Compound. A circular dependency among Compound types is to be avoided.
 
- - **&lt;&lt;enumerationgt;&gt;** Enumerations, e.g. UnitSymbol, UnitMultiplier, Currency, etc.
+ - **&lt;&lt;enumeration&gt;&gt;** Enumerations, e.g. UnitSymbol, UnitMultiplier, Currency, etc.
 
  - None of the above stereotypes. A domain object that participates in inheritance and/or association relationships with other domain objects. Most of domain objects inherit from the class IdentifiedObject and thus get the identifier and one or multiple names.
 
-CIM classes with a stereotype other than **&lt;&lt;deprecatedgt;&gt;** are types that never participate in relationships (i.e., no associations, no inheritance), but are used as types for attributes.
+CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** are types that never participate in relationships (i.e., no associations, no inheritance), but are used as types for attributes.
 
 CIM does not use abstract classes, because CIM is in itself an abstract model. In contrast, profiles may distinguish between concrete and abstract classes.
 
@@ -432,11 +432,11 @@ Classes should be ordered alphabetically or in order of importance or by logical
 | Rule040    | All classes shall have unique names. The package containment hierarchy shall not be used in uniquely identifying a class.                                        |
 | Rule041    | A CIM class shall be used to describe either an electric utility domain entity or an information entity used in the electric utility domain.                     |
 | Rule042    | All class names shall be the singular form of a utility domain concept.                                                                                          |
-| Rule043    | A CIM class that has the **&lt;&lt;CIMDatatypegt;&gt;** stereotype shall have at minimum, the following attributes: 1. value; 2. unit; and 3. multiplier.                   |
+| Rule043    | A CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall have at minimum, the following attributes: 1. value; 2. unit; and 3. multiplier.                   |
 | Rule044    | A CIM class shall not be an abstract class.                                                                                                                      |
 | Rule045    | A CIM class shall not be an association class.                                                                                                                   |
-| Rule046    | CIM classes with a stereotype other than **&lt;&lt;deprecatedgt;&gt;** shall never participate in relationships with other classes (i.e., no associations, no inheritance). |
-| Rule047    | CIM classes with a stereotype other than **&lt;&lt;deprecatedgt;&gt;** shall only be used as datatypes for attributes.                                                      |
+| Rule046    | CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** shall never participate in relationships with other classes (i.e., no associations, no inheritance). |
+| Rule047    | CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** shall only be used as datatypes for attributes.                                                      |
 | Rule048    | CIM classes should be ordered alphabetically or in order of importance or by logical grouping within a package.                                                  |
 
 ## 5.5 Attribute Rules
@@ -466,9 +466,9 @@ The attribute order should normally be alphabetical unless there is some clear r
 | Rule049 | Names for attributes shall use the Lower Camel Case naming convention. |
 | Rule050 | Names for attributes shall be British English names. |
 | Rule051 | Attribute names shall be singular form concepts. |
-| Rule052 | The "value" attribute of a CIM class that has the "**&lt;&lt;CIMDatatypegt;&gt;**" stereotype shall be a Primitive data type. |
-| Rule053 | The "unit" attribute of a CIM class that has the "**&lt;&lt;CIMDatatypegt;&gt;**" stereotype shall be an enumeration data type. |
-| Rule054 | The "multiplier" attribute of a CIM class that has the "**&lt;&lt;CIMDatatypegt;&gt;**" stereotype shall be an enumeration data type. |
+| Rule052 | The "value" attribute of a CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be a Primitive data type. |
+| Rule053 | The "unit" attribute of a CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be an enumeration data type. |
+| Rule054 | The "multiplier" attribute of a CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be an enumeration data type. |
 | Rule055 | Attribute data types shall be one of the stereotyped CIM classes (i.e. shall not be one of the Enterprise Architect native data types). |
 | Rule056 | In instances where an attribute of a CIM class has an initial value, it shall denote a constant for all instance of the class to which the attribute belongs. |
 | Rule057 | In instances where an attribute of a CIM class has an initial value, it shall be set as both static and constant. |
@@ -479,7 +479,7 @@ The attribute order should normally be alphabetical unless there is some clear r
 
 ## 5.6 Association Rules
 
-Associations describe how classes are related. Only classes describing domain objects, i.e. classes without data type stereotypes such as **&lt;&lt;enumerationgt;&gt;**, **&lt;&lt;Primitivegt;&gt;**, **&lt;&lt;Compoundgt;&gt;**, or **&lt;&lt;CIMDatatypegt;&gt;**, may participate in associations.
+Associations describe how classes are related. Only classes describing domain objects, i.e. classes without data type stereotypes such as **&lt;&lt;enumeration&gt;&gt;**, **&lt;&lt;Primitive&gt;&gt;**, **&lt;&lt;Compound&gt;&gt;**, or **&lt;&lt;CIMDatatype&gt;&gt;**, may participate in associations.
 
 An association has two ends referred to as association ends. CIM associations have unspecified direction but have both ends specified which means they are implicitly bi-directional (i.e., it is possible, through end names, to navigate from A to B and from B to A).
 
@@ -487,7 +487,7 @@ The association description and association name are not specified. These become
 
 The UML association features used in CIM are as follows:
 
-Stereotype **&lt;&lt;informativegt;&gt;**, only in case the association is informative. No other stereotypes are allowed.
+Stereotype **&lt;&lt;informative&gt;&gt;**, only in case the association is informative. No other stereotypes are allowed.
 
 The UML association end features used in CIM are:
 
@@ -617,11 +617,11 @@ Multiplicities shall be chosen to specify what can be expected in the domain. Mu
 
 ## 5.7 Enumeration Rules
 
-Enumeration literals are attributes within an **&lt;&lt;enumerationgt;&gt;** type. The following UML attribute features are used in CIM:
+Enumeration literals are attributes within an **&lt;&lt;enumeration&gt;&gt;** type. The following UML attribute features are used in CIM:
 
 Name, always used and must be unique among all levels of specialisation.
 
-UML stereotype **&lt;&lt;enumgt;&gt;**.
+UML stereotype **&lt;&lt;enum&gt;&gt;**.
 
 (enumeration literal has no type by definition).
 
@@ -633,7 +633,7 @@ Initial value, if used, denotes a code that has semantic binding. If used, the c
 
 Documentation. The documentation should not use or rely upon special formatting. Plain text is assumed. It is suggested to avoid special characters here also.
 
-Other than **&lt;&lt;enumgt;&gt;** or **&lt;&lt;deprecatedgt;&gt;** attribute stereotype can temporarily be used to describe the development state of the attribute or use case that initiated the creation of the attribute. Once the literal is fully incorporated in the model, the stereotype is removed.
+Other than **&lt;&lt;enum&gt;&gt;** or **&lt;&lt;deprecated&gt;&gt;** attribute stereotype can temporarily be used to describe the development state of the attribute or use case that initiated the creation of the attribute. Once the literal is fully incorporated in the model, the stereotype is removed.
 
 Like for attributes, literal names are unique within a classifier and Enterprise Architect will enforce this.
 
@@ -653,7 +653,7 @@ There is no ordering required or reinforced; the order found in the UML model wi
 <tbody>
 <tr class="odd">
 <td>Rule084</td>
-<td>A CIM enumeration shall be a UML class with the "**&lt;&lt;enumerationgt;&gt;**" stereotype.</td>
+<td>A CIM enumeration shall be a UML class with the **&lt;&lt;enumeration&gt;&gt;** stereotype.</td>
 </tr>
 <tr class="even">
 <td>Rule085</td>
@@ -677,7 +677,7 @@ There is no ordering required or reinforced; the order found in the UML model wi
 </tr>
 <tr class="odd">
 <td>Rule090</td>
-<td>All enumeration literals shall use the stereotype **&lt;&lt;enumgt;&gt;**.</td>
+<td>All enumeration literals shall use the stereotype **&lt;&lt;enum&gt;&gt;**.</td>
 </tr>
 <tr class="even">
 <td>Rule091</td>
@@ -836,42 +836,42 @@ Inheritance should never create situations where attribute names or role names a
 
 ## 5.11 Stereotype Rules
 
-### 5.11.1 General and **&lt;&lt;Deprecatedgt;&gt;** Stereotype Rules
+### 5.11.1 General and **&lt;&lt;Deprecated&gt;&gt;** Stereotype Rules
 
-This stereotype is recognised by the CIM UML validation and document generation tool and can be applied to any of the UML concepts defined below. The typical usage of the **&lt;&lt;deprecatedgt;&gt;** stereotype is for the purpose of preserving backwards compatibility for the normative, already published content, during a release or two, while indicating to the users that the item is likely to actually be removed in the future. This is a graceful means of phasing out obsolete or re-factored elements, and leaving some time to the users to provide implementation in terms of the new features replacing those marked with **&lt;&lt;deprecatedgt;&gt;**.
+This stereotype is recognised by the CIM UML validation and document generation tool and can be applied to any of the UML concepts defined below. The typical usage of the **&lt;&lt;deprecated&gt;&gt;** stereotype is for the purpose of preserving backwards compatibility for the normative, already published content, during a release or two, while indicating to the users that the item is likely to actually be removed in the future. This is a graceful means of phasing out obsolete or re-factored elements, and leaving some time to the users to provide implementation in terms of the new features replacing those marked with **&lt;&lt;deprecated&gt;&gt;**.
 
-It is possible and supported by the CIM UML tool to have multiple stereotypes on an element (e.g. **&lt;&lt;deprecated, CIMDatatypegt;&gt;**).
+It is possible and supported by the CIM UML tool to have multiple stereotypes on an element (e.g. **&lt;&lt;deprecated, CIMDatatype&gt;&gt;**).
 
-The **&lt;&lt;deprecatedgt;&gt;** strereotype may be used on attributes, associations, classes, packages, and diagrams in the UML model. It is recommended when deprecating a package to deprecate all its contained classes as well. When deprecating a class it is recommended to deprecate all associations in which it is involved and all its native attributes. Inheritance from a deprecated class is less clear and no general guidance is given, except to avoid this situation if possible.
+The **&lt;&lt;deprecated&gt;&gt;** strereotype may be used on attributes, associations, classes, packages, and diagrams in the UML model. It is recommended when deprecating a package to deprecate all its contained classes as well. When deprecating a class it is recommended to deprecate all associations in which it is involved and all its native attributes. Inheritance from a deprecated class is less clear and no general guidance is given, except to avoid this situation if possible.
 
 | **RuleID** | **Description**                                                                                                                                                      |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rule120    | CIM elements may have multiple stereotypes.                                                                                                                          |
-| Rule121    | The **&lt;&lt;deprecatedgt;&gt;** stereotype may be used on attributes, associations, classes, packages, and diagrams in the CIM.                                               |
-| Rule122    | The **&lt;&lt;deprecatedgt;&gt;** stereotype should be used when it is desired to deprecate a package and all its contained classes as well.                                    |
-| Rule123    | The **&lt;&lt;deprecatedgt;&gt;** stereotype should be used when it is desired to deprecate a class and all associations in which it is involved and all its native attributes. |
-| Rule124    | Usage of the **&lt;&lt;deprecatedgt;&gt;** stereotype should be for the purpose of preserving backwards compatibility for normative, already published content.                 |
-| Rule125    | The **&lt;&lt;deprecatedgt;&gt;** stereotype should be used for no more than two (2) releases of the CIM.                                                                       |
+| Rule121    | The **&lt;&lt;deprecated&gt;&gt;** stereotype may be used on attributes, associations, classes, packages, and diagrams in the CIM.                                               |
+| Rule122    | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used when it is desired to deprecate a package and all its contained classes as well.                                    |
+| Rule123    | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used when it is desired to deprecate a class and all associations in which it is involved and all its native attributes. |
+| Rule124    | Usage of the **&lt;&lt;deprecated&gt;&gt;** stereotype should be for the purpose of preserving backwards compatibility for normative, already published content.                 |
+| Rule125    | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used for no more than two (2) releases of the CIM.                                                                       |
 
 ### 5.11.2 Package Stereotype Rules
 
-| **RuleID** | **Description**                                                                                                                                                                                                    |
-|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule126    | A package stereotype may be used temporarily to describe the development state of the package, e.g. **&lt;&lt;Work in progressgt;&gt;**. Once the package is fully incorporated in the model the stereotype shall be removed. |
+| **RuleID** | **Description**  |
+|------------|------------------------------|
+| Rule126    | A package stereotype may be used temporarily to describe the development state of the package, e.g. **&lt;&lt;Work in progress&gt;&gt;**. Once the package is fully incorporated in the model the stereotype shall be removed. |
 
 ### 5.11.3 Class Stereotype Rules
 
-| **RuleID** | **Description**                                                                                                                                                                                                                                                          |
-|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule127    | The "**&lt;&lt;CIMDatatypegt;&gt;**" stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain data type.                                                                                                                   |
-| Rule128    | The "**&lt;&lt;Primitivegt;&gt;**" stereotype shall be used to extend the semantics of the UML class element to represent the following data types: 1. Boolean; 2. Date; 3. DateTime; 4. Decimal; 5. Duration; 6. Float; 7. Integer; 8. MonthDay; 9. String; 10. Time; and 11. URI. |
-| Rule129    | The "**&lt;&lt;Compoundgt;&gt;**" stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain datatype that is a collection of related class attributes.                                                                      |
-| Rule130    | The "**&lt;&lt;enumerationgt;&gt;**" stereotype shall be used to extend the semantics of the UML class element to represent a data type whose instances form a list of named literal values.                                                                                        |
-| Rule131    | A CIM class that represents a domain object that participates in inheritance and / or association relationships shall not use a stereotype with the exception of the **&lt;&lt;deprecatedgt;&gt;** stereotype specified in \[Rule 124\].                                            |
+| **RuleID** | **Description** |
+|------------|------------------------------|
+| Rule127 | The **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain data type. |
+| Rule128 | The **&lt;&lt;Primitive&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent the following data types: 1. Boolean; 2. Date; 3. DateTime; 4. Decimal; 5. Duration; 6. Float; 7. Integer; 8. MonthDay; 9. String; 10. Time; and 11. URI. |
+| Rule129 | The **&lt;&lt;Compound&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain datatype that is a collection of related class attributes. |
+| Rule130 | The **&lt;&lt;enumeration&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent a data type whose instances form a list of named literal values. |
+| Rule131 | A CIM class that represents a domain object that participates in inheritance and / or association relationships shall not use a stereotype with the exception of the **&lt;&lt;deprecated&gt;&gt;** stereotype specified in \[Rule 124\]. |
 
 ## 5.12 Namespace Rules
 
-Namespaces are specified at level of packages in the CIM UML model. The namespaces apply to classes, attributes, association ends, data types (**&lt;&lt;CIMDatatypegt;&gt;**, **&lt;&lt;Compoundgt;&gt;**, **&lt;&lt;Primitivegt;&gt;**, and **&lt;&lt;enumerationgt;&gt;**) and enums. Namespaces are useful for marking the source of CIM models for either standards or extensions.
+Namespaces are specified at level of packages in the CIM UML model. The namespaces apply to classes, attributes, association ends, data types (**&lt;&lt;CIMDatatype&gt;&gt;**, **&lt;&lt;Compound&gt;&gt;**, **&lt;&lt;Primitive&gt;&gt;**, and **&lt;&lt;enumeration&gt;&gt;**) and enums. Namespaces are useful for marking the source of CIM models for either standards or extensions.
 
 Namespaces are derived from the rules given below.
 
@@ -931,7 +931,7 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 </tr>
 <tr class="even">
 <td>Rule137</td>
-<td>Namespaces shall apply to classes, attributes, association ends, datatypes (**&lt;&lt;CIMDatatypegt;&gt;**, **&lt;&lt;Compoundgt;&gt;**, **&lt;&lt;Primitivegt;&gt;**, and **&lt;&lt;enumerationgt;&gt;**) and enumerations.</td>
+<td>Namespaces shall apply to classes, attributes, association ends, datatypes (**&lt;&lt;CIMDatatype&gt;&gt;**, **&lt;&lt;Compound&gt;&gt;**, **&lt;&lt;Primitive&gt;&gt;**, and **&lt;&lt;enumeration&gt;&gt;**) and enumerations.</td>
 </tr>
 <tr class="odd">
 <td>Rule138</td>
