@@ -20,11 +20,11 @@ As IEC standards, the CIM standards must go through the IEC standards developmen
 
 CIM Artifacts are model artifacts that are maintained in the Sparx Systems Enterprise Architect modeling tool. CIM Artifacts are stored in four (4) file formats: 1) as an EA project file in the native EA file format (\*.eap or \*.eapx); 2) in the ZIP compressed file format (\*.zip); 3) in the XML Metadata Interchange file format (\*.xmi); and 4) as a collection of web pages in HyperText Markup Language file format (\*.html). The EA project file is also exported and maintained as a Web Ontology Language project file (\*.owl). The CIM Artifacts under CIM Management are listed and described in Table 9‑1.
 
-| **CIM Artifact**                    | **Artifact Description**                                                                                                                                                                                                             |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CIM UML                             | The CIM UML is the semantic common information model expressed in UML.                                                                                                                                                               |
-| CIM Interface Reference Model (IRM) | The IRM is contained in the same EA project file as the CIM UML as a separate root model. The IRM is stored in the same four (4) file formats as the CIM UML.                                                                        |
-| Schema Composer Profile Artifacts   | Schema Composer profile artifacts are contained in the same EA project file as the CIM UML as a separate top level package within the CIM UML. Schema profile artifacts are stored in the same four (4) file formats as the CIM UML. |
+| **CIM Artifact** | **Artifact Description** |   
+|------------------|--------------------------|
+| CIM UML | The CIM UML is the semantic common information model expressed in UML. |
+| CIM Interface Reference Model (IRM) | The IRM is contained in the same EA project file as the CIM UML as a separate root model. The IRM is stored in the same four (4) file formats as the CIM UML. |
+| Schema Composer Profile Artifacts | Schema Composer profile artifacts are contained in the same EA project file as the CIM UML as a separate top level package within the CIM UML. Schema profile artifacts are stored in the same four (4) file formats as the CIM UML. |
 
 <span id="_Ref22120330" class="anchor"></span>Table 9‑1. CIM Artifacts Under CIM Management
 
@@ -33,7 +33,7 @@ CIM Artifacts are model artifacts that are maintained in the Sparx Systems Enter
 Model documents are CIM standards that are derived from the CIM UML using the CIM document generation tool jCleanCim. Draft versions of the CIM standard model documents under CIM Management are listed and described in Table 9‑2.
 
 | **Model Document** | **Model Document Description** |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------|--------------------------------|
 | IEC 61970-301 | This document specifies a Base set of packages which provide a logical view of the functional aspects of Energy Management System (EMS) and power system modelling information within the electric utility enterprise that is shared between all applications. |
 | IEC 61968-11 | This part of IEC 61968 specifies the distribution extensions of the common information model (CIM) specified in IEC 61970-301. It defines a standard set of extensions of common information model (CIM), which support message definitions in IEC 61968-3 to IEC 61968-9, IEC 61968-13 and IEC 61968-142. The scope of this standard is the information model that extends the base CIM for the needs of distribution networks, as well as for integration with enterprise-wide information systems typically used within electrical utilities. |
 | IEC 61970-303 | This proposed specification IEC 61970-303 extends the Common Information Model (CIM) with information describing how network model data is organised and administrated. A specific network model not only describe its equipment but also include additional data about the network model itself as its origin, responsible organisation, author, when it was created, version, the time (e.g. past, current, future) when the model is valid, usage (e.g. operation, operation planning, extension planning), purpose for its creation (e.g. commissioning of new equipment, test of network changes/extensions), relation to neighbouring networks etc. IEC 61970-303 extends the basic CIM (IEC 61970-301 and IEC 61970-302) with this kind of data. |
@@ -198,7 +198,7 @@ The RDF schemas under CIM management are listed and described in Table 9‑4.
 <span id="_Ref25431641" class="anchor"></span>Table 9‑4. RDF Schemas Under CIM Management
 
 | **RDF Schema** | **RDF Schema Description** |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------|----------------------------|
 | IEC 61970-501  | This part of the IEC 61970 series specifies the mapping between the semantic information model (in the UML) specified in IEC 61970-301 and the machine-readable Extensible Markup Language (XML) representation of that model using the Resource Description Framework (RDF) Schema specification language. |
 | IEC 61970-552  | This part of the IEC 61970 series specifies how the CIM RDF schema specified in IEC 61970-501 is used to exchange power system models using XML (referred to as CIMXML) defined in the 61970-45x series of profile standards, such as the CIM Transmission Network Model Exchange Profile described in IEC 61970-452. |
 | IEC 61970-556  | This part of the IEC 61970 series specifies how the CIM RDF schema specified in IEC 61970-501 is used to exchange CIM based graphic objects; and how to display an object using XML defined in the 61970-453. This standard defines a format (CIM/G) to facilitate efficient graphic data transfer, which will support on-line remote diagram browsing and exchanging, and off-line exchange of graphic displays. It includes graphic file structure and graphic element definitions. |
@@ -305,7 +305,7 @@ Table 9‑7 is a list and description of CIM Management Documents maintained by 
 <span id="_Ref25435542" class="anchor"></span>Table 9‑7. CIM Management Documents
 
 | **Document** | **Document Description** |
-|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------|--------------------------|
 | **Action Item List** | The action item list is a list of actions that have been assigned to one of the model managers to complete. The action item list is used to identify and track the activity of the model managers. |
 | **CIM Management Processes and Procedures** | The purpose of this document is to provide a detailed description of the processes and procedures that are involved in CIM Model Management. This document is written by CIM model managers for CIM model managers and anyone who is considering becoming a CIM model manager. |
 | **CIM Modeling Guide** | The purpose of this document is to provide guidance to individuals working with the CIM UML on how to modify the CIM in accordance with the CIM modeling rules and CIM change management. The rules and process are maintained and enforced by the CIM model managers. |
@@ -320,7 +320,7 @@ Table 9‑8 is a list and description of CIM Records managed by CIM model manage
 <span id="_Ref25435667" class="anchor"></span>Table 9‑8. CIM Records
 
 | **Record** | **Record Description** |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------|------------------------|
 | **Country Comment Responses** | Country Comment Responses are tracked by CIM Model Management and are used as part of a check and balance to ensure CIM UML changes are included in new versions of the CIM UML to address the responses as intended. |
 | **Lessons Learned** | Lessons learned are records that capture experience-based learning at the completion of a major milestone in a CIM Management process or at the completion of a CIM Management process. The lessons are used as input to planning process improvements. |
 | **Meeting Agendas** | Meeting agendas are documents that capture what is planned to be covered during a Model Manager led meeting. The purpose of the agenda is twofold: 1) To be used as a guide during the meeting to make sure everything intended to be covered is known; and 2) To be used as part of a meeting invite to help ensure individuals who should or want to be in attendance are aware of what topics will be covered so they can plan accordingly. |
@@ -340,10 +340,10 @@ Tool customizations are artifacts that facilitate or help automate tasks perform
 <span id="_Ref25435838" class="anchor"></span>Table 9‑9. Tool Customizations
 
 | **Document** | **Document Description**  |
-|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Automation Scripts**  | Automation scripts are used in Enterprise Architect to automate workflows or perform modeling tasks. An automation script can be written, for example, to perform Model Validation.  |
+|--------------|---------------------------|
+| **Automation Scripts**  | Automation scripts are used in Enterprise Architect to automate workflows or perform modeling tasks. An automation script can be written, for example, to perform Model Validation. |
 | **Model Management Document Templates** | Model management document templates are used in the auto generation of CIM Documents. Document templates are used with jCleanCim and can be used with Word and Enterprise Architect.  |
-| **User-Defined Add-ins**  | User-defined add-ins (also referred to as plug-ins) are developed software that is designed to be procedurally added to a tool to extend the base functionality of a tool. User-defined add-ins can be developed for Enterprise Architect.  |
+| **User-Defined Add-ins**  | User-defined add-ins (also referred to as plug-ins) are developed software that is designed to be procedurally added to a tool to extend the base functionality of a tool. User-defined add-ins can be developed for Enterprise Architect. |
 | **User-Defined Configuration Files** | User-defined configuration files are used to setup an automated tool activity. User-defined configuration files are used with jCleanCim and can be used with Enterprise Architect. |
 | **User-Defined Model Searches** | User-defined model searches are used in Enterprise Architect to query the in-memory database of the open Enterprise Architect project.  |
 | **Vendor Add-ins** | Vendor add-ins (also referred to as plug-ins) are vendor supplied software that is designed to be procedurally added to a tool to extend the base functionality of a tool. Vendor supplied add-ins are available for Word and Enterprise Architect. |

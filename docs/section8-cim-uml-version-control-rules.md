@@ -4,23 +4,23 @@
 
 After the top-level CIM packages have been synchronized and deployed as the complete CIM UML for use by either working groups or into the public domain, profiles will naturally be developed that have dependencies on it. When the need arises to make changes to the CIM UML, an impact assessment needs to be made to determine:
 
-- Whether the changes will negatively impact existing (and potentially future) CIM Profiles
+-   Whether the changes will negatively impact existing (and potentially future) CIM Profiles
 
-- How changes that will or will not impact CIM Profiles should be implemented and communicated.
+-   How changes that will or will not impact CIM Profiles should be implemented and communicated.
 
 These issues result in the need for versioning. How versioning is implemented and communicated is specified in a **Version Control Strategy**. The Version Control Strategy must answer the following questions:
 
-- What exactly constitutes a new version of the CIM UML?
+-   What exactly constitutes a new version of the CIM UML?
 
-- What is the difference between a major and a minor version?
+-   What is the difference between a major and a minor version?
 
-- What do the parts of a version number indicate?
+-   What do the parts of a version number indicate?
 
-- Will the new version of the CIM UML still work with existing profiles that were designed for the old CIM UML version?
+-   Will the new version of the CIM UML still work with existing profiles that were designed for the old CIM UML version?
 
-- Will the current version of the CIM UML work with new profiles that have different data exchange requirements?
+-   Will the current version of the CIM UML work with new profiles that have different data exchange requirements?
 
-- What is the best way to add changes to the CIM UML while minimizing the impact on profiles?
+-   What is the best way to add changes to the CIM UML while minimizing the impact on profiles?
 
 The remaining subsections of this overview address these questions and provide a set of options for solving common versioning problems.
 
@@ -34,12 +34,12 @@ The number one concern when developing and deploying a new version of the CIM UM
 
 This subsection establishes the fundamental types of compatibility that relate to the content of new CIM UML versions and also tie into the goals and limitations of different versioning strategies covered in section 8.2. The different types of compatibility are listed and described in Table 8‑1.
 
-| **Compatibility Type**      | **Compatibility Type Description**                                                                                                                                                                                                                                                                                                                                                                                   |
-|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Backwards Compatibility** | A new version of the CIM UML continues to support CIM Profiles designed to work with the old version is considered *backwards-compatible*.                                                                                                                                                                                                                                                                           |
-| **Forwards Compatibility**  | When a new version of the CIM UML can support a range of future CIM Profiles it is considered to have an extent of forwards compatibility. A new version of the CIM UML will support future CIM Profiles by definition. The extent of forwards compatibility is defined by the number of new use case interactions that can be supported with the new CIM UML.                                                       |
-| **Compatible Changes**      | When the changes incorporated in a new version of the CIM UML do not negatively affect existing CIM Profiles, then the change itself is considered a *compatible change*. Common compatible changes include adding an enumeration literal, and changes to a UML element description for clarification.                                                                                                               |
-| **Incompatible Changes**    | If after a change the CIM UML is no longer compatible with existing CIM Profiles, then the CIM UML is considered to have received an *incompatible change.* The term “Incompatible change” indicates an absence of backwards compatibility. Common incompatibility changes include changing the multiplicity of an association end from “0..”, changing an association role name, and deleting enumeration literals. |
+| **Compatibility Type** | **Compatibility Type Description** |
+|------------------------|------------------------------------|
+| **Backwards Compatibility** | A new version of the CIM UML continues to support CIM Profiles designed to work with the old version is considered *backwards-compatible*. |
+| **Forwards Compatibility** | When a new version of the CIM UML can support a range of future CIM Profiles it is considered to have an extent of forwards compatibility. A new version of the CIM UML will support future CIM Profiles by definition. The extent of forwards compatibility is defined by the number of new use case interactions that can be supported with the new CIM UML. |
+| **Compatible Changes** | When the changes incorporated in a new version of the CIM UML do not negatively affect existing CIM Profiles, then the change itself is considered a *compatible change*. Common compatible changes include adding an enumeration literal, and changes to a UML element description for clarification. |
+| **Incompatible Changes** | If after a change the CIM UML is no longer compatible with existing CIM Profiles, then the CIM UML is considered to have received an *incompatible change.* The term “Incompatible change” indicates an absence of backwards compatibility. Common incompatibility changes include changing the multiplicity of an association end from “0..”, changing an association role name, and deleting enumeration literals. |
 
 <span id="_Ref22373775" class="anchor"></span>Table 8‑1. Compatibility Types
 
@@ -118,15 +118,15 @@ The version control strategy is expressed as a set of rules that address version
 
 ### 8.2.1 Version Scope
 
-| **RuleID** | **Description** 
-|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule225    | A new version of a top-level package shall be created when the contents of the top-level package (which includes any of its normative sub-packages) has been changed, and the change has been verified by the appropriate CIM model manager. |
-| Rule226    | A new version of the CIM UML shall be created when a new version of a top-level package has been created. |
+| **RuleID** | **Description** |
+|------------|-----------------|
+| Rule225 | A new version of a top-level package shall be created when the contents of the top-level package (which includes any of its normative sub-packages) has been changed, and the change has been verified by the appropriate CIM model manager. |
+| Rule226 | A new version of the CIM UML shall be created when a new version of a top-level package has been created. |
 
 ### 8.2.2 Version Compatibility
 
-| **RuleID** | **Description**  |
-|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **RuleID** | **Description** |
+|------------|-----------------|
 | Rule227 | A new version of the CIM UML shall be considered backwards-compatible if it continues to support CIM Profiles designed to work with the old version of the CIM UML (i.e. the changes incorporated in the new version of the CIM UML are compatible changes). |
 | Rule228 | A new version of the CIM UML shall be considered not backwards-compatible if it does not support CIM Profiles designed to work with the old version of the CIM UML. |
 
