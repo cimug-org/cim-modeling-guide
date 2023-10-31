@@ -120,7 +120,7 @@ The CIM Technical Subcommittee is responsible for handling all technical and mai
 
       - training materials.
 
-    - Maintain repositories for sample CIM/XML/RDF power system model files
+      - Maintain repositories for sample CIM/XML/RDF power system model files
 
 ## 4.3 CIM Management Functions
 
@@ -206,13 +206,13 @@ The CIM Model Managers perform most of the tasks within the CIM management proce
 
 | **Role** | **Role Description** | **MDP** | **CMP** | **DGP** | **ADP** | **CPIP** |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------|---------|---------|----------|
-| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. |         |         |         |         |          |
-| CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. |         |         |         |         |          |
-| CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. |         |         |         |         |          |
-| IEC CIM Working Group | This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents. |         |         |         |         |          |
-| IEC Working Group Project Leader | This individual role performed by an IEC Working Group member has overall responsibility for leading the development of a new edition of an international standard from the IEC proposal stage through to the IEC publication stage. |         |         |         |         |          |
-| IEC Working Group Convener | This individual role performed by an IEC Working Group member is responsible for arranging and leading face-to-face IEC Working Group meetings and providing working group oversight.  |         |         |         |         |          |
-| Model Manager | This individual role performed by an individual that is a member of both the CIMug and an IEC Working Group has overall responsibility for artifacts under CIM management. |         |         |         |         |          |
+| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. |  <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
+| CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
+| CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
+| IEC CIM Working Group | This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |          |
+| IEC Working Group Project Leader | This individual role performed by an IEC Working Group member has overall responsibility for leading the development of a new edition of an international standard from the IEC proposal stage through to the IEC publication stage. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |          |
+| IEC Working Group Convener | This individual role performed by an IEC Working Group member is responsible for arranging and leading face-to-face IEC Working Group meetings and providing working group oversight.  |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
+| Model Manager | This individual role performed by an individual that is a member of both the CIMug and an IEC Working Group has overall responsibility for artifacts under CIM management. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
 
 <span id="_Toc25586011" class="anchor"></span>Table 4‑3. Role-to-CIM Management Process Mapping
 
