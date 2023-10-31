@@ -1,6 +1,6 @@
 # Section 7 - CIM UML Transformation Rules and Recommendations
 
-## Overview
+## 7.1 Overview
 
 The CIM UML is a semantic information model (also referred to as a conceptual data model). It is a conceptual model of utility objects and their relationships with each other. It is application independent, but defines all the concepts needed for any application. It essentially provides the vocabulary (sometimes referred to as a data dictionary) to be used when utility domain data is exchanged between systems.
 
@@ -8,7 +8,7 @@ Since the CIM UML is a conceptual model, it cannot be used as is for data exchan
 
 This section specifies the rules and recommendations for transforming a subset of the CIM UML into a contextual data model. The contextual data model can then be used to derive implementation models which define the data and the structure of the data required to exchange information between two systems to execute a single interaction in a System Use Case.
 
-## General Transformation Rules and Recommendations
+## 7.2 General Transformation Rules and Recommendations
 
 | **RuleID** | **Description**                                                                                                                                                                     |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -16,7 +16,7 @@ This section specifies the rules and recommendations for transforming a subset o
 | Rule208    | In instances where CIM extensions have been added to the CIM UML, the extensions may be part of a contextual data model derived from the CIM UML.                                   |
 | Rule209    | A class diagram that contains all candidate classes and associations should be created, which may be used as a reference diagram, for each contextual data model.                   |
 
-## Package Transformation Rules and Recommendations
+## 7.3 Package Transformation Rules and Recommendations
 
 | **RuleID** | **Description**                                                                                                                                                                                                              |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -24,14 +24,14 @@ This section specifies the rules and recommendations for transforming a subset o
 | Rule211    | Transformation of an entire package shall not be required to create a contextual data model (i.e. classes, attributes, and associations within a package may be left out of a contextual data model if they are not needed). |
 | Rule212    | A single top-level package for contextual data models that exists outside of the TC57CIM package should be created at the root level of the CIM.                                                                             |
 
-## Class Transformation Rules and Recommendations
+## 7.4 Class Transformation Rules and Recommendations
 
 | **RuleID** | **Description**                                                    |
 |------------|--------------------------------------------------------------------|
 | Rule213    | A contextual data model shall contain at least one concrete class. |
 | Rule214    | A contextual data model may contain abstract classes.              |
 
-## Attribute Transformation Rules and Recommendations
+## 7.5 Attribute Transformation Rules and Recommendations
 
 | **RuleID** | **Description**                                                                                                                                                              |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -41,7 +41,7 @@ This section specifies the rules and recommendations for transforming a subset o
 | Rule218    | A contextual data model should contain the attributes necessary to execute a System use case interaction.                                                                    |
 | Rule219    | A contextual data model should not contain attributes not used in a System use case interaction (i.e. not all class attributes must be included in a contextual data model). |
 
-## Association Transformation Rules and Recommendations
+## 7.6 Association Transformation Rules and Recommendations
 
 | **RuleID** | **Description**                                                                                                                                                                  |
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

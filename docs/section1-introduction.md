@@ -1,6 +1,6 @@
 # Section 1 - Introduction
 
-## Document Overview
+## 1.1 Document Overview
 
 The CIM has been growing and more groups are extending it with new functionality. Currently the following IEC TC57 working groups are working with the CIM:
 
@@ -12,13 +12,13 @@ The CIM has been growing and more groups are extending it with new functionality
 
   Initially only WG13 and WG14 were working with the CIM. Each group worked with a local copy of the UML model file and the two copies were synchronised as needed. With three working groups the synchronisation process becomes more complex. This document describes how to manage CIM across multiple working groups and provides best practices for applications wanting to extend the CIM.
 
-### Document Purpose
+### 1.1.1 Document Purpose
 
 The purpose of this document is to provide guidance to individuals working with the CIM UML on how to modify the CIM in accordance with the CIM modeling rules and CIM change management. The rules and process are maintained and enforced by the CIM model managers.
 
 The goals of this document are to: 1) facilitate communication and understanding among individuals working with CIM domain models; and 2) streamline the incorporation of new content into the CIM UML.
 
-### Document Scope
+### 1.1.2 Document Scope
 
 The scope of this document includes providing:
 
@@ -36,7 +36,7 @@ The scope of this document includes providing:
 
 7)  A description of the UML tool (Sparx EA) used for CIM Management.
 
-### What this Document Does Not Cover
+### 1.1.3 What this Document Does Not Cover
 
 *This Document Does Not Cover All UML Concepts*
 
@@ -58,7 +58,7 @@ The detailed tool procedures used to accomplish CIM Management tasks are not in 
 
 The tools used to create CIM Profiles are not in the purview of CIM Management. This document does provide rules and recommendations for transforming the CIM UML (a semantic information model) into a canoncial data model that can then be used as input to a tool to create CIM Profiles.
 
-### Who this Document Is For
+### 1.1.4 Who this Document Is For
 
 This document has the following intended audience:
 
@@ -84,7 +84,7 @@ This document has the following intended audience:
 
 - Researchers interested in learning about the CIM UML and conducting CIM UML research.
 
-## How this Document Is Organized
+## 1.2 How this Document Is Organized
 
 This document begins with Sections 1, 2, and 3 providing introductory content, references, and definitions, respectively.
 
@@ -102,7 +102,7 @@ Section 9 identifies and describes the artifacts under CIM Management. This incl
 
 Section 10 discusses the tools used for CIM UML model management. Tools include Enterprise Architect, jCleanCIM, and the CIMug Website.
 
-## Symbols, Figures, and Style Conventions
+## 1.3 Symbols, Figures, and Style Conventions
 
 **Conventions**
 
@@ -128,7 +128,7 @@ The Unified Modeling Language is used
 
 2.  Square brackets (\[ \]) are used as delimiters for referenced works cited in this document.
 
-## Document Control
+## 1.4 Document Control
 
 This document will be reviewed periodically by the CIM Model Managers and updated as needed. Lessons learned will be captured with each CIM UML update and used to improve this document. If the document is written in an older format, the document should be revised into the latest CIM Users Group template format.
 

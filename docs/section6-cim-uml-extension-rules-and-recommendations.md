@@ -1,16 +1,16 @@
 #  Section 6 - CIM UML Extension Rules and Recommendations
 
-## Overview
+## 6.1 Overview
 
 The CIM UML is an ever-evolving semantic information model. It is extended periodically based on work performed by the IEC TC57 working groups 13, 14, 16 and 21, and work performed by the CIMug through its various focus communities, projects, and working groups. CIM extensions originating from IEC TC57 working group are classified as “Standard” CIM extensions. CIM extensions originating from the CIMug are classified as “User-Defined” CIM extensions.
 
-### Application of CIM UML Extension Rules and Recommendations
+### 6.1.1 Application of CIM UML Extension Rules and Recommendations
 
 Work on Standard CIM extensions is started with the full understanding that the extensions are intended to become part of the standard CIM and ultimately to be used to as the basis of new standard CIM profiles. Whereas work on User-Defined extensions is started because the CIM needs to be extended to address the needs and constraints of a particular user’s instance of the CIM. All User-Defined CIM extensions will not become part of the standard CIM. User-Defined CIM extensions must be evaluated to see if they can also be applied in the broader CIM user community as is or with some modifications.
 
 For the reasons presented above, some extension rules and recommendations apply only to Standard CIM extensions; some only to User-Defined CIM extensions; and some to all CIM extensions. The language of the rules and recommendations is intended to be unambiguous so the users of this document will know to which class of CIM extensions each rule and recommendation applies.
 
-### Custom CIM Extensions
+### 6.1.2 Custom CIM Extensions
 
 The objective of these recommendations is to allow for clear modularization of extensions such that they can be readily identified as extensions and migrated more easily to updated versions of the standard CIM,
 
@@ -50,7 +50,7 @@ Figure Example UML model for association extensions to standard CIM classes
 
 An extension class should be used only one time within a namespace. The extension class should have the \<\<CIMExtension\>\> generalization pointing to a standard CIM class of the same name. A particular extension is an extension to the one and only standard CIM class. A standard CIM class may have any number of \<\<CIMExtension\>\> generalization relationships where each should be from an extension class of the same name but with unique namespaces. The possiblity exists for extension classes extending other extension classes, though it is preferred to extend the standard CIM class if it exits.
 
-## General Extension Rules
+## 6.2 General Extension Rules
 
 General rules for IEC TC57, available in “TC57 CIM Naming_Rules_Draft_R00_2008-05-16v3.doc”, give the overall guidelines for naming conventions of UML models at any abstraction level. The rules defined in this technical report, dedicated to CIM UML information model, take precedence over the rules in the above document in case the rules differ.
 
@@ -81,7 +81,7 @@ It is discouraged to distinguished names by upper and lower case changes alone. 
 | Rule169    | UML packages shall be used to structure CIM extensions into manageable and logical model parts.                                                                                                                  |
 | Rule170    | Before creating a new model element, the CIM should be searched to see if an element similar to the intended extension element already exists. If it does exist, it may influence the extension to the model.    |
 
-## Package Extension Rules
+## 6.3 Package Extension Rules
 
 Package names start with upper case (UpperCamelCase rule). Package names must be unique across the whole CIM.
 
@@ -154,7 +154,7 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 </tbody>
 </table>
 
-## Class Extension Rules
+## 6.4 Class Extension Rules
 
 Class names start with upper case (UpperCamelCase rule). Class names should use singular form. Class names must be unique across the whole CIM. Be aware there is a potential conflict of profile names and class names that may occur from the 62321-100 standard for XSD naming rules, so the choice of profile names and class names should be made with this consideration.
 
@@ -169,7 +169,7 @@ Class names start with upper case (UpperCamelCase rule). Class names should use 
 | Rule190    | User-Defined CIM extension class names may include an underscore character.                                                                                                                                         |
 | Rule191    | Relationships between User-Defined CIM extension classes and standard CIM classes should be generalisations whenever possible.                                                                                      |
 
-## Attribute Extension Rules
+## 6.5 Attribute Extension Rules
 
 Attribute names start with lower case (lowerCamelCase rule). Attribute names should use singular form. Attribute names are unique within a classifier. Inherited attribute names should be unique
 
@@ -180,13 +180,13 @@ Attribute names start with lower case (lowerCamelCase rule). Attribute names sho
 | Rule194    | User-Defined CIM extension attributes that are part of a User-Defined CIM extension class shall not be stereotyped. |
 | Rule195    | User-Defined CIM extension attributes that are part of a standard CIM class shall be stereotyped.                   |
 
-## Association Extension Rules
+## 6.6 Association Extension Rules
 
-### Association names
+### 6.6.1 Association names
 
 Association names are not used and should be left empty.
 
-### Association end names
+### 6.6.2 Association end names
 
 Association end names are mandatory at both sides for an association.
 
@@ -222,7 +222,7 @@ Inherited association ends should have unique names.
 
 <span id="_Ref22115402" class="anchor"></span>Figure 6‑3. Allowed duplication of association end names
 
-## Enumeration Extension Rules
+## 6.7 Enumeration Extension Rules
 
 Enumeration literal names should follow the same rules as attribute names (5.4.7), except in case some established conventions exist, e.g. SI unit symbols or currencies.
 
