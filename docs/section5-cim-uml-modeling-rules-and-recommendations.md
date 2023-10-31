@@ -461,24 +461,22 @@ Attribute names are unique within a classifier and Enterprise Architect will enf
 
 The attribute order should normally be alphabetical unless there is some clear reason to group like attributes together. We do not enforce alphabetic ordering in the UML tool.
 
-| **RuleID** | **Description**                                                                                                                                               |
+| **RuleID** | **Description** |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule049    | Names for attributes shall use the Lower Camel Case naming convention.                                                                                        |
-| Rule050    | Names for attributes shall be British English names.                                                                                                          |
-| Rule051    | Attribute names shall be singular form concepts.                                                                                                              |
-| Rule052    | The "value" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be a Primitive data type.                                            |
-| Rule053    | The "unit" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be an enumeration data type.                                          |
-| Rule054    | The "multiplier" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be an enumeration data type.                                    |
-| Rule055    | Attribute data types shall be one of the stereotyped CIM classes (i.e. shall not be one of the Enterprise Architect native data types).                       |
-| Rule056    | In instances where an attribute of a CIM class has an initial value, it shall denote a constant for all instance of the class to which the attribute belongs. |
-| Rule057    | In instances where an attribute of a CIM class has an initial value, it shall be set as both static and constant.                                             |
-| Rule058    | Attribute multiplicity shall always be \[0..1\] (i.e. all CIM attributes are optional).                                                                       |
-| Rule059    | Names for attributes shall use the Lower Camel Case naming convention.                                                                                        |
-| Rule060    | Attribute names shall be unique among all levels of specialisation.                                                                                           |
-| Rule061    | The scope of a CIM attribute shall be "Public".                                                                                                               |
-| Rule062    | The "value" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be a Primitive data type.                                            |
-| Rule063    | The "unit" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be an enumeration data type.                                          |
-| Rule064    | Datatypes used for attributes in cross-working group dependencies shall be coordinated among the affected working groups.                                     |
+| Rule049 | Names for attributes shall use the Lower Camel Case naming convention. |
+| Rule050 | Names for attributes shall be British English names. |
+| Rule051 | Attribute names shall be singular form concepts. |
+| Rule052 | The "value" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be a Primitive data type. |
+| Rule053 | The "unit" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be an enumeration data type. |
+| Rule054 | The "multiplier" attribute of a CIM class that has the "&lt;&lt;CIMDatatype&gt;&gt;" stereotype shall be an enumeration data type. |
+| Rule055 | Attribute data types shall be one of the stereotyped CIM classes (i.e. shall not be one of the Enterprise Architect native data types). |
+| Rule056 | In instances where an attribute of a CIM class has an initial value, it shall denote a constant for all instance of the class to which the attribute belongs. |
+| Rule057 | In instances where an attribute of a CIM class has an initial value, it shall be set as both static and constant. |
+| Rule058 | Attribute multiplicity shall always be \[0..1\] (i.e. all CIM attributes are optional). |
+| Rule059 | Names for attributes shall use the Lower Camel Case naming convention. |
+| Rule060 | Attribute names shall be unique among all levels of specialisation. |
+| Rule061 | The scope of a CIM attribute shall be "Public".  |
+| Rule062 | Datatypes used for attributes in cross-working group dependencies shall be coordinated among the affected working groups. |
 
 ## 5.6 Association Rules
 
