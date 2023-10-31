@@ -14,7 +14,7 @@ For the reasons presented above, some extension rules and recommendations apply 
 
 The objective of these recommendations is to allow for clear modularization of extensions such that they can be readily identified as extensions and migrated more easily to updated versions of the standard CIM,
 
-Extensions to the CIM model should be included in the extension package just as any other CIM modeling except for the differences noted in this clause. The extension package should have the \<\<CIMExtension\>\> stereotype to identify all its contents as extensions to the CIM information model. The extension package should also introduce a new namespace.
+Extensions to the CIM model should be included in the extension package just as any other CIM modeling except for the differences noted in this clause. The extension package should have the &lt;&lt;CIMExtension&gt;&gt; stereotype to identify all its contents as extensions to the CIM information model. The extension package should also introduce a new namespace.
 
 The subpackage structure of the extensions may pattern after that of standard CIM packages, but the package structure should reflect the needs for individually managing and organising parts of the extensions.
 
@@ -30,7 +30,7 @@ Note that the introduction of an association from a new extension class to an ex
 
 In the case of a new association with both ends referencing existing classes or new attributes on existing classes, a method of using multiple inheritance is allowed and discussed below.
 
-Name the new extension class with the same name as the standard CIM class. Give the new class a generalization relationship from the standard CIM class such that the standard CIM class is a specialisation of the extension class. Generally the extension class will have no base class and the standard CIM class will now have multiple inheritance. The generalisation relationship should have the \<\<CIMExtension\>\> stereotype.
+Name the new extension class with the same name as the standard CIM class. Give the new class a generalization relationship from the standard CIM class such that the standard CIM class is a specialisation of the extension class. Generally the extension class will have no base class and the standard CIM class will now have multiple inheritance. The generalisation relationship should have the &lt;&lt;CIMExtension&gt;&gt; stereotype.
 
 \[Should we also add a CIMExtension stereotype to the extension class to make it easily distinquished without having to look at the package containment?\]
 
@@ -48,7 +48,7 @@ A new association can be effectively between two standard CIM classes by introdu
 
 Figure Example UML model for association extensions to standard CIM classes
 
-An extension class should be used only one time within a namespace. The extension class should have the \<\<CIMExtension\>\> generalization pointing to a standard CIM class of the same name. A particular extension is an extension to the one and only standard CIM class. A standard CIM class may have any number of \<\<CIMExtension\>\> generalization relationships where each should be from an extension class of the same name but with unique namespaces. The possiblity exists for extension classes extending other extension classes, though it is preferred to extend the standard CIM class if it exits.
+An extension class should be used only one time within a namespace. The extension class should have the &lt;&lt;CIMExtension&gt;&gt; generalization pointing to a standard CIM class of the same name. A particular extension is an extension to the one and only standard CIM class. A standard CIM class may have any number of &lt;&lt;CIMExtension&gt;&gt; generalization relationships where each should be from an extension class of the same name but with unique namespaces. The possiblity exists for extension classes extending other extension classes, though it is preferred to extend the standard CIM class if it exits.
 
 ## 6.2 General Extension Rules
 
