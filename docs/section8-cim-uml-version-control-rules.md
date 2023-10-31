@@ -118,17 +118,17 @@ The version control strategy is expressed as a set of rules that address version
 
 ### 8.2.1 Version Scope
 
-| **RuleID** | **Description**                                                                                                                                                                                                                              |
+| **RuleID** | **Description** 
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rule225    | A new version of a top-level package shall be created when the contents of the top-level package (which includes any of its normative sub-packages) has been changed, and the change has been verified by the appropriate CIM model manager. |
-| Rule226    | A new version of the CIM UML shall be created when a new version of a top-level package has been created.                                                                                                                                    |
+| Rule226    | A new version of the CIM UML shall be created when a new version of a top-level package has been created. |
 
 ### 8.2.2 Version Compatibility
 
-| **RuleID** | **Description**                                                                                                                                                                                                                                              |
+| **RuleID** | **Description**  |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule227    | A new version of the CIM UML shall be considered backwards-compatible if it continues to support CIM Profiles designed to work with the old version of the CIM UML (i.e. the changes incorporated in the new version of the CIM UML are compatible changes). |
-| Rule228    | A new version of the CIM UML shall be considered not backwards-compatible if it does not support CIM Profiles designed to work with the old version of the CIM UML.                                                                                          |
+| Rule227 | A new version of the CIM UML shall be considered backwards-compatible if it continues to support CIM Profiles designed to work with the old version of the CIM UML (i.e. the changes incorporated in the new version of the CIM UML are compatible changes). |
+| Rule228 | A new version of the CIM UML shall be considered not backwards-compatible if it does not support CIM Profiles designed to work with the old version of the CIM UML. |
 
 ### 8.2.3 Version Identification
 
