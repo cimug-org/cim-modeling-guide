@@ -16,4 +16,3 @@ jCleanCim is a Java application that is used to auto generate draft model standa
 
 The CIMug website serves as the tool that provides online access to artifacts under CIM Management. The CIMug website provides unrestricted access to the CIM UML and controlled access (security credentials required) to artifacts that fall under the Liason D relationship UCA has with the IEC.
 
-[^1]: “IntelliGrid Common Information Model Primer: Second Edition”; EPRI, Palo Alto, CA: 2013 3002001040
