@@ -353,15 +353,15 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 </tr>
 <tr class="even">
 <td>Rule028</td>
-<td>The name of the top-level CIM package at the root of the model shall be “TC57CIM”.</td>
+<td>The name of the top-level package at the root of the model shall be "CIM" (formerly it was "TC57CIM").</td>
 </tr>
 <tr class="odd">
 <td>Rule029</td>
-<td><p>The following names shall be used to identify TC57CIM top-level packages:</p>
+<td><p>The following names shall be used to identify CIM (formerly TC57CIM) top-level packages:</p>
 <ol type="1">
-<li><p>“IEC61970” for IEC TC57 WG13 domain information;</p></li>
-<li><p>“IEC61968” for IEC TC57 WG14 domain information;</p></li>
-<li><p>“IEC62325” for IEC TC57 WG16 domain information;</p></li>
+<li><p>"Grid" (formerly IEC61970) for IEC TC57 WG13 domain information;</p></li>
+<li><p>"Enterprise" (formerly IEC61968) for IEC TC57 WG14 domain information;</p></li>
+<li><p>"Markets" (formerly IEC62325) for IEC TC57 WG16 domain information;</p></li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -421,7 +421,7 @@ CIM does not use abstract classes, because CIM is in itself an abstract model. I
 
 CIM does not use association classes, for the sake of keeping the used subset of UML to the minimum that is well supported by tools and well understood by the wide community.
 
-CIM class names are unique among all TC57CIM class names without consideration of the package hierarchy.
+CIM class names are unique among all classes residing within the "CIM" top-level package without consideration of the package hierarchy.
 
 Classes should be ordered alphabetically or in order of importance or by logical grouping. We do not enforce alphabetically ordering automatically in the UML tool. The order of classes in the UML tool with be the order of classes printed in the IEC document.
 
@@ -653,7 +653,7 @@ There is no ordering required or reinforced; the order found in the UML model wi
 <tbody>
 <tr class="odd">
 <td>Rule084</td>
-<td>A CIM enumeration shall be a UML class with the **&lt;&lt;enumeration&gt;&gt;** stereotype.</td>
+<td>A CIM enumeration shall be a UML class with the &lt;&lt;enumeration&gt;&gt; stereotype.</td>
 </tr>
 <tr class="even">
 <td>Rule085</td>
@@ -677,7 +677,7 @@ There is no ordering required or reinforced; the order found in the UML model wi
 </tr>
 <tr class="odd">
 <td>Rule090</td>
-<td>All enumeration literals shall use the stereotype **&lt;&lt;enum&gt;&gt;**.</td>
+<td>All enumeration literals shall use the stereotype &lt;&lt;enum&gt;&gt;.</td>
 </tr>
 <tr class="even">
 <td>Rule091</td>
@@ -895,7 +895,7 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 
 62325-301 nsprefix=mcim nsuri=htt://iec.ch/ …. Market…
 
-\[Proposed\] The IEC is taking an approach of using a consistent namespace for all standard CIM within one consistent version of total CIM. Thus namespaces are only specified one time at the top level package (TC57CIM) and version would be bumped when any subpackage changes. Therefore the namespace approach is useful to encode this single namespace in the UML for standard CIM canonical model plus namespace for any extension packages.
+\[Proposed\] The IEC is taking an approach of using a consistent namespace for all standard CIM within one consistent version of total CIM. Thus namespaces are only specified one time at the top level package (i.e. the "CIM" top level package) and version would be bumped when any subpackage changes. Therefore the namespace approach is useful to encode this single namespace in the UML for standard CIM canonical model plus namespace for any extension packages.
 
 <table>
 <colgroup>
@@ -931,7 +931,7 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 </tr>
 <tr class="even">
 <td>Rule137</td>
-<td>Namespaces shall apply to classes, attributes, association ends, datatypes (**&lt;&lt;CIMDatatype&gt;&gt;**, **&lt;&lt;Compound&gt;&gt;**, **&lt;&lt;Primitive&gt;&gt;**, and **&lt;&lt;enumeration&gt;&gt;**) and enumerations.</td>
+<td>Namespaces shall apply to classes, attributes, association ends, datatypes (&lt;&lt;CIMDatatype&gt;&gt;, &lt;&lt;Compound&gt;&gt;, &lt;&lt;Primitive&gt;&gt;, and &lt;&lt;enumeration&gt;&gt;) and enumerations.</td>
 </tr>
 <tr class="odd">
 <td>Rule138</td>
@@ -955,11 +955,11 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 </tr>
 <tr class="even">
 <td>Rule143</td>
-<td>The TC57CIM package shall have a namespace specification.</td>
+<td>The "CIM" top-level package shall have a namespace specification.</td>
 </tr>
 <tr class="odd">
 <td>Rule144</td>
-<td><p>The value of the TC57CIM package nsuri tag shall be: http://iec.ch/TC57/CIM&lt;version&gt;# where:</p>
+<td><p>The value of the "CIM" (formerly TC57CIM) top-level package nsuri tag shall be: http://iec.ch/TC57/CIM&lt;version&gt;# where:</p>
 <p>&lt;version&gt; = the version number of the CIM.</p></td>
 </tr>
 <tr class="even">
