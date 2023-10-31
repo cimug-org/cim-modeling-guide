@@ -232,7 +232,7 @@ The procedure to update a package with a partition file corresponds to an arrow 
 
 - Import the partition file in the destination model and subsequently import any packages depending on it in dependency order.
 
-To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 2. Complete synchronisation can be achieved by copying whole models as shown in Figure 3 in Figure 3.
+To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 2. Complete synchronisation can be achieved by copying whole models as shown in Figure 3.
 
 ![](images/media/image16.emf)
 
@@ -240,11 +240,11 @@ Figure 3 Complete synchronisation example
 
 In Figure 3 a complete synchronisation of all model files is made in the following steps:
 
-1 – Synchronise the WG14 model with 61970 from WG13,
+ 1. Synchronise the WG14 model with 61970 from WG13,
 
-2 – Synchronise the WG16 model with 61970 from WG13 and 61968 from WG14,
+ 2. Synchronise the WG16 model with 61970 from WG13 and 61968 from WG14,
 
-3 – Copy the complete and synchronised WG16 model to WG13 and WG14.
+ 3. Copy the complete and synchronised WG16 model to WG13 and WG14.
 
 This procedure minimizes the number of steps.
 
