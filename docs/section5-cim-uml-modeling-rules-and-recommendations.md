@@ -399,23 +399,21 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 
 The following UML class features are used in CIM:
 
-• Name
-
-• Documentation
-
-• Stereotype
+ - Name
+ - Documentation
+ - Stereotype
 
 In CIM, a class is used to describe either domain entities or various data types specific to the CIM domain:
 
-• \<\<Primitive\>\> Primitive data types as Booleans, Float, String etc. Primitive cannot have attributes.
+ - \<\<Primitive\>\> Primitive data types as Booleans, Float, String etc. Primitive cannot have attributes.
 
-• \<\<CIMDatatype\>\> Simple data types specific for the CIM, e.g. ActivePower, Resistance etc. CIMDatatype has at least three attributes: value, unit and multiplier. The “value” attribute is of Primitive type, and unit and multiplier are of an enumeration type. When required additional attributes can be defined to describe for example “demoninatorUnit” and “denominatorMultiplier”, but only one “value” attribute is allowed.
+ - \<\<CIMDatatype\>\> Simple data types specific for the CIM, e.g. ActivePower, Resistance etc. CIMDatatype has at least three attributes: value, unit and multiplier. The “value” attribute is of Primitive type, and unit and multiplier are of an enumeration type. When required additional attributes can be defined to describe for example “demoninatorUnit” and “denominatorMultiplier”, but only one “value” attribute is allowed.
 
-• \<\<Compound\>\> Compound data types specific for the CIM, e.g.StreetAddress etc. Compound has no identity and is a simple group of related attributes, Compound may have attributes whose types are Primitive, enumeration, CIMDatatype or Compound. A circular dependency among Compound types is to be avoided.
+ - \<\<Compound\>\> Compound data types specific for the CIM, e.g.StreetAddress etc. Compound has no identity and is a simple group of related attributes, Compound may have attributes whose types are Primitive, enumeration, CIMDatatype or Compound. A circular dependency among Compound types is to be avoided.
 
-• \<\<enumeration\>\> Enumerations, e.g. UnitSymbol, UnitMultiplier, Currency, etc.
+ - \<\<enumeration\>\> Enumerations, e.g. UnitSymbol, UnitMultiplier, Currency, etc.
 
-• None of the above stereotypes. A domain object that participates in inheritance and/or association relationships with other domain objects. Most of domain objects inherit from the class IdentifiedObject and thus get the identifier and one or multiple names.
+ - None of the above stereotypes. A domain object that participates in inheritance and/or association relationships with other domain objects. Most of domain objects inherit from the class IdentifiedObject and thus get the identifier and one or multiple names.
 
 CIM classes with a stereotype other than \<\<deprecated\>\> are types that never participate in relationships (i.e., no associations, no inheritance), but are used as types for attributes.
 
@@ -518,13 +516,13 @@ Association end names should be unique among all specialisations of a class. For
 
 Multiplicities are used to describe the number of expected objects at each end of an association as well as if an attribute is optional or mandatory. The following multiplicities are common for association ends in CIM:
 
-- 0..1 an object may or may not exist,
+ - 0..1 an object may or may not exist,
 
-- 1 an object always exists,
+ - 1 an object always exists,
 
-- 0..\* any number of objects may exist,
+ - 0..\* any number of objects may exist,
 
-- 1..\* at least one object exists.
+ - 1..\* at least one object exists.
 
 Multiplicities shall be chosen to specify what can be expected in the domain. Multiplicity minimum does not mean all profiles must include the association, but if a profile does include the association it should respect the minimum. Note that minimum multiplicities are normally not enforced by implementations at all times. For example in the middle of a transaction one may require violation of minimum multiplicities.
 
