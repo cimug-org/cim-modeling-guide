@@ -425,19 +425,19 @@ CIM class names are unique among all classes residing within the "CIM" top-level
 
 Classes should be ordered alphabetically or in order of importance or by logical grouping. We do not enforce alphabetically ordering automatically in the UML tool. The order of classes in the UML tool with be the order of classes printed in the IEC document.
 
-| **RuleID** | **Description**                                                                                                                                                  |
-|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule038    | Names for classes shall use the Upper Camel Case naming convention.                                                                                              |
-| Rule039    | Names for classes shall be British English names.                                                                                                                |
-| Rule040    | All classes shall have unique names. The package containment hierarchy shall not be used in uniquely identifying a class.                                        |
-| Rule041    | A CIM class shall be used to describe either an electric utility domain entity or an information entity used in the electric utility domain.                     |
-| Rule042    | All class names shall be the singular form of a utility domain concept.                                                                                          |
-| Rule043    | A CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall have at minimum, the following attributes: 1. value; 2. unit; and 3. multiplier.                   |
-| Rule044    | A CIM class shall not be an abstract class.                                                                                                                      |
-| Rule045    | A CIM class shall not be an association class.                                                                                                                   |
-| Rule046    | CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** shall never participate in relationships with other classes (i.e., no associations, no inheritance). |
-| Rule047    | CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** shall only be used as datatypes for attributes.                                                      |
-| Rule048    | CIM classes should be ordered alphabetically or in order of importance or by logical grouping within a package.                                                  |
+| **RuleID** | **Description** |
+|------------|-------------------------|
+| Rule038 | Names for classes shall use the Upper Camel Case naming convention. |
+| Rule039 | Names for classes shall be British English names. |
+| Rule040 | All classes shall have unique names. The package containment hierarchy shall not be used in uniquely identifying a class. |
+| Rule041 | A CIM class shall be used to describe either an electric utility domain entity or an information entity used in the electric utility domain. |
+| Rule042 | All class names shall be the singular form of a utility domain concept. |
+| Rule043 | A CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall have at minimum, the following attributes: 1. value; 2. unit; and 3. multiplier. |
+| Rule044 | A CIM class shall not be an abstract class. |
+| Rule045 | A CIM class shall not be an association class. |
+| Rule046 | CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** shall never participate in relationships with other classes (i.e., no associations, no inheritance). |
+| Rule047 | CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** shall only be used as datatypes for attributes. |
+| Rule048 | CIM classes should be ordered alphabetically or in order of importance or by logical grouping within a package. |
 
 ## 5.5 Attribute Rules
 
@@ -462,7 +462,7 @@ Attribute names are unique within a classifier and Enterprise Architect will enf
 The attribute order should normally be alphabetical unless there is some clear reason to group like attributes together. We do not enforce alphabetic ordering in the UML tool.
 
 | **RuleID** | **Description** |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------|-------------------------|
 | Rule049 | Names for attributes shall use the Lower Camel Case naming convention. |
 | Rule050 | Names for attributes shall be British English names. |
 | Rule051 | Attribute names shall be singular form concepts. |
@@ -491,11 +491,11 @@ Stereotype **&lt;&lt;informative&gt;&gt;**, only in case the association is info
 
 The UML association end features used in CIM are:
 
-Association end name
+-   Association end name;
 
-Association end multiplicity
+-   Association end multiplicity;
 
-Association end description.
+-   Association end description.
 
 No other options should be used, although some association ends in CIM are defined as aggregation (= shared).
 
