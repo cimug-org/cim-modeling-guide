@@ -5,8 +5,9 @@
 Since international deregulation of energy markets began in the 1990’s, the need for electric utility companies to exchange data externally on a regular basis, and internally between software applications, has steadily increased. The exponential growth in integration complexity due to the large number of proprietary application interfaces created a significant risk to the reliable operation of an interconnected electric power grid owned and operated by different electric utility companies. This business concern was the driver for a common format for all data exchanges in the electrical power domain.
 
 This business driver led to the need for: 
-1. a semantic information model that represents all of the real-world and information entities (concepts) in the electric power domain and the relationships between them; and
-2. a canonical data model to provide a non-proprietary way to exchange data between utility domain systems and databases.
+
+1.  a semantic information model that represents all of the real-world and information entities (concepts) in the electric power domain and the relationships between them; and
+2.  a canonical data model to provide a non-proprietary way to exchange data between utility domain systems and databases.
 
 The Common Information Model (CIM) is an open source semantic information model expressed in the Unified Modeling Language (CIM UML) representing real-world electric utility objects and information entities, and the relationships between them (sometimes called a “domain model”). The CIM UML also represents the properties of the concepts as UML class attributes. The CIM UML model is hosted and maintained in a Sparx Systems Enterprise Architect Project by the UCAIug.
 
@@ -17,19 +18,21 @@ The IEC publishes international standards derived directly from the CIM UML for 
 In recent years, the IEC TC57 has come under increasing pressure from utility companies and vendors to release new versions of the CIM-based standards more quickly in order to respond to the transformative changes occurring in the industry. UCAIug leadership has determined that in order to reduce the time to market of new standards, updates to the CIM must occur often enough to support the release of new versions of the IEC TC57 standards once a year while simultaneously expanding the organization’s ability to effectively manage a higher volume of content change to the CIM UML.
 
 In order to achieve these two goals, the UCAIug leadership has decided that the UCAIug can best improve its effectiveness in these areas by: 
- 1. aligning CIM UML Management processes with the IEC fast track International Standard release process; 
- 2. facilitating communication and understanding among individuals working with CIM UML domain models; and 
- 3. facilitating the incorporation of new content into the CIM UML.
+
+1.  aligning CIM UML Management processes with the IEC fast track International Standard release process; 
+2.  facilitating communication and understanding among individuals working with CIM UML domain models; and 
+3.  facilitating the incorporation of new content into the CIM UML.
 
 For the past two years the IEC TC57 CIM working groups have emphasized the importance (to their productivity) of having access to documented rules and recommendations for creating new CIM content. Up until the release of this document, CIM management guidelines resided in draft documents owned by CIM Model Managers.
 
 ## 4.1 CIM UML Scope
 
 The CIM UML is semantic information model that represents real-world physical electric grid objects and information entities. The CIM UML is the basis for data that is exchanged between systems to: 
- 1. enable grid operation and planning;
- 2. support grid operations, grid maintenance, and customer support;
- 3. support wholesale electricity market activity between market participants; and
- 4. support interfaces with non-utility owned systems connected on the other side of the meter to the grid. The CIM UML is used by IEC TC57 CIM working groups as the foundation for creating CIM profiles. The mission statement for each IEC TC57 CIM working group is provided in Table 4‑1.
+
+1.  enable grid operation and planning;
+2.  support grid operations, grid maintenance, and customer support;
+3.  support wholesale electricity market activity between market participants; and
+4.  support interfaces with non-utility owned systems connected on the other side of the meter to the grid. The CIM UML is used by IEC TC57 CIM working groups as the foundation for creating CIM profiles. The mission statement for each IEC TC57 CIM working group is provided in Table 4‑1.
 
 <span id="_Ref21669616" class="anchor"></span>Table 4‑1. IEC TC57 CIM Working Group Mission Statements
 
@@ -83,7 +86,7 @@ The CIM Technical Subcommittee is responsible for handling all technical and mai
 
 1.  **Chair Modeling Meetings**
 
-- Review model updates submitted by working groups with working group representative(s)
+    - Review model updates submitted by working groups with working group representative(s)
 
 2.  **Manage the CIM Issues Process**
 
