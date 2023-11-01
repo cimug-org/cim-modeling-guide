@@ -143,7 +143,7 @@ Both the legacy and new top-level package structure are shown in Figure 5‑1 an
 
 ### 5.2.3 Package Dependency Rules
 
-The concept of package dependencies is critical to both the understanding of model ownership among working groups and the practical integration or assembly of packages from different owners. An additional package is maintained outside of the IEC working group packages to describe the dependencies among the packages of each working group. This package, named “PackageDependencies” contains a figure illustrating these dependencies as shown in Figure 4 UML package dependencies (for illustration, not official CIM standard). As such the PackageDependencies package is itself dependent upon all the other major packages
+The concept of package dependencies is critical to both the understanding of model ownership among working groups and the practical integration or assembly of packages from different owners. An additional package is maintained outside of the IEC working group packages to describe the dependencies among the packages of each working group. This package, named “PackageDependencies” contains a figure illustrating these dependencies as shown in Figure 5-4 UML package dependencies (for illustration, not official CIM standard). As such the PackageDependencies package is itself dependent upon all the other major packages
 
 The package dependencies should rarely change and therefore it makes sense for the CIM model manager role to maintain this diagram through the normal model issues submittal process. There is no need for each package owner to edit this package. By design there are no circular dependencies among the major packages. Issues are resolved through the CMM board.
 
@@ -153,7 +153,7 @@ Further we expect that derived classes (specialisations) are within the dependen
 
 Additionally we prefer to have the source end of associations in the dependent package. This is not strictly required, but is a good practice and can be validated by the CIM validation tools used to generate the CIM documentation. Following this convention may allow shortcuts in reassembling combined models, but this is not a formally documented feature of Enterprise Architect.
 
-Diagrams should only include links to anything from packages upon which the containing package depends. Not following this practice will cause such linked elements to disappear when reassembling the combined model. This is the main reason for having the separate “PackageDependencies” package with its overview diagram from Figure 4. Importing this package last ensures that all the dependencies appear on the diagram when assembling the combined model from its partitions.
+Diagrams should only include links to anything from packages upon which the containing package depends. Not following this practice will cause such linked elements to disappear when reassembling the combined model. This is the main reason for having the separate “PackageDependencies” package with its overview diagram from Figure 5-4. Importing this package last ensures that all the dependencies appear on the diagram when assembling the combined model from its partitions.
 
 When a model linkage spans working group packages, both parties should be aware of the linkage once models are combined. Such linkages should normally be discussed among working groups so that inappropriate linkages are not established. At this point any change that impacts that linkage should be agreed among the affected working groups.
 
@@ -191,7 +191,7 @@ Types used for attributes in a class introduce dependencies that must be coordin
 </tr>
 <tr class="odd">
 <td>Rule013</td>
-<td>The “PackageDependencies” package shall contain a figure illustrating package dependencies as shown in Figure 5‑2.</td>
+<td>The “PackageDependencies” package shall contain a figure illustrating package dependencies as shown in Figure 5‑3.</td>
 </tr>
 <tr class="even">
 <td>Rule014</td>
@@ -208,38 +208,38 @@ Types used for attributes in a class introduce dependencies that must be coordin
 </tr>
 <tr class="odd">
 <td>Rule017</td>
-<td>Associations between classes in different IEC working group packages shall be owned by the source (dependent) working group package (i.e., for an association between e.g. an IEC61968 class and an IEC61970 class, both association ends are owned by the IEC61968 package).</td>
+<td>Associations between classes in different IEC working group packages shall be owned by the source (dependent) working group package e.g. for an association between an Enterprise (formerly IEC61968) class and a Grid (formerly IEC61970) class, both association ends are owned by the Enterprise (formerly IEC61968) package.</td>
 </tr>
 </tbody>
 </table>
 
-<img src="/images/media/image14.png" style="width:7in;height:6.96944in" />
+<img src="../images/media/image14.png" style="width:7in;height:6.96944in" />
 
-<span id="_Ref532235977" class="anchor"></span>Figure 5‑2. TC57CIM Top-Level Package Dependencies
+<span id="_Ref532235977" class="anchor"></span>Figure 5‑3. Top-level CIM (formerly TC57CIM) Package Dependencies
 
 ### 5.2.4 Package Assembly Rules
 
-Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 2.
+Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 5-3.
 
-![](images/media/image15.png)
+![](../images/media/image15.png)
 
 Figure Possible partition file exchanges between WG13, WG14 and WG16
 
-A box in Figure 2 represents a complete UML model while the rows under the working group name correspond to package numbers in CIM.
+A box in Figure 5-3 represents a complete UML model while the rows under the working group name correspond to package numbers in CIM.
 
 With four working groups the number of possible exchanges increases to twelve and with five it becomes twenty and so on.
 
-The procedure to update a package with a partition file corresponds to an arrow in Figure 2 and consists of the following steps:
+The procedure to update a package with a partition file corresponds to an arrow in Figure 5-3 and consists of the following steps:
 
-- Export the partition file from the source model,
+-   Export the partition file from the source model,
 
-- Delete the corresponding package in the destination model along with any packages depending on it, and,
+-   Delete the corresponding package in the destination model along with any packages depending on it, and,
 
-- Import the partition file in the destination model and subsequently import any packages depending on it in dependency order.
+-   Import the partition file in the destination model and subsequently import any packages depending on it in dependency order.
 
-To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 2. Complete synchronisation can be achieved by copying whole models as shown in Figure 3.
+To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 5-2. Complete synchronisation can be achieved by copying whole models as shown in Figure 5-4.
 
-![](images/media/image16.png)
+![](../images/media/image16.png)
 
 Figure 3 Complete synchronisation example
 
@@ -257,7 +257,7 @@ The whole process can be summarized as simply merging packages from the owner of
 
 The merging process can inadvertently change dependent models so care must be taken to not make changes that invalidate dependent models. For example if WG13 were to delete a class from which WG14 generalizes, that generalization owned by WG14 would be lost in any merge where the class was deleted. This is why it is important to track the dependencies and make or break such dependencies only when agreed on both sides.
 
-It is vital when using Enterprise Architect tool to start with an empty model and import packages in dependency order as defined in the PackageDependendencies diagram shown in Figure 4. This assembly process will ensure that combined models are created properly. For example import the IEC61970 package before IEC61968, and import PackageDependencies package last. At any point when assembling packages, the model will be complete in regards to anything owned by the imported packages according to the definition of ownership in clause 2.2.4.
+It is vital when using Enterprise Architect tool to start with an empty model and import packages in dependency order as defined in the PackageDependendencies diagram shown in Figure 4. This assembly process will ensure that combined models are created properly. For example import the Grid (formerly IEC61970) package before Enerprise (formerly IEC61968), and import PackageDependencies package last. At any point when assembling packages, the model will be complete in regards to anything owned by the imported packages according to the definition of ownership in clause 2.2.4.
 
 UML element Identity in Enterprise Architect UML is by internally generated GUID’s. Thus it is not equivalent to delete something and then enter the same data again. Such an operation will break linkages in the model, though the source model appears identical from the user interface. In Enterprise Architect you can change the names without breaking linkages. Some tools rely upon the name of the class or attribute not the Enterprise Architect GUID values for reference matching and will break linkages if names are changed. Modelling actions should be aware of both implications.
 
@@ -298,7 +298,7 @@ The best practice is to always import and work with the standard packages upon w
 </tr>
 <tr class="even">
 <td>Rule023</td>
-<td>Package assembly must be performed by importing packages in dependency order as defined in the PackageDependencies diagram shown in Figure 5‑2. Specifically, the package import order is: 1) IEC61970; 2) IEC61968; 3) IEC6235; 4) PackageDependencies.</td>
+<td>Package assembly must be performed by importing packages in dependency order as defined in the PackageDependencies diagram shown in Figure 5‑3. Specifically, the package import order is: <ol><li>Grid (formerly IEC61970);</li><li>Enterprise (formerly IEC61968);</li><li>Market (formerly IEC6235);</li><li>PackageDependencies.</li></ol></td>
 </tr>
 <tr class="odd">
 <td>Rule024</td>
@@ -394,31 +394,31 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 
 ### 5.3.2 Package Specification Rules
 
-| **RuleID** | **Description**                                                                                                                                                                    |
-|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule035    | Informative packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages.       |
-| Rule036    | “Doc” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages.             |
-| Rule037    | “DetailedDiagram” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages. |
+| **RuleID** | **Description** |
+|------------|-----------------|
+| Rule035 | Informative packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages. |
+| Rule036 | “Doc” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages. |
+| Rule037 | “DetailedDiagram” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages. |
 
 ## 5.4 Class Rules
 
 The following UML class features are used in CIM:
 
- - Name
- - Documentation
- - Stereotype
+-   Name
+-   Documentation
+-   Stereotype
 
 In CIM, a class is used to describe either domain entities or various data types specific to the CIM domain:
 
- - **&lt;&lt;Primitive&gt;&gt;** Primitive data types as Booleans, Float, String etc. Primitive cannot have attributes.
+-   **&lt;&lt;Primitive&gt;&gt;** Primitive data types as Booleans, Float, String etc. Primitive cannot have attributes.
 
- - **&lt;&lt;CIMDatatype&gt;&gt;** Simple data types specific for the CIM, e.g. ActivePower, Resistance etc. CIMDatatype has at least three attributes: value, unit and multiplier. The “value” attribute is of Primitive type, and unit and multiplier are of an enumeration type. When required additional attributes can be defined to describe for example “demoninatorUnit” and “denominatorMultiplier”, but only one “value” attribute is allowed.
+-   **&lt;&lt;CIMDatatype&gt;&gt;** Simple data types specific for the CIM, e.g. ActivePower, Resistance etc. CIMDatatype has at least three attributes: value, unit and multiplier. The “value” attribute is of Primitive type, and unit and multiplier are of an enumeration type. When required additional attributes can be defined to describe for example “demoninatorUnit” and “denominatorMultiplier”, but only one “value” attribute is allowed.
 
- - **&lt;&lt;Compound&gt;&gt;** Compound data types specific for the CIM, e.g.StreetAddress etc. Compound has no identity and is a simple group of related attributes, Compound may have attributes whose types are Primitive, enumeration, CIMDatatype or Compound. A circular dependency among Compound types is to be avoided.
+-   **&lt;&lt;Compound&gt;&gt;** Compound data types specific for the CIM, e.g.StreetAddress etc. Compound has no identity and is a simple group of related attributes, Compound may have attributes whose types are Primitive, enumeration, CIMDatatype or Compound. A circular dependency among Compound types is to be avoided.
 
- - **&lt;&lt;enumeration&gt;&gt;** Enumerations, e.g. UnitSymbol, UnitMultiplier, Currency, etc.
+-   **&lt;&lt;enumeration&gt;&gt;** Enumerations, e.g. UnitSymbol, UnitMultiplier, Currency, etc.
 
- - None of the above stereotypes. A domain object that participates in inheritance and/or association relationships with other domain objects. Most of domain objects inherit from the class IdentifiedObject and thus get the identifier and one or multiple names.
+-   None of the above stereotypes. A domain object that participates in inheritance and/or association relationships with other domain objects. Most of domain objects inherit from the class IdentifiedObject and thus get the identifier and one or multiple names.
 
 CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** are types that never participate in relationships (i.e., no associations, no inheritance), but are used as types for attributes.
 
@@ -732,15 +732,15 @@ Diagram names are used for model document generation and should be unique across
 
 Diagrams should be placed inside of packages (the normal case) or classes (e.g. in Dynamics package). The order of diagrams in the package is retained and should be from most general to specifics. Otherwise, diagrams should be in alphabetical order.
 
-| **RuleID** | **Description**                                                                                                                                                                               |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule097    | Names for diagrams shall use the Upper Camel Case naming convention.                                                                                                                          |
-| Rule098    | All diagrams shall have unique names. The package containment hierarchy shall not be used in uniquely identifying a diagram (i.e., diagram names shall be unique across the whole CIM model). |
-| Rule099    | Names for diagrams shall be British English names.                                                                                                                                            |
-| Rule100    | Diagrams shall only include associations from packages upon which the containing package depends                                                                                              |
-| Rule101    | Diagrams should use A4 page size.                                                                                                                                                             |
-| Rule102    | Diagrams should be placed inside of packages (the normal case) or classes (e.g. in Dynamics package).                                                                                         |
-| Rule103    | The order of diagrams in the package should be from most general to most specific.                                                                                                            |
+| **RuleID** | **Description** |
+|------------|-----------------|
+| Rule097 | Names for diagrams shall use the Upper Camel Case naming convention. |
+| Rule098 | All diagrams shall have unique names. The package containment hierarchy shall not be used in uniquely identifying a diagram (i.e., diagram names shall be unique across the whole CIM model). |
+| Rule099 | Names for diagrams shall be British English names. |
+| Rule100 | Diagrams shall only include associations from packages upon which the containing package depends |
+| Rule101 | Diagrams should use A4 page size. |
+| Rule102 | Diagrams should be placed inside of packages (the normal case) or classes (e.g. in Dynamics package). |
+| Rule103 | The order of diagrams in the package should be from most general to most specific. |
 
 ## 5.9 Element Description Rules
 
@@ -831,13 +831,13 @@ Inheritance relationship must be drawn from the more specific class to the more 
 
 Inheritance should never create situations where attribute names or role names are duplicated or “override” within the inheritance linage.
 
-| **RuleID** | **Description**                                                                                                                                                             |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule115    | Multiple inheritance shall not be used.                                                                                                                                     |
-| Rule116    | Inheritance relationships must be drawn from the more specific class to the more general class.                                                                             |
-| Rule117    | In case the classes from two top-level packages are involved, the subclass must be in the dependent package, and inherit from the class in a package upon which it depends. |
-| Rule118    | Inheritance should never create situations where attribute names or role names are duplicated or “override” within the inheritance lineage.                                 |
-| Rule119    | Inheritance shall not be used with stereotyped classes.                                                                                                                     |
+| **RuleID** | **Description** |
+|------------|-----------------|
+| Rule115 | Multiple inheritance shall not be used. |
+| Rule116 | Inheritance relationships must be drawn from the more specific class to the more general class. |
+| Rule117 | In case the classes from two top-level packages are involved, the subclass must be in the dependent package, and inherit from the class in a package upon which it depends. |
+| Rule118  | Inheritance should never create situations where attribute names or role names are duplicated or “override” within the inheritance lineage. |
+| Rule119 | Inheritance shall not be used with stereotyped classes. |
 
 ## 5.11 Stereotype Rules
 
@@ -849,25 +849,25 @@ It is possible and supported by the CIM UML tool to have multiple stereotypes on
 
 The **&lt;&lt;deprecated&gt;&gt;** strereotype may be used on attributes, associations, classes, packages, and diagrams in the UML model. It is recommended when deprecating a package to deprecate all its contained classes as well. When deprecating a class it is recommended to deprecate all associations in which it is involved and all its native attributes. Inheritance from a deprecated class is less clear and no general guidance is given, except to avoid this situation if possible.
 
-| **RuleID** | **Description**                                                                                                                                                      |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule120    | CIM elements may have multiple stereotypes.                                                                                                                          |
-| Rule121    | The **&lt;&lt;deprecated&gt;&gt;** stereotype may be used on attributes, associations, classes, packages, and diagrams in the CIM.                                               |
-| Rule122    | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used when it is desired to deprecate a package and all its contained classes as well.                                    |
-| Rule123    | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used when it is desired to deprecate a class and all associations in which it is involved and all its native attributes. |
-| Rule124    | Usage of the **&lt;&lt;deprecated&gt;&gt;** stereotype should be for the purpose of preserving backwards compatibility for normative, already published content.                 |
-| Rule125    | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used for no more than two (2) releases of the CIM.                                                                       |
+| **RuleID** | **Description** |
+|------------|-----------------|
+| Rule120 | CIM elements may have multiple stereotypes. |
+| Rule121 | The **&lt;&lt;deprecated&gt;&gt;** stereotype may be used on attributes, associations, classes, packages, and diagrams in the CIM. |
+| Rule122 | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used when it is desired to deprecate a package and all its contained classes as well. |
+| Rule123 | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used when it is desired to deprecate a class and all associations in which it is involved and all its native attributes. |
+| Rule124 | Usage of the **&lt;&lt;deprecated&gt;&gt;** stereotype should be for the purpose of preserving backwards compatibility for normative, already published content. |
+| Rule125 | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used for no more than two (2) releases of the CIM. |
 
 ### 5.11.2 Package Stereotype Rules
 
-| **RuleID** | **Description**  |
-|------------|------------------------------|
+| **RuleID** | **Description** |
+|------------|-----------------|
 | Rule126    | A package stereotype may be used temporarily to describe the development state of the package, e.g. **&lt;&lt;Work in progress&gt;&gt;**. Once the package is fully incorporated in the model the stereotype shall be removed. |
 
 ### 5.11.3 Class Stereotype Rules
 
 | **RuleID** | **Description** |
-|------------|------------------------------|
+|------------|-----------------|
 | Rule127 | The **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain data type. |
 | Rule128 | The **&lt;&lt;Primitive&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent the following data types: 1. Boolean; 2. Date; 3. DateTime; 4. Decimal; 5. Duration; 6. Float; 7. Integer; 8. MonthDay; 9. String; 10. Time; and 11. URI. |
 | Rule129 | The **&lt;&lt;Compound&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain datatype that is a collection of related class attributes. |
@@ -1021,13 +1021,13 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 
 ## 5.13 Documentation Rules
 
-| **RuleID** | **Description**                                                                                                                                                                                                                |
-|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rule155    | Diagrams contained in packages with the “Doc” prefix will not be printed as part of the model content information, but will be printed as part of a document template’s static (boilerplate) information in CIM documentation. |
-| Rule156    | Documentation will use the package order to determine the order for printing model information.                                                                                                                                |
-| Rule157    | Documentation will use the class order within a package to determine the order for printing class information.                                                                                                                 |
-| Rule158    | Documentation will use the attribute order within a class to determine the order for printing attribute information.                                                                                                           |
-| Rule159    | Documentation will use the enumeration order within a package to determine the order for printing enumeration information.                                                                                                     |
-| Rule160    | Documentation will use the enumeration literal order within an enumeration class to determine the order for printing enumeration literal information.                                                                          |
-| Rule161    | The content of the informative package, including any sub-packages and its content, recursively, is considered as informative in the sense of IEC documents and is therefore by default excluded from the document generation. |
-| Rule162    | Diagrams should not use shadows, colours or diagram frames when printing model documents.                                                                                                                                      |
+| **RuleID** | **Description** |
+|------------|-----------------|
+| Rule155 | Diagrams contained in packages with the “Doc” prefix will not be printed as part of the model content information, but will be printed as part of a document template’s static (boilerplate) information in CIM documentation. |
+| Rule156 | Documentation will use the package order to determine the order for printing model information. |
+| Rule157 | Documentation will use the class order within a package to determine the order for printing class information. |
+| Rule158 | Documentation will use the attribute order within a class to determine the order for printing attribute information. |
+| Rule159 | Documentation will use the enumeration order within a package to determine the order for printing enumeration information. |
+| Rule160 | Documentation will use the enumeration literal order within an enumeration class to determine the order for printing enumeration literal information. |
+| Rule161 | The content of the informative package, including any sub-packages and its content, recursively, is considered as informative in the sense of IEC documents and is therefore by default excluded from the document generation. |
+| Rule162 | Diagrams should not use shadows, colours or diagram frames when printing model documents. |
