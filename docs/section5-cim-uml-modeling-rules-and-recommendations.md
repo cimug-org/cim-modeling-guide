@@ -87,7 +87,7 @@ TC57CIM is partitioned into packages corresponding to the IEC TC57 working group
 
 The TC57CIM package structure is shown in Figure 5‑1.
 
-<img src="images/media/image13.png" style="width:3.41667in;height:2.60417in" />
+<img src="/images/media/image13.png" style="width:3.41667in;height:2.60417in" />
 
 <span id="_Ref8597346" class="anchor"></span>Figure 5‑1 - TC57CIM Package Structure
 
