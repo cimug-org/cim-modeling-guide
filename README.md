@@ -6,7 +6,10 @@ This repository hosts the publically available **CIM Modeling Guide** made avail
 ## Contributing
 CIM Modeling Guide is documented using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material). If you need to do work on the CIM Modeling Guide you can do so by editing the files directly in the `docs` folder of this repo. 
 
-To serve the guide locally as a live-reloading web page, use [Docker](https://www.docker.com/) or [Python](https://www.python.org/).
+## Offline Viewing
+There are two options for offline viewing of the latest CIM Modeling Guide. You can download the latest release of the PDF of the CIM Modeling Guide at [releases](https://github.com/cimug-org/cim-modeling-guide/releases). 
+
+Alternatively, to serve the modeling guide locally as a live-reloading web page, use [Docker](https://www.docker.com/) or [Python](https://www.python.org/).
 
 For Docker, do `docker pull squidfunk/mkdocs-material` then `mkdocs serve` is default command so you can just do the following from repo root to start the site:
 
