@@ -22,7 +22,7 @@ This section specifies the rules and recommendations for transforming a subset o
 |------------|-----------------|
 | Rule210    | Transformation of all CIM UML packages shall not be required to create a contextual data model (i.e. entire packages may be left out of a contextual data models if they are not needed). |
 | Rule211    | Transformation of an entire package shall not be required to create a contextual data model (i.e. classes, attributes, and associations within a package may be left out of a contextual data model if they are not needed). |
-| Rule212    | A single top-level package for contextual data models that exists outside of the top-level "CIM" (formerly "TC57CIM") package should be created at the root-level of the CIM. |
+| Rule212    | A single top-level package for contextual data models that exists outside of the top-level CIM (formerly TC57CIM) package should be created at the root-level of the CIM. |
 
 ## 7.4 Class Transformation Rules and Recommendations
 

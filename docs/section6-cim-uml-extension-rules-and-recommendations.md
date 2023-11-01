@@ -99,11 +99,11 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 <tbody>
 <tr class="odd">
 <td>Rule171</td>
-<td>Standard CIM extensions shall exist within the top-level "CIM" (formerly "TC57CIM") package.</td>
+<td>Standard CIM extensions shall exist within the top-level CIM (formerly TC57CIM) package.</td>
 </tr>
 <tr class="even">
 <td>Rule172</td>
-<td>A single top-level package for User-Defined CIM extensions that exist outside of the top-level "CIM" (formerly "TC57CIM") package shall be created at the root-level of the CIM model.</td>
+<td>A single top-level package for User-Defined CIM extensions that exist outside of the top-level CIM (formerly TC57CIM) package shall be created at the root-level of the CIM model.</td>
 </tr>
 <tr class="odd">
 <td>Rule173</td>
@@ -115,8 +115,8 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 </tr>
 <tr class="odd">
 <td>Rule175</td>
-<td><p>User-Defined CIM extensions shall exist either within a sub-package within the top-level User-Defined CIM extension package or within the "CIM" top-level package.</p>
-<p>NOTE: The preferred approach is to have User-Defined CIM extensions contained within a sub-package within the top-level User-Defined CIM extension package. However, there are known instances where implementation constraints make it necessary to place some User-Defined CIM extensions within the top-level "CIM" (formerly "TC57CIM") package.</p></td>
+<td><p>User-Defined CIM extensions shall exist either within a sub-package within the top-level User-Defined CIM extension package or within the CIM top-level package.</p>
+<p>NOTE: The preferred approach is to have User-Defined CIM extensions contained within a sub-package within the top-level User-Defined CIM extension package. However, there are known instances where implementation constraints make it necessary to place some User-Defined CIM extensions within the top-level CIM (formerly TC57CIM) package.</p></td>
 </tr>
 <tr class="even">
 <td>Rule176</td>

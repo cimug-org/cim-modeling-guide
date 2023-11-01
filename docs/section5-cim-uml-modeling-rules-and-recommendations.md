@@ -77,13 +77,13 @@ The CIM is wholly contained in one top-level package named **TC57CIM.** TC57CIM 
 
 **TC57CIM Package Structure**
 
-TC57CIM is partitioned into packages corresponding to the IEC TC57 working groups and an additional package that describes the dependencies between the top-level IEC TC57 working group packages. The working groups are mapped to the corresponding UML top-level packages as follows:
+The top-level "CIM" (formerly TC57CIM) package is partitioned into sub-packages corresponding to the IEC TC57 working groups and an additional package that describes the dependencies between the top-level IEC TC57 working group packages. The working groups are mapped to the corresponding UML top-level packages as follows:
 
-- WG13 - IEC61970 package,
+- WG13 - Grid (formerly IEC61970) package,
 
-- WG14 - IEC61968 package,
+- WG14 - Enterprise (formerly IEC61968)  package,
 
-- WG16 - IEC62325 package.
+- WG16 - Market (formerly IEC62325) package.
 
 Both the legacy and new top-level package structure are shown in Figure 5‑1 and Figure 5-2 respectively.
 
@@ -358,7 +358,7 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 </tr>
 <tr class="even">
 <td>Rule028</td>
-<td>The name of the top-level package at the root of the model shall be "CIM" (formerly it was "TC57CIM").</td>
+<td>The name of the top-level package at the root of the model shall be CIM (formerly TC57CIM).</td>
 </tr>
 <tr class="odd">
 <td>Rule029</td>
@@ -426,7 +426,7 @@ CIM does not use abstract classes, because CIM is in itself an abstract model. I
 
 CIM does not use association classes, for the sake of keeping the used subset of UML to the minimum that is well supported by tools and well understood by the wide community.
 
-CIM class names are unique among all classes residing within the "CIM" top-level package without consideration of the package hierarchy.
+CIM class names are unique among all classes residing within the CIM top-level package without consideration of the package hierarchy.
 
 Classes should be ordered alphabetically or in order of importance or by logical grouping. We do not enforce alphabetically ordering automatically in the UML tool. The order of classes in the UML tool with be the order of classes printed in the IEC document.
 
@@ -900,7 +900,7 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 
 62325-301 nsprefix=mcim nsuri=htt://iec.ch/ …. Market…
 
-\[Proposed\] The IEC is taking an approach of using a consistent namespace for all standard CIM within one consistent version of total CIM. Thus namespaces are only specified one time at the top-level package (i.e. the "CIM" top-level package) and version would be bumped when any subpackage changes. Therefore the namespace approach is useful to encode this single namespace in the UML for standard CIM canonical model plus namespace for any extension packages.
+\[Proposed\] The IEC is taking an approach of using a consistent namespace for all standard CIM within one consistent version of total CIM. Thus namespaces are only specified one time at the top-level package (i.e. the CIM top-level package) and version would be bumped when any subpackage changes. Therefore the namespace approach is useful to encode this single namespace in the UML for standard CIM canonical model plus namespace for any extension packages.
 
 <table>
 <colgroup>
@@ -960,11 +960,11 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 </tr>
 <tr class="even">
 <td>Rule143</td>
-<td>The "CIM" top-level package shall have a namespace specification.</td>
+<td>The CIM top-level package shall have a namespace specification.</td>
 </tr>
 <tr class="odd">
 <td>Rule144</td>
-<td><p>The value of the "CIM" (formerly TC57CIM) top-level package nsuri tag shall be: http://iec.ch/TC57/CIM&lt;version&gt;# where:</p>
+<td><p>The value of the CIM (formerly TC57CIM) top-level package nsuri tag shall be: http://iec.ch/TC57/CIM&lt;version&gt;# where:</p>
 <p>&lt;version&gt; = the version number of the CIM.</p></td>
 </tr>
 <tr class="even">
