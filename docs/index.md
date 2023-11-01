@@ -82,5 +82,4 @@ The UCAIug as well as its member groups (the CIM Users Group (CIMug), Open Smart
 
 This document is a work product produced by the CIM Subcommittee with the intent to help accomplish the UCAIug mission.
 
-
 [^1]: "Common Information Model Primer: Eighth Edition”; EPRI, Palo Alto, CA: 2022 [EPRI 3002001040](https://www.epri.com/research/products/000000003002024188)
