@@ -208,7 +208,7 @@ Types used for attributes in a class introduce dependencies that must be coordin
 </tbody>
 </table>
 
-<img src="images/media/image14.png" style="width:7in;height:6.96944in" />
+<img src="/images/media/image14.png" style="width:7in;height:6.96944in" />
 
 <span id="_Ref532235977" class="anchor"></span>Figure 5‑2. TC57CIM Top-Level Package Dependencies
 
@@ -216,7 +216,7 @@ Types used for attributes in a class introduce dependencies that must be coordin
 
 Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 2.
 
-![](images/media/image15.emf)
+![](images/media/image15.png)
 
 Figure Possible partition file exchanges between WG13, WG14 and WG16
 
@@ -234,7 +234,7 @@ The procedure to update a package with a partition file corresponds to an arrow 
 
 To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 2. Complete synchronisation can be achieved by copying whole models as shown in Figure 3.
 
-![](images/media/image16.emf)
+![](images/media/image16.png)
 
 Figure 3 Complete synchronisation example
 

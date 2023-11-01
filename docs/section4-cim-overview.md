@@ -78,7 +78,7 @@ The CIM UML is semantic information model that represents real-world physical el
 
 CIM Management is a business function performed by the CIM Subcommittee of the UCAIug Technical Oversight Committee (see Figure 4‑1).
 
-<img src="images/media/image2.jpeg" style="width:4.47551in;height:3.02727in" alt="http://www.ucaiug.org/aboutucaiug/ucaiugorg.jpg" />
+<img src="/images/media/image2.jpeg" style="width:4.47551in;height:3.02727in" alt="http://www.ucaiug.org/aboutucaiug/ucaiugorg.jpg" />
 
 <span id="_Ref529901341" class="anchor"></span>Figure 4‑1. UCA International Users Group Organization Chart
 
@@ -152,7 +152,8 @@ Continuous process improvement (CPI) is the ongoing process of improving the CIM
 
 Mapping of the CIM management functions includes two (2) mappings of the CIM management functions. The first shows the mapping between CIM management functions and CIM management responsibilities assigned to the CIM Subcommittee with the UCAIug. The second shows the mapping between CIM management functions and the CIM management processes that realize those functions. The first mapping is shown in Figure 4‑2. The second mapping is discussed in Section 4.4 and shown in Figure 4‑9
 
-<img src="images/media/image3.png" style="width:5.53416in;height:3.21783in" />
+
+<img src="/images/media/image3.png" style="width:5.53416in;height:3.21783in" />
 
 <span id="_Ref1988984" class="anchor"></span>Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping
 
@@ -160,7 +161,7 @@ Mapping of the CIM management functions includes two (2) mappings of the CIM man
 
 CIM management processes are the realization of CIM management functions. There are five (5) CIM management processes. The CIM management processes are shown in Figure 4‑3. A list of the processes and their descriptions are provided in Table 4‑2.
 
-![](images/media/image4.emf)
+![](images/media/image4.png)
 
 <span id="_Ref22556726" class="anchor"></span>Figure 4‑3. CIM Management Processes
 
@@ -174,23 +175,23 @@ CIM management processes are the realization of CIM management functions. There 
 | Artifact Distribution | The artifact distribution process ensures comprehensive distribution of artifacts under CIM management (see Section 8 for details) to CIMug repositories and other subscribers of those artifacts. The artifact distribution process flow is shown in Figure 4‑7. |
 | Continuous Process Improvement | The continuous process improvement process establishes a sequence of activities for incremental improvement of the change request and model distribution processes with the goal of improving the quality of the CIM UML or the efficiency of the CIM management processes. The continuous process improvement process is shown in Figure 4‑8. |
 
-![](images/media/image5.emf)
+![](images/media/image5.png)
 
 <span id="_Ref2079526" class="anchor"></span>Figure 4‑4. Model Development Process Flow
 
-<img src="images/media/image6.png" style="width:7.78294in;height:2.33488in" />
+<img src="/images/media/image6.png" style="width:7.78294in;height:2.33488in" />
 
 <span id="_Ref1985784" class="anchor"></span>Figure 4‑5. Change Management Process
 
-![](images/media/image7.emf)
+![](images/media/image7.png)
 
 <span id="_Ref22563694" class="anchor"></span>Figure 4‑6. Document generation from CIM UML
 
-![](images/media/image8.emf)
+![](images/media/image8.png)
 
 <span id="_Ref2158379" class="anchor"></span>Figure 4‑7. Artifacts Distribution Process Flow
 
-![](images/media/image9.emf)
+![](images/media/image9.png)
 
 <span id="_Ref1995527" class="anchor"></span>Figure 4‑8. Continuous Process Improvement Process Flow
 
@@ -198,7 +199,7 @@ CIM management processes are the realization of CIM management functions. There 
 
 The mapping between CIM management functions and the CIM management processes are shown in Figure 4‑9.
 
-<img src="images/media/image10.png" style="width:7in;height:3.33194in" />
+<img src="/images/media/image10.png" style="width:7in;height:3.33194in" />
 
 <span id="_Ref1994217" class="anchor"></span>Figure 4‑9. CIM Management Process-to-CIM Management Functions Mapping
 
@@ -206,13 +207,13 @@ The CIM Model Managers perform most of the tasks within the CIM management proce
 
 | **Role** | **Role Description** | **MDP** | **CMP** | **DGP** | **ADP** | **CPIP** |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------|---------|---------|----------|
-| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. |  <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
-| CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
-| CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
-| IEC CIM Working Group | This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |          |
-| IEC Working Group Project Leader | This individual role performed by an IEC Working Group member has overall responsibility for leading the development of a new edition of an international standard from the IEC proposal stage through to the IEC publication stage. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |          |
-| IEC Working Group Convener | This individual role performed by an IEC Working Group member is responsible for arranging and leading face-to-face IEC Working Group meetings and providing working group oversight.  |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
-| Model Manager | This individual role performed by an individual that is a member of both the CIMug and an IEC Working Group has overall responsibility for artifacts under CIM management. | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
+| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. |  <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
+| CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
+| CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         |         |          |
+| IEC CIM Working Group | This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents. | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |          |
+| IEC Working Group Project Leader | This individual role performed by an IEC Working Group member has overall responsibility for leading the development of a new edition of an international standard from the IEC proposal stage through to the IEC publication stage. | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |          |
+| IEC Working Group Convener | This individual role performed by an IEC Working Group member is responsible for arranging and leading face-to-face IEC Working Group meetings and providing working group oversight.  |         | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |         |         | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
+| Model Manager | This individual role performed by an individual that is a member of both the CIMug and an IEC Working Group has overall responsibility for artifacts under CIM management. | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
 
 <span id="_Toc25586011" class="anchor"></span>Table 4‑3. Role-to-CIM Management Process Mapping
 
@@ -222,7 +223,7 @@ The CIM Model Managers perform most of the tasks within the CIM management proce
 
 As IEC standards, the CIM standards must go through the IEC international standards development process to be published. An IEC International Standard is the result of an agreement between the National Committees of the IEC. The IEC standard development process and the documents created in the process are shown in Figure 4‑10. A description of the IEC stages is provided in Table 4‑4.
 
-![](images/media/image11.emf)
+![](images/media/image11.png)
 
 <span id="_Ref22425787" class="anchor"></span>Figure 4‑10. IEC International Standard Development Process
 
@@ -284,10 +285,10 @@ A mapping between the applicable IEC standards development stages and the CIM Ma
 
 | | Proposal Stage | Preparatory Stage | Committee Stage | Enquiry Stage | Approval Stage | Publication Stage |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Model Development Process | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | |
-| Change Management Process | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | |
-| Document Generation Process | | | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | |
-| Artifact Distribution Process | | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
+| Model Development Process | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | |
+| Change Management Process | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | |
+| Document Generation Process | | | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | |
+| Artifact Distribution Process | | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
 
 #### 4.5.2.1 Draft Standards Preparation
 

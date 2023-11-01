@@ -445,7 +445,7 @@ Mapping of the CIM management functions includes two (2) mappings of the CIM man
 
 CIM management processes are the realization of CIM management functions. There are five (5) CIM management processes. The CIM management processes are shown in Figure 4‑3. A list of the processes and their descriptions are provided in Table 4‑2.
 
-![](images/media/image4.emf)
+![](images/media/image4.png)
 
 <span id="_Ref22556726" class="anchor"></span>Figure 4‑3. CIM Management Processes
 
@@ -459,7 +459,7 @@ CIM management processes are the realization of CIM management functions. There 
 | Artifact Distribution          | The artifact distribution process ensures comprehensive distribution of artifacts under CIM management (see Section 8 for details) to CIMug repositories and other subscribers of those artifacts. The artifact distribution process flow is shown in Figure 4‑7.                                                                                                                                                                      |
 | Continuous Process Improvement | The continuous process improvement process establishes a sequence of activities for incremental improvement of the change request and model distribution processes with the goal of improving the quality of the CIM UML or the efficiency of the CIM management processes. The continuous process improvement process is shown in Figure 4‑8.                                                                                         |
 
-![](images/media/image5.emf)
+![](images/media/image5.png)
 
 <span id="_Ref2079526" class="anchor"></span>Figure 4‑4. Model Development Process Flow
 
@@ -467,15 +467,15 @@ CIM management processes are the realization of CIM management functions. There 
 
 <span id="_Ref1985784" class="anchor"></span>Figure 4‑5. Change Management Process
 
-![](images/media/image7.emf)
+![](images/media/image7.png)
 
 <span id="_Ref22563694" class="anchor"></span>Figure 4‑6. Document generation from CIM UML
 
-![](images/media/image8.emf)
+![](images/media/image8.png)
 
 <span id="_Ref2158379" class="anchor"></span>Figure 4‑7. Artifacts Distribution Process Flow
 
-![](images/media/image9.emf)
+![](images/media/image9.png)
 
 <span id="_Ref1995527" class="anchor"></span>Figure 4‑8. Continuous Process Improvement Process Flow
 
@@ -507,7 +507,7 @@ The CIM Model Managers perform most of the tasks within the CIM management proce
 
 As IEC standards, the CIM standards must go through the IEC international standards development process to be published. An IEC International Standard is the result of an agreement between the National Committees of the IEC. The IEC standard development process and the documents created in the process are shown in Figure 4‑10. A description of the IEC stages is provided in Table 4‑4.
 
-![](images/media/image11.emf)
+![](images/media/image11.png)
 
 <span id="_Ref22425787" class="anchor"></span>Figure 4‑10. IEC International Standard Development Process
 
@@ -800,7 +800,7 @@ Types used for attributes in a class introduce dependencies that must be coordin
 
 Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 2.
 
-![](images/media/image15.emf)
+![](images/media/image15.png)
 
 Figure Possible partition file exchanges between WG13, WG14 and WG16
 
@@ -818,7 +818,7 @@ The procedure to update a package with a partition file corresponds to an arrow 
 
 To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 2. Complete synchronisation can be achieved by copying whole models as shown in Figure 3 in Figure 3.
 
-![](images/media/image16.emf)
+![](images/media/image16.png)
 
 Figure 3 Complete synchronisation example
 
@@ -1828,7 +1828,7 @@ Inherited association ends should have unique names.
 | Rule203    | Inherited association ends shall have unique role names.                                                                                                                                                                                                                    |
 | Rule204    | Associations between CIM extension classes and high-level standard CIM classes should be minimized.                                                                                                                                                                         |
 
-<img src="images/media/image20.emf" style="width:5.63665in;height:1.92055in" />
+<img src="images/media/image20.png" style="width:5.63665in;height:1.92055in" />
 
 <span id="_Ref22115672" class="anchor"></span>Figure 6‑1. Example of two associations between two classes
 
