@@ -85,15 +85,17 @@ TC57CIM is partitioned into packages corresponding to the IEC TC57 working group
 
 - WG16 - IEC62325 package.
 
-The TC57CIM package structure is shown in Figure 5‑1.
-
-<img src="/images/media/image13.png" style="width:3.41667in;height:2.60417in" />
-
-<span id="_Ref8597346" class="anchor"></span>Figure 5‑1 - Legacy TC57CIM Package Structure
+The new top-level"CIM" (previously "TC57CIM") package structure is shown in Figure 5‑1.
 
 <img src="/images/media/image13-new.png" style="width:3.41667in;height:2.60417in" />
 
-<span id="_Ref8597347" class="anchor"></span>Figure 5‑1 - New CIM Package Structure (starting as of CIM18)
+<span id="_Ref8597347" class="anchor"></span>Figure 5‑1 - CIM Package Structure Legacy TC57CIM Package Structure
+
+The older package name structure:
+
+<img src="/images/media/image13.png" style="width:3.41667in;height:2.60417in" />
+
+<span id="_Ref8597346" class="anchor"></span>Figure 5‑2 - Legacy TC57CIM Package Structure
 
 <table>
 <colgroup>
