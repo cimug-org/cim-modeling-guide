@@ -143,7 +143,7 @@ Both the legacy and new top-level package structure are shown in Figure 5‑1 an
 
 ### 5.2.3 Package Dependency Rules
 
-The concept of package dependencies is critical to both the understanding of model ownership among working groups and the practical integration or assembly of packages from different owners. An additional package is maintained outside of the IEC working group packages to describe the dependencies among the packages of each working group. This package, named “PackageDependencies” contains a figure illustrating these dependencies as shown in Figure 5-4 UML package dependencies (for illustration, not official CIM standard). As such the PackageDependencies package is itself dependent upon all the other major packages
+The concept of package dependencies is critical to both the understanding of model ownership among working groups and the practical integration or assembly of packages from different owners. An additional package is maintained outside of the IEC working group packages to describe the dependencies among the packages of each working group. This package, named “PackageDependencies” contains a figure illustrating these dependencies as shown in Figure 5-3 UML package dependencies (for illustration, not official CIM standard). As such the PackageDependencies package is itself dependent upon all the other major packages
 
 The package dependencies should rarely change and therefore it makes sense for the CIM model manager role to maintain this diagram through the normal model issues submittal process. There is no need for each package owner to edit this package. By design there are no circular dependencies among the major packages. Issues are resolved through the CMM board.
 
@@ -219,17 +219,17 @@ Types used for attributes in a class introduce dependencies that must be coordin
 
 ### 5.2.4 Package Assembly Rules
 
-Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 5-3.
+Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 5-4.
 
 ![](../images/media/image15.png)
 
-Figure Possible partition file exchanges between WG13, WG14 and WG16
+Figure 5-4 - Possible partition file exchanges between WG13, WG14 and WG16
 
-A box in Figure 5-3 represents a complete UML model while the rows under the working group name correspond to package numbers in CIM.
+A box in Figure 5-4 represents a complete UML model while the rows under the working group name correspond to package numbers in CIM.
 
 With four working groups the number of possible exchanges increases to twelve and with five it becomes twenty and so on.
 
-The procedure to update a package with a partition file corresponds to an arrow in Figure 5-3 and consists of the following steps:
+The procedure to update a package with a partition file corresponds to an arrow in Figure 5-4 and consists of the following steps:
 
 -   Export the partition file from the source model,
 
@@ -237,19 +237,19 @@ The procedure to update a package with a partition file corresponds to an arrow 
 
 -   Import the partition file in the destination model and subsequently import any packages depending on it in dependency order.
 
-To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 5-2. Complete synchronisation can be achieved by copying whole models as shown in Figure 5-4.
+To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 5-5. Complete synchronisation can be achieved by copying whole models as shown in Figure 5-5.
 
 ![](../images/media/image16.png)
 
-Figure 3 Complete synchronisation example
+Figure 5-5 Complete synchronisation example
 
-In Figure 3 a complete synchronisation of all model files is made in the following steps:
+In Figure 5-5 a complete synchronisation of all model files is made in the following steps:
 
- 1. Synchronise the WG14 model with 61970 from WG13,
+1.   Synchronise the WG14 model with Grid (61970) from WG13,
 
- 2. Synchronise the WG16 model with 61970 from WG13 and 61968 from WG14,
+2.   Synchronise the WG16 model with Grid (61970) from WG13 and Enterprise (61968) from WG14,
 
- 3. Copy the complete and synchronised WG16 model to WG13 and WG14.
+3.   Copy the complete and synchronised WG16 model to WG13 and WG14.
 
 This procedure minimizes the number of steps.
 
