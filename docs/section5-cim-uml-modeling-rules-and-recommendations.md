@@ -478,9 +478,11 @@ The attribute order should normally be alphabetical unless there is some clear r
 | Rule056 | In instances where an attribute of a CIM class has an initial value, it shall denote a constant for all instance of the class to which the attribute belongs. |
 | Rule057 | In instances where an attribute of a CIM class has an initial value, it shall be set as both static and constant. |
 | Rule058 | Attribute multiplicity shall always be \[0..1\] (i.e. all CIM attributes are optional). |
+| Rule059 | For attributes that correspond to power system related measurements as listed below the attribute name must use the symbol, in lower camel case (e.g. ratedU), instead of the name or unit of measurement.<table><colgroup><col style="width: 100%" /></colgroup><thead><tr class="even"><td><ul><li>Active Power (p)<li>Reactive Power (q) <br><li>Apparent Power (s)<li>Resistance (r)<li>Reactance (x)<li>Conductance (g)<li>Susceptance (b)<li>Power Factor (pf)<li>Voltage (u)<li>Current (i)<li>Frequency (f)<li>Inductance (l)<li>Capacitance (c)<li>Impedance (z)<li>Admittance (y)</ul></td></tr></tbody></table>For the properties mentioned in the above list, the symbol is to be appended with "2" for negative-sequence and "0" for zero-sequence properties.<br>Where properties mentioned in the list are used in a compound term (e.g. maximum voltage, nominal apparent power, natural impedance), the value name should be written in full. The attribute name as a whole must also comply with Rule049.|
 | Rule060 | Attribute names shall be unique among all levels of specialisation. |
 | Rule061 | The scope of a CIM attribute shall be "Public".  |
 | Rule062 | Datatypes used for attributes in cross-working group dependencies shall be coordinated among the affected working groups. |
+
 
 ## 5.6 Association Rules
 
