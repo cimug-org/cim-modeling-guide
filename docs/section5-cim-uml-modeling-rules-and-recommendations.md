@@ -454,7 +454,7 @@ The following UML attribute features (i.e. available in the "Properties" Pane in
 -   *Multiplicity* is always \[0..1\]
 -   *Initial Value*, if used, always denotes a constant for all instances of the class where the attribute belongs, and the attribute has to be set as both static and constant.
 -   *Documentation* (i.e. the Notes pane in Sparx EA). The documentation should not use or rely upon special formatting. Plain text is assumed. It is suggested to avoid special characters here also.
--   *Stereotype*, where appliable, can temporarily be used to describe the development state of the attribute or use case that initiated the creation of the attribute. Once the attribute is fully incorporated in the model the stereotype is removed.
+-   *Stereotype*, where applicable, can temporarily be used to describe the development state of the attribute or use case that initiated the creation of the attribute. Once the attribute is fully incorporated in the model the stereotype is removed.
 
 Attribute names are unique within a classifier and Enterprise Architect will enforce this.
 
