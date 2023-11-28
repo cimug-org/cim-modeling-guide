@@ -11,7 +11,7 @@
 
 !!! tip
 
-    It should be noted that the latest content for this guide is made available online at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io). When reference a PDF version of this guide for offline viewing it is recommended to confirm it reflects that latest release.
+    It should be noted that the latest content for this guide is made available online at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io). When referencing a PDF version of the guide for offline viewing it is recommendeded to confirm it reflects that latest release.
 
 
 **UCA International Users Group**
