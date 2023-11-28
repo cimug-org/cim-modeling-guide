@@ -4,6 +4,8 @@ theme:
   name: material
   features:
     - content.code.copy
+    - navigation.footer
+copyright: Copyright &copy; 2019 - 2023. All rights reserved by the UCA International CIM Users Group
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
