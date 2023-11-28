@@ -16,12 +16,6 @@ markdown_extensions:
   - admonition
   - tables
   - pymdownx.details
-plugins:
-  - search
-  - pdf-export:
-      enabled_if_env: ENABLE_PDF_EXPORT
-      combined: true
-      combined_output_path: CIM Modeling Guide.pdf
 nav:
   - 'index.md'
   - 'section1-introduction.md'
