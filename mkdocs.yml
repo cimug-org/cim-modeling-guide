@@ -3,7 +3,7 @@ repo_url: https://github.com/CIMug-org/cim-modeling-guide
 theme:
   palette:
     primary: white
-  logo: images/media/logo-white.png
+  logo: images/media/logo-gray.png
   name: material
   features:
     - content.code.copy
