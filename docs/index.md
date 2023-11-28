@@ -6,18 +6,18 @@
 
 **Version 1.0**
 
-**25-November-2019**
+**25-November-2023**
 
 **UCA International Users Group**
 
 
 > **RIGHT TO DISTRIBUTE AND CREDIT NOTICE**
 >
-> This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.0, © November 2019. All rights reserved by the UCA International Users Group”.
+> This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.0, © November 2023. All rights reserved by the UCA International Users Group”.
 
 DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITIES
 
-> THIS DOCUMENT is a work product of THE UCA International Users Group. it was prepared by the CIM Model Managers and approved by the UCA International Users Group leadership. NEITHER the CIM Model Managers, the UCA International Users Group leadership, the cim users group, NOR ANY PERSON ACTING ON BEHALF OF ANY OF THEM:
+> THIS DOCUMENT is a work product of THE UCA International Users Group. it was prepared by the CIM Model Managers and approved by the UCA International Users Group leadership. NEITHER the CIM Model Managers, the UCA International Users Group leadership, the CIM users group, NOR ANY PERSON ACTING ON BEHALF OF ANY OF THEM:
 >
 > \(A\) MAKES ANY WARRANTY OR REPRESENTATION WHATSOEVER, EXPRESS OR IMPLIED, (I) WITH RESPECT TO THE USE OF ANY INFORMATION, APPARATUS, METHOD, PROCESS, OR SIMILAR ITEM DISCLOSED IN THIS DOCUMENT, INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, OR (II) THAT SUCH USE DOES NOT INFRINGE ON OR INTERFERE WITH PRIVATELY OWNED RIGHTS, INCLUDING ANY PARTY'S INTELLECTUAL PROPERTY, OR (III) THAT THIS DOCUMENT IS SUITABLE TO ANY PARTICULAR USER'S CIRCUMSTANCE; OR
 >
@@ -27,7 +27,7 @@ DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITIES
 
 THIRD PARTY INTELLECTUAL PROPERTY
 
-> The Cim standards are a set of International Electrotechnical Committee (IEC) standards and are the Intellectual Property of the IEC. the UCA International Users Group has a liaison d relationship with the iec that provides access rights to the cim standards for software development. the common information model (CIM) is Open Source and is rendered in the Unified Modeling Language.
+> The CIM standards are a set of International Electrotechnical Committee (IEC) standards and are the Intellectual Property of the IEC. the UCA International Users Group has a liaison d relationship with the iec that provides access rights to the cim standards for software development. the common information model (CIM) is Open Source and is rendered in the Unified Modeling Language.
 
 # Acknowledgements
 
