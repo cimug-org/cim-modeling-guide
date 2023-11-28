@@ -6,6 +6,12 @@
 
 **Version 1.0**
 
+
+!!! tip
+
+    If viewing the PDF version of this CIM Modeling Guide it should be noted that the latest content can be found in the online guide available at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io).
+
+
 **25-November-2023**
 
 **UCA International Users Group**
