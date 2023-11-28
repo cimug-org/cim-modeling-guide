@@ -1,6 +1,7 @@
 site_name: CIM Modeling Guide
 repo_url: https://github.com/CIMug-org/cim-modeling-guide
 theme:
+  logo: images/media/logo.png
   name: material
   features:
     - content.code.copy
