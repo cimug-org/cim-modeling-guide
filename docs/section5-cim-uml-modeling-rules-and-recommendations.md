@@ -87,11 +87,11 @@ The top-level "CIM" (formerly TC57CIM) package is partitioned into sub-packages 
 
 Both the legacy and new top-level package structure are shown in Figure 5‑1 and Figure 5-2 respectively.
 
-<img src="/images/media/image13.png" style="width:3.41667in;height:2.60417in" />
+![](images/media/image13.png)
 
 <span id="_Ref8597346" class="anchor"></span>Figure 5‑1 - TC57CIM Package Structure
 
-<img src="/images/media/image13-new.png" style="width:3.41667in;height:2.60417in" />
+![](images/media/image13-new.png)
 
 <span id="_Ref8597347" class="anchor"></span>Figure 5‑2 - CIM Package Structure (New)
 
@@ -213,7 +213,7 @@ Types used for attributes in a class introduce dependencies that must be coordin
 </tbody>
 </table>
 
-<img src="../images/media/image14.png" style="width:7in;height:6.96944in" />
+![](images/media/image14.png)
 
 <span id="_Ref532235977" class="anchor"></span>Figure 5‑3. Top-level CIM (formerly TC57CIM) Package Dependencies
 
@@ -221,7 +221,7 @@ Types used for attributes in a class introduce dependencies that must be coordin
 
 Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 5-4.
 
-![](../images/media/image15.png)
+![](images/media/image15.png)
 
 Figure 5-4 - Possible partition file exchanges between WG13, WG14 and WG16
 
@@ -239,7 +239,7 @@ The procedure to update a package with a partition file corresponds to an arrow 
 
 To properly obtain the correct UML package versions in a synchronized model, one can follow the steps in Figure 5-5. Complete synchronisation can be achieved by copying whole models as shown in Figure 5-5.
 
-![](../images/media/image16.png)
+![](images/media/image16.png)
 
 Figure 5-5 Complete synchronisation example
 

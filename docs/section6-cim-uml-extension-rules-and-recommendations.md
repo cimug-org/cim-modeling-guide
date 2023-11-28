@@ -22,7 +22,7 @@ It is recommended to utilize existing data types and CIM classes where possible.
 
 The typical case of adding a new extension class and associating with existing standard classes is can be modeled in a diagram within the extension package as shown in Figure 10 Example UML model for extension class with association to standard class. This situation does not require multiple inheritance.
 
-<img src="/images/media/image17.png" style="width:4.75in;height:0.775in" />
+![](images/media/image17.png)
 
 Figure Example UML model for extension class with association to standard class
 
@@ -38,13 +38,13 @@ The new attributes or associations can be added to the new extension class and t
 
 A new attribute is effectively added to an existing CIM class within the new extension package using a diagram within the extension package as shown in Figure 11 Example UML model for attribute extensions to standard CIM classes.
 
-<img src="/images/media/image18.png" style="width:4.15in;height:2.28333in" />
+![](images/media/image18.png)
 
 Figure Example UML model for attribute extensions to standard CIM classes.
 
 A new association can be effectively between two standard CIM classes by introducing one of the classes as an extension class in the extension package then making the association to the other class. There is no guidance on which end to chose as the extension class and it may be driven by having already added one of the extension classes to the extension package for other purposes. A diagram in the extension package can be used as shown in Figure 12 Example UML model for association extensions to standard CIM classes. If both classes are already extension classes, the association should be added between the two extension classes for better modularity.
 
-<img src="/images/media/image19.png" style="width:4.90833in;height:2.14167in" />
+![](images/media/image19.png)
 
 Figure Example UML model for association extensions to standard CIM classes
 
@@ -210,15 +210,15 @@ Inherited association ends should have unique names.
 | Rule203    | Inherited association ends shall have unique role names.                                                                                                                                                                                                                    |
 | Rule204    | Associations between CIM extension classes and high-level standard CIM classes should be minimized.                                                                                                                                                                         |
 
-<img src="/images/media/image20.png" style="width:5.63665in;height:1.92055in" />
+![](images/media/image20.png)
 
 <span id="_Ref22115672" class="anchor"></span>Figure 6‑1. Example of two associations between two classes
 
-<img src="/images/media/image21.png" style="width:4.03297in;height:1.4439in" />
+![](images/media/image21.png)
 
 <span id="_Ref22115886" class="anchor"></span>Figure 6‑2. Example of self-association
 
-<img src="/images/media/image22.png" style="width:4.50702in;height:2.74166in" />
+![](images/media/image22.png)
 
 <span id="_Ref22115402" class="anchor"></span>Figure 6‑3. Allowed duplication of association end names
 

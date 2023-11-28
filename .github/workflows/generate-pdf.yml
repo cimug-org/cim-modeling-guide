@@ -1,0 +1,35 @@
+name: Generate PDF
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - env:
+        ENABLE_PDF_EXPORT: 1
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+    - run: pip install mkdocs-material
+    - run: sudo apt install libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0
+    - run: pip install mkdocs-pdf-export-plugin
+    - run: mkdocs build
+    - uses: actions/upload-artifact@v3
+      with:
+        name: CIM Modeling Guide PDF
+        path: site/CIM Modeling Guide.pdf
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs: build
+    steps: 
+      - uses: actions/download-artifact@v3
+        with:
+          name: CIM Modeling Guide PDF
+          path: CIM Modeling Guide.pdf
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "CIM Modeling Guide.pdf"
