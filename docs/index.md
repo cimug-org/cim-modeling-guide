@@ -9,9 +9,9 @@
 **25-November-2023**
 
 
-!!! tip
+!!! Note
 
-    It should be noted that the latest content for this guide is made available online at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io). When referencing the PDF version for offline viewing it is recommendeded to confirm it reflects the latest release.
+    When referencing the PDF version of the guide for offline viewing it is recommendeded to confirm it reflects the latest release. Latest content is publically available online at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io). 
 
 
 **UCA International Users Group**
