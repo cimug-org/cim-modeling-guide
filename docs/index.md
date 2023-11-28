@@ -11,7 +11,7 @@
 
 !!! Note
 
-    When referencing the PDF version of the guide for offline viewing it is recommendeded to confirm it reflects the latest release. Latest content is publically available online at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io). 
+    When referencing the PDF version of this guide for offline viewing it is recommended to confirm it reflects the current release. For latest content visit [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io). 
 
 
 **UCA International Users Group**
