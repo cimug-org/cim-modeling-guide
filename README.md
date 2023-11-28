@@ -22,18 +22,3 @@ For Python, do `pip install mkdocs-material` then once installed, the basic comm
 * `mkdocs -h` - Print help message and exit.
 
 Once you have it running with either Docker or Python, you can view it by navigating to http://localhost:8000 on your browser.
-
-## PDF Generation
-A PDF copy of the CIM Modeling Guide is created using an `mkdocs` plugin called [`pdf-export`](https://github.com/zhaoterryy/mkdocs-pdf-export-plugin). To generate the PDF on Windows, install GTK runtime found [here](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases). See [Weasyprint documentation](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation) for other platforms such as Linux.
-
-Then install the plugin
-```cmd
-pip install mkdocs-pdf-export-plugin
-```
-
-Finally, set the following environment variable and run the build
-```cmd
-set ENABLE_PDF_EXPORT=1
-mkdocs build
-```
-The PDF will appear in the build output

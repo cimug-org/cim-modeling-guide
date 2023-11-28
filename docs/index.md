@@ -1,4 +1,4 @@
-![](images/media/image1.png)
+<img src="images/media/image1.png" style="width:3.02526in;height:1.41679in" />
 
 **UCAIug**
 
