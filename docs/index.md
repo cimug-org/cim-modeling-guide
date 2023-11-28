@@ -45,7 +45,7 @@ In preparing this specification, the UCAIug recognizes the special contributions
 
 - Margaret Goodrich - *Project Consultants, LLC*
 
-- Martin Milller - *ABB*
+- Martin Miller - *ABB*
 
 - Tatjana Kostic - *ABB*
 
