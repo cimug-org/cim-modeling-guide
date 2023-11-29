@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: CIM Modeling Guide.pdf
-        path: site/CIM Modeling Guide.pdf
+        path: site/CIM_Modeling_Guide.pdf
