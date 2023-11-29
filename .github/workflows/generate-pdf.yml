@@ -1,5 +1,6 @@
 name: Generate CIM Modeling Guide PDF
 on:
+  push:
   release:
     types: [published]
   pull_request:
@@ -27,5 +28,5 @@ jobs:
     - name: Upload CIM Modeling Guide PDF as artifact
       uses: actions/upload-artifact@v3
       with:
-        name: CIM Modeling Guide.pdf
+        name: CIM_Modeling_Guide.pdf
         path: site/CIM_Modeling_Guide.pdf
