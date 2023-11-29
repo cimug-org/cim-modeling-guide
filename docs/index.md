@@ -11,7 +11,7 @@
 
 !!! Note
 
-    When referencing an offline PDF version of this guide it is recommended to confirm it corresponds to the latest publicly available guide at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io)
+    When referencing an offline PDF version of this guide it is recommended to confirm it corresponds to the latest publicly available guide at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io).
 
 
 **UCA International Users Group**
