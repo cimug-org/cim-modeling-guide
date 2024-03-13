@@ -4,14 +4,14 @@
 
 **CIM Modeling Guide**
 
-**Version 1.0**
+**Version 1.1**
 
-**25-November-2023**
+**13-February-2021**
 
 
 !!! Note
 
-    When referencing an offline PDF version of this guide it is recommended to confirm it corresponds to the latest publicly available guide at [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io).
+    When referencing an offline PDF version of this guide note that it may not corresponds to the latest publicly available guide. To reference the latest visit [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io).
 
 
 **UCA International Users Group**
@@ -19,7 +19,7 @@
 
 > **RIGHT TO DISTRIBUTE AND CREDIT NOTICE**
 >
-> This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.0, © November 2023. All rights reserved by the UCA International Users Group”.
+> This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.1, © November 2021. All rights reserved by the UCA International Users Group”.
 
 DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITIES
 
@@ -54,8 +54,6 @@ In preparing this specification, the UCAIug recognizes the special contributions
 - Martin Miller - *ABB*
 
 - Tatjana Kostic - *ABB*
-
-- Todd Viegut - *AspenTech*
 
 ##  
 
