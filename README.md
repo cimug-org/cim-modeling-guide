@@ -3,6 +3,10 @@ UCAIug CIM Modeling Guide, © 2019 - 2023. All rights reserved by the UCA Intern
 
 This repository hosts the publically available **CIM Modeling Guide** made available by the UCA International CIM Users Group. This official guide is managed and maintained by the CIM Model Management Team and can be viewed online [here](https://cim-mg.ucaiug.io/).
 
+## CIM Modeling Guide Discussion Forums
+
+Please post all questions, suggestions, and/or comments directly to the new [CIM Modeling Guide Discussions](https://github.com/ucaiug/cim-modeling-guide/discussions) board for this repository.
+
 ## Contributing
 CIM Modeling Guide is documented using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material). If you need to do work on the CIM Modeling Guide you can do so by editing the files directly in the `docs` folder of this repo. 
 
