@@ -5,7 +5,7 @@ This repository hosts the publically available **CIM Modeling Guide** made avail
 
 ## CIM Modeling Guide Discussion Forums
 
-Please post all questions, suggestions, and/or comments directly to the new [CIM Modeling Guide Discussions](https://github.com/cimug-org/cim-modeling-guide/discussions)) board for this repository.
+Please post all questions, suggestions, and/or comments directly to the new [CIM Modeling Guide Discussions](https://github.com/cimug-org/cim-modeling-guide/discussions) board for this repository.
 
 ## Contributing
 CIM Modeling Guide is documented using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material). If you need to do work on the CIM Modeling Guide you can do so by editing the files directly in the `docs` folder of this repo. 
