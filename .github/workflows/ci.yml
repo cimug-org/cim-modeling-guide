@@ -1,4 +1,4 @@
-name: ci
+name: Documentation Site CI
 on:
   push:
     branches:
