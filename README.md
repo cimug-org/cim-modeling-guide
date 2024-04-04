@@ -15,19 +15,48 @@ For general questions or discussions related to this UCAIug publication or speci
 ## Submitting Issues
 For any identified issues with this **CIM Modeling Guide** please submit them via the [CIM Modeling Guide Issues](https://github.com/cimug-org/cim-modeling-guide/issues) tracker. Be sure to add an appropriate "version" label on your issue (e.g. v1.1) corresponding to the publication version of the modeling guide.
 
-## Offline Viewing
-There are two options for offline viewing of the latest CIM Modeling Guide. You can download the latest release of the PDF of the CIM Modeling Guide at [releases](https://github.com/cimug-org/cim-modeling-guide/releases). 
+To run the site locally use [Python](https://www.python.org/). This is cleanest if you use a Python virtual envirnment as shown below to install the dependencies.
+```cmd
+python -m venv venv
+venv\Scripts\activate
+pip install mkdocs-material mkdocs-pdf-export-plugin mike
+```
 
-Alternatively, to serve the modeling guide locally as a live-reloading web page, use [Docker](https://www.docker.com/) or [Python](https://www.python.org/).
+Once installed, you can then run the documentation site locally with `mkdocs serve`
+```cmd
+mkdocs serve
+```
+You can view the site by navigating to http://localhost:8000 in your browser.
 
-For Docker, do `docker pull squidfunk/mkdocs-material` then `mkdocs serve` is default command so you can just do the following from repo root to start the site:
+### Publishing
+This project uses the [mike](https://github.com/jimporter/mike) plugin to publish multiple versions of the documentation to the https://cim-mg.ucaiug.io site. Under the hood it is using [GitHub Pages](https://pages.github.com/) to host the site which effecitvely just stores the site content in a dedicated git branch called `gh-pages`. 
 
-    docker run --rm -it -p 127.0.0.1:8000:8000/tcp -v %CD%:/docs squidfunk/mkdocs-material
+You deploy using the `mike deploy [version]` command. This will replace the existing version of the documentation on the site with whever the currently checkout version is. So for example to publish a new version of the documentation to the https://cim-mg.ucaiug.io site you first want to pull the latest published changes down from the remote site
+```cmd
+git remote add origin https://github.com/cimug-org/cim-modeling-guide
+git fetch origin
+git switch gh-pages
+git pull origin gh-pages
+```
+Then switch to the branch you want to publisha and run the deploy command giving it the name you want, for example let's say we're going to publish version "1.0" which is in branch "v1.0".
+```cmd
+git checkout v1.0
+mike deploy 1.0
+```
 
-For Python, do `pip install mkdocs-material` then once installed, the basic commands are:
+When you need to update which version is considered the "latest" (e.g. when going from 1.0 to 2.0) run the following
+```cmd
+mike deploy -u 2.0 latest
+```
+Note that mike will always update the version and any aliases (latest) when you run a `mike deploy [version]` command. So you only need to do the `mike deploy -u [version] latest` when the latest version is changed.
 
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site (for deployment).
-* `mkdocs -h` - Print help message and exit.
+To view the site before publishing it to https://cim-mg.ucaiug.io, run to view it locally
+```cmd
+mike serve
+```
+Then to publish it to https://cim-mg.ucaiug.io, you will want to push your local `gh-pages` branch to the remote https://github.com/cimug-org/cim-modeling-guide repo (or push it to a fork and submit a pull request to the upstream repo)
+```cmd
+git push origin gh-pages
+```
 
-Once you have it running with either Docker or Python, you can view it by navigating to http://localhost:8000 on your browser.
+Refer to [mike documentation](https://github.com/jimporter/mike) for more information.
