@@ -1,14 +1,19 @@
 # CIM Modeling Guide
-UCAIug CIM Modeling Guide, © 2019 - 2023. All rights reserved by the UCA International CIM Users Group
+
+![image](docs/images/media/image-header-1.png)
+
+UCAIug CIM Modeling Guide, © 2019 - 2024. All rights reserved by the UCA International CIM Users Group
 
 This repository hosts the publically available **CIM Modeling Guide** made available by the UCA International CIM Users Group. This official guide is managed and maintained by the CIM Model Management Team and can be viewed online [here](https://cim-mg.ucaiug.io/).
 
+The final documentation published online is generated using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
+
 ## CIM Modeling Guide Discussion Forums
 
-Please post all questions, suggestions, and/or comments directly to the new [CIM Modeling Guide Discussions](https://github.com/cimug-org/cim-modeling-guide/discussions)) board for this repository.
+For general questions or discussions related to this UCAIug publication or specific rules therein please post directly to the [CIM Modeling Guide Discussion](https://github.com/cimug-org/cim-modeling-guide/discussions) forums for this repository.
 
-## Contributing
-CIM Modeling Guide is documented using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material). If you need to do work on the CIM Modeling Guide you can do so by editing the files directly in the `docs` folder of this repo. 
+## Submitting Issues
+For any identified issues with this **CIM Modeling Guide** please submit them via the [CIM Modeling Guide Issues](https://github.com/cimug-org/cim-modeling-guide/issues) tracker. Be sure to add an appropriate "version" label on your issue (e.g. v1.1) corresponding to the publication version of the modeling guide.
 
 To run the site locally use [Python](https://www.python.org/). This is cleanest if you use a Python virtual envirnment as shown below to install the dependencies.
 ```cmd
