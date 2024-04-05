@@ -18,22 +18,15 @@ markdown_extensions:
   - pymdownx.details
 plugins:
   - search
-  - pdf-export:
-      enabled_if_env: ENABLE_PDF_EXPORT
-      combined: true
-      combined_output_path: CIM_Modeling_Guide.pdf
-  # This plugin is for publishing multiple versions see https://github.com/jimporter/mike
-  - mike: 
-      alias_type: symlink
-      redirect_template: null
-      deploy_prefix: ''
-      canonical_version: null
-      version_selector: true
-      css_dir: css
-      javascript_dir: js
-extra:
-  version:
-    provider: mike
+  - with-pdf:
+      copyright: CIMug Users Group
+      cover: true
+      cover_title: CIM Users Group
+      cover_subtitle: CIM Modeling Guide
+      toc_title: Table of Contents
+      heading_shift: true
+      toc_level: 3
+      show_anchors: true
 nav:
   - 'index.md'
   - 'section1-introduction.md'
