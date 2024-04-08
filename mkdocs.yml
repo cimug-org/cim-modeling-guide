@@ -19,14 +19,14 @@ markdown_extensions:
 plugins:
   - search
   - with-pdf:
-      copyright:  UCAIug CIM Modeling Guide, Version 1.1, © November 2021. All rights reserved by the UCA International Users Group
+      copyright:   Version 1.1, © November 2021. All rights reserved by the UCA International Users Group
       cover: true
       cover_title: CIM Modeling Guide
       cover_subtitle: Version 1.1, © November 2021
       toc_title: Table of Contents
       heading_shift: true
       toc_level: 3
-      show_anchors: false
+      show_anchors: true
 nav:
   - 'index.md'
   - 'section1-introduction.md'
