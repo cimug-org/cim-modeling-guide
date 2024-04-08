@@ -35,7 +35,7 @@ THIRD PARTY INTELLECTUAL PROPERTY
 
 > The CIM standards are a set of International Electrotechnical Committee (IEC) standards and are the Intellectual Property of the IEC. the UCA International Users Group has a liaison d relationship with the iec that provides access rights to the cim standards for software development. the common information model (CIM) is Open Source and is rendered in the Unified Modeling Language.
 
-# Acknowledgements
+<span style="font-size:2.0em;">Acknowledgements</span>
 
 In preparing this specification, the UCAIug recognizes the special contributions of the following CIM Subcommittee and their organizations.
 
@@ -55,14 +55,11 @@ In preparing this specification, the UCAIug recognizes the special contributions
 
 - Tatjana Kostic - *ABB*
 
-##  
-
-# *Abstract*
+<span style="font-style:italic;font-size:2.0em;">Abstract</span>
 
 > *This document specifies the rules and recommendations on how to use the UML to create and maintain a standardized Common Information Model (CIM) of the electric grid and other related business domains. Such models are called Domain Models. The primary goal of this document is to facilitate communication and understanding among people working with the CIM domain models. The primary goal of the rules is to specify the structure and modeling constraints applied to the CIM. The primary goal of the recommendations is to provide guidelines on how to extend the CIM as more of the model is elaborated by working groups within the International Electrotechnical Commission (IEC) and by the CIM user community. The intent of the recommendations is to facilitate the incorporation of new model elements into the CIM.*
 
-
-# Foreword
+<span style="font-size:2.0em;">Foreword</span>
 
 Exchanging power systems data between utility companies is always problematic when proprietary formats are used. In the past a company would traditionally use a single software system, whether it is a custom in-house solution, or purchased from a large software company, and there would be a single proprietary data standard and format used. With the deregulation of the power industry and the emergence of smarter grids, there is now a greater need to be able to share such power system data between companies and systems.
 
@@ -70,7 +67,7 @@ The increase in choice provided by the number of power system software vendors a
 
 The Common Information Model (CIM) is an open standard for representing power system components originally developed by the Electric Power Research Institute (EPRI) in North America. The CIM provides the basis of a series of standards developed under the auspices of the International Electrotechnical Commission (IEC). The CIM standard was started as part of the Control Centre Application Programming Interface (CCAPI) project at EPRI with the aim of defining a common definition for the components in power systems for use the Energy Management System (EMS) Application Programming Interface (API). The EMS API is now maintained by IEC Technical Committee 57 Working Group 13 as IEC 61970-301. The format has been adopted by the major EMS vendors to allow the exchange of data between their applications, independent of their internal software architecture or operating platform.[^1]
 
-# About the UCA International CIM Users Group
+<span style="font-size:2.0em;">About the UCA International CIM Users Group</span>
 
 The UCA International Users Group (UCAIug) is a not-for-profit corporation focused on assisting users and vendors in the deployment of standards for real-time applications for several industries with related requirements. The UCAIug does not write standards, however it works closely with those bodies that have primary responsibility for the completion of standards (notably IEC TC 57: *Power Systems Management and Associated Information Exchange*).
 
