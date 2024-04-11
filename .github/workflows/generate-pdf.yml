@@ -14,10 +14,8 @@ jobs:
       run: pip install mkdocs-material mkdocs-with-pdf
     - name: Build the documentation including PDF
       run: mkdocs build
-      env:
-        ENABLE_PDF_EXPORT: 1
     - name: Upload CIM Modeling Guide PDF as artifact
       uses: actions/upload-artifact@v4
       with:
         name: CIM_Modeling_Guide.pdf
-        path: site/pdf/CIM_Modeling_Guide.pdf
+        path: site/pdf/document.pdf

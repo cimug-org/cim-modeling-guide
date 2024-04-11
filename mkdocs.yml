@@ -27,8 +27,6 @@ plugins:
       heading_shift: true
       toc_level: 3
       show_anchors: true
-      enabled_if_env: ENABLE_PDF_EXPORT
-      output_path: pdf/CIM_Modeling_Guide.pdf
 nav:
   - 'index.md'
   - 'section1-introduction.md'
