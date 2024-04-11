@@ -1,0 +1,1354 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../section8-cim-uml-version-control-rules/">
+      
+      
+        <link rel="next" href="../section10-cim-management-tools/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+    
+    
+      
+        <title>Section 9 - Artifacts Under CIM Management - CIM Modeling Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#section-9-artifacts-under-cim-management" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CIM Modeling Guide" class="md-header__button md-logo" aria-label="CIM Modeling Guide" data-md-component="logo">
+      
+  <img src="../images/media/logo-gray.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CIM Modeling Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Section 9 - Artifacts Under CIM Management
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CIMug-org/cim-modeling-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CIM Modeling Guide" class="md-nav__button md-logo" aria-label="CIM Modeling Guide" data-md-component="logo">
+      
+  <img src="../images/media/logo-gray.png" alt="logo">
+
+    </a>
+    CIM Modeling Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CIMug-org/cim-modeling-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1-introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 1 - Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section2-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 2 - References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section3-definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 3 - Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section4-cim-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 4 - CIM Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section5-cim-uml-modeling-rules-and-recommendations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 5 - CIM UML Modeling Rules and Recommendations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section6-cim-uml-extension-rules-and-recommendations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 6 - CIM UML Extension Rules and Recommendations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section7-cim-uml-transformation-rules-and-recommendations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 7 - CIM UML Transformation Rules and Recommendations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section8-cim-uml-version-control-rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 8 - CIM UML Version Control Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Section 9 - Artifacts Under CIM Management
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Section 9 - Artifacts Under CIM Management
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#91-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.1 Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#911-draft-standards-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.1 Draft Standards Artifacts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-cim-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 CIM Artifacts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-model-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Model Documents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-cim-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4 CIM Profiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-cim-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5 CIM Schemas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.5 CIM Schemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#951-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.1 Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#952-rdf-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.2 RDF Schemas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#953-xml-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.3 XML Schemas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#954-hybrid-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.4 Hybrid Schemas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-cim-management-documents-and-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6 CIM Management Documents and Records
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.6 CIM Management Documents and Records">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#961-cim-management-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6.1 CIM Management Documents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#962-cim-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6.2 CIM Records
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#97-tool-customizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.7 Tool Customizations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section10-cim-management-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 10 - CIM Management Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#91-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1 Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.1 Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#911-draft-standards-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1.1 Draft Standards Artifacts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-cim-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.2 CIM Artifacts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-model-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3 Model Documents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-cim-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4 CIM Profiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-cim-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5 CIM Schemas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.5 CIM Schemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#951-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.1 Background
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#952-rdf-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.2 RDF Schemas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#953-xml-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.3 XML Schemas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#954-hybrid-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.5.4 Hybrid Schemas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-cim-management-documents-and-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6 CIM Management Documents and Records
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.6 CIM Management Documents and Records">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#961-cim-management-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6.1 CIM Management Documents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#962-cim-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.6.2 CIM Records
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#97-tool-customizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.7 Tool Customizations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="section-9-artifacts-under-cim-management">Section 9 - Artifacts Under CIM Management</h1>
+<h2 id="91-overview">9.1 Overview</h2>
+<p>Artifacts under CIM Management consist of: 1) model artifacts (CIM Artifacts); 2) draft standards; 3) CIM Schemas; 4) CIM Management documents and records; and 5) tool customizations. These artifacts are described in this section.</p>
+<h3 id="911-draft-standards-artifacts">9.1.1 Draft Standards Artifacts</h3>
+<p>As IEC standards, the CIM standards must go through the IEC standards development process to be published (see Section 8.1). This process results in the creation of several draft standard artifacts as intermediate work products. The types IEC draft standard artifacts under CIM management are listed below. The description of each type of draft standard is provided in Section 8.1.</p>
+<ol>
+<li>
+<p>New Work Item Proposal (NWIP)</p>
+</li>
+<li>
+<p>Working Draft &amp; Committee Draft (CD)</p>
+</li>
+<li>
+<p>Committee Draft for Vote (CDV)</p>
+</li>
+<li>
+<p>Final Draft International Standard FDIS)</p>
+</li>
+</ol>
+<h2 id="92-cim-artifacts">9.2 CIM Artifacts</h2>
+<p>CIM Artifacts are model artifacts that are maintained in the Sparx Systems Enterprise Architect modeling tool. CIM Artifacts are stored in four (4) file formats: 1) as an EA project file in the native EA file format (*.eap or *.eapx); 2) in the ZIP compressed file format (*.zip); 3) in the XML Metadata Interchange file format (*.xmi); and 4) as a collection of web pages in HyperText Markup Language file format (*.html). The EA project file is also exported and maintained as a Web Ontology Language project file (*.owl). The CIM Artifacts under CIM Management are listed and described in Table 9‑1.</p>
+<table>
+<thead>
+<tr>
+<th><strong>CIM Artifact</strong></th>
+<th><strong>Artifact Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CIM UML</td>
+<td>The CIM UML is the semantic common information model expressed in UML.</td>
+</tr>
+<tr>
+<td>CIM Interface Reference Model (IRM)</td>
+<td>The IRM is contained in the same EA project file as the CIM UML as a separate root model. The IRM is stored in the same four (4) file formats as the CIM UML.</td>
+</tr>
+<tr>
+<td>Schema Composer Profile Artifacts</td>
+<td>Schema Composer profile artifacts are contained in the same EA project file as the CIM UML as a separate top level package within the CIM UML. Schema profile artifacts are stored in the same four (4) file formats as the CIM UML.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Ref22120330" class="anchor"></span>Table 9‑1. CIM Artifacts Under CIM Management</p>
+<h2 id="93-model-documents">9.3 Model Documents</h2>
+<p>Model documents are CIM standards that are derived from the CIM UML using the CIM document generation tool jCleanCim. Draft versions of the CIM standard model documents under CIM Management are listed and described in Table 9‑2.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Model Document</strong></th>
+<th><strong>Model Document Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IEC 61970-301</td>
+<td>This document specifies a Base set of packages which provide a logical view of the functional aspects of Energy Management System (EMS) and power system modelling information within the electric utility enterprise that is shared between all applications.</td>
+</tr>
+<tr>
+<td>IEC 61968-11</td>
+<td>This part of IEC 61968 specifies the distribution extensions of the common information model (CIM) specified in IEC 61970-301. It defines a standard set of extensions of common information model (CIM), which support message definitions in IEC 61968-3 to IEC 61968-9, IEC 61968-13 and IEC 61968-142. The scope of this standard is the information model that extends the base CIM for the needs of distribution networks, as well as for integration with enterprise-wide information systems typically used within electrical utilities.</td>
+</tr>
+<tr>
+<td>IEC 61970-303</td>
+<td>This proposed specification IEC 61970-303 extends the Common Information Model (CIM) with information describing how network model data is organised and administrated. A specific network model not only describe its equipment but also include additional data about the network model itself as its origin, responsible organisation, author, when it was created, version, the time (e.g. past, current, future) when the model is valid, usage (e.g. operation, operation planning, extension planning), purpose for its creation (e.g. commissioning of new equipment, test of network changes/extensions), relation to neighbouring networks etc. IEC 61970-303 extends the basic CIM (IEC 61970-301 and IEC 61970-302) with this kind of data.</td>
+</tr>
+<tr>
+<td>IEC 62325-301</td>
+<td>This international standard specifies a set of packages which provide a logical view of the functional aspects of market management within an electricity market that is shared between a market management system and other systems concerned with different aspects of market management, such as capacity allocation, day-ahead management, balancing, settlement, etc. This international standard includes support for demand-side resource communication with a wholesale market and support for environmental (weather) forecast, observation, phenomena, and alerts data.</td>
+</tr>
+</tbody>
+</table>
+<p><span id="_Ref22125995" class="anchor"></span>Table 9‑2. Model Documents Under CIM Management</p>
+<h2 id="94-cim-profiles">9.4 CIM Profiles</h2>
+<p>A CIM Profile is a subset of the full CIM UML that is derived to define data exchanges required between systems. Each profile is a collection of classes, attributes and references along with additional restrictions such as making attributes mandatory or restricting the cardinalities on associations. Draft versions of CIM standard profiles are artifacts under CIM Management. Also included as a CIM Profile is 61968-1 which is not a subset of the CIM UML; it is a reference to be used in the development of CIM Profiles. The CIM Profiles under CIM Management are listed and described in Table 9‑3.</p>
+<p><span id="_Ref25434542" class="anchor"></span>Table 9‑3. CIM Profiles Under CIM Management</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>CIM Profile</strong></th>
+<th><strong>CIM Profile Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IEC 61968-1</td>
+<td>This Part of the IEC 61968 International Standard identifies and establishes recommendations for standard interfaces based on an Interface Reference Model (IRM). Subsequent clauses of this standard are based on each interface identified in the IRM. This set of standards is limited to the definition of interfaces. They provide for interoperability among different computer systems, platforms, and languages. Methods and technologies used to implement functionality conforming to these interfaces are recommended in IEC 61968-100.</td>
+</tr>
+<tr class="even">
+<td>IEC 61968-3</td>
+<td>This part of the IEC 61968 International Standard specifies the information content of a set of message types that can be used to supervise main substation topology (breaker and switch state) and control equipment status. It also provides the means for handling network connectivity and loading conditions. Finally, it makes it possible for utilities to locate customer telephone complaints and supervise the location of field crews.</td>
+</tr>
+<tr class="odd">
+<td>IEC 61968-4</td>
+<td>This Part of IEC 61968 International Standard specifies the information content of a set of message types that can be used to support many of the business functions related to records and asset management.</td>
+</tr>
+<tr class="even">
+<td>IEC 61968-5</td>
+<td>This Part of IEC 61968 International Standard specifies a set of functions that are needed for enterprise integration of DERMS functions. These exchanges are most likely between a DERMS and a DMS. However, an enterprise integration standard leveraging IEC 61968-100:2013 for application integration, there are no technical limitation for systems with which a DERMS might exchange information.</td>
+</tr>
+<tr class="odd">
+<td>IEC 61968-6</td>
+<td>This Part of IEC 61968 International Standard specifies the information content of a set of message types that can be used to support business functions related to Maintenance and Construction. Typical uses of the message types defined in Part 6 include planned maintenance, unplanned maintenance, conditional maintenance, and work management</td>
+</tr>
+<tr class="even">
+<td>IEC 61968-7</td>
+<td>This Part of IEC 61968 International Standard specifies the information content of a set of message types that can be used to support business functions related to engineering design.</td>
+</tr>
+<tr class="odd">
+<td>IEC 61968-8</td>
+<td>This Part of IEC 61968 International Standard specifies the information content of a set of message types that can be used to support many of the business functions related to customer support.</td>
+</tr>
+<tr class="even">
+<td>IEC 61968-9</td>
+<td>This Part of IEC 61968 International Standard specifies the information content of a set of message types that can be used to support many of the business functions related to meter reading and control.</td>
+</tr>
+<tr class="odd">
+<td>IEC 61968-13</td>
+<td>This part of IEC 61968 specifies profiles that can be used to exchange Network Models in a Utility or between a Utility and external applications to the utility. This standard provides a list of profiles which allow to model balanced and unbalanced distribution networks in order to conduct network analysis (Power flow calculation).</td>
+</tr>
+<tr class="even">
+<td>IEC 61968-100</td>
+<td>This document specifies an implementation profile for the application of the other parts of IEC 61968 using common integration technologies, including JMS and web services. This International Standard also provides guidance with respect to the use of Enterprise Service Bus (ESB) technologies.</td>
+</tr>
+<tr class="odd">
+<td>IEC 61970-452</td>
+<td>This document contains a subset of classes, class attributes, and associations from the CIM UML necessary to describe a static transmission network model. This document defines a Core Equipment Profile, an Operation Profile, and a Short Circuit Profile.</td>
+</tr>
+<tr class="even">
+<td>IEC 61970-453</td>
+<td>This document contains a subset of classes, class attributes, and associations from the CIM UML necessary to exchange schematic information between systems. This document defines a Diagram Layout Profile.</td>
+</tr>
+<tr class="odd">
+<td>IEC 61970-456</td>
+<td>This document contains a subset of classes, class attributes, and associations from the CIM UML necessary to describe the steady state of a power system network. This document defines a State Variables Profile and a Topology Profile.</td>
+</tr>
+<tr class="even">
+<td>IEC 61970-457</td>
+<td><p>This international standard specifies a standard interface for exchanging dynamic model information needed to support the analysis of the steady state stability (small-signal stability) and/or transient stability of a power system or parts of it. The schema(s) for expressing the dynamic model information shall be derived directly from the CIM.</p>
+<p>The scope of this standard includes only the dynamic model information that needs to be exchanged as part of a dynamic study, namely the type, description and parameters of each control equipment associated with a piece of power system equipment included in the steady state solution of a complete power system network model.</p></td>
+</tr>
+<tr class="odd">
+<td>IEC 61970-458</td>
+<td>This international standard specifies a standard interface to support the models and objects required for power generation information exchanges. The scope of information exchange includes all generation processes such as bulk and distributed resources, including processes generating by-products such as heat or steam. The scope of information exchange is focused on Generation specific applications such as scheduling, optimization, operation and maintenance of the Generation resources.</td>
+</tr>
+<tr class="even">
+<td>IEC 61970-459</td>
+<td>This international standard specifies a framework for network model exchange including description of network model parts, boundaries between network model parts, complete power flow cases and responsible authorities. The boundaries act as a frame where network model parts fit. A network model part, boundary or power flow case is described by additional meta-data such as source, author, study time, description, development of time (audit trail) etc. This additional meta-data is described in the framework information model and will be part of the IEC 61970 300 series documents.</td>
+</tr>
+<tr class="odd">
+<td>IEC 61970-460</td>
+<td><p>This international standard specifies a standard interface for exchanging incremental network models of proposed changes to IEC 61970 network models used for network analysis. These incremental network models of proposed changes are called IEC 61970 Projects, or in this document, simply ‘Projects’.</p>
+<p>The scope of this document shall include models for all types of changes that impact IEC 61970 network model datasets. The initial version of this specification, however, focuses on Projects that define plans for new construction activity in the power grid.</p>
+<p>The exchanges which are in scope here, (i.e. the proposed change) are datasets of long-term interest which are a fundamental component used by various parties in the construction of network analysis cases for many different purposes.</p></td>
+</tr>
+<tr class="even">
+<td>IEC 62325-351</td>
+<td>This part of IEC 62325 provides the European style market profile specifications that support the European style design electricity markets. These electricity markets are based on the European regulations, and on the concepts of third-party access and zonal market.</td>
+</tr>
+<tr class="odd">
+<td>IEC 62325-450</td>
+<td>This document provides the modelling rules necessary to ensure that Contextual Models derived from the CIM for information exchanges between electricity market actors participating in various market business processes are in conformity with the CIM model.</td>
+</tr>
+<tr class="even">
+<td>IEC 62325-451-1</td>
+<td>This document provides for the European style market profile the generic technical and application acknowledgement document that can be used in all European style market processes.</td>
+</tr>
+<tr class="odd">
+<td>IEC 62325-451-2</td>
+<td>This document provides for the European style market profile the time-based scheduling process. These market processes are based on the European regulations, and on the concepts of third-party access and zonal market.</td>
+</tr>
+<tr class="even">
+<td>IEC 62325-451-3</td>
+<td>This document provides for the European style market profile the transmission capacity allocation business process based on either explicit or implicit auction that can be used throughout a European style market.</td>
+</tr>
+<tr class="odd">
+<td>IEC 62325-451-4</td>
+<td>This document provides for the European style market profile the settlement and reconciliation business process that can be used throughout a European style market.</td>
+</tr>
+<tr class="even">
+<td>IEC 62325-451-5</td>
+<td>This document provides for the European style market profile the problem statement and status request business processes that can be used throughout a European style market.</td>
+</tr>
+<tr class="odd">
+<td>IEC 62325-451-6</td>
+<td>This document provides for the European style market profile the publication (or transparency) information exchanges to submit either to a data aggregator or to an electronic publication platform the necessary information to be published about the electricity market.</td>
+</tr>
+<tr class="even">
+<td>IEC 62325-451-7</td>
+<td>This document provides, for the European style market profile, the necessary information to be exchanged between Balancing Service Providers, Transmission System Operators and a Common Merit Order List about the Electricity Balancing market.</td>
+</tr>
+<tr class="odd">
+<td>IEC 62325-451-8</td>
+<td>Based on the European style market profile, IEC 62325-351, this document specifies a package for the HVDC Scheduling business processes and the associated document’s contextual models, assembly models and XML schema for use within European style markets.</td>
+</tr>
+<tr class="even">
+<td>IEC 62325-451-10</td>
+<td>Based on the European style market contextual model (IEC 62325-351), this particular part of IEC 62325 series specifies a UML package for the Energy Consumption Data business process and its associated document contextual model, assembly model and XML schema for use within the European style electricity markets.</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table 9‑3. CIM Profiles Under CIM Management (Cont’d)</strong></p>
+<h2 id="95-cim-schemas">9.5 CIM Schemas</h2>
+<h3 id="951-background">9.5.1 Background</h3>
+<p>XML, the eXtensible Markup Language, is a “universal format for structured documents and data” which is quickly becoming the standard for storing machine-readable data in a structured, extensible format that is accessible over the Internet. XML uses <em>tags</em> to denote the elements within XML documents.</p>
+<p>While XML itself has no set tag-syntax or semantics, <em>schemas</em> can be defined for expressing almost any kind of data using XML notation. An application interpreting XML data must be given this knowledge of the syntax and semantics used; otherwise it will have trouble interpreting it. This requires the tag-syntax and semantics of the XML to be expressed as a schema, which provides constraints on the structure and contents of an XML document.</p>
+<p>CIM Schemas provide the constraints on the structure and contents of CIM based XML data exchanges. The types of CIM Schemas under CIM Management are: 1) RDF Schemas (RDFS – used for exchange of network model information); 2) XML Schemas (XSDs – used for message exchanges between applications); and 3) CIM based schemas that contain RDFS and XSD elements, and non-XML elements. The later are referred to as “Hybrid Schemas”.</p>
+<p>The following subsections list and describe the CIM Schemas under CIM Management. Some of the CIM Schemas are IEC International Standards and some are schemas derived from CIM Profiles.</p>
+<h3 id="952-rdf-schemas">9.5.2 RDF Schemas</h3>
+<p>The RDF schemas under CIM management are listed and described in Table 9‑4.</p>
+<p><span id="_Ref25431641" class="anchor"></span>Table 9‑4. RDF Schemas Under CIM Management</p>
+<table>
+<thead>
+<tr>
+<th><strong>RDF Schema</strong></th>
+<th><strong>RDF Schema Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IEC 61970-501</td>
+<td>This part of the IEC 61970 series specifies the mapping between the semantic information model (in the UML) specified in IEC 61970-301 and the machine-readable Extensible Markup Language (XML) representation of that model using the Resource Description Framework (RDF) Schema specification language.</td>
+</tr>
+<tr>
+<td>IEC 61970-552</td>
+<td>This part of the IEC 61970 series specifies how the CIM RDF schema specified in IEC 61970-501 is used to exchange power system models using XML (referred to as CIMXML) defined in the 61970-45x series of profile standards, such as the CIM Transmission Network Model Exchange Profile described in IEC 61970-452.</td>
+</tr>
+<tr>
+<td>IEC 61970-556</td>
+<td>This part of the IEC 61970 series specifies how the CIM RDF schema specified in IEC 61970-501 is used to exchange CIM based graphic objects; and how to display an object using XML defined in the 61970-453. This standard defines a format (CIM/G) to facilitate efficient graphic data transfer, which will support on-line remote diagram browsing and exchanging, and off-line exchange of graphic displays. It includes graphic file structure and graphic element definitions.</td>
+</tr>
+<tr>
+<td>IEC 62325-503</td>
+<td>The purpose of this part of the 62325 series is to provide the guidelines to exchange European style market messages specified in IEC 62325-451-x. The common information model (CIM UML) specifies the basis for the semantics for the message exchange. The European style market profile specifications that support the European style design electricity markets are defined in IEC 62325 part 351.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 9‑4. RDF Schemas Under CIM Management (Cont’d)</strong></p>
+<h3 id="953-xml-schemas">9.5.3 XML Schemas</h3>
+<p>The XML schemas under CIM management are listed and described in Table 9‑5.</p>
+<p><span id="_Ref25431767" class="anchor"></span>Table 9‑5. XML Schemas Under CIM Management</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>XML Schema</strong></th>
+<th><strong>XML Schema Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>61968-3 Schemas</td>
+<td>IEC61968 Part 3 XSDs specify the message payloads for system interactions in network operations support use cases.</td>
+</tr>
+<tr class="even">
+<td>61968-4 Schemas</td>
+<td>IEC61968 Part 4 XSDs specify the message payloads for system interactions in asset management use cases.</td>
+</tr>
+<tr class="odd">
+<td>61968-5 Schemas</td>
+<td>IEC61968 Part 5 XSDs specify the message payloads for system interactions in Distributed Energy Resources and DERMS use cases.</td>
+</tr>
+<tr class="even">
+<td>61968-6 Schemas</td>
+<td>IEC61968 Part 6 XSDs specify the message payloads for system interactions in work management use cases.</td>
+</tr>
+<tr class="odd">
+<td>61968-7 Schemas</td>
+<td>IEC61968 Part 7 XSDs specify the message payloads for system interactions in engineering design use cases.</td>
+</tr>
+<tr class="even">
+<td>61968-8 Schemas</td>
+<td>IEC61968 Part 8 XSDs specify the message payloads for system interactions in customer support use cases.</td>
+</tr>
+<tr class="odd">
+<td>61968-9 Schemas</td>
+<td>IEC61968 Part 9 XSDs specify the message payloads for system interactions in meter reading and control use cases.</td>
+</tr>
+<tr class="even">
+<td>61968-100 Schemas</td>
+<td>IEC61968 Part 100 XSDs specify the message headers for CIM message payloads.</td>
+</tr>
+<tr class="odd">
+<td>IEC 62325-504</td>
+<td><p>This part of the 32325 series defines the services needed to support the electronic data interchanges between different actors on the European Energy Market for Electricity (EME) in a fast (near-real time), and secure way. At the same time, this Technical Specification can also be applied to integration problems outside the scope of IEC 62325-451, such as to the integration of gas market systems or general enterprise integration</p>
+<p>Web Services (in WSDL) will be specified for the defined services, applying the Basic Web Service Pattern implementation profile from IEC 61968-100.</p></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table 9‑5. XML Schemas Under CIM Management (Cont’d)</strong></p>
+<h3 id="954-hybrid-schemas">9.5.4 Hybrid Schemas</h3>
+<p>The Hybrid schemas under CIM management are listed and described in Table 9‑6.</p>
+<p><span id="_Ref25432000" class="anchor"></span>Table 9‑6. Hybrid Schemas Under CIM Management</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Hybrid Schema</strong></th>
+<th><strong>Hybrid Schema Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IEC 61970-555</td>
+<td><p>This international standard specifies the translation of the CIM UML into a CIM based machine-readable format named the "Efficient Model Exchange Format"(CIM/E). The CIM/E, which is in use in China, is an alternative to 61970-552 (CIM/XML) for serializing CIM data exchanges. A CIM/E formatted exchange document will contain some symbols with semantic meaning that are not compliant with the XML standard.</p>
+<p>IEC 61970-555 specifies how the CIM/E schema is used to support power system models or particular application data models exchange requirements, especially for real-time or online applications. Similar to CIM/XML, CIM/E is an efficient serialization format to describe CIM objects. The power system model described by CIM/E can be converted bi-directionally with consistent result.</p></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="96-cim-management-documents-and-records">9.6 CIM Management Documents and Records</h2>
+<p>CIM management documents are electronic or paper objects that contain instructions for tasks, requirements for how and when to perform a task or function, and logs the task execution and decisions. CIM management documents can communicate and share information and knowledge. Examples of CIM management documents include procedures, protocols, methods, and specifications.</p>
+<p>CIM records are a subset of CIM management documents that provide evidence that actions were taken and decisions were made in keeping with procedures; they can serve as evidence of the Working Group’s activity and compliance with IEC processes and procedures.</p>
+<h3 id="961-cim-management-documents">9.6.1 CIM Management Documents</h3>
+<p>Table 9‑7 is a list and description of CIM Management Documents maintained by CIM model managers.</p>
+<p><span id="_Ref25435542" class="anchor"></span>Table 9‑7. CIM Management Documents</p>
+<table>
+<thead>
+<tr>
+<th><strong>Document</strong></th>
+<th><strong>Document Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Action Item List</strong></td>
+<td>The action item list is a list of actions that have been assigned to one of the model managers to complete. The action item list is used to identify and track the activity of the model managers.</td>
+</tr>
+<tr>
+<td><strong>CIM Management Processes and Procedures</strong></td>
+<td>The purpose of this document is to provide a detailed description of the processes and procedures that are involved in CIM Model Management. This document is written by CIM model managers for CIM model managers and anyone who is considering becoming a CIM model manager.</td>
+</tr>
+<tr>
+<td><strong>CIM Modeling Guide</strong></td>
+<td>The purpose of this document is to provide guidance to individuals working with the CIM UML on how to modify the CIM in accordance with the CIM modeling rules and CIM change management. The rules and process are maintained and enforced by the CIM model managers.</td>
+</tr>
+<tr>
+<td><strong>Combined Issues List</strong></td>
+<td>The combined issues list is a collection of issues concerning the CIM UML that need to be resolved by a joint effort of more than working group.</td>
+</tr>
+<tr>
+<td><strong>Model Manager Checklist</strong></td>
+<td>The Model Manager Checklist is a list of tasks that need to be completed as a matter of course in implementing a model change request. Currently there is a Model Manager Checklist maintained for each working group.</td>
+</tr>
+<tr>
+<td><strong>Working Group Issues List</strong></td>
+<td>The working group issues list is a collection of issues raised by a working group concerning the CIM UML contained in their respective top-level CIM package. The issues on these lists can be resolved without involving other working groups.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="962-cim-records">9.6.2 CIM Records</h3>
+<p>Table 9‑8 is a list and description of CIM Records managed by CIM model managers.</p>
+<p><span id="_Ref25435667" class="anchor"></span>Table 9‑8. CIM Records</p>
+<table>
+<thead>
+<tr>
+<th><strong>Record</strong></th>
+<th><strong>Record Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Country Comment Responses</strong></td>
+<td>Country Comment Responses are tracked by CIM Model Management and are used as part of a check and balance to ensure CIM UML changes are included in new versions of the CIM UML to address the responses as intended.</td>
+</tr>
+<tr>
+<td><strong>Lessons Learned</strong></td>
+<td>Lessons learned are records that capture experience-based learning at the completion of a major milestone in a CIM Management process or at the completion of a CIM Management process. The lessons are used as input to planning process improvements.</td>
+</tr>
+<tr>
+<td><strong>Meeting Agendas</strong></td>
+<td>Meeting agendas are documents that capture what is planned to be covered during a Model Manager led meeting. The purpose of the agenda is twofold: 1) To be used as a guide during the meeting to make sure everything intended to be covered is known; and 2) To be used as part of a meeting invite to help ensure individuals who should or want to be in attendance are aware of what topics will be covered so they can plan accordingly.</td>
+</tr>
+<tr>
+<td><strong>Meeting Minutes</strong></td>
+<td>Meeting minutes are records of what took place during a Model Manager led meeting.</td>
+</tr>
+<tr>
+<td><strong>Model Change Request</strong></td>
+<td>A model change request is the document used to identify and track changes to the CIM UML.</td>
+</tr>
+<tr>
+<td><strong>Model Managers Report</strong></td>
+<td>The Model Managers report is a Model Management status report delivered at face-to-face CIMug and IEC CIM working group meetings. A Model Managers report is prepared for each working group and presented by the working group’s model manager.</td>
+</tr>
+<tr>
+<td><strong>Model Release/Change Report</strong></td>
+<td>The Model Release/Change Report is a document that describes changes implemented in a particular release and version of the CIM UML. Each working group prepares its own report.</td>
+</tr>
+<tr>
+<td><strong>Model Validation Report</strong></td>
+<td>The Model Validation Report is the output of CIM UML validation checking that is used as input to the process step that creates the Model Release/Change Report.</td>
+</tr>
+<tr>
+<td><strong>Process Metrics</strong></td>
+<td>Process metrics are records of key performance indicators used to identify under-performing CIM Management processes and to make decisions about changes necessary to improve CIM Management processes.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 9‑8. CIM Records (Cont’d)</strong></p>
+<h2 id="97-tool-customizations">9.7 Tool Customizations</h2>
+<p>Tool customizations are artifacts that facilitate or help automate tasks performed by CIM Model Mangers in conjunction with a software tool. Table 9‑9 is a list and description of Tool customizations managed by CIM Model Managers.</p>
+<p><span id="_Ref25435838" class="anchor"></span>Table 9‑9. Tool Customizations</p>
+<table>
+<thead>
+<tr>
+<th><strong>Document</strong></th>
+<th><strong>Document Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automation Scripts</strong></td>
+<td>Automation scripts are used in Enterprise Architect to automate workflows or perform modeling tasks. An automation script can be written, for example, to perform Model Validation.</td>
+</tr>
+<tr>
+<td><strong>Model Management Document Templates</strong></td>
+<td>Model management document templates are used in the auto generation of CIM Documents. Document templates are used with jCleanCim and can be used with Word and Enterprise Architect.</td>
+</tr>
+<tr>
+<td><strong>User-Defined Add-ins</strong></td>
+<td>User-defined add-ins (also referred to as plug-ins) are developed software that is designed to be procedurally added to a tool to extend the base functionality of a tool. User-defined add-ins can be developed for Enterprise Architect.</td>
+</tr>
+<tr>
+<td><strong>User-Defined Configuration Files</strong></td>
+<td>User-defined configuration files are used to setup an automated tool activity. User-defined configuration files are used with jCleanCim and can be used with Enterprise Architect.</td>
+</tr>
+<tr>
+<td><strong>User-Defined Model Searches</strong></td>
+<td>User-defined model searches are used in Enterprise Architect to query the in-memory database of the open Enterprise Architect project.</td>
+</tr>
+<tr>
+<td><strong>Vendor Add-ins</strong></td>
+<td>Vendor add-ins (also referred to as plug-ins) are vendor supplied software that is designed to be procedurally added to a tool to extend the base functionality of a tool. Vendor supplied add-ins are available for Word and Enterprise Architect.</td>
+</tr>
+</tbody>
+</table>
+<p>Table 9‑9. Tool Customizations (Cont’d)</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../section8-cim-uml-version-control-rules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Section 8 - CIM UML Version Control Rules">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Section 8 - CIM UML Version Control Rules
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../section10-cim-management-tools/" class="md-footer__link md-footer__link--next" aria-label="Next: Section 10 - CIM Management Tools">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Section 10 - CIM Management Tools
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2019 - 2023. All rights reserved by the UCA International CIM Users Group
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      
+    
+  </body>
+</html>
