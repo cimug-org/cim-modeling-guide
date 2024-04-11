@@ -19,7 +19,7 @@ To run the site locally use [Python](https://www.python.org/). This is cleanest 
 ```cmd
 python -m venv venv
 venv\Scripts\activate
-pip install mkdocs-material mkdocs-pdf-export-plugin mike
+pip install mkdocs-material mkdocs-pdf-export-plugin mike mkdocs-enumerate-headings-plugin
 ```
 
 Once installed, you can then run the documentation site locally with `mkdocs serve`

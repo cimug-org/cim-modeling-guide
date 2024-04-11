@@ -1,4 +1,4 @@
-# Section 4 - CIM Overview
+# CIM Overview
 
 **Background**
 
@@ -25,7 +25,7 @@ In order to achieve these two goals, the UCAIug leadership has decided that the 
 
 For the past two years the IEC TC57 CIM working groups have emphasized the importance (to their productivity) of having access to documented rules and recommendations for creating new CIM content. Up until the release of this document, CIM management guidelines resided in draft documents owned by CIM Model Managers.
 
-## 4.1 CIM UML Scope
+## CIM UML Scope
 
 The CIM UML is semantic information model that represents real-world physical electric grid objects and information entities. The CIM UML is the basis for data that is exchanged between systems to: 
 
@@ -74,7 +74,7 @@ The CIM UML is semantic information model that represents real-world physical el
 </tbody>
 </table>
 
-## 4.2 CIM Management Business Context
+## CIM Management Business Context
 
 CIM Management is a business function performed by the CIM Subcommittee of the UCAIug Technical Oversight Committee (see Figure 4‑1).
 
