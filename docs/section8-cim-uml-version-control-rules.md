@@ -1,6 +1,6 @@
-# Section 8 - CIM UML Version Control Rules
+# CIM UML Version Control Rules
 
-## 8.1 Overview
+## Overview
 
 After the top-level CIM packages have been synchronized and deployed as the complete CIM UML for use by either working groups or into the public domain, profiles will naturally be developed that have dependencies on it. When the need arises to make changes to the CIM UML, an impact assessment needs to be made to determine:
 
@@ -24,11 +24,11 @@ These issues result in the need for versioning. How versioning is implemented an
 
 The remaining subsections of this overview address these questions and provide a set of options for solving common versioning problems.
 
-### 8.1.1 The Scope of a Version
+### The Scope of a Version
 
 We have established that the CIM UML is partitioned into three top-level packages that must be merged and synchronized before being deployed for use. So, when a new version of the CIM UML is created, exactly what is being referring to must be defined.
 
-### 8.1.2 Versioning and Compatibility
+### Versioning and Compatibility
 
 The number one concern when developing and deploying a new version of the CIM UML is the impact it will have on users that will develop CIM Profiles that have dependencies on it. The measure of impact is directly related to how compatible the new CIM UML is with the old version(s) of the CIM UML.
 
@@ -43,17 +43,17 @@ This subsection establishes the fundamental types of compatibility that relate t
 
 <span id="_Ref22373775" class="anchor"></span>Table 8‑1. Compatibility Types
 
-### 8.1.3 Version Identifiers
+### Version Identifiers
 
 Version identifiers always follow some version identification pattern. The version identification pattern used must not only express the version number at the CIM UML level, but right down to the lowest level changeable element or element property. The version identification patterns for the CIM UML are specified in section 8.2.3, Version Identification.
 
-### 8.1.4 Versioning Strategies
+### Versioning Strategies
 
 There is no one versioning strategy that is right for everyone. Because versioning represents a governance-related phase in the overall lifecycle of the CIM UML, it is a practice that is subject to conventions, preferences, and requirements that are distinct to CIM Management.
 
 Even though there is no de facto versioning strategy for UML models, a number of advocated versioning strategies have emerged, each with its own benefits and tradeoffs. This sub-section will cover the three known versioning strategies considered for the CIM UML.
 
-#### 8.1.4.1 The Strict Strategy
+#### The Strict Strategy
 
 The Strict Strategy is the simplest approach to CIM UML versioning. Any compatible or incompatible changes result in a new version of the CIM UML. This approach is commonly implemented by changing the target namespace value. In effect, namespaces are used for version identification instead of a version attribute because changing the namespace value automatically forces a change in all CIM Profiles that need to access the new version of the CIM UML.
 
@@ -67,7 +67,7 @@ On the downside, by forcing a new namespace upon the CIM UML with each change, i
 
 Therefore, this strategy will increase the governance burden on users of the CIM UML and will require careful transitioning strategies. Having two or more version of the CIM UML at the same time can become a common requirement for which a supporting infrastructure will need to be prepared.
 
-#### 8.1.4.2 The Flexible Strategy
+#### The Flexible Strategy
 
 A common strategy used to balance practical considerations with an attempt at minimizing the impact of changes to the CIM UML is to allow compatible changes to occur without forcing a new CIM UML version, while not attempting to support forwards compatibility at all.
 
@@ -81,7 +81,7 @@ The primary advantage to this strategy is that it can be used to accommodate a v
 
 However, when compatibility changes are made, these changes become permanent and cannot be reversed without introducing an incompatible change. Therefore, a governance process is required during which each proposed change is evaluated to ensure CIM Profiles do not become overly bloated or convoluted.
 
-#### 8.1.4.3 The Loose Strategy
+#### The Loose Strategy
 
 As with the previous two strategies, this strategy requires that incompatible changes result in a new version of the CIM UML. The difference is the changes are modeled in the CIM UML to be intrinsically extensible so that the CIM UML remains able to support a broad range of future, unknown data exchange requirements. Since the CIM UML is, by definition, a semantic information model, it is structured to be intrinsically extensible.
 
@@ -89,7 +89,7 @@ As with the previous two strategies, this strategy requires that incompatible ch
 
 The fact that all attributes are optional and most associations have an undefined upper range provides a constant opportunity to further expand the CIM UML. On the other hand, there is a governance process required during which each proposed change is evaluated to ensure CIM Profiles do not become overly bloated or convoluted.
 
-#### 8.1.4.4 Summary Table
+#### Summary Table
 
 Table 8‑2 broadly summarizes how the three strategies compare based on three fundamental characteristics.
 
@@ -110,27 +110,27 @@ The three characteristics used in this table to form the basis of this compariso
 
 <span id="_Ref22387240" class="anchor"></span>Table 8‑2. A general comparison of the three versioning strategies.
 
-## 8.2 Version Control Strategy
+## Version Control Strategy
 
 The version control strategy is expressed as a set of rules that address version scope, version compatibility, and version identification. The following sub-sections address each area, respectively.
 
 **NOTE**: The versioning strategy presented here is still under discussion amongst the CIM managers and is subject to change once discussions are completed. The versioning strategy will then be updated to reflect any changes.
 
-### 8.2.1 Version Scope
+### Version Scope
 
 | **RuleID** | **Description** |
 |------------|-----------------|
 | Rule225 | A new version of a top-level package shall be created when the contents of the top-level package (which includes any of its normative sub-packages) has been changed, and the change has been verified by the appropriate CIM model manager. |
 | Rule226 | A new version of the CIM UML shall be created when a new version of a top-level package has been created. |
 
-### 8.2.2 Version Compatibility
+### Version Compatibility
 
 | **RuleID** | **Description** |
 |------------|-----------------|
 | Rule227 | A new version of the CIM UML shall be considered backwards-compatible if it continues to support CIM Profiles designed to work with the old version of the CIM UML (i.e. the changes incorporated in the new version of the CIM UML are compatible changes). |
 | Rule228 | A new version of the CIM UML shall be considered not backwards-compatible if it does not support CIM Profiles designed to work with the old version of the CIM UML. |
 
-### 8.2.3 Version Identification
+### Version Identification
 
 Version identification rules are based on the needs of the CIM UML users. There are two types of CIM UML users: 1) working group members involved in the development of standards; and 2) the broader CIM community (end users). Each type of user has different requirements for version identification.
 

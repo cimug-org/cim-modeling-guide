@@ -1,6 +1,6 @@
-# Section 2 - References
+# References
 
-## 2.1 Normative References
+## Normative References
 
 The following IEC documents, and the other identified references herein contain information which, through reference in this text, constitute normative provisions of this document. At the time of publication, the editions indicated were valid. All IEC documents, and other normative references are subject to revision. All users of this document are therefore encouraged to investigate the possibility of applying the most recent edition of the references listed below.
 
@@ -12,7 +12,7 @@ The following IEC documents, and the other identified references herein contain 
 | TC57-Glossary | IEC TC57 Glossary |
 | UML-2.5.1 | Unified Modeling Language Specification Version 2.5.1. Object Management Group December 2017 |
 
-## 2.2 Informative References
+## Informative References
 
 The following documents referenced herein contain information which is not binding and does not constitute provisions of this document. The information referenced in this text is informative and supportive information intended to enhance the comprehension of this document.
 

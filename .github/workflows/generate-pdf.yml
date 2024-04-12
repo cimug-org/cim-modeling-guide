@@ -1,32 +1,23 @@
 name: Generate CIM Modeling Guide PDF
-on:
-  push:
-  release:
-    types: [published]
-  pull_request:
-    branches: [ "master" ]
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout this repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Install/setup Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.x
-    - name: Install mkdocs documentation tool
-      run: pip install mkdocs-material
-    - name: Install PDF export plugin dependency (Pango)
-      run: sudo apt install libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0
-    - name: Install PDF export plugin for mkdocs
-      run: pip install mkdocs-pdf-export-plugin
+        python-version: 3.9
+    - name: Install mkdocs documentation tool and plugins
+      run: pip install -r requirements.txt
     - name: Build the documentation including PDF
       run: mkdocs build
       env:
         ENABLE_PDF_EXPORT: 1
     - name: Upload CIM Modeling Guide PDF as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: CIM_Modeling_Guide.pdf
-        path: site/CIM_Modeling_Guide.pdf
+        path: site/pdf/CIM_Modeling_Guide.pdf

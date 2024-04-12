@@ -1,6 +1,6 @@
-# Section 5 - CIM UML Modeling Rules and Recommendations
+# CIM UML Modeling Rules and Recommendations
 
-## 5.1 Overview
+## Overview
 
 This section describes rules and recommendations on how to use the UML to model electric utility domain information. The UML does not include a step-by-step model development process. It is a general-purpose modeling language that all modelers can use. The primary goal behind CIM UML modeling rules and recommendations is to ensure a well-formed, consistent semantic information model is maintained in order to facilitate communication and understanding among people working with the CIM.
 
@@ -12,25 +12,25 @@ Due to the evolving nature of the CIM, there are notable rule exceptions through
 
 - special circumstances warrant the need for an exception
 
-### 5.1.1 UML Concepts Used in the CIM
+### UML Concepts Used in the CIM
 
 The CIM uses a very small subset of UML concepts. UML concepts and models can be grouped into the following concept areas: 1) static structure; 2) dynamic behavior; 3) implementation constructs; 4) model organization; and 5) extensibility mechanisms. The CIM only uses UML concepts in the static structure and model organization concept areas.
 
-### 5.1.2 UML Static Structure Concepts
+### UML Static Structure Concepts
 
 The CIM uses UML concepts that model utility domain concepts, their internal properties, and their relationships to each other. Utility domain concepts are modeled as classes, each of which describes a set of discrete objects that hold information. Utility domain concept properties are modeled as class attributes. The relationships between utility domain concepts are modeled as class associations or generalisations. Many classes share common structure using generalisation. Static structure concepts are viewed using class diagrams.
 
-### 5.1.3 UML Model Organization Concepts
+### UML Model Organization Concepts
 
 The CIM uses UML packages to organize modeling information. Packages are general-purpose hierarchical organizational units of UML models. The purpose of packages in the CIM is mainly for controlling working group ownership, with sub-packages mainly representing conceptual organization. This usage of the package structure allows for relatively easy movement of classes among packages without impacting concrete implementations. It also defines the area of responsibility for model managers.
 
 The CIM also uses UML dependencies among packages to impose an overall model architecture. The contents of the packages must conform to the package dependencies and to the imposed model structure.
 
-## 5.2 Model Structure Rules
+## Model Structure Rules
 
 Model structure rules address UML metamodel rules, and the structure, dependencies, and assembly of CIM packages.
 
-### 5.2.1 UML Metamodel Rules
+### UML Metamodel Rules
 
 <table>
 <colgroup>
@@ -69,7 +69,7 @@ Model structure rules address UML metamodel rules, and the structure, dependenci
 </tbody>
 </table>
 
-### 5.2.2 Package Structure Rules
+### Package Structure Rules
 
 <u>Overview</u>
 
@@ -141,7 +141,7 @@ Both the legacy and new top-level package structure are shown in Figure 5‑1 an
 </tbody>
 </table>
 
-### 5.2.3 Package Dependency Rules
+### Package Dependency Rules
 
 The concept of package dependencies is critical to both the understanding of model ownership among working groups and the practical integration or assembly of packages from different owners. An additional package is maintained outside of the IEC working group packages to describe the dependencies among the packages of each working group. This package, named “PackageDependencies” contains a figure illustrating these dependencies as shown in Figure 5-3 UML package dependencies (for illustration, not official CIM standard). As such the PackageDependencies package is itself dependent upon all the other major packages
 
@@ -217,7 +217,7 @@ Types used for attributes in a class introduce dependencies that must be coordin
 
 <span id="_Ref532235977" class="anchor"></span>Figure 5‑3. Top-level CIM (formerly TC57CIM) Package Dependencies
 
-### 5.2.4 Package Assembly Rules
+### Package Assembly Rules
 
 Each working group edits what it owns and merges what others own. With three working groups this results in six possible ways to exchange portioned model files between the groups as shown in Figure 5-4.
 
@@ -308,7 +308,7 @@ The best practice is to always import and work with the standard packages upon w
 </tbody>
 </table>
 
-## 5.3 Package Rules
+## Package Rules
 
 The purpose of packages in the CIM model is mainly for controlling working group ownership, with sub-packages mainly representing conceptual organization. This usage of the package structure allows for relatively easy movement of classes among packages without impacting concrete implementations.
 
@@ -392,7 +392,7 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 </tbody>
 </table>
 
-### 5.3.2 Package Specification Rules
+### Package Specification Rules
 
 | **RuleID** | **Description** |
 |------------|-----------------|
@@ -400,7 +400,7 @@ Package names start with upper case (UpperCamelCase rule). Package names must be
 | Rule036 | “Doc” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages. |
 | Rule037 | “DetailedDiagram” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages. |
 
-## 5.4 Class Rules
+## Class Rules
 
 The following UML class features are used in CIM:
 
@@ -444,7 +444,7 @@ Classes should be ordered alphabetically or in order of importance or by logical
 | Rule047 | CIM classes with a stereotype other than **&lt;&lt;deprecated&gt;&gt;** shall only be used as datatypes for attributes. |
 | Rule048 | CIM classes should be ordered alphabetically or in order of importance or by logical grouping within a package. |
 
-## 5.5 Attribute Rules
+## Attribute Rules
 
 The following UML attribute features (i.e. available in the "Properties" Pane in Sparx EA) are used in CIM:
 
@@ -531,7 +531,7 @@ The attribute order should normally be alphabetical unless there is some clear r
 </tbody>
 </table>
 
-## 5.6 Association Rules
+## Association Rules
 
 Associations describe how classes are related. Only classes describing domain objects, i.e. classes without data type stereotypes such as **&lt;&lt;enumeration&gt;&gt;**, **&lt;&lt;Primitive&gt;&gt;**, **&lt;&lt;Compound&gt;&gt;**, or **&lt;&lt;CIMDatatype&gt;&gt;**, may participate in associations.
 
@@ -669,7 +669,7 @@ Multiplicities shall be chosen to specify what can be expected in the domain. Mu
 </tbody>
 </table>
 
-## 5.7 Enumeration Rules
+## Enumeration Rules
 
 Enumeration literals are attributes within an **&lt;&lt;enumeration&gt;&gt;** type. The following UML attribute features are used in CIM:
 
@@ -761,7 +761,7 @@ There is no ordering required or reinforced; the order found in the UML model wi
 </tbody>
 </table>
 
-## 5.8 Diagram Rules
+## Diagram Rules
 
 The following UML diagram features are used in CIM:
 
@@ -791,7 +791,7 @@ Diagrams should be placed inside of packages (the normal case) or classes (e.g. 
 | Rule102 | Diagrams should be placed inside of packages (the normal case) or classes (e.g. in Dynamics package). |
 | Rule103 | The order of diagrams in the package should be from most general to most specific. |
 
-## 5.9 Element Description Rules
+## Element Description Rules
 
 Make sure to add a description to the UML elements (package, diagram, class, attribute, association ends etc.) when creating them. The description shall explain the meaning of the entity as clearly as possible. It is often useful to search dictionaries and the web for good descriptions.
 
@@ -870,7 +870,7 @@ Avoid using mark-up in the documentation (e.g., bold, lists, superscripts). Note
 </tbody>
 </table>
 
-## 5.10 Inheritance Rules
+## Inheritance Rules
 
 Inheritance is used to specialise an existing class. The inheriting class is more specific than the base class. Inheritance is the strongest possible dependency; it is often misused and should be used with care (note: everything that can be expressed through inheritance could also be expressed through composition).
 
@@ -888,9 +888,9 @@ Inheritance should never create situations where attribute names or role names a
 | Rule118  | Inheritance should never create situations where attribute names or role names are duplicated or “override” within the inheritance lineage. |
 | Rule119 | Inheritance shall not be used with stereotyped classes. |
 
-## 5.11 Stereotype Rules
+## Stereotype Rules
 
-### 5.11.1 General and **&lt;&lt;Deprecated&gt;&gt;** Stereotype Rules
+### General and **&lt;&lt;Deprecated&gt;&gt;** Stereotype Rules
 
 This stereotype is recognised by the CIM UML validation and document generation tool and can be applied to any of the UML concepts defined below. The typical usage of the **&lt;&lt;deprecated&gt;&gt;** stereotype is for the purpose of preserving backwards compatibility for the normative, already published content, during a release or two, while indicating to the users that the item is likely to actually be removed in the future. This is a graceful means of phasing out obsolete or re-factored elements, and leaving some time to the users to provide implementation in terms of the new features replacing those marked with **&lt;&lt;deprecated&gt;&gt;**.
 
@@ -907,13 +907,13 @@ The **&lt;&lt;deprecated&gt;&gt;** strereotype may be used on attributes, associ
 | Rule124 | Usage of the **&lt;&lt;deprecated&gt;&gt;** stereotype should be for the purpose of preserving backwards compatibility for normative, already published content. |
 | Rule125 | The **&lt;&lt;deprecated&gt;&gt;** stereotype should be used for no more than two (2) releases of the CIM. |
 
-### 5.11.2 Package Stereotype Rules
+### Package Stereotype Rules
 
 | **RuleID** | **Description** |
 |------------|-----------------|
 | Rule126    | A package stereotype may be used temporarily to describe the development state of the package, e.g. **&lt;&lt;Work in progress&gt;&gt;**. Once the package is fully incorporated in the model the stereotype shall be removed. |
 
-### 5.11.3 Class Stereotype Rules
+### Class Stereotype Rules
 
 | **RuleID** | **Description** |
 |------------|-----------------|
@@ -923,7 +923,7 @@ The **&lt;&lt;deprecated&gt;&gt;** strereotype may be used on attributes, associ
 | Rule130 | The **&lt;&lt;enumeration&gt;&gt;** stereotype shall be used to extend the semantics of the UML class element to represent a data type whose instances form a list of named literal values. |
 | Rule131 | A CIM class that represents a domain object that participates in inheritance and / or association relationships shall not use a stereotype with the exception of the **&lt;&lt;deprecated&gt;&gt;** stereotype specified in \[Rule 124\]. |
 
-## 5.12 Namespace Rules
+## Namespace Rules
 
 Namespaces are specified at level of packages in the CIM UML model. The namespaces apply to classes, attributes, association ends, data types (**&lt;&lt;CIMDatatype&gt;&gt;**, **&lt;&lt;Compound&gt;&gt;**, **&lt;&lt;Primitive&gt;&gt;**, and **&lt;&lt;enumeration&gt;&gt;**) and enums. Namespaces are useful for marking the source of CIM models for either standards or extensions.
 
@@ -1068,7 +1068,7 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 </tbody>
 </table>
 
-## 5.13 Documentation Rules
+## Documentation Rules
 
 | **RuleID** | **Description** |
 |------------|-----------------|
