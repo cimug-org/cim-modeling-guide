@@ -1,5 +1,5 @@
 
-# Section 3 - Definitions
+# Definitions
 
 For the purposes of this document the following definitions apply:
 
