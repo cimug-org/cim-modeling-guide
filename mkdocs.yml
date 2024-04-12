@@ -4,6 +4,7 @@ theme:
   palette:
     primary: white
   logo: images/media/logo-gray.png
+  favicon: images/media/logo-white.png
   name: material
   features:
     - content.code.copy
@@ -18,19 +19,43 @@ markdown_extensions:
   - pymdownx.details
 plugins:
   - search
-  - pdf-export:
+  - enumerate-headings:
+      toc_depth: 6
+      exclude:
+        - index.md
+  - with-pdf:
+      copyright:   Version 1.1, © February 2021. All rights reserved by the UCA International Users Group
+      cover: true
+      cover_title: CIM Modeling Guide
+      cover_subtitle: Version 1.1, © February 2021
+      toc_title: Table of Contents
+      heading_shift: true
+      ordered_chapter_level: 0
+      toc_level: 3
+      show_anchors: true
       enabled_if_env: ENABLE_PDF_EXPORT
-      combined: true
-      combined_output_path: CIM_Modeling_Guide.pdf
+      output_path: pdf/CIM_Modeling_Guide.pdf
+  # This 'mike' plugin is for publishing multiple versions see https://github.com/jimporter/mike
+  - mike: 
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+extra:
+  version:
+    provider: mike
 nav:
   - 'index.md'
-  - 'section1-introduction.md'
-  - 'section2-references.md'
-  - 'section3-definitions.md'
-  - 'section4-cim-overview.md'
-  - 'section5-cim-uml-modeling-rules-and-recommendations.md'
-  - 'section6-cim-uml-extension-rules-and-recommendations.md'
-  - 'section7-cim-uml-transformation-rules-and-recommendations.md'
-  - 'section8-cim-uml-version-control-rules.md'
-  - 'section9-artifacts-under-cim-management.md'
-  - 'section10-cim-management-tools.md'
+  - '1. Introduction': 'section1-introduction.md'
+  - '2. References': 'section2-references.md'
+  - '3. Definitions': 'section3-definitions.md'
+  - '4. CIM Overview': 'section4-cim-overview.md'
+  - '5. CIM UML Modeling Rules and Recommendations': 'section5-cim-uml-modeling-rules-and-recommendations.md'
+  - '6. CIM UML Extension Rules and Recommendations': 'section6-cim-uml-extension-rules-and-recommendations.md'
+  - '7. CIM UML Transformation Rules and Recommendations': 'section7-cim-uml-transformation-rules-and-recommendations.md'
+  - '8. CIM UML Version Control Rules': 'section8-cim-uml-version-control-rules.md'
+  - '9. Artifacts Under CIM Management': 'section9-artifacts-under-cim-management.md'
+  - '10. CIM Management Tools': 'section10-cim-management-tools.md'
