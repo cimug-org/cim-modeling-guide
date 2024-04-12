@@ -32,8 +32,18 @@ plugins:
       ordered_chapter_level: 0
       toc_level: 3
       show_anchors: true
-      enabled_if_env: ENABLE_PDF_EXPORT
-      output_path: pdf/CIM_Modeling_Guide.pdf
+  # This 'mike' plugin is for publishing multiple versions see https://github.com/jimporter/mike
+  - mike: 
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+extra:
+  version:
+    provider: mike
 nav:
   - 'index.md'
   - '1. Introduction': 'section1-introduction.md'
