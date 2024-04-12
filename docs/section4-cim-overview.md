@@ -1,4 +1,4 @@
-# Section 4 - CIM Overview
+# CIM Overview
 
 **Background**
 
@@ -25,7 +25,7 @@ In order to achieve these two goals, the UCAIug leadership has decided that the 
 
 For the past two years the IEC TC57 CIM working groups have emphasized the importance (to their productivity) of having access to documented rules and recommendations for creating new CIM content. Up until the release of this document, CIM management guidelines resided in draft documents owned by CIM Model Managers.
 
-## 4.1 CIM UML Scope
+## CIM UML Scope
 
 The CIM UML is semantic information model that represents real-world physical electric grid objects and information entities. The CIM UML is the basis for data that is exchanged between systems to: 
 
@@ -122,33 +122,33 @@ The CIM Technical Subcommittee is responsible for handling all technical and mai
 
       - Maintain repositories for sample CIM/XML/RDF power system model files
 
-## 4.3 CIM Management Functions
+## CIM Management Functions
 
-### 4.3.1 Model Change Management
+### Model Change Management
 
 Model change management (MCM) is the ongoing process of identifying and managing CIM UML change requests. A model change management plan (MCMP) is developed to define, document and track the information required to effectively manage change requests throughout the CIM UML development life cycle.
 
-### 4.3.2 Model Change Validation
+### Model Change Validation
 
 Model change validation (MCV) is the ongoing process of ensuring proposed CIM UML changes are in compliance with CIM modeling rules.
 
-### 4.3.3 Model Change Implementation
+### Model Change Implementation
 
 Model change implementation (MCI) is the ongoing process of making changes to an existing CIM UML baseline to create a new CIM UML baseline.
 
-### 4.3.4 Configuration Management
+### Configuration Management
 
 Configuration management (CM) is the ongoing process of identifying and managing changes to the CIM UML and other work products. A configuration management plan (CM Plan) is developed to define, document, control, implement, account for, and audit changes to the various CIM configuration items. The CM Plan provides information on the requirements and procedures necessary for CMP activities and establishes the methodology for configuration identification and control of releases and changes to configuration items. It also describes the process for maintaining status accounting and verifying the completeness and correctness of configuration items throughout the CIM UML development life cycle.
 
-### 4.3.5 Model Distribution
+### Model Distribution
 
 Model distribution (MD) is the ongoing process of distributing CIM UML baselines to official repositories and authorized consumers of the CIM UML.
 
-### 4.3.6 Continuous Process Improvement
+### Continuous Process Improvement
 
 Continuous process improvement (CPI) is the ongoing process of improving the CIM management processes through incremental and breakthrough improvements. The goal of CPI is to improve the quality of the CIM UML or the efficiency of the CIM management processes.
 
-### 4.3.7 CIM Management Function Mappings
+### CIM Management Function Mappings
 
 Mapping of the CIM management functions includes two (2) mappings of the CIM management functions. The first shows the mapping between CIM management functions and CIM management responsibilities assigned to the CIM Subcommittee with the UCAIug. The second shows the mapping between CIM management functions and the CIM management processes that realize those functions. The first mapping is shown in Figure 4‑2. The second mapping is discussed in Section 4.4 and shown in Figure 4‑9
 
@@ -157,7 +157,7 @@ Mapping of the CIM management functions includes two (2) mappings of the CIM man
 
 <span id="_Ref1988984" class="anchor"></span>Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping
 
-## 4.4 CIM Management Processes
+## CIM Management Processes
 
 CIM management processes are the realization of CIM management functions. There are five (5) CIM management processes. The CIM management processes are shown in Figure 4‑3. A list of the processes and their descriptions are provided in Table 4‑2.
 
@@ -195,7 +195,7 @@ CIM management processes are the realization of CIM management functions. There 
 
 <span id="_Ref1995527" class="anchor"></span>Figure 4‑8. Continuous Process Improvement Process Flow
 
-### 4.4.1 CIM Management Process Mappings
+### CIM Management Process Mappings
 
 The mapping between CIM management functions and the CIM management processes are shown in Figure 4‑9.
 
@@ -217,9 +217,9 @@ The CIM Model Managers perform most of the tasks within the CIM management proce
 
 <span id="_Toc25586011" class="anchor"></span>Table 4‑3. Role-to-CIM Management Process Mapping
 
-## 4.5 CIM Management Process Integration with the IEC Standards Process
+## CIM Management Process Integration with the IEC Standards Process
 
-### 4.5.1 IEC Standards Development Process
+### IEC Standards Development Process
 
 As IEC standards, the CIM standards must go through the IEC international standards development process to be published. An IEC International Standard is the result of an agreement between the National Committees of the IEC. The IEC standard development process and the documents created in the process are shown in Figure 4‑10. A description of the IEC stages is provided in Table 4‑4.
 
@@ -275,7 +275,7 @@ As IEC standards, the CIM standards must go through the IEC international standa
 </tbody>
 </table>
 
-### 4.5.2 Process Integration Points
+### Process Integration Points
 
 The CIM management processes integrate with the IEC standards development process because the CIM UML provides the basis for IEC CIM standards. There are two types of integration points between the two processes: 1) draft standards preparation; and 2) draft standards submission.
 
@@ -290,10 +290,10 @@ A mapping between the applicable IEC standards development stages and the CIM Ma
 | Document Generation Process | | | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | |
 | Artifact Distribution Process | | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> | <img src="/images/media/image12.png" style="width:0.15518in;height:0.17674in" alt="Image result for check mark" /> |
 
-#### 4.5.2.1 Draft Standards Preparation
+#### Draft Standards Preparation
 
 The intermediate draft standards submitted to the IEC are produced during the execution of the Model Development process and the Document Generation process. CIM UML changes are incorporated to form the basis of the draft standards. Therefore, the Change Management process is also part of draft standards preparation.
 
-#### 4.5.2.2 Draft Standards Submission
+#### Draft Standards Submission
 
 The submission of the draft standards to the IEC takes place during the Artifact Distribution process. The IEC is considered one of the subscribers for the draft standards in the process.

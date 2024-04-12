@@ -1,10 +1,10 @@
-# Section 9 - Artifacts Under CIM Management
+# Artifacts Under CIM Management
 
-## 9.1 Overview
+## Overview
 
 Artifacts under CIM Management consist of: 1) model artifacts (CIM Artifacts); 2) draft standards; 3) CIM Schemas; 4) CIM Management documents and records; and 5) tool customizations. These artifacts are described in this section.
 
-### 9.1.1 Draft Standards Artifacts
+### Draft Standards Artifacts
 
 As IEC standards, the CIM standards must go through the IEC standards development process to be published (see Section 8.1). This process results in the creation of several draft standard artifacts as intermediate work products. The types IEC draft standard artifacts under CIM management are listed below. The description of each type of draft standard is provided in Section 8.1.
 
@@ -16,7 +16,7 @@ As IEC standards, the CIM standards must go through the IEC standards developmen
 
 4.  Final Draft International Standard FDIS)
 
-## 9.2 CIM Artifacts
+## CIM Artifacts
 
 CIM Artifacts are model artifacts that are maintained in the Sparx Systems Enterprise Architect modeling tool. CIM Artifacts are stored in four (4) file formats: 1) as an EA project file in the native EA file format (\*.eap or \*.eapx); 2) in the ZIP compressed file format (\*.zip); 3) in the XML Metadata Interchange file format (\*.xmi); and 4) as a collection of web pages in HyperText Markup Language file format (\*.html). The EA project file is also exported and maintained as a Web Ontology Language project file (\*.owl). The CIM Artifacts under CIM Management are listed and described in Table 9‑1.
 
@@ -28,7 +28,7 @@ CIM Artifacts are model artifacts that are maintained in the Sparx Systems Enter
 
 <span id="_Ref22120330" class="anchor"></span>Table 9‑1. CIM Artifacts Under CIM Management
 
-## 9.3 Model Documents
+## Model Documents
 
 Model documents are CIM standards that are derived from the CIM UML using the CIM document generation tool jCleanCim. Draft versions of the CIM standard model documents under CIM Management are listed and described in Table 9‑2.
 
@@ -41,7 +41,7 @@ Model documents are CIM standards that are derived from the CIM UML using the CI
 
 <span id="_Ref22125995" class="anchor"></span>Table 9‑2. Model Documents Under CIM Management
 
-## 9.4 CIM Profiles
+## CIM Profiles
 
 A CIM Profile is a subset of the full CIM UML that is derived to define data exchanges required between systems. Each profile is a collection of classes, attributes and references along with additional restrictions such as making attributes mandatory or restricting the cardinalities on associations. Draft versions of CIM standard profiles are artifacts under CIM Management. Also included as a CIM Profile is 61968-1 which is not a subset of the CIM UML; it is a reference to be used in the development of CIM Profiles. The CIM Profiles under CIM Management are listed and described in Table 9‑3.
 
@@ -179,9 +179,9 @@ A CIM Profile is a subset of the full CIM UML that is derived to define data exc
 
 **Table 9‑3. CIM Profiles Under CIM Management (Cont’d)**
 
-## 9.5 CIM Schemas
+## CIM Schemas
 
-### 9.5.1 Background
+### Background
 
 XML, the eXtensible Markup Language, is a “universal format for structured documents and data” which is quickly becoming the standard for storing machine-readable data in a structured, extensible format that is accessible over the Internet. XML uses *tags* to denote the elements within XML documents.
 
@@ -191,7 +191,7 @@ CIM Schemas provide the constraints on the structure and contents of CIM based X
 
 The following subsections list and describe the CIM Schemas under CIM Management. Some of the CIM Schemas are IEC International Standards and some are schemas derived from CIM Profiles.
 
-### 9.5.2 RDF Schemas
+### RDF Schemas
 
 The RDF schemas under CIM management are listed and described in Table 9‑4.
 
@@ -206,7 +206,7 @@ The RDF schemas under CIM management are listed and described in Table 9‑4.
 
 **Table 9‑4. RDF Schemas Under CIM Management (Cont’d)**
 
-### 9.5.3 XML Schemas
+### XML Schemas
 
 The XML schemas under CIM management are listed and described in Table 9‑5.
 
@@ -266,7 +266,7 @@ The XML schemas under CIM management are listed and described in Table 9‑5.
 
 **Table 9‑5. XML Schemas Under CIM Management (Cont’d)**
 
-### 9.5.4 Hybrid Schemas
+### Hybrid Schemas
 
 The Hybrid schemas under CIM management are listed and described in Table 9‑6.
 
@@ -292,13 +292,13 @@ The Hybrid schemas under CIM management are listed and described in Table 9‑6.
 </tbody>
 </table>
 
-## 9.6 CIM Management Documents and Records
+## CIM Management Documents and Records
 
 CIM management documents are electronic or paper objects that contain instructions for tasks, requirements for how and when to perform a task or function, and logs the task execution and decisions. CIM management documents can communicate and share information and knowledge. Examples of CIM management documents include procedures, protocols, methods, and specifications.
 
 CIM records are a subset of CIM management documents that provide evidence that actions were taken and decisions were made in keeping with procedures; they can serve as evidence of the Working Group’s activity and compliance with IEC processes and procedures.
 
-### 9.6.1 CIM Management Documents
+### CIM Management Documents
 
 Table 9‑7 is a list and description of CIM Management Documents maintained by CIM model managers.
 
@@ -313,7 +313,7 @@ Table 9‑7 is a list and description of CIM Management Documents maintained by 
 | **Model Manager Checklist** | The Model Manager Checklist is a list of tasks that need to be completed as a matter of course in implementing a model change request. Currently there is a Model Manager Checklist maintained for each working group. |
 | **Working Group Issues List** | The working group issues list is a collection of issues raised by a working group concerning the CIM UML contained in their respective top-level CIM package. The issues on these lists can be resolved without involving other working groups. |
 
-### 9.6.2 CIM Records
+### CIM Records
 
 Table 9‑8 is a list and description of CIM Records managed by CIM model managers.
 
@@ -333,7 +333,7 @@ Table 9‑8 is a list and description of CIM Records managed by CIM model manage
 
 **Table 9‑8. CIM Records (Cont’d)**
 
-## 9.7 Tool Customizations
+## Tool Customizations
 
 Tool customizations are artifacts that facilitate or help automate tasks performed by CIM Model Mangers in conjunction with a software tool. Table 9‑9 is a list and description of Tool customizations managed by CIM Model Managers.
 
