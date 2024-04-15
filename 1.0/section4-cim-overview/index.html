@@ -1,0 +1,957 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../section3-definitions/" rel="prev"/>
+<link href="../section5-cim-uml-modeling-rules-and-recommendations/" rel="next"/>
+<link href="../images/media/logo-white.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.17" name="generator"/>
+<title>4. CIM Overview - CIM Modeling Guide</title>
+<link href="../assets/stylesheets/main.bcfcd587.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="white" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#cim-overview">4. 
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="CIM Modeling Guide" class="md-header__button md-logo" data-md-component="logo" href=".." title="CIM Modeling Guide">
+<img alt="logo" src="../images/media/logo-gray.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            CIM Modeling Guide
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              4. CIM Overview
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/CIMug-org/cim-modeling-guide" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="CIM Modeling Guide" class="md-nav__button md-logo" data-md-component="logo" href=".." title="CIM Modeling Guide">
+<img alt="logo" src="../images/media/logo-gray.png"/>
+</a>
+    CIM Modeling Guide
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/CIMug-org/cim-modeling-guide" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section1-introduction/">
+<span class="md-ellipsis">
+    1. Introduction
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section2-references/">
+<span class="md-ellipsis">
+    2. References
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section3-definitions/">
+<span class="md-ellipsis">
+    3. Definitions
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    4. CIM Overview
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    4. CIM Overview
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-uml-scope">4.1 
+<span class="md-ellipsis">
+      CIM UML Scope
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-cim-management-business-context">4.2 
+<span class="md-ellipsis">
+      4.2 CIM Management Business Context
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-functions">4.3 
+<span class="md-ellipsis">
+      CIM Management Functions
+    </span>
+</a>
+<nav aria-label="CIM Management Functions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-change-management">4.3.1 
+<span class="md-ellipsis">
+      Model Change Management
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-change-validation">4.3.2 
+<span class="md-ellipsis">
+      Model Change Validation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-change-implementation">4.3.3 
+<span class="md-ellipsis">
+      Model Change Implementation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration-management">4.3.4 
+<span class="md-ellipsis">
+      Configuration Management
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-distribution">4.3.5 
+<span class="md-ellipsis">
+      Model Distribution
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#continuous-process-improvement">4.3.6 
+<span class="md-ellipsis">
+      Continuous Process Improvement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-function-mappings">4.3.7 
+<span class="md-ellipsis">
+      CIM Management Function Mappings
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-processes">4.4 
+<span class="md-ellipsis">
+      CIM Management Processes
+    </span>
+</a>
+<nav aria-label="CIM Management Processes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-process-mappings">4.4.1 
+<span class="md-ellipsis">
+      CIM Management Process Mappings
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-process-integration-with-the-iec-standards-process">4.5 
+<span class="md-ellipsis">
+      CIM Management Process Integration with the IEC Standards Process
+    </span>
+</a>
+<nav aria-label="CIM Management Process Integration with the IEC Standards Process" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iec-standards-development-process">4.5.1 
+<span class="md-ellipsis">
+      IEC Standards Development Process
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#process-integration-points">4.5.2 
+<span class="md-ellipsis">
+      Process Integration Points
+    </span>
+</a>
+<nav aria-label="Process Integration Points" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#draft-standards-preparation">4.5.2.1 
+<span class="md-ellipsis">
+      Draft Standards Preparation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#draft-standards-submission">4.5.2.2 
+<span class="md-ellipsis">
+      Draft Standards Submission
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section5-cim-uml-modeling-rules-and-recommendations/">
+<span class="md-ellipsis">
+    5. CIM UML Modeling Rules and Recommendations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section6-cim-uml-extension-rules-and-recommendations/">
+<span class="md-ellipsis">
+    6. CIM UML Extension Rules and Recommendations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section7-cim-uml-transformation-rules-and-recommendations/">
+<span class="md-ellipsis">
+    7. CIM UML Transformation Rules and Recommendations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section8-cim-uml-version-control-rules/">
+<span class="md-ellipsis">
+    8. CIM UML Version Control Rules
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section9-artifacts-under-cim-management/">
+<span class="md-ellipsis">
+    9. Artifacts Under CIM Management
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section10-cim-management-tools/">
+<span class="md-ellipsis">
+    10. CIM Management Tools
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-uml-scope">4.1 
+<span class="md-ellipsis">
+      CIM UML Scope
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#42-cim-management-business-context">4.2 
+<span class="md-ellipsis">
+      4.2 CIM Management Business Context
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-functions">4.3 
+<span class="md-ellipsis">
+      CIM Management Functions
+    </span>
+</a>
+<nav aria-label="CIM Management Functions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-change-management">4.3.1 
+<span class="md-ellipsis">
+      Model Change Management
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-change-validation">4.3.2 
+<span class="md-ellipsis">
+      Model Change Validation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-change-implementation">4.3.3 
+<span class="md-ellipsis">
+      Model Change Implementation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration-management">4.3.4 
+<span class="md-ellipsis">
+      Configuration Management
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-distribution">4.3.5 
+<span class="md-ellipsis">
+      Model Distribution
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#continuous-process-improvement">4.3.6 
+<span class="md-ellipsis">
+      Continuous Process Improvement
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-function-mappings">4.3.7 
+<span class="md-ellipsis">
+      CIM Management Function Mappings
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-processes">4.4 
+<span class="md-ellipsis">
+      CIM Management Processes
+    </span>
+</a>
+<nav aria-label="CIM Management Processes" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-process-mappings">4.4.1 
+<span class="md-ellipsis">
+      CIM Management Process Mappings
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cim-management-process-integration-with-the-iec-standards-process">4.5 
+<span class="md-ellipsis">
+      CIM Management Process Integration with the IEC Standards Process
+    </span>
+</a>
+<nav aria-label="CIM Management Process Integration with the IEC Standards Process" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iec-standards-development-process">4.5.1 
+<span class="md-ellipsis">
+      IEC Standards Development Process
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#process-integration-points">4.5.2 
+<span class="md-ellipsis">
+      Process Integration Points
+    </span>
+</a>
+<nav aria-label="Process Integration Points" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#draft-standards-preparation">4.5.2.1 
+<span class="md-ellipsis">
+      Draft Standards Preparation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#draft-standards-submission">4.5.2.2 
+<span class="md-ellipsis">
+      Draft Standards Submission
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="cim-overview"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.</span> CIM Overview</h1>
+<p><strong>Background</strong></p>
+<p>Since international deregulation of energy markets began in the 1990’s, the need for electric utility companies to exchange data externally on a regular basis, and internally between software applications, has steadily increased. The exponential growth in integration complexity due to the large number of proprietary application interfaces created a significant risk to the reliable operation of an interconnected electric power grid owned and operated by different electric utility companies. This business concern was the driver for a common format for all data exchanges in the electrical power domain.</p>
+<p>This business driver led to the need for: </p>
+<ol>
+<li>a semantic information model that represents all of the real-world and information entities (concepts) in the electric power domain and the relationships between them; and</li>
+<li>a canonical data model to provide a non-proprietary way to exchange data between utility domain systems and databases.</li>
+</ol>
+<p>The Common Information Model (CIM) is an open source semantic information model expressed in the Unified Modeling Language (CIM UML) representing real-world electric utility objects and information entities, and the relationships between them (sometimes called a “domain model”). The CIM UML also represents the properties of the concepts as UML class attributes. The CIM UML model is hosted and maintained in a Sparx Systems Enterprise Architect Project by the UCAIug.</p>
+<p>The IEC Technical Committee 57 (IEC TC57) CIM working groups develop a set of standards to enable electric power systems integration and information exchange based on the CIM UML. New model content provided by members of either the IEC TC57 CIM working groups or the UCAIug is formally incorporated into the CIM UML. These members volunteer their time and subject matter expertise to accomplish the goals of each organization.</p>
+<p>The IEC publishes international standards derived directly from the CIM UML for each IEC TC57 CIM working group. The IEC also publishes international standards derived from canonical data models that constrain fragments of the CIM UML for specific data exchanges between utility domain systems and databases. These international standards for data exchange are called “CIM Profiles”.</p>
+<p>In recent years, the IEC TC57 has come under increasing pressure from utility companies and vendors to release new versions of the CIM-based standards more quickly in order to respond to the transformative changes occurring in the industry. UCAIug leadership has determined that in order to reduce the time to market of new standards, updates to the CIM must occur often enough to support the release of new versions of the IEC TC57 standards once a year while simultaneously expanding the organization’s ability to effectively manage a higher volume of content change to the CIM UML.</p>
+<p>In order to achieve these two goals, the UCAIug leadership has decided that the UCAIug can best improve its effectiveness in these areas by: </p>
+<ol>
+<li>aligning CIM UML Management processes with the IEC fast track International Standard release process; </li>
+<li>facilitating communication and understanding among individuals working with CIM UML domain models; and </li>
+<li>facilitating the incorporation of new content into the CIM UML.</li>
+</ol>
+<p>For the past two years the IEC TC57 CIM working groups have emphasized the importance (to their productivity) of having access to documented rules and recommendations for creating new CIM content. Up until the release of this document, CIM management guidelines resided in draft documents owned by CIM Model Managers.</p>
+<h2 id="cim-uml-scope"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1</span> CIM UML Scope</h2>
+<p>The CIM UML is semantic information model that represents real-world physical electric grid objects and information entities. The CIM UML is the basis for data that is exchanged between systems to: </p>
+<ol>
+<li>enable grid operation and planning;</li>
+<li>support grid operations, grid maintenance, and customer support;</li>
+<li>support wholesale electricity market activity between market participants; and</li>
+<li>support interfaces with non-utility owned systems connected on the other side of the meter to the grid. The CIM UML is used by IEC TC57 CIM working groups as the foundation for creating CIM profiles. The mission statement for each IEC TC57 CIM working group is provided in Table 4‑1.</li>
+</ol>
+<p><span class="anchor" id="_Ref21669616"></span>Table 4‑1. IEC TC57 CIM Working Group Mission Statements</p>
+<table>
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 86%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Group ID</strong></th>
+<th><strong>Mission Statement</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>WG13</td>
+<td>Define standards for information exchange among systems supporting business functions directly involved with operation and planning of the overall interconnected electric grid. These functions rely on power system network models to analyse the behaviour of the grid. These business functions cover the entire interconnected grid at all voltage levels, and they often involve interactions between systems at various different participants in the grid (e.g. RTO, TSO, DSO, microgrid, generator, consumer).</td>
+</tr>
+<tr class="even">
+<td>WG14</td>
+<td>Define standards for information exchange among systems supporting business functions that support power system operations, maintenance and customer support. This includes major business functions such as asset management, work management, meter data management, customer information, geographic information systems and engineering design. Also included is interoperating with assets and business capabilities governed by interconnection agreements with customers.</td>
+</tr>
+<tr class="odd">
+<td>WG16</td>
+<td>Define standards which facilitate the integration of electricity market application software developed independently by different vendors into a market management system, between market management systems and market participant systems. This is accomplished by defining message exchanges to enable these applications or systems access to public data and exchange information independent of how such information is represented internally.</td>
+</tr>
+<tr class="even">
+<td>WG21</td>
+<td><p>Define standards for system interfaces, communication protocols and profiles in consideration of:</p>
+<ul>
+<li><p>Interconnecting a large number of geographically distributed systems (aggregator, (utility, QSE, SC) to end customer)</p></li>
+<li><p>Domain specific protocols for industrial, home and building automation</p></li>
+<li><p>Domain specific protocols for retail markets, real time pricing, and traditional non-market load management</p></li>
+<li><p>State-of-the-art wireless and wired communication</p></li>
+<li><p>Efficient installation, commissioning and maintenance</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<h2 id="42-cim-management-business-context"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2</span> 4.2 CIM Management Business Context</h2>
+<p>CIM Management is a business function performed by the CIM Subcommittee of the UCAIug Technical Oversight Committee (see Figure 4‑1).</p>
+<p><img alt="http://www.ucaiug.org/aboutucaiug/ucaiugorg.jpg" src="/images/media/image2.jpeg" style="width:4.47551in;height:3.02727in"/></p>
+<p><span class="anchor" id="_Ref529901341"></span>Figure 4‑1. UCA International Users Group Organization Chart</p>
+<p>The CIM Technical Subcommittee is responsible for handling all technical and maintenance issues concerning the CIM and related standards. Responsibilities of the CIM Subcommittee related to CIM Management include:</p>
+<ol>
+<li>
+<p><strong>Chair Modeling Meetings</strong></p>
+<ul>
+<li>Review model updates submitted by working groups with working group representative(s)</li>
+</ul>
+</li>
+<li>
+<p><strong>Manage the CIM Issues Process</strong></p>
+<ul>
+<li>
+<p>Compile and categorize issues</p>
+</li>
+<li>
+<p>Develop proposed resolutions</p>
+</li>
+<li>
+<p>Obtain agreement on resolutions from CIM Technical Subcommittee and IEC TC57 WG13, WG14, WG16 and WG21.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Manage Versions of CIM Artifacts</strong></p>
+<ul>
+<li>
+<p>Provide version management of the CIM UML model</p>
+</li>
+<li>
+<p>Provide version management of derived files in other formats (e.g., XML, RDF, etc.)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Maintain Oversight of CIM Support Tools</strong></p>
+<ul>
+<li>
+<p>Maintain oversight of which version of Sparx Enterprise Architect is used to maintain the CIM UML.</p>
+</li>
+<li>
+<p>Maintain oversight of the jCleanCIM tool used for validation of the CIM UML model.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Maintain CIM Repositories</strong></p>
+<ul>
+<li>
+<p>Maintain repositories for artifacts produced by individual projects implementing the CIM and related standards, such as:</p>
+</li>
+<li>
+<p>submitted CIM extensions;</p>
+</li>
+<li>
+<p>message payload definitions;</p>
+</li>
+<li>
+<p>tools, and;</p>
+</li>
+<li>
+<p>training materials.</p>
+</li>
+<li>
+<p>Maintain repositories for sample CIM/XML/RDF power system model files</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="cim-management-functions"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3</span> CIM Management Functions</h2>
+<h3 id="model-change-management"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.1</span> Model Change Management</h3>
+<p>Model change management (MCM) is the ongoing process of identifying and managing CIM UML change requests. A model change management plan (MCMP) is developed to define, document and track the information required to effectively manage change requests throughout the CIM UML development life cycle.</p>
+<h3 id="model-change-validation"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.2</span> Model Change Validation</h3>
+<p>Model change validation (MCV) is the ongoing process of ensuring proposed CIM UML changes are in compliance with CIM modeling rules.</p>
+<h3 id="model-change-implementation"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.3</span> Model Change Implementation</h3>
+<p>Model change implementation (MCI) is the ongoing process of making changes to an existing CIM UML baseline to create a new CIM UML baseline.</p>
+<h3 id="configuration-management"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.4</span> Configuration Management</h3>
+<p>Configuration management (CM) is the ongoing process of identifying and managing changes to the CIM UML and other work products. A configuration management plan (CM Plan) is developed to define, document, control, implement, account for, and audit changes to the various CIM configuration items. The CM Plan provides information on the requirements and procedures necessary for CMP activities and establishes the methodology for configuration identification and control of releases and changes to configuration items. It also describes the process for maintaining status accounting and verifying the completeness and correctness of configuration items throughout the CIM UML development life cycle.</p>
+<h3 id="model-distribution"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.5</span> Model Distribution</h3>
+<p>Model distribution (MD) is the ongoing process of distributing CIM UML baselines to official repositories and authorized consumers of the CIM UML.</p>
+<h3 id="continuous-process-improvement"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.6</span> Continuous Process Improvement</h3>
+<p>Continuous process improvement (CPI) is the ongoing process of improving the CIM management processes through incremental and breakthrough improvements. The goal of CPI is to improve the quality of the CIM UML or the efficiency of the CIM management processes.</p>
+<h3 id="cim-management-function-mappings"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3.7</span> CIM Management Function Mappings</h3>
+<p>Mapping of the CIM management functions includes two (2) mappings of the CIM management functions. The first shows the mapping between CIM management functions and CIM management responsibilities assigned to the CIM Subcommittee with the UCAIug. The second shows the mapping between CIM management functions and the CIM management processes that realize those functions. The first mapping is shown in Figure 4‑2. The second mapping is discussed in Section 4.4 and shown in Figure 4‑9</p>
+<p><img src="/images/media/image3.png" style="width:5.53416in;height:3.21783in"/></p>
+<p><span class="anchor" id="_Ref1988984"></span>Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping</p>
+<h2 id="cim-management-processes"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.4</span> CIM Management Processes</h2>
+<p>CIM management processes are the realization of CIM management functions. There are five (5) CIM management processes. The CIM management processes are shown in Figure 4‑3. A list of the processes and their descriptions are provided in Table 4‑2.</p>
+<p><img alt="" src="../images/media/image4.png"/></p>
+<p><span class="anchor" id="_Ref22556726"></span>Figure 4‑3. CIM Management Processes</p>
+<p><span class="anchor" id="_Ref22556968"></span>Table 4‑2. CIM Management Processes</p>
+<table>
+<thead>
+<tr>
+<th><strong>Process</strong></th>
+<th><strong>Process Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model Development</td>
+<td>The model development process is the core CIM UML process. It is executed to extend the CIM UML and create a new baseline of the CIM UML. This process is triggered by any one of the roles that is responsible for model development. The model development process flow is shown in Figure 4‑4. CIM Management is performed as part of the “Verify Extended Model” subprocess.</td>
+</tr>
+<tr>
+<td>Change Management</td>
+<td>The Change Management Process establishes an orderly and effective procedure for tracking the submission, coordination, review, evaluation, categorization of change requests, and approval for release of changes to CIM UML baselines. The Change Management Process is shown in Figure 4‑5. Changes can either be modifications to existing model elements or the creation of new model elements.</td>
+</tr>
+<tr>
+<td>Document Generation</td>
+<td>The document generation process involves the creation of the document artifacts associated with the CIM. The CIM UML is used to create these documents as exemplified in Figure 4‑6. CIM Profiles (including RDF and XML schemas) are generated by the IEC working groups. CIM Model Managers may assist working groups in creating RDF and XML schemas. All other artifacts under CIM Management are generated by CIM Model Managers.</td>
+</tr>
+<tr>
+<td>Artifact Distribution</td>
+<td>The artifact distribution process ensures comprehensive distribution of artifacts under CIM management (see Section 8 for details) to CIMug repositories and other subscribers of those artifacts. The artifact distribution process flow is shown in Figure 4‑7.</td>
+</tr>
+<tr>
+<td>Continuous Process Improvement</td>
+<td>The continuous process improvement process establishes a sequence of activities for incremental improvement of the change request and model distribution processes with the goal of improving the quality of the CIM UML or the efficiency of the CIM management processes. The continuous process improvement process is shown in Figure 4‑8.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../images/media/image5.png"/></p>
+<p><span class="anchor" id="_Ref2079526"></span>Figure 4‑4. Model Development Process Flow</p>
+<p><img src="/images/media/image6.png" style="width:7.78294in;height:2.33488in"/></p>
+<p><span class="anchor" id="_Ref1985784"></span>Figure 4‑5. Change Management Process</p>
+<p><img alt="" src="../images/media/image7.png"/></p>
+<p><span class="anchor" id="_Ref22563694"></span>Figure 4‑6. Document generation from CIM UML</p>
+<p><img alt="" src="../images/media/image8.png"/></p>
+<p><span class="anchor" id="_Ref2158379"></span>Figure 4‑7. Artifacts Distribution Process Flow</p>
+<p><img alt="" src="../images/media/image9.png"/></p>
+<p><span class="anchor" id="_Ref1995527"></span>Figure 4‑8. Continuous Process Improvement Process Flow</p>
+<h3 id="cim-management-process-mappings"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.4.1</span> CIM Management Process Mappings</h3>
+<p>The mapping between CIM management functions and the CIM management processes are shown in Figure 4‑9.</p>
+<p><img src="/images/media/image10.png" style="width:7in;height:3.33194in"/></p>
+<p><span class="anchor" id="_Ref1994217"></span>Figure 4‑9. CIM Management Process-to-CIM Management Functions Mapping</p>
+<p>The CIM Model Managers perform most of the tasks within the CIM management processes. There are however, other roles within the CIMug and IEC working groups that also perform CIM management tasks. The following table provides a description of each role and its mapping to CIM management processes.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Role</strong></th>
+<th><strong>Role Description</strong></th>
+<th><strong>MDP</strong></th>
+<th><strong>CMP</strong></th>
+<th><strong>DGP</strong></th>
+<th><strong>ADP</strong></th>
+<th><strong>CPIP</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CIMug Focus Community</td>
+<td>This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus.</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CIMug Project Team</td>
+<td>This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies.</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CIMug Working Group</td>
+<td>This group role consists of individual CIMug members working on issues of common interest to CIM Users.</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IEC CIM Working Group</td>
+<td>This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents.</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IEC Working Group Project Leader</td>
+<td>This individual role performed by an IEC Working Group member has overall responsibility for leading the development of a new edition of an international standard from the IEC proposal stage through to the IEC publication stage.</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>IEC Working Group Convener</td>
+<td>This individual role performed by an IEC Working Group member is responsible for arranging and leading face-to-face IEC Working Group meetings and providing working group oversight.</td>
+<td></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+<td></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+</tr>
+<tr>
+<td>Model Manager</td>
+<td>This individual role performed by an individual that is a member of both the CIMug and an IEC Working Group has overall responsibility for artifacts under CIM management.</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+</tr>
+</tbody>
+</table>
+<p><span class="anchor" id="_Toc25586011"></span>Table 4‑3. Role-to-CIM Management Process Mapping</p>
+<h2 id="cim-management-process-integration-with-the-iec-standards-process"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5</span> CIM Management Process Integration with the IEC Standards Process</h2>
+<h3 id="iec-standards-development-process"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5.1</span> IEC Standards Development Process</h3>
+<p>As IEC standards, the CIM standards must go through the IEC international standards development process to be published. An IEC International Standard is the result of an agreement between the National Committees of the IEC. The IEC standard development process and the documents created in the process are shown in Figure 4‑10. A description of the IEC stages is provided in Table 4‑4.</p>
+<p><img alt="" src="../images/media/image11.png"/></p>
+<p><span class="anchor" id="_Ref22425787"></span>Figure 4‑10. IEC International Standard Development Process</p>
+<p><span class="anchor" id="_Ref22426512"></span><strong>Table 4‑4. Description of IEC Standard Development Stages.</strong></p>
+<table>
+<colgroup>
+<col style="width: 22%"/>
+<col style="width: 77%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Stage</strong></th>
+<th><strong>Stage Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Preliminary Stage</td>
+<td>The preliminary stage is applied for work items where no target dates can be established. This stage can be used for the elaboration of a new work item proposal and the development of an initial draft. These work items are subject to approval in accordance with the normal procedures before progressing to the preparatory stage.</td>
+</tr>
+<tr class="even">
+<td>Proposal Stage</td>
+<td>The proposal stage is the first step in creating a new standard. During this stage a working group generates a proposal for new work. The output of this stage is a New Work Item Proposal (NWIP). The NWIP is submitted via a National Committee to the IEC and communicated to the members of the appropriate IEC CIM working group.</td>
+</tr>
+<tr class="odd">
+<td>Preparatory Stage</td>
+<td><p>During this stage a Working Draft (WD) is prepared, generally by a project leader within a project team. The availability of working draft (if not supplied with the proposal) is 6 months.</p>
+<p>The preparatory stage ends when a working draft is available for circulation to the members of the technical committee or subcommittee as a first committee draft (CD) and is registered by the office of the CEO.</p></td>
+</tr>
+<tr class="even">
+<td>Committee Stage</td>
+<td>The committee stage is the principal stage at which comments from National Committees are taken into consideration, with a view to reaching consensus on the technical content.</td>
+</tr>
+<tr class="odd">
+<td>Enquiry Stage</td>
+<td>After addressing the comments received from national committees about the CD the working group then prepares an updated version of the standard that is issued as a Committee Draft for Vote (CDV). This is circulated to member countries for a five-month voting period and is considered approved if two thirds of the votes cast are in favor and the number of negative votes does not exceed 25% of the votes cast. At this stage countries may still submit comments along with their vote.</td>
+</tr>
+<tr class="even">
+<td>Approval Stage</td>
+<td><p>The working group, once again, addresses any comments that have been received and prepares a Final Draft International Standard (FDIS). This is submitted to the IEC Central Office and circulated to the national committees for a two-month voting period. At this stage a country may only make an explicit vote: positive, negative or abstention.</p>
+<p>The FDIS is approved if two thirds of the votes cast are in favor and the number of negative votes cast does not exceed 25% of the votes cast. If approved, the document is published however if the conditions are not met it is referred back to the working group to be revised. Final publication is the responsibility of the IEC Central Office and leads to the publication of an international standard. This normally takes place within two months of the approval of the FDIS.</p></td>
+</tr>
+<tr class="odd">
+<td>Publication Stage</td>
+<td><p>This stage is entirely the responsibility of the Central Office and leads to publication of the International Standard, normally within 6 weeks of approval of the FDIS.</p>
+<p>Once a final draft International Standard has been approved, only minor editorial changes are introduced into the final text. The International Standard is published within 6 weeks of approval of the FDIS.</p></td>
+</tr>
+</tbody>
+</table>
+<h3 id="process-integration-points"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5.2</span> Process Integration Points</h3>
+<p>The CIM management processes integrate with the IEC standards development process because the CIM UML provides the basis for IEC CIM standards. There are two types of integration points between the two processes: 1) draft standards preparation; and 2) draft standards submission.</p>
+<p>A mapping between the applicable IEC standards development stages and the CIM Management processes are provided in Table 4‑5.</p>
+<p><span class="anchor" id="_Ref22569302"></span>Table 4‑5. CIM Management Processes-to-IEC Standard Development Stage Mappings</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Proposal Stage</th>
+<th>Preparatory Stage</th>
+<th>Committee Stage</th>
+<th>Enquiry Stage</th>
+<th>Approval Stage</th>
+<th>Publication Stage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model Development Process</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+</tr>
+<tr>
+<td>Change Management Process</td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+</tr>
+<tr>
+<td>Document Generation Process</td>
+<td></td>
+<td></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td></td>
+</tr>
+<tr>
+<td>Artifact Distribution Process</td>
+<td></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+<td><img alt="Image result for check mark" src="/images/media/image12.png" style="width:0.15518in;height:0.17674in"/></td>
+</tr>
+</tbody>
+</table>
+<h4 id="draft-standards-preparation"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5.2.1</span> Draft Standards Preparation</h4>
+<p>The intermediate draft standards submitted to the IEC are produced during the execution of the Model Development process and the Document Generation process. CIM UML changes are incorporated to form the basis of the draft standards. Therefore, the Change Management process is also part of draft standards preparation.</p>
+<h4 id="draft-standards-submission"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.5.2.2</span> Draft Standards Submission</h4>
+<p>The submission of the draft standards to the IEC takes place during the Artifact Distribution process. The IEC is considered one of the subscribers for the draft standards in the process.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: 3. Definitions" class="md-footer__link md-footer__link--prev" href="../section3-definitions/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                3. Definitions
+              </div>
+</div>
+</a>
+<a aria-label="Next: 5. CIM UML Modeling Rules and Recommendations" class="md-footer__link md-footer__link--next" href="../section5-cim-uml-modeling-rules-and-recommendations/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                5. CIM UML Modeling Rules and Recommendations
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2019 - 2023. All rights reserved by the UCA International CIM Users Group
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+</body>
+</html>

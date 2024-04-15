@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href=".." rel="prev"/>
+<link href="../section2-references/" rel="next"/>
+<link href="../images/media/logo-white.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.17" name="generator"/>
+<title>1. Introduction - CIM Modeling Guide</title>
+<link href="../assets/stylesheets/main.bcfcd587.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="white" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#introduction">1. 
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="CIM Modeling Guide" class="md-header__button md-logo" data-md-component="logo" href=".." title="CIM Modeling Guide">
+<img alt="logo" src="../images/media/logo-gray.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            CIM Modeling Guide
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              1. Introduction
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/CIMug-org/cim-modeling-guide" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="CIM Modeling Guide" class="md-nav__button md-logo" data-md-component="logo" href=".." title="CIM Modeling Guide">
+<img alt="logo" src="../images/media/logo-gray.png"/>
+</a>
+    CIM Modeling Guide
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/CIMug-org/cim-modeling-guide" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    1. Introduction
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    1. Introduction
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-overview">1.1 
+<span class="md-ellipsis">
+      Document Overview
+    </span>
+</a>
+<nav aria-label="Document Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-purpose">1.1.1 
+<span class="md-ellipsis">
+      Document Purpose
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-scope">1.1.2 
+<span class="md-ellipsis">
+      Document Scope
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-this-document-does-not-cover">1.1.3 
+<span class="md-ellipsis">
+      What this Document Does Not Cover
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#who-this-document-is-for">1.1.4 
+<span class="md-ellipsis">
+      Who this Document Is For
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-this-document-is-organized">1.2 
+<span class="md-ellipsis">
+      How this Document Is Organized
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#symbols-figures-and-style-conventions">1.3 
+<span class="md-ellipsis">
+      Symbols, Figures, and Style Conventions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-control">1.4 
+<span class="md-ellipsis">
+      Document Control
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section2-references/">
+<span class="md-ellipsis">
+    2. References
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section3-definitions/">
+<span class="md-ellipsis">
+    3. Definitions
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section4-cim-overview/">
+<span class="md-ellipsis">
+    4. CIM Overview
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section5-cim-uml-modeling-rules-and-recommendations/">
+<span class="md-ellipsis">
+    5. CIM UML Modeling Rules and Recommendations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section6-cim-uml-extension-rules-and-recommendations/">
+<span class="md-ellipsis">
+    6. CIM UML Extension Rules and Recommendations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section7-cim-uml-transformation-rules-and-recommendations/">
+<span class="md-ellipsis">
+    7. CIM UML Transformation Rules and Recommendations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section8-cim-uml-version-control-rules/">
+<span class="md-ellipsis">
+    8. CIM UML Version Control Rules
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section9-artifacts-under-cim-management/">
+<span class="md-ellipsis">
+    9. Artifacts Under CIM Management
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../section10-cim-management-tools/">
+<span class="md-ellipsis">
+    10. CIM Management Tools
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-overview">1.1 
+<span class="md-ellipsis">
+      Document Overview
+    </span>
+</a>
+<nav aria-label="Document Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-purpose">1.1.1 
+<span class="md-ellipsis">
+      Document Purpose
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-scope">1.1.2 
+<span class="md-ellipsis">
+      Document Scope
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-this-document-does-not-cover">1.1.3 
+<span class="md-ellipsis">
+      What this Document Does Not Cover
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#who-this-document-is-for">1.1.4 
+<span class="md-ellipsis">
+      Who this Document Is For
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-this-document-is-organized">1.2 
+<span class="md-ellipsis">
+      How this Document Is Organized
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#symbols-figures-and-style-conventions">1.3 
+<span class="md-ellipsis">
+      Symbols, Figures, and Style Conventions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-control">1.4 
+<span class="md-ellipsis">
+      Document Control
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="introduction"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.</span> Introduction</h1>
+<h2 id="document-overview"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1</span> Document Overview</h2>
+<p>The CIM has been growing and more groups are extending it with new functionality. Currently the following IEC TC57 working groups are working with the CIM:</p>
+<ul>
+<li>
+<p>WG13</p>
+</li>
+<li>
+<p>WG14</p>
+</li>
+<li>
+<p>WG16</p>
+</li>
+</ul>
+<p>Initially only WG13 and WG14 were working with the CIM. Each group worked with a local copy of the UML model file and the two copies were synchronised as needed. With three working groups the synchronisation process becomes more complex. This document describes how to manage CIM across multiple working groups and provides best practices for applications wanting to extend the CIM.</p>
+<h3 id="document-purpose"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.1</span> Document Purpose</h3>
+<p>The purpose of this document is to provide guidance to individuals working with the CIM UML on how to modify the CIM in accordance with the CIM modeling rules and CIM change management. The rules and process are maintained and enforced by the CIM model managers.</p>
+<p>The goals of this document are to: 1) facilitate communication and understanding among individuals working with CIM domain models; and 2) streamline the incorporation of new content into the CIM UML.</p>
+<h3 id="document-scope"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.2</span> Document Scope</h3>
+<p>The scope of this document includes providing:</p>
+<p>1)  A description of the items under CIM Management;</p>
+<p>2)  A description of the CIM Management processes;</p>
+<p>3)  Rules and recommendations for CIM UML modeling</p>
+<p>4)  Rules and recommendations for CIM UML extension;</p>
+<p>5)  Rules and recommendations for transforming CIM UML into a canonical model in preparation to create CIM Profiles;</p>
+<p>6)  A description of the process for submitting CIM UML extensions, UML used in the user-defined profiles for incorporation into the CIM UML and the IEC CIM standards, respectively;</p>
+<p>7)  A description of the UML tool (Sparx EA) used for CIM Management.</p>
+<h3 id="what-this-document-does-not-cover"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.3</span> What this Document Does Not Cover</h3>
+<p><em>This Document Does Not Cover All UML Concepts</em></p>
+<p>The CIM UML uses a subset of the UML concepts. This document only covers the UML concepts relevant to the CIM UML.</p>
+<p><em>This Document Does Not Cover How the CIM UML Rules Evolved</em></p>
+<p>The CIM UML rules have evolved over time and it is not the intent of this document to discuss the history of their evolution. The intent of this document is to specify the CIM UML rules in clear unambiguous language. It is the goal of this document to communicate the rules in such a way that the rationale for each rule is self-evident. The exception is the discussion of CIM UML version control in section 8.</p>
+<p><em>This Document Does Not Cover How Each Working Group Develops Additional CIM UML Content</em></p>
+<p>The methodologies and practices used by each IEC working group to develop additional CIM UML content is not in the purview of CIM Management. The output of the working groups do trigger some of the CIM Management processes, and these triggers are identified in this document.</p>
+<p><em>This Document Does Not Cover Detailed Tool Procedures Used To Accomplish CIM Management Tasks</em></p>
+<p>The detailed tool procedures used to accomplish CIM Management tasks are not in the purview of CIM modeling. This document does identify what tool is used to accomplish each CIM Management process activity. This document does provide the step by step procedures for exporting and importing the CIM model in XMI format. CIM Management tasks are discussed in the CIM Management Process and Procedures document.</p>
+<p><em>This Document Does Not Cover Tools Used To Create CIM Profiles</em></p>
+<p>The tools used to create CIM Profiles are not in the purview of CIM Management. This document does provide rules and recommendations for transforming the CIM UML (a semantic information model) into a canonical data model that can then be used as input to a tool to create CIM Profiles.</p>
+<h3 id="who-this-document-is-for"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.4</span> Who this Document Is For</h3>
+<p>This document has the following intended audience:</p>
+<p><strong>Target Audience</strong></p>
+<ul>
+<li>
+<p>CIM Model Managers in order to have documented rules and recommendations for CIM UML modeling, and extensions,</p>
+</li>
+<li>
+<p>IEC Working Group leads who need to understand how their CIM UML development processes relate to and interact with CIM Management processes;</p>
+</li>
+<li>
+<p>IEC Working Group members who need to know CIM UML modeling rules and recommendations in order to properly incorporate additional information into the CIM UML;</p>
+</li>
+<li>
+<p>IEC CIM users who need to know how to create their own CIM compliant Enterprise Information Model which contains their user defined CIM UML extensions that can be readily submitted for addition to the base CIM UML;</p>
+</li>
+<li>
+<p>IEC CIM users who need to know how to create their own CIM profiles that can be readily submitted for addition to the IEC CIM standards;</p>
+</li>
+<li>
+<p>Utility companies who need to know the process for submitting their user-defined CIM UML extensions and CIM profiles for addition to the CIM UML and the IEC CIM standard documents, respectively;</p>
+</li>
+</ul>
+<p><strong>Secondary Audience</strong></p>
+<ul>
+<li>
+<p>Utility companies interested in learning more about the CIM UML;</p>
+</li>
+<li>
+<p>Vendors interested in developing CIM compliant products;</p>
+</li>
+<li>
+<p>Researchers interested in learning about the CIM UML and conducting CIM UML research.</p>
+</li>
+</ul>
+<h2 id="how-this-document-is-organized"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.2</span> How this Document Is Organized</h2>
+<p>This document begins with Sections 1, 2, and 3 providing introductory content, references, and definitions, respectively.</p>
+<p>Section 4 is an overview of CIM Management. This section provides the business context for CIM Management within the UCAIug organizational structure (the “Where” of CIM Management), and the roles and responsibilities (the “Who” and “What”) of CIM Management. The section also provides an overview of the CIM Management processes (the “How” of CIM Management) performed by CIM model managers, and how the CIM Management processes integrate with the IEC standards development process.</p>
+<p>Section 5 specifies CIM UML modeling rules and recommendations. This section covers rules and recommendations for the model structure, packages, classes, attributes, associations, enumerations, inheritance, diagrams, element descriptions, stereotypes, namespaces, and documentation (the “How To” of CIM UML development within the working groups).</p>
+<p>Section 6 specifies CIM extension rules and recommendations. This section contains general extension rules and covers rules and recommendations for package extension, class extension, attribute extension, association extension, and enumeration extension (the “How To” of CIM extension).</p>
+<p>Section 7 specifies CIM UML transformation rules. This section contains general schema profiling rules and rules for RDFS and XSD profiling.</p>
+<p>Section 8 describes CIM UML version control. This section provides an overview of version control and the CIM UML version control strategy.</p>
+<p>Section 9 identifies and describes the artifacts under CIM Management. This includes CIM UML artifacts, CIM Profiles, draft standards, CIM Management process artifacts, and CIM Management tool customizations.</p>
+<p>Section 10 discusses the tools used for CIM UML model management. Tools include Enterprise Architect, jCleanCIM, and the CIMug Website.</p>
+<h2 id="symbols-figures-and-style-conventions"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.3</span> Symbols, Figures, and Style Conventions</h2>
+<p><strong>Conventions</strong></p>
+<p>This document uses the following conventions.</p>
+<ul>
+<li>
+<p>Rules and recommendations are similar to requirements. As such, this document uses the terms defined in RFC 2119 of the Internet Engineering Task Force (IETF) in the specification of the rules and recommendations.</p>
+</li>
+<li>
+<p>Specifically, the terms “Shall”, “Must”, “Shall not”, “Must not”, and “May” are used to specify rules, and the terms “Should” and “Should not” are used to provide recommendations.</p>
+</li>
+<li>
+<p>All rules and recommendations have a unique identifier that is formatted as: “RuleXXX”. The distinction between rules and recommendations is based on the use of the RFC 2119 terms in the descriptive text.</p>
+</li>
+</ul>
+<p><strong>Symbol Legend</strong></p>
+<p>This document contains a series of diagrams that are referred to as figures. The primary symbols used throughout all figures are individually described in the following symbol legend:</p>
+<p>UML Notation</p>
+<p>The Unified Modeling Language is used</p>
+<p><strong>Text Formats</strong></p>
+<ol>
+<li>
+<p><strong>Bold text</strong> is used to identify a term that can be found in the glossary. The term will be in bold text the first time it is used in the document. All subsequent uses of the term will be in normal text.</p>
+</li>
+<li>
+<p>Square brackets ([ ]) are used as delimiters for referenced works cited in this document.</p>
+</li>
+</ol>
+<h2 id="document-control"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.4</span> Document Control</h2>
+<p>This document will be reviewed periodically by the CIM Model Managers and updated as needed. Lessons learned will be captured with each CIM UML update and used to improve this document. If the document is written in an older format, the document should be revised into the latest CIM Users Group template format.</p>
+<p>This document contains a revision history log. When changes occur, the version number will be updated to the next increment and the date, author making the change, and change description will be recorded in the revision history log of the document.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Home" class="md-footer__link md-footer__link--prev" href="..">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                Home
+              </div>
+</div>
+</a>
+<a aria-label="Next: 2. References" class="md-footer__link md-footer__link--next" href="../section2-references/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                2. References
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2019 - 2023. All rights reserved by the UCA International CIM Users Group
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+</body>
+</html>
