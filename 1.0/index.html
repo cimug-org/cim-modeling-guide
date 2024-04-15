@@ -69,11 +69,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#acknowledgements" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -231,19 +226,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -254,34 +236,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -504,25 +458,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -540,19 +475,21 @@
   
 
 
+  <h1>Home</h1>
+
 <p><img src="images/media/image1.png" style="width:3.02526in;height:1.41679in" /></p>
 <p><strong>UCAIug</strong></p>
 <p><strong>CIM Modeling Guide</strong></p>
-<p><strong>Version 1.0</strong></p>
-<p><strong>25-November-2023</strong></p>
+<p><strong>Version 1.1</strong></p>
+<p><strong>13-February-2021</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When referencing an offline PDF version of this guide it is recommended to confirm it corresponds to the latest publicly available guide at <a href="https://cim-mg.ucaiug.io">https://cim-mg.ucaiug.io</a>.</p>
+<p>When referencing an offline PDF version of this guide note that it may not correspond to the latest publicly available guide. To reference the latest visit <a href="https://cim-mg.ucaiug.io">https://cim-mg.ucaiug.io</a>.</p>
 </div>
 <p><strong>UCA International Users Group</strong></p>
 <blockquote>
 <p><strong>RIGHT TO DISTRIBUTE AND CREDIT NOTICE</strong></p>
-<p>This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.0, © November 2023. All rights reserved by the UCA International Users Group”.</p>
+<p>This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.1, © November 2021. All rights reserved by the UCA International Users Group”.</p>
 </blockquote>
 <p>DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITIES</p>
 <blockquote>
@@ -565,7 +502,7 @@
 <blockquote>
 <p>The CIM standards are a set of International Electrotechnical Committee (IEC) standards and are the Intellectual Property of the IEC. the UCA International Users Group has a liaison d relationship with the iec that provides access rights to the cim standards for software development. the common information model (CIM) is Open Source and is rendered in the Unified Modeling Language.</p>
 </blockquote>
-<h1 id="acknowledgements">Acknowledgements</h1>
+<p><span style="font-size:2.0em;">Acknowledgements</span></p>
 <p>In preparing this specification, the UCAIug recognizes the special contributions of the following CIM Subcommittee and their organizations.</p>
 <ul>
 <li>
@@ -592,20 +529,16 @@
 <li>
 <p>Tatjana Kostic - <em>ABB</em></p>
 </li>
-<li>
-<p>Todd Viegut - <em>AspenTech</em></p>
-</li>
 </ul>
-<h2 id="_1"></h2>
-<h1 id="abstract"><em>Abstract</em></h1>
+<p><span style="font-style:italic;font-size:2.0em;">Abstract</span></p>
 <blockquote>
 <p><em>This document specifies the rules and recommendations on how to use the UML to create and maintain a standardized Common Information Model (CIM) of the electric grid and other related business domains. Such models are called Domain Models. The primary goal of this document is to facilitate communication and understanding among people working with the CIM domain models. The primary goal of the rules is to specify the structure and modeling constraints applied to the CIM. The primary goal of the recommendations is to provide guidelines on how to extend the CIM as more of the model is elaborated by working groups within the International Electrotechnical Commission (IEC) and by the CIM user community. The intent of the recommendations is to facilitate the incorporation of new model elements into the CIM.</em></p>
 </blockquote>
-<h1 id="foreword">Foreword</h1>
+<p><span style="font-size:2.0em;">Foreword</span></p>
 <p>Exchanging power systems data between utility companies is always problematic when proprietary formats are used. In the past a company would traditionally use a single software system, whether it is a custom in-house solution, or purchased from a large software company, and there would be a single proprietary data standard and format used. With the deregulation of the power industry and the emergence of smarter grids, there is now a greater need to be able to share such power system data between companies and systems.</p>
 <p>The increase in choice provided by the number of power system software vendors and the different software packages and architectures available add to the challenge of data exchange. These issues point to a requirement for a single, open standard for describing power system data and to aid the interoperability between software packages and exchange of information both within one company and between companies.</p>
 <p>The Common Information Model (CIM) is an open standard for representing power system components originally developed by the Electric Power Research Institute (EPRI) in North America. The CIM provides the basis of a series of standards developed under the auspices of the International Electrotechnical Commission (IEC). The CIM standard was started as part of the Control Centre Application Programming Interface (CCAPI) project at EPRI with the aim of defining a common definition for the components in power systems for use the Energy Management System (EMS) Application Programming Interface (API). The EMS API is now maintained by IEC Technical Committee 57 Working Group 13 as IEC 61970-301. The format has been adopted by the major EMS vendors to allow the exchange of data between their applications, independent of their internal software architecture or operating platform.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
-<h1 id="about-the-uca-international-cim-users-group">About the UCA International CIM Users Group</h1>
+<p><span style="font-size:2.0em;">About the UCA International CIM Users Group</span></p>
 <p>The UCA International Users Group (UCAIug) is a not-for-profit corporation focused on assisting users and vendors in the deployment of standards for real-time applications for several industries with related requirements. The UCAIug does not write standards, however it works closely with those bodies that have primary responsibility for the completion of standards (notably IEC TC 57: <em>Power Systems Management and Associated Information Exchange</em>).</p>
 <p>The UCAIug as well as its member groups (the CIM Users Group (CIMug), Open Smart Grid, and IEC61850) draws its membership from utility user and supplier companies. The mission of the UCAIug is to enable integration through the deployment of open standards by providing a forum in which the various stakeholders in the energy and utility industry can work cooperatively together as members of a common organization to:</p>
 <ul>
