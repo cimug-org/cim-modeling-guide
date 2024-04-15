@@ -32,6 +32,7 @@ plugins:
       ordered_chapter_level: 0
       toc_level: 3
       show_anchors: true
+      enabled_if_env: ENABLE_PDF_EXPORT
       output_path: pdf/CIM_Modeling_Guide.pdf
   # This 'mike' plugin is for publishing multiple versions see https://github.com/jimporter/mike
   - mike: 
