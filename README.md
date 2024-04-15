@@ -39,18 +39,21 @@ mkdocs build
 The output will indicate the PDF file location.
 
 ## Publishing
-This project uses the [mike](https://github.com/jimporter/mike) plugin to publish multiple versions of the documentation to the https://cim-mg.ucaiug.io site. Under the hood it is using [GitHub Pages](https://pages.github.com/) to host the site which effecitvely just stores the site content in a dedicated git branch called `gh-pages`. 
+This project publishes gets published to the https://cim-mg.ucaiug.io site. The easieset way update the site is with the [Publish website](https://github.com/cimug-org/cim-modeling-guide/actions/workflows/publish-site.yml) GitHub Action.
 
-You can push new versions using the `mike deploy [version]` command. This will replace the existing version of the documentation on the `gh-pages` branch with whever the currently checkout version is and give it a label of `[version]`. So for example to publish a new version of 1.0 you first want to pull the latest published changes down from the remote site
+You can also publish manually as described below. Under the hood the project is using [GitHub Pages](https://pages.github.com/) to host the site which effecitvely just stores the site content in a dedicated git branch called `gh-pages`. It uses the [mike](https://github.com/jimporter/mike) plugin to publish multiple versions.
+
+Update a version in the `gh-pages` branch using the `mike deploy [version]` command. This will replace the existing version of the documentation on the `gh-pages` branch with whever the currently checkout version is and give it a label of `[version]`. So for example to publish a new version of 1.0 you first want to pull the latest published changes down from the remote
 ```cmd
-git remote add origin https://github.com/cimug-org/cim-modeling-guide
-git fetch origin
+git remote add upstream https://github.com/cimug-org/cim-modeling-guide
+git fetch upstream
 git switch gh-pages
-git pull origin gh-pages
+git pull upstream gh-pages
 ```
-Then switch to the branch you want to update and run the deploy command giving it the name you want, for example let's say we're going to publish version "1.0" which is in branch "v1.0".
+Then switch to the branch you want to update and run the deploy command giving it the verion name you want, for example let's say we're going to publish version "1.0" which is in branch "v1.0".
 ```cmd
 git switch v1.0
+git pull upstream v1.0
 mike deploy 1.0
 ```
 
@@ -58,7 +61,7 @@ When you need to update which version is considered the "latest" (e.g. when goin
 ```cmd
 mike deploy 2.0 latest --update-aliases
 ```
-Note that mike will always update the version and any aliases (latest) when you run a `mike deploy [version]` command. So you only need to do the `mike deploy -u [version] latest` when the latest version is changed.
+Note that mike will always update the version and any aliases ("latest") when you run a `mike deploy [version]` command. So you only need to do the `mike deploy [version] latest --update-aliases` when the latest version is changed.
 
 To view the site locally before publishing it to https://cim-mg.ucaiug.io, run
 ```cmd
@@ -66,7 +69,7 @@ mike serve
 ```
 Then to publish it to https://cim-mg.ucaiug.io, you will want to push your local `gh-pages` branch to the remote https://github.com/cimug-org/cim-modeling-guide repo using
 ```cmd
-mike deploy 1.0 --push
+mike deploy 1.0 --push --branch gh-pages --remote upstream
 ```
 
 Refer to [mike documentation](https://github.com/jimporter/mike) for more information.
