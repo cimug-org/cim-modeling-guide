@@ -9,7 +9,7 @@ theme:
   features:
     - content.code.copy
     - navigation.footer
-copyright: Copyright &copy; 2019 - 2023. All rights reserved by the UCA International CIM Users Group
+copyright: Copyright &copy; 2019 - 2024. All rights reserved by the UCA International CIM Users Group
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
@@ -24,10 +24,10 @@ plugins:
       exclude:
         - index.md
   - with-pdf:
-      copyright:   Version 1.0, © November 2023. All rights reserved by the UCA International Users Group
+      copyright:   Version 1.0, © November 2019. All rights reserved by the UCA International Users Group
       cover: true
       cover_title: CIM Modeling Guide
-      cover_subtitle: Version 1.0, © November 2023
+      cover_subtitle: Version 1.0, © November 2019
       toc_title: Table of Contents
       heading_shift: true
       ordered_chapter_level: 0
