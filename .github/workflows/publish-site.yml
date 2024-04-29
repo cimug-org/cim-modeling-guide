@@ -8,15 +8,20 @@ jobs:
     steps:
     - name: Checkout this repository
       uses: actions/checkout@v4
+
     - name: Install/setup Python
       uses: actions/setup-python@v5
       with:
         python-version: 3.9
+
     - name: Install mkdocs documentation tool and plugins
       run: pip install -r requirements.txt
+
     - name: Configure Deploy
       run: |
         git config --global user.name "Admin CIMug"
         git config --global user.email "cimug.dev@gmail.com"
+        git fetch origin gh-pages --depth=1
+
     - name: Build Docs Website
-      run: mike deploy --branch gh-pages --push 1.1
+      run: mike deploy --branch gh-pages --remote origin --push 1.1
