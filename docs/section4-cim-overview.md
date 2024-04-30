@@ -74,7 +74,7 @@ The CIM UML is semantic information model that represents real-world physical el
 </tbody>
 </table>
 
-## 4.2 CIM Management Business Context
+## CIM Management Business Context
 
 CIM Management is a business function performed by the CIM Subcommittee of the UCAIug Technical Oversight Committee (see Figure 4‑1).
 
