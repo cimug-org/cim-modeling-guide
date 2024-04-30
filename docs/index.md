@@ -19,7 +19,7 @@
 
 > **RIGHT TO DISTRIBUTE AND CREDIT NOTICE**
 >
-> This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.0, © November 2023. All rights reserved by the UCA International Users Group”.
+> This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.0, © November 2019. All rights reserved by the UCA International Users Group”.
 
 DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITIES
 
