@@ -78,6 +78,7 @@ The CIM UML is semantic information model that represents real-world physical el
 
 CIM Management is a business function performed by the CIM Subcommittee of the UCAIug Technical Oversight Committee (see Figure 4‑1).
 
+![](images/media/image4.png)
 <img src="/images/media/image2.jpeg" style="width:4.47551in;height:3.02727in" alt="http://www.ucaiug.org/aboutucaiug/ucaiugorg.jpg" />
 
 <span id="_Ref529901341" class="anchor"></span>Figure 4‑1. UCA International Users Group Organization Chart
@@ -152,8 +153,7 @@ Continuous process improvement (CPI) is the ongoing process of improving the CIM
 
 Mapping of the CIM management functions includes two (2) mappings of the CIM management functions. The first shows the mapping between CIM management functions and CIM management responsibilities assigned to the CIM Subcommittee with the UCAIug. The second shows the mapping between CIM management functions and the CIM management processes that realize those functions. The first mapping is shown in Figure 4‑2. The second mapping is discussed in Section 4.4 and shown in Figure 4‑9
 
-
-<img src="images/media/image3.png" style="width:5.53416in;height:3.21783in" />
+![](images/media/image3.png)
 
 <span id="_Ref1988984" class="anchor"></span>Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping
 
@@ -179,7 +179,7 @@ CIM management processes are the realization of CIM management functions. There 
 
 <span id="_Ref2079526" class="anchor"></span>Figure 4‑4. Model Development Process Flow
 
-<img src="images/media/image6.png" style="width:7.78294in;height:2.33488in" />
+![](images/media/image6.png)
 
 <span id="_Ref1985784" class="anchor"></span>Figure 4‑5. Change Management Process
 
@@ -199,7 +199,7 @@ CIM management processes are the realization of CIM management functions. There 
 
 The mapping between CIM management functions and the CIM management processes are shown in Figure 4‑9.
 
-<img src="images/media/image10.png" style="width:7in;height:3.33194in" />
+![](images/media/image10.png)
 
 <span id="_Ref1994217" class="anchor"></span>Figure 4‑9. CIM Management Process-to-CIM Management Functions Mapping
 
@@ -284,7 +284,7 @@ A mapping between the applicable IEC standards development stages and the CIM Ma
 <span id="_Ref22569302" class="anchor"></span>Table 4‑5. CIM Management Processes-to-IEC Standard Development Stage Mappings
 
 | | Proposal Stage | Preparatory Stage | Committee Stage | Enquiry Stage | Approval Stage | Publication Stage |
-|-|----------------|:-----------------:|:---------------:|:-------------:|:--------------:|:-----------------:|
+|-|:--------------:|:-----------------:|:---------------:|:-------------:|:--------------:|:-----------------:|
 | Model Development Process | **X** | **X** | **X** | **X** | **X** | |
 | Change Management Process | **X** | **X** | **X** | **X** | **X** | |
 | Document Generation Process | | | **X** | **X** | **X** | |
