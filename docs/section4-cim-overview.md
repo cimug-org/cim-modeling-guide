@@ -285,10 +285,10 @@ A mapping between the applicable IEC standards development stages and the CIM Ma
 
 | | Proposal Stage | Preparatory Stage | Committee Stage | Enquiry Stage | Approval Stage | Publication Stage |
 |-|----------------|-------------------|-----------------|---------------|----------------|-------------------|
-| Model Development Process | X | X | X | X | X | |
-| Change Management Process | X | X | X | X | X | |
-| Document Generation Process | | | X | X | X | |
-| Artifact Distribution Process | | X | X | X | X | X |
+| Model Development Process | **X** | **X** | **X** | **X** | **X** | |
+| Change Management Process | **X** | **X** | **X** | **X** | **X** | |
+| Document Generation Process | | | **X** | **X** | **X** | |
+| Artifact Distribution Process | | **X** | **X** | **X** | **X** | **X** |
 
 #### Draft Standards Preparation
 
