@@ -78,8 +78,7 @@ The CIM UML is semantic information model that represents real-world physical el
 
 CIM Management is a business function performed by the CIM Subcommittee of the UCAIug Technical Oversight Committee (see Figure 4‑1).
 
-![](images/media/image4.png)
-<img src="/images/media/image2.jpeg" style="width:4.47551in;height:3.02727in" alt="http://www.ucaiug.org/aboutucaiug/ucaiugorg.jpg" />
+![](images/media/image2.jpeg)
 
 <span id="_Ref529901341" class="anchor"></span>Figure 4‑1. UCA International Users Group Organization Chart
 
@@ -206,7 +205,7 @@ The mapping between CIM management functions and the CIM management processes ar
 The CIM Model Managers perform most of the tasks within the CIM management processes. There are however, other roles within the CIMug and IEC working groups that also perform CIM management tasks. The following table provides a description of each role and its mapping to CIM management processes.
 
 | **Role** | **Role Description** | **MDP** | **CMP** | **DGP** | **ADP** | **CPIP** |
-|----------|----------------------|:-------:|:-------:|:-------:|:-------:|:--------:|
+|----------|----------------------|---------|---------|---------|---------|----------|
 | CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. | **X** |         |         |         |          |
 | CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. | **X** |         |         |         |          |
 | CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. | **X** |         |         |         |          |
@@ -284,7 +283,7 @@ A mapping between the applicable IEC standards development stages and the CIM Ma
 <span id="_Ref22569302" class="anchor"></span>Table 4‑5. CIM Management Processes-to-IEC Standard Development Stage Mappings
 
 | | Proposal Stage | Preparatory Stage | Committee Stage | Enquiry Stage | Approval Stage | Publication Stage |
-|-|:--------------:|:-----------------:|:---------------:|:-------------:|:--------------:|:-----------------:|
+|-|----------------|-------------------|-----------------|---------------|----------------|-------------------|
 | Model Development Process | **X** | **X** | **X** | **X** | **X** | |
 | Change Management Process | **X** | **X** | **X** | **X** | **X** | |
 | Document Generation Process | | | **X** | **X** | **X** | |
