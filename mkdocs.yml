@@ -24,11 +24,11 @@ plugins:
       exclude:
         - index.md
   - with-pdf:
-      author:
-      copyright: © Copyright 2021,UCA International Users Group, All rights reserved
+      author: UCA International Users Group
+      copyright: © Copyright 2021, UCA International Users Group, All rights reserved
       cover: true
       cover_title: CIM Modeling Guide
-      cover_subtitle: Version 1.1, 13-Feb-2021
+      cover_subtitle: Version 1.1,  13-February-2021
       toc_title: Table of Contents
       heading_shift: true
       ordered_chapter_level: 0
