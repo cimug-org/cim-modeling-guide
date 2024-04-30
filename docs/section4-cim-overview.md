@@ -78,7 +78,7 @@ The CIM UML is semantic information model that represents real-world physical el
 
 CIM Management is a business function performed by the CIM Subcommittee of the UCAIug Technical Oversight Committee (see Figure 4‑1).
 
-<img src="/images/media/image2.jpeg" style="width:4.47551in;height:3.02727in" alt="http://www.ucaiug.org/aboutucaiug/ucaiugorg.jpg" />
+![](images/media/image2.jpeg)
 
 <span id="_Ref529901341" class="anchor"></span>Figure 4‑1. UCA International Users Group Organization Chart
 
