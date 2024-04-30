@@ -153,7 +153,7 @@ Continuous process improvement (CPI) is the ongoing process of improving the CIM
 Mapping of the CIM management functions includes two (2) mappings of the CIM management functions. The first shows the mapping between CIM management functions and CIM management responsibilities assigned to the CIM Subcommittee with the UCAIug. The second shows the mapping between CIM management functions and the CIM management processes that realize those functions. The first mapping is shown in Figure 4‑2. The second mapping is discussed in Section 4.4 and shown in Figure 4‑9
 
 
-<img src="/images/media/image3.png" style="width:5.53416in;height:3.21783in" />
+![](images/media/image3.png)
 
 <span id="_Ref1988984" class="anchor"></span>Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping
 
