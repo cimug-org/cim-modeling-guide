@@ -34,7 +34,7 @@
 
 ### THIRD PARTY INTELLECTUAL PROPERTY
 
-> The CIM standards are a set of International Electrotechnical Committee (IEC) standards and are the Intellectual Property of the IEC. the UCA International Users Group has a liaison d relationship with the iec that provides access rights to the cim standards for software development. the common information model (CIM) is Open Source and is rendered in the Unified Modeling Language.
+> The CIM standards are a set of International Electrotechnical Committee (IEC) standards and are the Intellectual Property of the IEC. The UCA International Users Group has a Liaison D relationship with the IEC that provides access rights to the CIM standards for software development. The Common Information Model (CIM) is Open Source and is rendered in the Unified Modeling Language.
 
 ## Acknowledgements
 
