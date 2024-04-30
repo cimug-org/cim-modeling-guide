@@ -50,6 +50,7 @@ extra:
     provider: mike
 nav:
   - 'index.md'
+  - 'revision-history.md'
   - '1. Introduction': 'section1-introduction.md'
   - '2. References': 'section2-references.md'
   - '3. Definitions': 'section3-definitions.md'
