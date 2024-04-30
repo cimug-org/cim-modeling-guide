@@ -124,9 +124,9 @@ The Unified Modeling Language is used
 
 **Text Formats**
 
- 1. **Bold text** is used to identify a term that can be found in the glossary. The term will be in bold text the first time it is used in the document. All subsequent uses of the term will be in normal text.
+  1. **Bold text** is used to identify a term that can be found in the glossary. The term will be in bold text the first time it is used in the document. All subsequent uses of the term will be in normal text.
 
- 2. Square brackets (\[ \]) are used as delimiters for referenced works cited in this document.
+  2. Square brackets (\[ \]) are used as delimiters for referenced works cited in this document.
 
 ## Document Control
 
