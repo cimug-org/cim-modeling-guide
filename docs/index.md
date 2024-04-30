@@ -20,7 +20,7 @@
 
 > This material was created by the UCA International Users Group CIM Model Managers and is available for public use and distribution. Please include credit in the following manner, “UCAIug CIM Modeling Guide, Version 1.1, © February 2021. All rights reserved by the UCA International Users Group”.
 
-### DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITIES**
+### DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITIES
 
 > THIS DOCUMENT is a work product of THE UCA International Users Group. it was prepared by the CIM Model Managers and approved by the UCA International Users Group leadership. NEITHER the CIM Model Managers, the UCA International Users Group leadership, the CIM users group, NOR ANY PERSON ACTING ON BEHALF OF ANY OF THEM:
 >
