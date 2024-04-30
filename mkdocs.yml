@@ -23,6 +23,7 @@ plugins:
       toc_depth: 6
       exclude:
         - index.md
+        - revision-history.md
   - with-pdf:
       author: UCA International Users Group
       copyright: © Copyright 2021, UCA International Users Group, All rights reserved
@@ -49,6 +50,7 @@ extra:
   version:
     provider: mike
 nav:
+ # If adding a new markdown file that you do not want included with sections numbers exclude it under -enumerate-headings
   - 'index.md'
   - 'revision-history.md'
   - '1. Introduction': 'section1-introduction.md'
