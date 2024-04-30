@@ -153,7 +153,7 @@ Continuous process improvement (CPI) is the ongoing process of improving the CIM
 Mapping of the CIM management functions includes two (2) mappings of the CIM management functions. The first shows the mapping between CIM management functions and CIM management responsibilities assigned to the CIM Subcommittee with the UCAIug. The second shows the mapping between CIM management functions and the CIM management processes that realize those functions. The first mapping is shown in Figure 4‑2. The second mapping is discussed in Section 4.4 and shown in Figure 4‑9
 
 
-<img src="/images/media/image3.png" style="width:5.53416in;height:3.21783in" />
+<img src="images/media/image3.png" style="width:5.53416in;height:3.21783in" />
 
 <span id="_Ref1988984" class="anchor"></span>Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping
 
@@ -179,7 +179,7 @@ CIM management processes are the realization of CIM management functions. There 
 
 <span id="_Ref2079526" class="anchor"></span>Figure 4‑4. Model Development Process Flow
 
-<img src="/images/media/image6.png" style="width:7.78294in;height:2.33488in" />
+<img src="images/media/image6.png" style="width:7.78294in;height:2.33488in" />
 
 <span id="_Ref1985784" class="anchor"></span>Figure 4‑5. Change Management Process
 
@@ -199,21 +199,21 @@ CIM management processes are the realization of CIM management functions. There 
 
 The mapping between CIM management functions and the CIM management processes are shown in Figure 4‑9.
 
-<img src="/images/media/image10.png" style="width:7in;height:3.33194in" />
+<img src="images/media/image10.png" style="width:7in;height:3.33194in" />
 
 <span id="_Ref1994217" class="anchor"></span>Figure 4‑9. CIM Management Process-to-CIM Management Functions Mapping
 
 The CIM Model Managers perform most of the tasks within the CIM management processes. There are however, other roles within the CIMug and IEC working groups that also perform CIM management tasks. The following table provides a description of each role and its mapping to CIM management processes.
 
 | **Role** | **Role Description** | **MDP** | **CMP** | **DGP** | **ADP** | **CPIP** |
-|----------|----------------------|---------|---------|---------|---------|----------|
-| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. |  X |         |         |         |          |
-| CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. | X |         |         |         |          |
-| CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. | X |         |         |         |          |
-| IEC CIM Working Group | This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents. | X |         | X |         |          |
-| IEC Working Group Project Leader | This individual role performed by an IEC Working Group member has overall responsibility for leading the development of a new edition of an international standard from the IEC proposal stage through to the IEC publication stage. | X |         | X |         |          |
-| IEC Working Group Convener | This individual role performed by an IEC Working Group member is responsible for arranging and leading face-to-face IEC Working Group meetings and providing working group oversight.  |         | X |         |         | X |
-| Model Manager | This individual role performed by an individual that is a member of both the CIMug and an IEC Working Group has overall responsibility for artifacts under CIM management. | X | X | X | X | X |
+|----------|----------------------|:-------:|:-------:|:-------:|:-------:|:--------:|
+| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. | **X** |         |         |         |          |
+| CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. | **X** |         |         |         |          |
+| CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. | **X** |         |         |         |          |
+| IEC CIM Working Group | This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents. | **X** |         | **X** |         |          |
+| IEC Working Group Project Leader | This individual role performed by an IEC Working Group member has overall responsibility for leading the development of a new edition of an international standard from the IEC proposal stage through to the IEC publication stage. | **X** |         | **X** |         |          |
+| IEC Working Group Convener | This individual role performed by an IEC Working Group member is responsible for arranging and leading face-to-face IEC Working Group meetings and providing working group oversight.  |         | **X** |         |         | **X** |
+| Model Manager | This individual role performed by an individual that is a member of both the CIMug and an IEC Working Group has overall responsibility for artifacts under CIM management. | **X** | **X** | **X** | **X** | **X** |
 
 <span id="_Toc25586011" class="anchor"></span>Table 4‑3. Role-to-CIM Management Process Mapping
 
@@ -284,11 +284,11 @@ A mapping between the applicable IEC standards development stages and the CIM Ma
 <span id="_Ref22569302" class="anchor"></span>Table 4‑5. CIM Management Processes-to-IEC Standard Development Stage Mappings
 
 | | Proposal Stage | Preparatory Stage | Committee Stage | Enquiry Stage | Approval Stage | Publication Stage |
-|-|----------------|-------------------|-----------------|---------------|----------------|-------------------|
-| Model Development Process | X | X | X | X | X | |
-| Change Management Process | X | X | X | X | X | |
-| Document Generation Process | | | X | X | X | |
-| Artifact Distribution Process | | X | X | X | X | X |
+|-|----------------|:-----------------:|:---------------:|:-------------:|:--------------:|:-----------------:|
+| Model Development Process | **X** | **X** | **X** | **X** | **X** | |
+| Change Management Process | **X** | **X** | **X** | **X** | **X** | |
+| Document Generation Process | | | **X** | **X** | **X** | |
+| Artifact Distribution Process | | **X** | **X** | **X** | **X** | **X** |
 
 #### Draft Standards Preparation
 
