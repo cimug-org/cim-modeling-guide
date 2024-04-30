@@ -24,7 +24,7 @@ plugins:
       exclude:
         - index.md
   - with-pdf:
-      author:  
+      author: John Doe
       copyright: © Copyright 2019, UCA International Users Group, All Rights Reserved
       cover: true
       cover_title: CIM Modeling Guide
