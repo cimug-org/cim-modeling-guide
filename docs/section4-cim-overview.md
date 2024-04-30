@@ -178,7 +178,7 @@ CIM management processes are the realization of CIM management functions. There 
 
 <span id="_Ref2079526" class="anchor"></span>Figure 4‑4. Model Development Process Flow
 
-<img src="/images/media/image6.png" style="width:7.78294in;height:2.33488in" />
+![](images/media/image6.png)
 
 <span id="_Ref1985784" class="anchor"></span>Figure 4‑5. Change Management Process
 
@@ -198,7 +198,7 @@ CIM management processes are the realization of CIM management functions. There 
 
 The mapping between CIM management functions and the CIM management processes are shown in Figure 4‑9.
 
-<img src="/images/media/image10.png" style="width:7in;height:3.33194in" />
+![](images/media/image10.png)
 
 <span id="_Ref1994217" class="anchor"></span>Figure 4‑9. CIM Management Process-to-CIM Management Functions Mapping
 
