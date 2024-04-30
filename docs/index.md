@@ -6,7 +6,7 @@
 
 **Version 1.1**
 
-**13-Feb-2021**
+**13-February-2021**
 
 
 !!! Note
