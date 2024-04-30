@@ -6,7 +6,7 @@
 
 **Version 1.0**
 
-**25-Nov-2019**
+**25-November-2019**
 
 
 !!! Note
