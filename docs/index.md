@@ -14,6 +14,8 @@ The PDF release of v1.1 of the CIM Modeling Guide is made available [here](https
 
     When referencing an offline PDF version of this guide note that it may not correspond to the latest publicly available guide. To reference the latest visit [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io).
 
+    The PDF release of v1.1 of the CIM Modeling Guide is made available [here](https://cimug.ucaiug.org/Model%20Manager%20Documents/Public/CIM%20Modeling%20Guide_v1.1.pdf) at the UCAIug SharePoint site or [here](https://github.com/cimug-org/cim-modeling-guide/releases/download/v1.1/CIM_Modeling_Guide_v1.1.pdf) at the UCAIug's official Github site.
+
 
 **UCA International Users Group**
 
