@@ -9,9 +9,11 @@
 **13-February-2021**
 
 
+Click [here](https://github.com/cimug-org/cim-modeling-guide/releases/download/v1.1/CIM_Modeling_Guide_v1.1.pdf) to download the PDF release pf this version of the CIM Modeling Guide.
+
 !!! Note
 
-    When referencing an offline PDF version of this guide note that it may not correspond to the latest publicly available guide. To reference the latest visit [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io).
+    When referencing an offline PDF version of this guide note that it may not correspond to the latest publicly available guide. To reference the latest online see [https://cim-mg.ucaiug.io](https://cim-mg.ucaiug.io).
 
 
 **UCA International Users Group**
