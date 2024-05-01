@@ -8,7 +8,7 @@
 
 **25-November-2019**
 
-Click [here](https://github.com/cimug-org/cim-modeling-guide/releases/download/v1.0/CIM_Modeling_Guide_v1.0.pdf) to download the PDF release of this version of the CIM Modeling Guide.
+The PDF release of v1.0 of the CIM Modeling Guide is made available [here](https://github.com/cimug-org/cim-modeling-guide/releases/download/v1.0/CIM_Modeling_Guide_v1.0.pdf) at the UCAIug's official Github site.
 
 !!! Note
 
