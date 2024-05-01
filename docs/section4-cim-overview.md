@@ -1,38 +1,126 @@
-# Section 4 - CIM Overview
+# Section 4 - CIM Modeling Overview
 
-**Background**
+## Section 4.1 Business Context
 
-Since international deregulation of energy markets began in the 1990’s, the need for electric utility companies to exchange data externally on a regular basis, and internally between software applications, has steadily increased. The exponential growth in integration complexity due to the large number of proprietary application interfaces created a significant risk to the reliable operation of an interconnected electric power grid owned and operated by different electric utility companies. This business concern was the driver for a common format for all data exchanges in the electrical power domain.
+### Section 4.1.1 Business Motivation
 
-This business driver led to the need for: 
+Since international deregulation of energy markets began in the 1990’s, the need for electric utility companies to exchange data externally on a regular basis, and internally between software applications, has steadily increased. The exponential growth in integration complexity due to the large number of proprietary application interfaces created a significant risk to the reliable operation of an interconnected electric power grid owned and operated by different electric utility companies. In addition, there is a greater demand for higher quality data within a utility enterprise and in power markets. The increase in operational complexity of the interconnected power grid has made grid operations dramatically more dependent on complex computer-based analytically-intensive operating practices.
 
-1.  a semantic information model that represents all of the real-world and information entities (concepts) in the electric power domain and the relationships between them; and
-2.  a canonical data model to provide a non-proprietary way to exchange data between utility domain systems and databases.
+These business drivers have led to the need for transformation of the traditional electric power grid into a “smart” grid. A Smart Grid is an interconnected electric power grid (system) that incorporates information technology to deliver electricity efficiently, reliably, sustainably, and securely. A Smart Grid system architecture at its core has a high degree of interoperability between its distributed components to handle the significant increase in the operational complexity of the system.
 
-The Common Information Model (CIM) is an open source semantic information model expressed in the Unified Modeling Language (CIM UML) representing real-world electric utility objects and information entities, and the relationships between them (sometimes called a “domain model”). The CIM UML also represents the properties of the concepts as UML class attributes. The CIM UML model is hosted and maintained in a Sparx Systems Enterprise Architect Project by the UCAIug.
+In order to achieve a high degree of system interoperability electric utility companies need a standard way to exchange information with each other, ISOs and energy markets. Specifically, electric utility companies need: 
 
-The IEC Technical Committee 57 (IEC TC57) CIM working groups develop a set of standards to enable electric power systems integration and information exchange based on the CIM UML. New model content provided by members of either the IEC TC57 CIM working groups or the UCAIug is formally incorporated into the CIM UML. These members volunteer their time and subject matter expertise to accomplish the goals of each organization.
+1. a common power system model, 
 
-The IEC publishes international standards derived directly from the CIM UML for each IEC TC57 CIM working group. The IEC also publishes international standards derived from canonical data models that constrain fragments of the CIM UML for specific data exchanges between utility domain systems and databases. These international standards for data exchange are called “CIM Profiles”.
+2. a common information exchange format, 
 
-In recent years, the IEC TC57 has come under increasing pressure from utility companies and vendors to release new versions of the CIM-based standards more quickly in order to respond to the transformative changes occurring in the industry. UCAIug leadership has determined that in order to reduce the time to market of new standards, updates to the CIM must occur often enough to support the release of new versions of the IEC TC57 standards once a year while simultaneously expanding the organization’s ability to effectively manage a higher volume of content change to the CIM UML.
+3. and common data naming and typing in order to achieve a high degree of interoperability.
 
-In order to achieve these two goals, the UCAIug leadership has decided that the UCAIug can best improve its effectiveness in these areas by: 
 
-1.  aligning CIM UML Management processes with the IEC fast track International Standard release process; 
-2.  facilitating communication and understanding among individuals working with CIM UML domain models; and 
-3.  facilitating the incorporation of new content into the CIM UML.
+### Section 4.1.2 Smart Grid Conceptual Model
 
-For the past two years the IEC TC57 CIM working groups have emphasized the importance (to their productivity) of having access to documented rules and recommendations for creating new CIM content. Up until the release of this document, CIM management guidelines resided in draft documents owned by CIM Model Managers.
+The NIST Smart Grid Conceptual Model diagram (shown in Figure 4.1) is a high-level view of Smart Grid conceptual domains and their overall interconnectivity. Each domain represents the types of services, interactions, and stakeholders that make decisions and exchange information.
 
-## 4.1 CIM UML Scope
+![](images/media/conceptual-model.png)
 
-The CIM UML is semantic information model that represents real-world physical electric grid objects and information entities. The CIM UML is the basis for data that is exchanged between systems to: 
+Figure 4-1. NIST Smart Grid Conceptual Model
 
-1.  enable grid operation and planning;
-2.  support grid operations, grid maintenance, and customer support;
-3.  support wholesale electricity market activity between market participants; and
-4.  support interfaces with non-utility owned systems connected on the other side of the meter to the grid. The CIM UML is used by IEC TC57 CIM working groups as the foundation for creating CIM profiles. The mission statement for each IEC TC57 CIM working group is provided in Table 4‑1.
+### Section 4.1.3 Smart Grid Conceptual Reference Model
+
+The NIST Conceptual Reference Model (shown in Figure 4-2) is a refinement of the NIST Conceptual Model. It depicts Smart Grid communication pathways. It is intended to aid in identifying potential intra- and inter-domain interactions and potential applications and capabilities enabled by these interactions. 
+
+![](images/media/nist-smart-grid-conceptual-reference-model.png)
+
+Figure 4-2. NIST Smart Grid Conceptual Reference Model
+
+
+
+## Section 4.2 Business Solution Overview
+
+### Section 4.2.1 Transformation Approach
+
+A systematic, model-driven, standards-based approach is being used to transform traditional electric power grids into Smart Grids. In the United States the National Institute of Standards and Technology (NIST) within the U.S. Department of Commerce has developed and maintains the NIST Framework and Roadmap for Smart Grid Interoperability Standards. In Europe the European Network of Transmission System Operators for Electricity (ENTSO-E) is responsible for carrying out the legally mandated task of development and implementation of standards, network codes, platforms and tools to ensure secure system and market operation as well as integration of renewable energy.
+
+### Section 4.2.2 The GWAC Stack and the NIST Smart Grid Model
+
+The GridWise Architecture Council (GWAC) was formed by the U.S. Department of Energy to promote and enable interoperability among the many entities that interact with the nation's electric power system. To that end the GWAC developed the GWAC Interoperability Framework, commonly known as the “GWAC Stack.” The intent of the interoperability framework is to provide the context for identifying and debating interoperability issues to advance actions that make integration within this complex system easier. The framework recognizes that system interoperability is only achieved when agreement is reached across overarching interdependent layers of concern and cross-cutting interoperability issues. These layers of concern are described in the framework as “layered interoperability categories” and are organized into technical, informational, and organizational groups.
+
+The GWAC Stack grouped interoperability categories along with the NIST Conceptual Reference Model are shown in Figure 4-3. The GWAC Stack interoperability categories and their cross-cutting interoperability issues are shown in Figure 4-4.
+
+![] (images/media/gwac-layers-of-concern.png)
+
+Figure 4-3. GWAC Layers of Concern and NIST Conceptual Reference Model
+
+![](images/media/gwac-cross-cutting-issues.png)
+
+Figure 4-4. GWAC Stack Interoperability Categories and Cross-Cutting Interoperability Issues
+
+## Section 4.3 CIM Overview
+
+### Section 4.3.1 What Is the CIM?
+
+The CIM is a framework that provides a systematic, model-driven methodology for creating standardized system interfaces based on a common electric utility semantic information model. Deriving system interfaces from a common semantic information model results in a system with a high degree of interoperability. The CIM framework includes:
+
+1. an open-source electric utility semantic information model expressed in the Unified Modeling Language (the CIM UML);
+
+2. a method for developing additional CIM UML model elements;
+
+3. a method for maintaining the CIM UML as a well-formed, consistent semantic information model;
+
+4. a method for deriving implementation models (CIM Profiles) from the CIM UML;
+
+5. CIM Profiles used to create serialized CIM-compliant files and messages;
+
+6. a method for developing extensions to the CIM UML to create a user-defined enterprise information model (EIM).
+
+### Section 4.3.2 Role of the CIM in Smart Grid Architecture
+
+The GWAC Stack is used along with the NIST Conceptual Reference Model to identify where the CIM framework artifacts are located within the Smart Grid Architecture. Figure 4 5 shows where the CIM framework artifacts fit within the GWAC Stack.
+
+![](images/media/cim-and-gwac.png)
+
+Figure 4-5. Location of CIM Framework artifacts within the GWAC Stack
+
+### Section 4.3.3 CIM Standards
+
+CIM Standards are standards published by the International Electrotechnical Commission (IEC) to enable electric power systems integration and data exchange that are based on the CIM UML. The IEC is the governing standards development organization (SDO) used by the electric utility industry to publish its international standards.
+IEC Technical Committee 57 (TC 57) was established in 1965 to develop standards for “Power systems management and associated information exchange.” TC 57 oversees the development of power systems modeling standards. TC 57 has four (4) Working Groups that develop CIM Standards.
+There are two types of CIM Standards, both derived from the CIM UML – Informational standards and Syntactic standards, based on the GWAC Stack. Informational standards specify:
+
+1. UML model elements that represent real-world power system objects and how they are related to each other;
+
+2. UML model elements that represent electric utility industry information concepts and how they are related to each other;
+
+3. normalized names for UML model elements representing real-world objects and information concepts and their attributes;
+
+4. and common data typing of UML class attributes.
+
+CIM Informational standards are sometimes referred to as “CIM Data Standards.”
+
+CIM Syntactic standards specify the data structure in information exchanged between systems. Syntactic standards are identified in the CIM Framework as “CIM Profiles.”
+
+<ins>It is important to note that the CIM UML is not a standard, nor is it the intellectual property of the IEC. The CIM UML is copyrighted under an Apache 2.0 open-source license held by the UCA International Users Group. The Apache 2.0 license makes the CIM UML open-source and free to use.</ins>
+
+## Section 4.4 Scope of the CIM UML
+
+The scope of the information contained in the CIM UML is established by the scope of work performed by each TC 57 Working Group. The scope of work for each TC 57 working group is described their respective mission statements and is provided in Table 4-1.
+
+Table 4-1. IEC TC57 CIM Working Group Mission Statements
+
+| **Group ID** | **Mission Statement**                                                                                                                       |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| WG13         | Define standards for information exchange among systems supporting business functions directly involved with operation and planning of the overall interconnected electric grid. These functions rely on power system network models to analyse the behaviour of the grid. These business functions cover the entire interconnected grid at all voltage levels, and they often involve interactions between systems at various different participants in the grid (e.g. RTO, TSO, DSO, microgrid, generator, consumer). |
+| WG14         | Define standards for information exchange among systems supporting business functions that support power system operations, maintenance and customer support. This includes major business functions such as asset management, work management, meter data management, customer information, geographic information systems and engineering design. Also included is interoperating with assets and business capabilities governed by interconnection agreements with customers. |
+| WG16         | Define standards which facilitate the integration of electricity market application software developed independently by different vendors into a market management system, between market management systems and market participant systems. This is accomplished by defining message exchanges to enable these applications or systems access to public data and exchange information independent of how such information is represented internally. |
+| WG21         | Define standards for system interfaces, communication protocols and profiles in consideration of:<br><br><un><li>Interconnecting a large number of geographically distributed systems (aggregator, (utility, QSE, SC) to end customer)<li>Domain specific protocols for industrial, home and building automation<li>Domain specific protocols for retail markets, real time pricing, and traditional non-market load management<li>State-of-the-art wireless and wired communication<li>Efficient installation, commissioning and maintenance</ul> |
+
+In summary, the CIM UML contains all of the information required to produce the IEC CIM data standards. Specifically, the CIM UML contains all of the information required to produce IEC Standards IEC61970-301, IEC61968-11, and IEC62325-301. The IEC TC57 CIM information exchange standards (CIM Profiles) are derived from the CIM UML. (Note: WG21 uses IEC62325-301 as the basis for its CIM-based Profiles and therefore does not have a separate IEC CIM data standard).
+
+## Section 4.5	CIM UML Model Structure
+
+The CIM UML uses UML packages to logically organize utility domain information. The CIM UML contains a single high-level (root) package (TC57CIM) and four (4) top-level packages The purpose of top-level packages in the CIM UML is primarily to organize utility domain information logically according to the mission of each IEC TC57 CIM working group. They are also used to define the areas of responsibility for each UCA and TC 57 working group and CIM Model Manager. The CIM UML high-level and top-level package hierarchy is shown in Figure 4-6. The CIM UML is maintained in Sparx Systems' Enterprise Architect (EA) modeling tool as an EA project file.
+
+
 
 <span id="_Ref21669616" class="anchor"></span>Table 4‑1. IEC TC57 CIM Working Group Mission Statements
 

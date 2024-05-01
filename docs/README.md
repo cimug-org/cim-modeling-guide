@@ -2,9 +2,7 @@
 UCAIug CIM Modeling Guide, © 2019 - 2023. All rights reserved by the UCA International CIM Users Group
 
 ## Development
-This directory stores the CIMTool documentation site, which is deployed [here](https://cim-modeling-guide.ucaiug.io/).
-
-
+This directory stores the CIMTool documentation site, which is deployed [here](https://cim-mg.ucaiug.io/).
 
 ## Development
 The CIMTool documentation site leverages [Material for MkDocs](https://squidfunk.github.io/mkdocs-material). If you need to do work on the documentation site, clone this repo then install Material for MkDocs with either Python `pip install mkdocs-material` or Docker `docker pull squidfunk/mkdocs-material`. 
