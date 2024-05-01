@@ -4,11 +4,12 @@ theme:
   palette:
     primary: white
   logo: images/media/logo-gray.png
+  favicon: images/media/logo-white.png
   name: material
   features:
     - content.code.copy
     - navigation.footer
-copyright: Copyright &copy; 2019 - 2023. All rights reserved by the UCA International CIM Users Group
+copyright: Copyright &copy; 2019 - 2024. All rights reserved by the UCA International CIM Users Group
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
@@ -22,11 +23,13 @@ plugins:
       toc_depth: 6
       exclude:
         - index.md
+        - revision-history.md
   - with-pdf:
-      copyright:   Version 1.1, © February 2021. All rights reserved by the UCA International Users Group
+      author: UCA International Users Group
+      copyright: © Copyright 2021, UCA International Users Group, All Rights Reserved
       cover: true
       cover_title: CIM Modeling Guide
-      cover_subtitle: Version 1.1, © February 2021
+      cover_subtitle: Version 1.1,  13 February 2021
       toc_title: Table of Contents
       heading_shift: true
       ordered_chapter_level: 0

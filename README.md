@@ -39,7 +39,7 @@ mkdocs build
 The output will indicate the PDF file location.
 
 ## Publishing
-This project publishes gets published to the https://cim-mg.ucaiug.io site. The easieset way update the site is with the [Publish website](https://github.com/cimug-org/cim-modeling-guide/actions/workflows/publish-site.yml) GitHub Action.
+This project gets published to the https://cim-mg.ucaiug.io site. The easieset way update the site is with the [Publish website](https://github.com/cimug-org/cim-modeling-guide/actions/workflows/publish-site.yml) GitHub Action.
 
 You can also publish manually as described below. Under the hood the project is using [GitHub Pages](https://pages.github.com/) to host the site which effecitvely just stores the site content in a dedicated git branch called `gh-pages`. It uses the [mike](https://github.com/jimporter/mike) plugin to publish multiple versions.
 
