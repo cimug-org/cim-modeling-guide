@@ -9,7 +9,7 @@
 **13-February-2021**
 
 
-Click [here](https://github.com/cimug-org/cim-modeling-guide/releases/download/v1.1/CIM_Modeling_Guide_v1.1.pdf) to download the PDF release pf this version of the CIM Modeling Guide.
+Click [here](https://github.com/cimug-org/cim-modeling-guide/releases/download/v1.1/CIM_Modeling_Guide_v1.1.pdf) to download the PDF release of this version of the CIM Modeling Guide.
 
 !!! Note
 
