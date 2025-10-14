@@ -8,7 +8,7 @@
 
 **13-February-2021**
 
-The PDF release of v1.1 of the CIM Modeling Guide is made available [here](https://cimug.ucaiug.org/Model%20Manager%20Documents/Public/CIM%20Modeling%20Guide_v1.1.pdf) at the UCAIug SharePoint site or [here](https://github.com/cimug-org/cim-modeling-guide/releases/download/v1.1/CIM_Modeling_Guide_v1.1.pdf) at the UCAIug's official Github site.
+The PDF release of v1.1 of the CIM Modeling Guide is made available [here]([https://cimug.ucaiug.org/Model%20Manager%20Documents/Public/CIM%20Modeling%20Guide_v1.1.pdf](https://cimug.org/cimdocs/model-manager-documents/?wpcp_link=JTdCJTIyc291cmNlJTIyJTNBJTIyNjVmNzM0NTkyN2U5OTk1YjliZDI0YzlmOTBjNWJhMWMlMjIlMkMlMjJhY2NvdW50X2lkJTIyJTNBJTIyMTg2MDYxNzEwNTYlMjIlMkMlMjJsYXN0Rm9sZGVyJTIyJTNBJTIyMzA3OTY4MzMwMzc0JTIyJTJDJTIyZm9sZGVyUGF0aCUyMiUzQSUyMld5SXpNRGM1Tmpnek16QXpOelFpWFElM0QlM0QlMjIlMkMlMjJmb2N1c19pZCUyMiUzQSUyMjE3ODA3MjMwMjYzMjElMjIlN0Q%3D)) at the UCAIug SharePoint site.
 
 !!! Note
 
