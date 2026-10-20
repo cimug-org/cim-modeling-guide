@@ -1,6 +1,8 @@
 site_name: CIM Modeling Guide
+site_description: UML modeling rules and guidelines for the CIM.
 repo_url: https://github.com/CIMug-org/cim-modeling-guide
 theme:
+  custom_dir: overrides
   palette:
     primary: white
   logo: images/media/logo-gray.png
@@ -40,7 +42,7 @@ plugins:
   # This 'mike' plugin is for publishing multiple versions see https://github.com/jimporter/mike
   - mike: 
       alias_type: symlink
-      redirect_template: null
+      redirect_template: templates/redirect.html
       deploy_prefix: ''
       canonical_version: null
       version_selector: true
