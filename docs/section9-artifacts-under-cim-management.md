@@ -179,9 +179,9 @@ A CIM Profile is a subset of the full CIM UML that is derived to define data exc
 
 **Table 9‑3. CIM Profiles Under CIM Management (Cont’d)**
 
-## 9.5 CIM Schemas
+## CIM Schemas
 
-### 9.5.1 Background
+### Background
 
 XML, the eXtensible Markup Language, is a “universal format for structured documents and data” which is quickly becoming the standard for storing machine-readable data in a structured, extensible format that is accessible over the Internet. XML uses *tags* to denote the elements within XML documents.
 

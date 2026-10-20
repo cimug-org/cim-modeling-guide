@@ -152,7 +152,6 @@ Continuous process improvement (CPI) is the ongoing process of improving the CIM
 
 Mapping of the CIM management functions includes two (2) mappings of the CIM management functions. The first shows the mapping between CIM management functions and CIM management responsibilities assigned to the CIM Subcommittee with the UCAIug. The second shows the mapping between CIM management functions and the CIM management processes that realize those functions. The first mapping is shown in Figure 4‑2. The second mapping is discussed in Section 4.4 and shown in Figure 4‑9
 
-
 ![](images/media/image3.png)
 
 <span id="_Ref1988984" class="anchor"></span>Figure 4‑2. CIM Management Functions-to-UCA CIM Responsibilities Mapping
@@ -206,8 +205,8 @@ The mapping between CIM management functions and the CIM management processes ar
 The CIM Model Managers perform most of the tasks within the CIM management processes. There are however, other roles within the CIMug and IEC working groups that also perform CIM management tasks. The following table provides a description of each role and its mapping to CIM management processes.
 
 | **Role** | **Role Description** | **MDP** | **CMP** | **DGP** | **ADP** | **CPIP** |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------|---------|---------|----------|
-| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. |  **X** |         |         |         |          |
+|----------|----------------------|---------|---------|---------|---------|----------|
+| CIMug Focus Community | This group role consists of individual CIMug members and IEC CIM Working Group members dedicated to developing CIM extensions that deal with a specific area of focus. | **X** |         |         |         |          |
 | CIMug Project Team | This group role consists of individual CIMug members and IEC CIM Working Group members working on projects that are jointly funded by participating utilities or vendor companies. | **X** |         |         |         |          |
 | CIMug Working Group | This group role consists of individual CIMug members working on issues of common interest to CIM Users. | **X** |         |         |         |          |
 | IEC CIM Working Group | This group role consists of individuals appointed by their respective IEC National Committee (technical experts) that take part in the drafting of IEC standard working documents. | **X** |         | **X** |         |          |

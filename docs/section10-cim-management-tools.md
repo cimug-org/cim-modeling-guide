@@ -10,9 +10,9 @@ Enterprise Architect can also be used to generate CIM Profiles with its Schema C
 
 ## CIMTool
 
-[CIMTool](https://cimtool.ucaiug.io/) is an open source tool for working with the CIM to produce design artifacts such as database schemas, RDF Schema, XSD Schema, JSON Schema, source code classes, reference documentation, etc. from a contextual profile.
+CIMTool is an open source tool for working with the CIM to produce design artifacts such as database schemas, RDF Schema, XSD Schema, JSON Schema, source code classes, reference documentation, etc. from a contextual profile.
 
-## jCleanCIM
+## jCleanCim
 
 jCleanCim is a Java application that is used to auto generate draft model standards from the CIM UML. It uses a Word document template, a configuration file, and a CIM UML project file to create the 61970-301, 61968-11, and 62325-301 model documents.
 
