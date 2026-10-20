@@ -329,12 +329,14 @@
   padding-top: 0.25rem;
   padding-bottom: 0.5rem;
   color: var(--cmm-heading);
-  font: 700 2rem/1.15 var(--cmm-heading-font);
+  font: 400 2rem/1.15 var(--cmm-heading-font);
 }
 .md-content__inner:has(> p > img[src$="image1.png"]) > p:is(:nth-of-type(4), :nth-of-type(5)) {
   color: var(--cmm-muted);
-  font: 700 0.85rem/1.55 var(--cmm-heading-font);
+  font: 400 0.85rem/1.55 var(--cmm-heading-font);
 }
+/* Title, version and date are bold in the Markdown; show them in regular weight */
+.md-content__inner:has(> p > img[src$="image1.png"]) > p:is(:nth-of-type(3), :nth-of-type(4), :nth-of-type(5)) strong { font-weight: 400; }
 .md-content__inner:has(> p > img[src$="image1.png"]) > p:nth-of-type(5) {
   margin-bottom: 1.6rem;
   padding-bottom: 0.3rem;
