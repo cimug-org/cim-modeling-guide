@@ -1,18 +1,58 @@
 name: Publish website
-on: workflow_dispatch
+
+# Run from the Actions tab with "Use workflow from: master".
+# Builds the chosen branch with that branch's own pinned tools and publishes it
+# to gh-pages with mike as the given version (optionally also as "latest").
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish, e.g. 1.1"
+        required: true
+      branch:
+        description: "Branch to build from, e.g. v1.1"
+        required: true
+      latest:
+        description: "Also make this the 'latest' version"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages
+
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ inputs.version }}
+      LATEST: ${{ inputs.latest }}
     steps:
-    - name: Checkout this repository
-      uses: actions/checkout@v4
-    - name: Install/setup Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: 3.9
-    - name: Install mkdocs documentation tool and plugins
-      run: pip install -r requirements.txt
-    - name: Configure Deploy
-      run: |
-        git config --global user.name "Admin CIMug"
-        git config --global user.email "cimug.dev@gmail.com"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch }}
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+
+      - name: Install the branch's pinned tools
+        run: pip install -r requirements.txt
+
+      - name: Configure deploy
+        run: |
+          [[ "$VERSION" =~ ^[0-9]+(\.[0-9]+)*$ ]] || { echo "Bad version: $VERSION"; exit 1; }
+          git config user.name "Admin CIMug"
+          git config user.email "cimug.dev@gmail.com"
+          git fetch origin gh-pages --depth=1
+
+      - name: Publish with mike
+        run: |
+          if [ "$LATEST" = "true" ]; then
+            mike deploy --push --update-aliases "$VERSION" latest
+          else
+            mike deploy --push "$VERSION"
+          fi
