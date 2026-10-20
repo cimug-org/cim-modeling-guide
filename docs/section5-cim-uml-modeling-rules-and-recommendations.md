@@ -73,9 +73,9 @@ Model structure rules address UML metamodel rules, and the structure, dependenci
 
 <u>Overview</u>
 
-The CIM is wholly contained in one top-level package named **TC57CIM.** TC57CIM contains all of the utility domain model elements.
+The CIM is wholly contained in one top-level package named **CIM** (formerly TC57CIM). CIM contains all of the utility domain model elements.
 
-**TC57CIM Package Structure**
+**CIM Package Structure**
 
 The top-level "CIM" (formerly TC57CIM) package is partitioned into sub-packages corresponding to the IEC TC57 working groups and an additional package that describes the dependencies between the top-level IEC TC57 working group packages. The working groups are mapped to the corresponding UML top-level packages as follows:
 
@@ -89,7 +89,7 @@ Both the legacy and new top-level package structure are shown in Figure 5‑1 an
 
 <img src="../images/media/image13.png" style="width:3.41667in;height:2.60417in" />
 
-<span id="_Ref8597346" class="anchor"></span>Figure 5‑1 - TC57CIM Package Structure
+<span id="_Ref8597346" class="anchor"></span>Figure 5‑1 - CIM Package Structure
 
 <img src="../images/media/image13-new.png" style="width:3.41667in;height:2.60417in" />
 
@@ -1018,7 +1018,7 @@ nsuri=http://iec.ch/TC57/2015/CIM17
 </tr>
 <tr class="even">
 <td>Rule145</td>
-<td>The value of the TC57CIM package nsprefix tag shall be “cim”.</td>
+<td>The value of the CIM package nsprefix tag shall be “cim”.</td>
 </tr>
 <tr class="odd">
 <td>Rule146</td>
