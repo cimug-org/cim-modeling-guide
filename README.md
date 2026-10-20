@@ -1,6 +1,4 @@
-# CIM Modeling Guide
-
-![image](docs/images/media/image-header-1.png)
+<h1><picture><source media="(prefers-color-scheme: dark)" srcset="media/logo/cim-modeling-guide-logo-dark.svg"><img src="media/logo/cim-modeling-guide-logo.svg" alt="CIM Modeling Guide" height="72"></picture></h1>
 
 UCAIug CIM Modeling Guide, © 2019 - 2024. All rights reserved by the UCA International CIM Users Group
 
