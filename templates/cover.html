@@ -1,0 +1,30 @@
+{#- CIM Model Management brand cover for the PDF export (mkdocs-with-pdf).
+    Replaces the plugin's default cover. Title, subtitle, author and copyright
+    come from the with-pdf settings in mkdocs.yml; the label matches the site's
+    "UCAIug guide" header label. Styles: templates/styles.scss. -#}
+<article id="doc-cover">
+  {#- The home page swaps its old cover image for the CIM MM logo. The image URL must be
+      resolved by to_url, so this one rule lives here rather than in styles.scss. -#}
+  <style>article[data-url="/."] > p:nth-of-type(1) { background-image: url("{{ 'brand/CIM_Model_Management_logo_dark.svg' | to_url }}"); }</style>
+  <div class="cmm-band">
+    <img class="cmm-mark" src="{{ 'brand/CIMug_mark.svg' | to_url }}" alt="">
+    <img class="cmm-logo" src="{{ 'brand/CIM_Model_Management_logo_dark.svg' | to_url }}" alt="CIM Model Management">
+    <p class="cmm-label">UCAIug guide</p>
+    <h1>{{ cover_title | e }}</h1>
+    {% if cover_subtitle is defined %}
+      <h2>{{ cover_subtitle | e }}</h2>
+    {% endif %}
+    <div class="cmm-rule"></div>
+  </div>
+  <div class="properties">
+    <address>
+      {% if author is defined %}
+        <p id="author">{{ author | e }}</p>
+      {% endif %}
+      {% if copyright is defined %}
+        <p id="copyright">{{ copyright | e }}</p>
+      {% endif %}
+    </address>
+  </div>
+  <div class="cmm-edge"></div>
+</article>
