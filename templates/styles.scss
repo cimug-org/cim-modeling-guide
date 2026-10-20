@@ -151,6 +151,12 @@ article#doc-cover {
     background: $teal;
   }
 
+  // ---- Numbered lists: numbers indented to the right of the paragraph above,
+  // in line with the bullets of bulleted lists. mkdocs-with-pdf indents
+  // paragraphs (0.7rem) and bulleted lists but not numbered lists, so their
+  // numbers fell to the left of the paragraph text.
+  .md-typeset > ol { margin-left: 2rem; }
+
   // ---- Tables: brand blue header; always fit the page width
   .md-typeset table:not([class]) {
     display: table;
