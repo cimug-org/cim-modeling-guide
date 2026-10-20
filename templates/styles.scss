@@ -1,11 +1,229 @@
-article h1 {
-    border-bottom: 2px solid #009dab;
+// =============================================================================
+// CIM Model Management brand for the PDF export (mkdocs-with-pdf).
+// with-pdf compiles this file into the PDF only; the website never loads it.
+// It comes after the site's stylesheets, so it also corrects the site rules
+// that do not suit print. Palette and type: Brand KB §3, §4, §11.1.
+// =============================================================================
+
+$navy: #0A2E57;
+$blue: #0058A9;
+$teal: #0097A5;
+$ink: #231F20;
+$band: #EEF4F8;
+$note: #F6F9FB;
+$hairline: #C8D2DA;
+$frame: #D5DEE5;
+$muted: #5B6770;
+$arial: Arial, "Liberation Sans", Helvetica, sans-serif;
+
+// ---- Pages: running header and footer (text unchanged, brand type and color)
+@page {
+  @top-left {
+    content: string(title);
+    font-family: $arial;
+    font-size: 7pt;
+    font-weight: bold;
+    color: $navy;
+  }
+  @top-right {
+    font-family: $arial;
+    color: $muted;
+  }
+  @bottom-center {
+    font-family: $arial;
+    font-weight: bold;
+    color: $blue;
+  }
+  @bottom-right {
+    font-family: $arial;
+    color: $muted;
+  }
 }
 
-article h2 {
-    border-bottom: 1px solid #009dab;
+// ---- Cover (templates/cover.html): full-bleed page -------------------------
+@page :first {
+  margin: 0;
+  @top-left { content: normal; }
 }
 
-.md-typeset a {
-    color: #0b57d0;
+article#doc-cover {
+  display: block;
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+  padding: 0;
+  page-break-after: always;
+  font-family: $arial;
+
+  .cmm-band {
+    position: relative;
+    overflow: hidden;
+    height: 150mm;
+    padding: 48mm 22mm 0;
+    background: $band;
+    border-bottom: 1px solid $hairline;
+  }
+  .cmm-mark {                       // CIMug watermark at 6%, bleeding off the right
+    position: absolute;
+    top: 18mm;
+    right: -38mm;
+    width: 120mm;
+    height: 120mm;
+    opacity: 0.06;
+  }
+  .cmm-logo { display: block; height: 20mm; width: auto; margin: 0 0 14mm; }
+  .cmm-label {
+    margin: 0 0 3mm;
+    color: $teal;
+    font: bold 10pt/1.2 $arial;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0 0 4mm;
+    padding: 0;
+    border: 0;
+    color: $navy;
+    font: bold 34pt/1.15 $arial;
+    text-align: left;
+  }
+  h1::after { display: none; }
+  h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: $muted;
+    font: bold 14pt/1.4 $arial;
+    text-align: left;
+    bookmark-level: none;
+  }
+  h2::after { display: none; }
+  .cmm-rule { width: 22mm; height: 1.4mm; margin-top: 9mm; background: $teal; }
+
+  .properties {
+    position: absolute;
+    left: 22mm;
+    right: 22mm;
+    bottom: 22mm;
+    padding: 0;
+    text-align: left;
+    address { font-style: normal; }
+    p { margin: 0 0 1.5mm; color: $muted; font: 9pt/1.4 $arial; }
+    p#author { color: $navy; font-weight: bold; font-size: 11pt; }
+    p#copyright { font-size: 8pt; }
+  }
+  .cmm-edge {                        // teal and navy edge bar, as on the white social cards
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4mm;
+    background: linear-gradient(90deg, $teal 0, $teal 33mm, $navy 33mm, $navy 100%);
+  }
+}
+
+// ---- Body text ------------------------------------------------------------
+@media print {
+  html, body, article, .md-typeset { font-family: $arial; }
+  .md-typeset { color: $ink; }
+  .md-typeset a { color: $blue; }
+
+  .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4,
+  article#doc-toc > h1 {
+    color: $navy;
+    font-family: $arial;
+    font-weight: bold;
+  }
+  // page titles: hairline with a short teal accent (the web h2 rule)
+  article.md-typeset > h1, article#doc-toc > h1 {
+    position: relative;
+    padding-bottom: 2mm;
+    border-bottom: 0.75pt solid $hairline;
+  }
+  article.md-typeset > h1::after, article#doc-toc > h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1pt;
+    width: 14mm;
+    height: 2pt;
+    background: $teal;
+  }
+
+  // ---- Tables: brand blue header; always fit the page width
+  .md-typeset table:not([class]) {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    font-size: 7.5pt;
+    border: 0.75pt solid $frame;
+    border-radius: 0;
+  }
+  .md-typeset table:not([class]) th {
+    min-width: 0;                    // Material's 5rem minimum pushes wide tables off the page
+    background: $blue;
+    color: #fff;
+    font-family: $arial;
+    font-weight: bold;
+    padding: 1.4mm 1.6mm;
+  }
+  .md-typeset table:not([class]) td { padding: 1.4mm 1.6mm; border-top: 0.5pt solid $frame; }
+  .md-typeset table:not([class]) tbody tr:nth-child(2n) { background: $band; }
+
+  // ---- Notes and quotes: teal edge, no screen icon (it prints as a square)
+  .md-typeset .admonition, .md-typeset details, .md-typeset blockquote,
+  .md-typeset .admonition.note, .md-typeset details.note {
+    border: 0;
+    border-left: 1.2mm solid $teal;
+    border-radius: 0;
+    background: $note;
+    box-shadow: none;
+  }
+  .md-typeset .admonition-title, .md-typeset summary {
+    padding-left: 3mm;
+    background: transparent;
+    color: $navy;
+    font-family: $arial;
+    font-weight: bold;
+  }
+  .md-typeset .admonition-title::before, .md-typeset summary::before { display: none; }
+
+  // Long block quotes (the Abstract, the legal notices) may break across pages. with-pdf
+  // marks them unbreakable; with Arial metrics WeasyPrint then stops paginating silently.
+  article blockquote { page-break-inside: auto; page-break-before: auto; }
+
+  // ---- Code
+  .md-typeset pre > code { background: $band; border: 0.5pt solid $frame; }
+
+  // ---- Home page: the cover lines in the light-blue panel (as on the site)
+  article[data-url="/."] {
+    > p:nth-of-type(1), > p:nth-of-type(2), > p:nth-of-type(3),
+    > p:nth-of-type(4), > p:nth-of-type(5) {
+      margin: 0;
+      padding: 0 6mm;
+      background-color: $band;
+      font-family: $arial;
+    }
+    > p:nth-of-type(1) {
+      height: 21mm;                   // border-box: 6 mm padding + 13 mm logo + 2 mm
+      margin-top: 2mm;
+      padding-top: 6mm;
+      background-color: $band;
+      background-repeat: no-repeat;
+      background-position: 6mm 6mm;
+      background-size: auto 13mm;     // the logo image itself is set in templates/cover.html (needs to_url)
+    }
+    > p:nth-of-type(1) img { display: none; }
+    > p:nth-of-type(2) {
+      padding-top: 4mm;
+      color: $teal;
+      font-size: 8pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    > p:nth-of-type(3) { padding-top: 1mm; color: $navy; font-size: 20pt; line-height: 1.2; }
+    > p:nth-of-type(4), > p:nth-of-type(5) { color: $muted; font-size: 10pt; line-height: 1.5; }
+    > p:nth-of-type(5) { margin-bottom: 6mm; padding-bottom: 6mm; }
+  }
 }
