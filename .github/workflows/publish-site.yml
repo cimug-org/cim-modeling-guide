@@ -1,17 +1,17 @@
 name: Publish website
 
 # Run from the Actions tab with "Use workflow from: master".
-# Builds the chosen branch with that branch's own pinned tools and publishes it
-# to gh-pages with mike as the given version (optionally also as "latest").
+# Builds branch v<version> with that branch's own pinned tools and publishes it
+# to gh-pages with mike as <version> (optionally also as "latest").
+# To offer a new version, add it to the version options below.
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Version to publish, e.g. 1.1"
+        description: "Version to publish (built from branch v<version>)"
+        type: choice
         required: true
-      branch:
-        description: "Branch to build from, e.g. v1.1"
-        required: true
+        options: ["1.1", "1.0"]
       latest:
         description: "Also make this the 'latest' version"
         type: boolean
@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.branch }}
+          ref: refs/heads/v${{ inputs.version }}
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
