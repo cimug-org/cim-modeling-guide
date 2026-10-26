@@ -13,7 +13,7 @@
 <title>6. CIM UML Extension Rules and Recommendations - CIM Modeling Guide</title>
 <link href="../assets/stylesheets/main.bcfcd587.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<link href="../stylesheets/extra.css?v=20261020.2" rel="stylesheet"/>
+<link href="../stylesheets/extra.css?v=20261026.1" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <meta content="website" property="og:type"/>
 <meta content="CIM Modeling Guide" property="og:site_name"/>
@@ -477,35 +477,35 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule163</td>
+<td class="cmm-rule-id" id="Rule163"><a class="cmm-rule-permalink" href="#Rule163" title="Permanent link to Rule163">Rule163</a></td>
 <td>CIM extensions shall be based on at least one business use case that describes a business need that will be satisfied by the extension.</td>
 </tr>
 <tr>
-<td>Rule164</td>
+<td class="cmm-rule-id" id="Rule164"><a class="cmm-rule-permalink" href="#Rule164" title="Permanent link to Rule164">Rule164</a></td>
 <td>CIM extensions should be a specific as possible based on the business use case(s) it satisfies. Specific CIM extensions will give less room for interpretation which will result in better interoperability.</td>
 </tr>
 <tr>
-<td>Rule165</td>
+<td class="cmm-rule-id" id="Rule165"><a class="cmm-rule-permalink" href="#Rule165" title="Permanent link to Rule165">Rule165</a></td>
 <td>Existing standard CIM shall not be changed for simply violating any CIM extension rules.</td>
 </tr>
 <tr>
-<td>Rule166</td>
+<td class="cmm-rule-id" id="Rule166"><a class="cmm-rule-permalink" href="#Rule166" title="Permanent link to Rule166">Rule166</a></td>
 <td>A cost/benefit analysis must be submitted with CIM extensions that are not backwards compatible with the current standard CIM. The analysis must include an impact assessment for standardized message profiles.</td>
 </tr>
 <tr>
-<td>Rule167</td>
+<td class="cmm-rule-id" id="Rule167"><a class="cmm-rule-permalink" href="#Rule167" title="Permanent link to Rule167">Rule167</a></td>
 <td>During development of Standard CIM extensions, custom rules may be temporarily used.</td>
 </tr>
 <tr>
-<td>Rule168</td>
+<td class="cmm-rule-id" id="Rule168"><a class="cmm-rule-permalink" href="#Rule168" title="Permanent link to Rule168">Rule168</a></td>
 <td>Custom rules must no longer be in effect or enforced before merging Standard CIM extensions with the CIM.</td>
 </tr>
 <tr>
-<td>Rule169</td>
+<td class="cmm-rule-id" id="Rule169"><a class="cmm-rule-permalink" href="#Rule169" title="Permanent link to Rule169">Rule169</a></td>
 <td>UML packages shall be used to structure CIM extensions into manageable and logical model parts.</td>
 </tr>
 <tr>
-<td>Rule170</td>
+<td class="cmm-rule-id" id="Rule170"><a class="cmm-rule-permalink" href="#Rule170" title="Permanent link to Rule170">Rule170</a></td>
 <td>Before creating a new model element, the CIM should be searched to see if an element similar to the intended extension element already exists. If it does exist, it may influence the extension to the model.</td>
 </tr>
 </tbody>
@@ -525,57 +525,57 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule171</td>
+<td class="cmm-rule-id" id="Rule171"><a class="cmm-rule-permalink" href="#Rule171" title="Permanent link to Rule171">Rule171</a></td>
 <td>Standard CIM extensions shall exist within the top-level CIM (formerly TC57CIM) package.</td>
 </tr>
 <tr class="even">
-<td>Rule172</td>
+<td class="cmm-rule-id" id="Rule172"><a class="cmm-rule-permalink" href="#Rule172" title="Permanent link to Rule172">Rule172</a></td>
 <td>A single top-level package for User-Defined CIM extensions that exist outside of the top-level CIM (formerly TC57CIM) package shall be created at the root-level of the CIM model.</td>
 </tr>
 <tr class="odd">
-<td>Rule173</td>
+<td class="cmm-rule-id" id="Rule173"><a class="cmm-rule-permalink" href="#Rule173" title="Permanent link to Rule173">Rule173</a></td>
 <td>The top-level User-Defined CIM extension package should have the stereotype **&lt;&lt;CIMExtension&gt;&gt;** to identify all its contents as extension to the standard CIM.</td>
 </tr>
 <tr class="even">
-<td>Rule174</td>
+<td class="cmm-rule-id" id="Rule174"><a class="cmm-rule-permalink" href="#Rule174" title="Permanent link to Rule174">Rule174</a></td>
 <td>The top-level User-Defined CIM extension package should introduce a new namespace.</td>
 </tr>
 <tr class="odd">
-<td>Rule175</td>
+<td class="cmm-rule-id" id="Rule175"><a class="cmm-rule-permalink" href="#Rule175" title="Permanent link to Rule175">Rule175</a></td>
 <td><p>User-Defined CIM extensions shall exist either within a sub-package within the top-level User-Defined CIM extension package or within the CIM top-level package.</p>
 <p>NOTE: The preferred approach is to have User-Defined CIM extensions contained within a sub-package within the top-level User-Defined CIM extension package. However, there are known instances where implementation constraints make it necessary to place some User-Defined CIM extensions within the top-level CIM (formerly TC57CIM) package.</p></td>
 </tr>
 <tr class="even">
-<td>Rule176</td>
+<td class="cmm-rule-id" id="Rule176"><a class="cmm-rule-permalink" href="#Rule176" title="Permanent link to Rule176">Rule176</a></td>
 <td>Before creating a CIM extension sub-package, the model should be searched to ensure no existing CIM package has the intended name of the CIM extension package.</td>
 </tr>
 <tr class="odd">
-<td>Rule177</td>
+<td class="cmm-rule-id" id="Rule177"><a class="cmm-rule-permalink" href="#Rule177" title="Permanent link to Rule177">Rule177</a></td>
 <td><p>In instances where an existing CIM package has the intended name of the CIM extension package, the intended name of the CIM extension package shall be changed.</p>
 <p>NOTE: Consider using another name or adding a prefix to the name of the new package.</p></td>
 </tr>
 <tr class="even">
-<td>Rule178</td>
+<td class="cmm-rule-id" id="Rule178"><a class="cmm-rule-permalink" href="#Rule178" title="Permanent link to Rule178">Rule178</a></td>
 <td>CIM extension package names shall use the Upper Camel Case naming convention.</td>
 </tr>
 <tr class="odd">
-<td>Rule179</td>
+<td class="cmm-rule-id" id="Rule179"><a class="cmm-rule-permalink" href="#Rule179" title="Permanent link to Rule179">Rule179</a></td>
 <td>The sub-package structure of the extensions should be patterned after the Standard CIM sub-package structure as applicable.</td>
 </tr>
 <tr class="even">
-<td>Rule180</td>
+<td class="cmm-rule-id" id="Rule180"><a class="cmm-rule-permalink" href="#Rule180" title="Permanent link to Rule180">Rule180</a></td>
 <td>The “Inf” and “Doc” name prefix rules specified in section 5.3 shall apply to CIM extension packages.</td>
 </tr>
 <tr class="odd">
-<td>Rule181</td>
+<td class="cmm-rule-id" id="Rule181"><a class="cmm-rule-permalink" href="#Rule181" title="Permanent link to Rule181">Rule181</a></td>
 <td>The “DetailedDiagram” rules specified in section 5.3 shall apply to CIM extension packages.</td>
 </tr>
 <tr class="even">
-<td>Rule182</td>
+<td class="cmm-rule-id" id="Rule182"><a class="cmm-rule-permalink" href="#Rule182" title="Permanent link to Rule182">Rule182</a></td>
 <td>The Informative packages rules specified in section 5.3 shall apply to CIM extension packages.</td>
 </tr>
 <tr class="odd">
-<td>Rule183</td>
+<td class="cmm-rule-id" id="Rule183"><a class="cmm-rule-permalink" href="#Rule183" title="Permanent link to Rule183">Rule183</a></td>
 <td>The sub-package structure of the extensions should take into consideration how the extensions will be managed.</td>
 </tr>
 </tbody>
@@ -591,35 +591,35 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule184</td>
+<td class="cmm-rule-id" id="Rule184"><a class="cmm-rule-permalink" href="#Rule184" title="Permanent link to Rule184">Rule184</a></td>
 <td>Before creating a new extension class to represent a utility domain concept, the CIM should be searched to make sure the concept Is not already present in the CIM.</td>
 </tr>
 <tr>
-<td>Rule185</td>
+<td class="cmm-rule-id" id="Rule185"><a class="cmm-rule-permalink" href="#Rule185" title="Permanent link to Rule185">Rule185</a></td>
 <td>The creation of new primitive data types should be avoided. As a semantic data model, the CIM is intended to represent utility domain concepts, not extensive data typing available in implementation technologies.</td>
 </tr>
 <tr>
-<td>Rule186</td>
+<td class="cmm-rule-id" id="Rule186"><a class="cmm-rule-permalink" href="#Rule186" title="Permanent link to Rule186">Rule186</a></td>
 <td>The creation of CIM extension classes that represent synthesized utility domain concepts and not real domain objects should be avoided.</td>
 </tr>
 <tr>
-<td>Rule187</td>
+<td class="cmm-rule-id" id="Rule187"><a class="cmm-rule-permalink" href="#Rule187" title="Permanent link to Rule187">Rule187</a></td>
 <td>Class rules specified in section 5.4 shall apply to CIM extension classes.</td>
 </tr>
 <tr>
-<td>Rule188</td>
+<td class="cmm-rule-id" id="Rule188"><a class="cmm-rule-permalink" href="#Rule188" title="Permanent link to Rule188">Rule188</a></td>
 <td>The choice of new CIM extension class names should be made in consideration of potential conflicts with profile names. This conflict may occur based on the IEC62321-100 standard for XSD naming rules.</td>
 </tr>
 <tr>
-<td>Rule189</td>
+<td class="cmm-rule-id" id="Rule189"><a class="cmm-rule-permalink" href="#Rule189" title="Permanent link to Rule189">Rule189</a></td>
 <td>User-Defined CIM extension classes should use a class name prefix, suffix, or a stereotype to facilitate model searches for the class.</td>
 </tr>
 <tr>
-<td>Rule190</td>
+<td class="cmm-rule-id" id="Rule190"><a class="cmm-rule-permalink" href="#Rule190" title="Permanent link to Rule190">Rule190</a></td>
 <td>User-Defined CIM extension class names may include an underscore character.</td>
 </tr>
 <tr>
-<td>Rule191</td>
+<td class="cmm-rule-id" id="Rule191"><a class="cmm-rule-permalink" href="#Rule191" title="Permanent link to Rule191">Rule191</a></td>
 <td>Relationships between User-Defined CIM extension classes and standard CIM classes should be generalisations whenever possible.</td>
 </tr>
 </tbody>
@@ -635,19 +635,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule192</td>
+<td class="cmm-rule-id" id="Rule192"><a class="cmm-rule-permalink" href="#Rule192" title="Permanent link to Rule192">Rule192</a></td>
 <td>Attribute rules specified in 5.5 shall apply to CIM extension attributes.</td>
 </tr>
 <tr>
-<td>Rule193</td>
+<td class="cmm-rule-id" id="Rule193"><a class="cmm-rule-permalink" href="#Rule193" title="Permanent link to Rule193">Rule193</a></td>
 <td>Standard CIM extension attributes shall not be stereotyped.</td>
 </tr>
 <tr>
-<td>Rule194</td>
+<td class="cmm-rule-id" id="Rule194"><a class="cmm-rule-permalink" href="#Rule194" title="Permanent link to Rule194">Rule194</a></td>
 <td>User-Defined CIM extension attributes that are part of a User-Defined CIM extension class shall not be stereotyped.</td>
 </tr>
 <tr>
-<td>Rule195</td>
+<td class="cmm-rule-id" id="Rule195"><a class="cmm-rule-permalink" href="#Rule195" title="Permanent link to Rule195">Rule195</a></td>
 <td>User-Defined CIM extension attributes that are part of a standard CIM class shall be stereotyped.</td>
 </tr>
 </tbody>
@@ -670,39 +670,39 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule196</td>
+<td class="cmm-rule-id" id="Rule196"><a class="cmm-rule-permalink" href="#Rule196" title="Permanent link to Rule196">Rule196</a></td>
 <td>CIM extension associations shall comply with association rules specified in section 5.6.</td>
 </tr>
 <tr>
-<td>Rule197</td>
+<td class="cmm-rule-id" id="Rule197"><a class="cmm-rule-permalink" href="#Rule197" title="Permanent link to Rule197">Rule197</a></td>
 <td>In instances where a CIM extension association role has multiplicity greater than 1, its role name may be plural. This is allowed as a concession for backwards compatibility. For all new associations it is recommended that end role names be expressed in the singular.</td>
 </tr>
 <tr>
-<td>Rule198</td>
+<td class="cmm-rule-id" id="Rule198"><a class="cmm-rule-permalink" href="#Rule198" title="Permanent link to Rule198">Rule198</a></td>
 <td>In instances where there are multiple associations between two classes, all role names shall be different (see Figure 6‑1).</td>
 </tr>
 <tr>
-<td>Rule199</td>
+<td class="cmm-rule-id" id="Rule199"><a class="cmm-rule-permalink" href="#Rule199" title="Permanent link to Rule199">Rule199</a></td>
 <td>In instances where there is self-association, the two role names shall be different (see Figure 6‑2).</td>
 </tr>
 <tr>
-<td>Rule200</td>
+<td class="cmm-rule-id" id="Rule200"><a class="cmm-rule-permalink" href="#Rule200" title="Permanent link to Rule200">Rule200</a></td>
 <td>In instances where the role of a class in an association is clear from the referenced class, the class name may be used as the association role name.</td>
 </tr>
 <tr>
-<td>Rule201</td>
+<td class="cmm-rule-id" id="Rule201"><a class="cmm-rule-permalink" href="#Rule201" title="Permanent link to Rule201">Rule201</a></td>
 <td>In instances where the role of a class in an association does not correspond to the class name, the role of the class in the association shall be contained in its association role name.</td>
 </tr>
 <tr>
-<td>Rule202</td>
+<td class="cmm-rule-id" id="Rule202"><a class="cmm-rule-permalink" href="#Rule202" title="Permanent link to Rule202">Rule202</a></td>
 <td>In instances where a class is in associations with multiple classes, the association role names may be duplicated if the role names on the other end of the associations are different (see Figure 6‑3).</td>
 </tr>
 <tr>
-<td>Rule203</td>
+<td class="cmm-rule-id" id="Rule203"><a class="cmm-rule-permalink" href="#Rule203" title="Permanent link to Rule203">Rule203</a></td>
 <td>Inherited association ends shall have unique role names.</td>
 </tr>
 <tr>
-<td>Rule204</td>
+<td class="cmm-rule-id" id="Rule204"><a class="cmm-rule-permalink" href="#Rule204" title="Permanent link to Rule204">Rule204</a></td>
 <td>Associations between CIM extension classes and high-level standard CIM classes should be minimized.</td>
 </tr>
 </tbody>
@@ -728,12 +728,12 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule205</td>
+<td class="cmm-rule-id" id="Rule205"><a class="cmm-rule-permalink" href="#Rule205" title="Permanent link to Rule205">Rule205</a></td>
 <td><p>CIM extension enumerations names shall comply with class extension rules specified in section 6.4 and shall end with the suffix “Kind”.</p>
 <p>NOTE: There are several standard CIM classes that do not comply with this naming convention. This is an instance where backwards compatibility supersedes a modeling rule.</p></td>
 </tr>
 <tr class="even">
-<td>Rule206</td>
+<td class="cmm-rule-id" id="Rule206"><a class="cmm-rule-permalink" href="#Rule206" title="Permanent link to Rule206">Rule206</a></td>
 <td>CIM extension enumerations shall comply with enumeration rules specified in section 5.7with the exception in cases where established conventions exist (e.g. SI unit symbols or currencies).</td>
 </tr>
 </tbody>

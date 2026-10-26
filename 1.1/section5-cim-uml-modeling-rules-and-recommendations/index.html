@@ -13,7 +13,7 @@
 <title>5. CIM UML Modeling Rules and Recommendations - CIM Modeling Guide</title>
 <link href="../assets/stylesheets/main.bcfcd587.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<link href="../stylesheets/extra.css?v=20261020.2" rel="stylesheet"/>
+<link href="../stylesheets/extra.css?v=20261026.1" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <meta content="website" property="og:type"/>
 <meta content="CIM Modeling Guide" property="og:site_name"/>
@@ -682,7 +682,7 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule001</td>
+<td class="cmm-rule-id" id="Rule001"><a class="cmm-rule-permalink" href="#Rule001" title="Permanent link to Rule001">Rule001</a></td>
 <td><p>The CIM shall be limited to the following UML metamodel elements:</p>
 <ol type="1">
 <li><p>Packages;</p></li>
@@ -700,7 +700,7 @@
 </ol></td>
 </tr>
 <tr class="even">
-<td>Rule002</td>
+<td class="cmm-rule-id" id="Rule002"><a class="cmm-rule-permalink" href="#Rule002" title="Permanent link to Rule002">Rule002</a></td>
 <td>The UML element unique identifier shall be the internally generated Enterprise Architect GUID.</td>
 </tr>
 </tbody>
@@ -739,11 +739,11 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule003</td>
+<td class="cmm-rule-id" id="Rule003"><a class="cmm-rule-permalink" href="#Rule003" title="Permanent link to Rule003">Rule003</a></td>
 <td>There shall be one and only one package in the root model that contains all of the TC57 CIM information.</td>
 </tr>
 <tr class="even">
-<td>Rule004</td>
+<td class="cmm-rule-id" id="Rule004"><a class="cmm-rule-permalink" href="#Rule004" title="Permanent link to Rule004">Rule004</a></td>
 <td><p>For each of the following TC57 working groups, there shall be one and only one package that contains all of its CIM information:</p>
 <ul>
 <li><p>Working Group 13;</p></li>
@@ -753,19 +753,19 @@
 <p>Each package is also referred to as a “top-level” package.</p></td>
 </tr>
 <tr class="odd">
-<td>Rule005</td>
+<td class="cmm-rule-id" id="Rule005"><a class="cmm-rule-permalink" href="#Rule005" title="Permanent link to Rule005">Rule005</a></td>
 <td>The TC57 working group top-level packages and the package that describes their dependencies shall be the only sub-packages within the TC57 CIM information package.</td>
 </tr>
 <tr class="even">
-<td>Rule006</td>
+<td class="cmm-rule-id" id="Rule006"><a class="cmm-rule-permalink" href="#Rule006" title="Permanent link to Rule006">Rule006</a></td>
 <td>There shall be a diagram within the TC57 CIM information package that depicts the top-level TC57 CIM package structure that includes the TC57 working group packages and the package that describes their dependencies.</td>
 </tr>
 <tr class="odd">
-<td>Rule007</td>
+<td class="cmm-rule-id" id="Rule007"><a class="cmm-rule-permalink" href="#Rule007" title="Permanent link to Rule007">Rule007</a></td>
 <td>There shall be a diagram within the TC57 CIM information package that contains a note as its only UML element and that note shall include the CIM UML copyright notice verbiage.</td>
 </tr>
 <tr class="even">
-<td>Rule008</td>
+<td class="cmm-rule-id" id="Rule008"><a class="cmm-rule-permalink" href="#Rule008" title="Permanent link to Rule008">Rule008</a></td>
 <td>Each package should typically include at least one diagram that contains all the classes in a package, and an arbitrary number of other diagrams.</td>
 </tr>
 </tbody>
@@ -793,40 +793,40 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule009</td>
+<td class="cmm-rule-id" id="Rule009"><a class="cmm-rule-permalink" href="#Rule009" title="Permanent link to Rule009">Rule009</a></td>
 <td>There shall be one and only one package in the CIM that describes the dependencies between the TC57 working group packages.</td>
 </tr>
 <tr class="even">
-<td>Rule010</td>
+<td class="cmm-rule-id" id="Rule010"><a class="cmm-rule-permalink" href="#Rule010" title="Permanent link to Rule010">Rule010</a></td>
 <td>The package that describes the dependencies between the TC57 working group packages shall be maintained outside of the IEC working group packages.</td>
 </tr>
 <tr class="odd">
-<td>Rule011</td>
+<td class="cmm-rule-id" id="Rule011"><a class="cmm-rule-permalink" href="#Rule011" title="Permanent link to Rule011">Rule011</a></td>
 <td>The package used to contain IEC working group package dependencies shall be named “PackageDependencies”</td>
 </tr>
 <tr class="even">
-<td>Rule012</td>
+<td class="cmm-rule-id" id="Rule012"><a class="cmm-rule-permalink" href="#Rule012" title="Permanent link to Rule012">Rule012</a></td>
 <td>There shall be no circular dependencies among IEC working group packages</td>
 </tr>
 <tr class="odd">
-<td>Rule013</td>
+<td class="cmm-rule-id" id="Rule013"><a class="cmm-rule-permalink" href="#Rule013" title="Permanent link to Rule013">Rule013</a></td>
 <td>The “PackageDependencies” package shall contain a figure illustrating package dependencies as shown in Figure 5‑3.</td>
 </tr>
 <tr class="even">
-<td>Rule014</td>
+<td class="cmm-rule-id" id="Rule014"><a class="cmm-rule-permalink" href="#Rule014" title="Permanent link to Rule014">Rule014</a></td>
 <td>Dependencies between packages shall be owned by the dependent package.</td>
 </tr>
 <tr class="odd">
-<td>Rule015</td>
+<td class="cmm-rule-id" id="Rule015"><a class="cmm-rule-permalink" href="#Rule015" title="Permanent link to Rule015">Rule015</a></td>
 <td><p>The source end of associations between classes in different working group sub-packages shall be owned by the dependent package.</p>
 <p>NOTE: Following this convention may allow shortcuts in reassembling combined models, but this is not a formally documented feature of Enterprise Architect.</p></td>
 </tr>
 <tr class="even">
-<td>Rule016</td>
+<td class="cmm-rule-id" id="Rule016"><a class="cmm-rule-permalink" href="#Rule016" title="Permanent link to Rule016">Rule016</a></td>
 <td>Class inheritances between classes in different packages (specialisations) shall be owned by the dependent package</td>
 </tr>
 <tr class="odd">
-<td>Rule017</td>
+<td class="cmm-rule-id" id="Rule017"><a class="cmm-rule-permalink" href="#Rule017" title="Permanent link to Rule017">Rule017</a></td>
 <td>Associations between classes in different IEC working group packages shall be owned by the source (dependent) working group package e.g. for an association between an Enterprise (formerly IEC61968) class and a Grid (formerly IEC61970) class, both association ends are owned by the Enterprise (formerly IEC61968) package.</td>
 </tr>
 </tbody>
@@ -885,32 +885,32 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule018</td>
+<td class="cmm-rule-id" id="Rule018"><a class="cmm-rule-permalink" href="#Rule018" title="Permanent link to Rule018">Rule018</a></td>
 <td>Working group package assembly must start with an empty Enterprise Architect project containing a single empty model.</td>
 </tr>
 <tr class="even">
-<td>Rule019</td>
+<td class="cmm-rule-id" id="Rule019"><a class="cmm-rule-permalink" href="#Rule019" title="Permanent link to Rule019">Rule019</a></td>
 <td>Packages must be first exported from a properly combined model and then imported into an empty Enterprise Architect project containing a single empty model in order to perform proper package assembly.</td>
 </tr>
 <tr class="odd">
-<td>Rule020</td>
+<td class="cmm-rule-id" id="Rule020"><a class="cmm-rule-permalink" href="#Rule020" title="Permanent link to Rule020">Rule020</a></td>
 <td>Packages may be exported in any order.</td>
 </tr>
 <tr class="even">
-<td>Rule021</td>
+<td class="cmm-rule-id" id="Rule021"><a class="cmm-rule-permalink" href="#Rule021" title="Permanent link to Rule021">Rule021</a></td>
 <td>Package exportation must follow the procedure specified in Appendix TBD.</td>
 </tr>
 <tr class="odd">
-<td>Rule022</td>
+<td class="cmm-rule-id" id="Rule022"><a class="cmm-rule-permalink" href="#Rule022" title="Permanent link to Rule022">Rule022</a></td>
 <td><p>The integrity of internally generated GUIDs for Enterprise Architect model elements must be preserved between model versions to ensure model integrity.</p>
 <p>NOTE:: Some tools rely upon the name of the class or attribute not the Enterprise Architect GUID values for reference matching and will break linkages if names are changed.</p></td>
 </tr>
 <tr class="even">
-<td>Rule023</td>
+<td class="cmm-rule-id" id="Rule023"><a class="cmm-rule-permalink" href="#Rule023" title="Permanent link to Rule023">Rule023</a></td>
 <td>Package assembly must be performed by importing packages in dependency order as defined in the PackageDependencies diagram shown in Figure 5‑3. Specifically, the package import order is: <ol><li>Grid (formerly IEC61970);</li><li>Enterprise (formerly IEC61968);</li><li>Market (formerly IEC6235);</li><li>PackageDependencies.</li></ol></td>
 </tr>
 <tr class="odd">
-<td>Rule024</td>
+<td class="cmm-rule-id" id="Rule024"><a class="cmm-rule-permalink" href="#Rule024" title="Permanent link to Rule024">Rule024</a></td>
 <td><p>After each package import, the package dependency rules specified in Section 5.2.3 must be satisfied.</p>
 <p>NOTE: Any cross-working group package associations to packages not yet imported will be discarded in the combined model as they are by definition not owned by the thus far imported packages.</p></td>
 </tr>
@@ -941,23 +941,23 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule025</td>
+<td class="cmm-rule-id" id="Rule025"><a class="cmm-rule-permalink" href="#Rule025" title="Permanent link to Rule025">Rule025</a></td>
 <td>Names for packages shall use the Upper Camel Case naming convention.</td>
 </tr>
 <tr class="even">
-<td>Rule026</td>
+<td class="cmm-rule-id" id="Rule026"><a class="cmm-rule-permalink" href="#Rule026" title="Permanent link to Rule026">Rule026</a></td>
 <td>Names for packages shall be British English names.</td>
 </tr>
 <tr class="odd">
-<td>Rule027</td>
+<td class="cmm-rule-id" id="Rule027"><a class="cmm-rule-permalink" href="#Rule027" title="Permanent link to Rule027">Rule027</a></td>
 <td>All packages containing classes shall have unique names. (i.e., the package containment hierarchy shall not be used in uniquely identifying a package).</td>
 </tr>
 <tr class="even">
-<td>Rule028</td>
+<td class="cmm-rule-id" id="Rule028"><a class="cmm-rule-permalink" href="#Rule028" title="Permanent link to Rule028">Rule028</a></td>
 <td>The name of the top-level package at the root of the model shall be CIM (formerly TC57CIM).</td>
 </tr>
 <tr class="odd">
-<td>Rule029</td>
+<td class="cmm-rule-id" id="Rule029"><a class="cmm-rule-permalink" href="#Rule029" title="Permanent link to Rule029">Rule029</a></td>
 <td><p>The following names shall be used to identify CIM (formerly TC57CIM) top-level packages:</p>
 <ol type="1">
 <li><p>"Grid" (formerly IEC61970) for IEC TC57 WG13 domain information;</p></li>
@@ -966,23 +966,23 @@
 </ol></td>
 </tr>
 <tr class="even">
-<td>Rule030</td>
+<td class="cmm-rule-id" id="Rule030"><a class="cmm-rule-permalink" href="#Rule030" title="Permanent link to Rule030">Rule030</a></td>
 <td>The “Inf” prefix shall be used in package names to denote informative CIM UML sub-packages.</td>
 </tr>
 <tr class="odd">
-<td>Rule031</td>
+<td class="cmm-rule-id" id="Rule031"><a class="cmm-rule-permalink" href="#Rule031" title="Permanent link to Rule031">Rule031</a></td>
 <td>An informative package can be defined at any depth in the CIM UML model. The only requirement is the “Inf” prefix in the package name.</td>
 </tr>
 <tr class="even">
-<td>Rule032</td>
+<td class="cmm-rule-id" id="Rule032"><a class="cmm-rule-permalink" href="#Rule032" title="Permanent link to Rule032">Rule032</a></td>
 <td>The “Doc” prefix shall be used in package names to denote CIM UML sub-packages that contain diagrams used during the generation of IEC documents.</td>
 </tr>
 <tr class="odd">
-<td>Rule033</td>
+<td class="cmm-rule-id" id="Rule033"><a class="cmm-rule-permalink" href="#Rule033" title="Permanent link to Rule033">Rule033</a></td>
 <td>The package name “DetailedDiagrams” shall be a reserved package name.</td>
 </tr>
 <tr class="even">
-<td>Rule034</td>
+<td class="cmm-rule-id" id="Rule034"><a class="cmm-rule-permalink" href="#Rule034" title="Permanent link to Rule034">Rule034</a></td>
 <td>There may be multiple instances of packages named “DetailedDiagrams” in the CIM.</td>
 </tr>
 </tbody>
@@ -997,15 +997,15 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule035</td>
+<td class="cmm-rule-id" id="Rule035"><a class="cmm-rule-permalink" href="#Rule035" title="Permanent link to Rule035">Rule035</a></td>
 <td>Informative packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages.</td>
 </tr>
 <tr>
-<td>Rule036</td>
+<td class="cmm-rule-id" id="Rule036"><a class="cmm-rule-permalink" href="#Rule036" title="Permanent link to Rule036">Rule036</a></td>
 <td>“Doc” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages.</td>
 </tr>
 <tr>
-<td>Rule037</td>
+<td class="cmm-rule-id" id="Rule037"><a class="cmm-rule-permalink" href="#Rule037" title="Permanent link to Rule037">Rule037</a></td>
 <td>“DetailedDiagram” packages should be specified as “private” packages in Enterprise Architect package properties, so they can be filtered out of diagrams showing the sub-packages.</td>
 </tr>
 </tbody>
@@ -1049,47 +1049,47 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule038</td>
+<td class="cmm-rule-id" id="Rule038"><a class="cmm-rule-permalink" href="#Rule038" title="Permanent link to Rule038">Rule038</a></td>
 <td>Names for classes shall use the Upper Camel Case naming convention.</td>
 </tr>
 <tr>
-<td>Rule039</td>
+<td class="cmm-rule-id" id="Rule039"><a class="cmm-rule-permalink" href="#Rule039" title="Permanent link to Rule039">Rule039</a></td>
 <td>Names for classes shall be British English names.</td>
 </tr>
 <tr>
-<td>Rule040</td>
+<td class="cmm-rule-id" id="Rule040"><a class="cmm-rule-permalink" href="#Rule040" title="Permanent link to Rule040">Rule040</a></td>
 <td>All classes shall have unique names. The package containment hierarchy shall not be used in uniquely identifying a class.</td>
 </tr>
 <tr>
-<td>Rule041</td>
+<td class="cmm-rule-id" id="Rule041"><a class="cmm-rule-permalink" href="#Rule041" title="Permanent link to Rule041">Rule041</a></td>
 <td>A CIM class shall be used to describe either an electric utility domain entity or an information entity used in the electric utility domain.</td>
 </tr>
 <tr>
-<td>Rule042</td>
+<td class="cmm-rule-id" id="Rule042"><a class="cmm-rule-permalink" href="#Rule042" title="Permanent link to Rule042">Rule042</a></td>
 <td>All class names shall be the singular form of a utility domain concept.</td>
 </tr>
 <tr>
-<td>Rule043</td>
+<td class="cmm-rule-id" id="Rule043"><a class="cmm-rule-permalink" href="#Rule043" title="Permanent link to Rule043">Rule043</a></td>
 <td>A CIM class that has the <strong>&lt;&lt;CIMDatatype&gt;&gt;</strong> stereotype shall have at minimum, the following attributes: 1. value; 2. unit; and 3. multiplier.</td>
 </tr>
 <tr>
-<td>Rule044</td>
+<td class="cmm-rule-id" id="Rule044"><a class="cmm-rule-permalink" href="#Rule044" title="Permanent link to Rule044">Rule044</a></td>
 <td>A CIM class shall not be an abstract class.</td>
 </tr>
 <tr>
-<td>Rule045</td>
+<td class="cmm-rule-id" id="Rule045"><a class="cmm-rule-permalink" href="#Rule045" title="Permanent link to Rule045">Rule045</a></td>
 <td>A CIM class shall not be an association class.</td>
 </tr>
 <tr>
-<td>Rule046</td>
+<td class="cmm-rule-id" id="Rule046"><a class="cmm-rule-permalink" href="#Rule046" title="Permanent link to Rule046">Rule046</a></td>
 <td>CIM classes with a stereotype other than <strong>&lt;&lt;deprecated&gt;&gt;</strong> shall never participate in relationships with other classes (i.e., no associations, no inheritance).</td>
 </tr>
 <tr>
-<td>Rule047</td>
+<td class="cmm-rule-id" id="Rule047"><a class="cmm-rule-permalink" href="#Rule047" title="Permanent link to Rule047">Rule047</a></td>
 <td>CIM classes with a stereotype other than <strong>&lt;&lt;deprecated&gt;&gt;</strong> shall only be used as datatypes for attributes.</td>
 </tr>
 <tr>
-<td>Rule048</td>
+<td class="cmm-rule-id" id="Rule048"><a class="cmm-rule-permalink" href="#Rule048" title="Permanent link to Rule048">Rule048</a></td>
 <td>CIM classes should be ordered alphabetically or in order of importance or by logical grouping within a package.</td>
 </tr>
 </tbody>
@@ -1120,59 +1120,59 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule049</td>
+<td class="cmm-rule-id" id="Rule049"><a class="cmm-rule-permalink" href="#Rule049" title="Permanent link to Rule049">Rule049</a></td>
 <td>Names for attributes shall use the Lower Camel Case naming convention</td>
 </tr>
 <tr class="even">
-<td>Rule050</td>
+<td class="cmm-rule-id" id="Rule050"><a class="cmm-rule-permalink" href="#Rule050" title="Permanent link to Rule050">Rule050</a></td>
 <td>Names for attributes shall be British English names.</td>
 </tr>
 <tr class="odd">
-<td>Rule051</td>
+<td class="cmm-rule-id" id="Rule051"><a class="cmm-rule-permalink" href="#Rule051" title="Permanent link to Rule051">Rule051</a></td>
 <td>Attribute names shall be singular form concepts.</td>
 </tr>
 <tr class="even">
-<td>Rule052</td>
+<td class="cmm-rule-id" id="Rule052"><a class="cmm-rule-permalink" href="#Rule052" title="Permanent link to Rule052">Rule052</a></td>
 <td>The "value" attribute of a CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be a Primitive data type.</td>
 </tr>
 <tr class="odd">
-<td>Rule053</td>
+<td class="cmm-rule-id" id="Rule053"><a class="cmm-rule-permalink" href="#Rule053" title="Permanent link to Rule053">Rule053</a></td>
 <td>The "unit" attribute of a CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be an enumeration data type.</td>
 </tr>
 <tr class="even">
-<td>Rule054</td>
+<td class="cmm-rule-id" id="Rule054"><a class="cmm-rule-permalink" href="#Rule054" title="Permanent link to Rule054">Rule054</a></td>
 <td>The "multiplier" attribute of a CIM class that has the **&lt;&lt;CIMDatatype&gt;&gt;** stereotype shall be an enumeration data type.</td>
 </tr>
 <tr class="odd">
-<td>Rule055</td>
+<td class="cmm-rule-id" id="Rule055"><a class="cmm-rule-permalink" href="#Rule055" title="Permanent link to Rule055">Rule055</a></td>
 <td>Attribute data types shall be one of the stereotyped CIM classes (i.e. shall not be one of the Enterprise Architect native data types).</td>
 </tr>
 <tr class="even">
-<td>Rule056</td>
+<td class="cmm-rule-id" id="Rule056"><a class="cmm-rule-permalink" href="#Rule056" title="Permanent link to Rule056">Rule056</a></td>
 <td>In instances where an attribute of a CIM class has an initial value, it shall denote a constant for all instance of the class to which the attribute belongs.</td>
 </tr>
 <tr class="odd">
-<td>Rule057</td>
+<td class="cmm-rule-id" id="Rule057"><a class="cmm-rule-permalink" href="#Rule057" title="Permanent link to Rule057">Rule057</a></td>
 <td>In instances where an attribute of a CIM class has an initial value, it shall be set as both static and constant.</td>
 </tr>
 <tr class="even">
-<td>Rule058</td>
+<td class="cmm-rule-id" id="Rule058"><a class="cmm-rule-permalink" href="#Rule058" title="Permanent link to Rule058">Rule058</a></td>
 <td>Attribute multiplicity shall always be \[0..1\] (i.e. all CIM attributes are optional).</td>
 </tr>
 <tr class="odd">
-<td>Rule059</td>
-<td>For attributes that correspond to power system related measurements as listed below the attribute name must use the symbol, in lower camel case (e.g. ratedU), instead of the name or unit of measurement.<br/><ul><li>Active Power (p)<li>Reactive Power (q)<li>Apparent Power (s)<li>Resistance (r)<li>Reactance (x)<li>Conductance (g)<li>Susceptance (b)<li>Power Factor (pf)<li>Voltage (u)<li>Current (i)<li>Frequency (f)<li>Inductance (l)<li>Capacitance (c)<li>Impedance (z)<li>Admittance (y)</li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></ul>For the properties mentioned in the above list, the symbol is to be appended with "2" for negative-sequence and "0" for zero-sequence properties.<br/><br/>Where properties mentioned in the list are used in a compound term (e.g. maximum voltage, nominal apparent power, natural impedance), the value name should be written in full (e.g. maximumVoltage, nominalApparentPower, naturalImpedance respectively). The attribute name as a whole must also comply with Rule049. <br/><br/>(NOTE: This rule was introduced as of CIM18. Pre-existing attributes that do not comply with this rule may be left as-is to reduce breaking changes; however, moving forward all new attributes that fall into this category must comply.)</td>
+<td class="cmm-rule-id" id="Rule059"><a class="cmm-rule-permalink" href="#Rule059" title="Permanent link to Rule059">Rule059</a></td>
+<td>For attributes that correspond to power system related measurements as listed below the attribute name must use the symbol, in lower camel case (e.g. ratedU), instead of the name or unit of measurement.<br/><ul><li>Active Power (p)<li>Reactive Power (q)<li>Apparent Power (s)<li>Resistance (r)<li>Reactance (x)<li>Conductance (g)<li>Susceptance (b)<li>Power Factor (pf)<li>Voltage (u)<li>Current (i)<li>Frequency (f)<li>Inductance (l)<li>Capacitance (c)<li>Impedance (z)<li>Admittance (y)</li></li></li></li></li></li></li></li></li></li></li></li></li></li></li></ul>For the properties mentioned in the above list, the symbol is to be appended with "2" for negative-sequence and "0" for zero-sequence properties.<br/><br/>Where properties mentioned in the list are used in a compound term (e.g. maximum voltage, nominal apparent power, natural impedance), the value name should be written in full (e.g. maximumVoltage, nominalApparentPower, naturalImpedance respectively). The attribute name as a whole must also comply with <a class="cmm-rule-ref" href="#Rule049">Rule049</a>. <br/><br/>(NOTE: This rule was introduced as of CIM18. Pre-existing attributes that do not comply with this rule may be left as-is to reduce breaking changes; however, moving forward all new attributes that fall into this category must comply.)</td>
 </tr>
 <tr class="even">
-<td>Rule060</td>
+<td class="cmm-rule-id" id="Rule060"><a class="cmm-rule-permalink" href="#Rule060" title="Permanent link to Rule060">Rule060</a></td>
 <td>Attribute names shall be unique among all levels of specialisation.</td>
 </tr>
 <tr class="odd">
-<td>Rule061</td>
+<td class="cmm-rule-id" id="Rule061"><a class="cmm-rule-permalink" href="#Rule061" title="Permanent link to Rule061">Rule061</a></td>
 <td>The scope of a CIM attribute shall be "Public".</td>
 </tr>
 <tr class="even">
-<td>Rule062</td>
+<td class="cmm-rule-id" id="Rule062"><a class="cmm-rule-permalink" href="#Rule062" title="Permanent link to Rule062">Rule062</a></td>
 <td>Datatypes used for attributes in cross-working group dependencies shall be coordinated among the affected working groups.</td>
 </tr>
 </tbody>
@@ -1231,79 +1231,79 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule065</td>
+<td class="cmm-rule-id" id="Rule065"><a class="cmm-rule-permalink" href="#Rule065" title="Permanent link to Rule065">Rule065</a></td>
 <td>Associations shall not have names.</td>
 </tr>
 <tr class="even">
-<td>Rule066</td>
+<td class="cmm-rule-id" id="Rule066"><a class="cmm-rule-permalink" href="#Rule066" title="Permanent link to Rule066">Rule066</a></td>
 <td>Associations shall not have descriptions.</td>
 </tr>
 <tr class="odd">
-<td>Rule067</td>
+<td class="cmm-rule-id" id="Rule067"><a class="cmm-rule-permalink" href="#Rule067" title="Permanent link to Rule067">Rule067</a></td>
 <td>Association ends shall have role names.</td>
 </tr>
 <tr class="even">
-<td>Rule068</td>
+<td class="cmm-rule-id" id="Rule068"><a class="cmm-rule-permalink" href="#Rule068" title="Permanent link to Rule068">Rule068</a></td>
 <td>Names for association roles shall use the Upper Camel Case naming convention.</td>
 </tr>
 <tr class="odd">
-<td>Rule069</td>
+<td class="cmm-rule-id" id="Rule069"><a class="cmm-rule-permalink" href="#Rule069" title="Permanent link to Rule069">Rule069</a></td>
 <td>Names for association roles shall be British English names.</td>
 </tr>
 <tr class="even">
-<td>Rule070</td>
+<td class="cmm-rule-id" id="Rule070"><a class="cmm-rule-permalink" href="#Rule070" title="Permanent link to Rule070">Rule070</a></td>
 <td>Association ends shall have descriptions.</td>
 </tr>
 <tr class="odd">
-<td>Rule071</td>
+<td class="cmm-rule-id" id="Rule071"><a class="cmm-rule-permalink" href="#Rule071" title="Permanent link to Rule071">Rule071</a></td>
 <td>Association ends shall have specified multiplicity.</td>
 </tr>
 <tr class="even">
-<td>Rule072</td>
+<td class="cmm-rule-id" id="Rule072"><a class="cmm-rule-permalink" href="#Rule072" title="Permanent link to Rule072">Rule072</a></td>
 <td>The CIM shall not include composition associations between classes.</td>
 </tr>
 <tr class="odd">
-<td>Rule073</td>
+<td class="cmm-rule-id" id="Rule073"><a class="cmm-rule-permalink" href="#Rule073" title="Permanent link to Rule073">Rule073</a></td>
 <td>Associations shall implicitly be bi-directional (i.e. the ‘Navigability’ property of the association ends is unspecified).</td>
 </tr>
 <tr class="even">
-<td>Rule074</td>
+<td class="cmm-rule-id" id="Rule074"><a class="cmm-rule-permalink" href="#Rule074" title="Permanent link to Rule074">Rule074</a></td>
 <td>Multiplicities for association ends shall be chosen to specify what is expected in the domain.</td>
 </tr>
 <tr class="odd">
-<td>Rule075</td>
+<td class="cmm-rule-id" id="Rule075"><a class="cmm-rule-permalink" href="#Rule075" title="Permanent link to Rule075">Rule075</a></td>
 <td>Only CIM classes without datatype stereotypes shall participate in associations.</td>
 </tr>
 <tr class="even">
-<td>Rule076</td>
+<td class="cmm-rule-id" id="Rule076"><a class="cmm-rule-permalink" href="#Rule076" title="Permanent link to Rule076">Rule076</a></td>
 <td>When associations span working group packages, both working groups shall be made aware of the association once models are combined.</td>
 </tr>
 <tr class="odd">
-<td>Rule077</td>
+<td class="cmm-rule-id" id="Rule077"><a class="cmm-rule-permalink" href="#Rule077" title="Permanent link to Rule077">Rule077</a></td>
 <td>Cross-working group associations shall be discussed among affected working groups to ensure inappropriate cross-working group associations are not established.</td>
 </tr>
 <tr class="even">
-<td>Rule078</td>
+<td class="cmm-rule-id" id="Rule078"><a class="cmm-rule-permalink" href="#Rule078" title="Permanent link to Rule078">Rule078</a></td>
 <td>Any change that impacts cross-working group associations shall be agreed upon by the affected working groups</td>
 </tr>
 <tr class="odd">
-<td>Rule079</td>
+<td class="cmm-rule-id" id="Rule079"><a class="cmm-rule-permalink" href="#Rule079" title="Permanent link to Rule079">Rule079</a></td>
 <td>Any change to potentially inherited associations and attributes due to cross-working group associations shall be discussed among affected working groups to ensure inappropriate cross-working group associations are not established.</td>
 </tr>
 <tr class="even">
-<td>Rule080</td>
+<td class="cmm-rule-id" id="Rule080"><a class="cmm-rule-permalink" href="#Rule080" title="Permanent link to Rule080">Rule080</a></td>
 <td>Any change to potentially inherited associations and attributes due to cross-working group associations shall be agreed upon by the affected working groups</td>
 </tr>
 <tr class="odd">
-<td>Rule081</td>
+<td class="cmm-rule-id" id="Rule081"><a class="cmm-rule-permalink" href="#Rule081" title="Permanent link to Rule081">Rule081</a></td>
 <td>Aggregation associations involving IEC 61968 classes should be avoided.</td>
 </tr>
 <tr class="even">
-<td>Rule082</td>
-<td>Enterprise Architect should be configured by the user so the default value of the navigability property of an association is “Unspecified” to ensure compliance with Rule073.</td>
+<td class="cmm-rule-id" id="Rule082"><a class="cmm-rule-permalink" href="#Rule082" title="Permanent link to Rule082">Rule082</a></td>
+<td>Enterprise Architect should be configured by the user so the default value of the navigability property of an association is “Unspecified” to ensure compliance with <a class="cmm-rule-ref" href="#Rule073">Rule073</a>.</td>
 </tr>
 <tr class="odd">
-<td>Rule083</td>
+<td class="cmm-rule-id" id="Rule083"><a class="cmm-rule-permalink" href="#Rule083" title="Permanent link to Rule083">Rule083</a></td>
 <td><p>Associations should be drawn from the dependent (source) class to the target class in Enterprise Architect to facilitate correct dependency processing.</p>
 <p>Note: If the source and target classes of the association are incorrect (i.e. class roles are incorrect), the direction of the association can be reversed through the Enterprise Architect user interface.</p></td>
 </tr>
@@ -1334,55 +1334,55 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule084</td>
+<td class="cmm-rule-id" id="Rule084"><a class="cmm-rule-permalink" href="#Rule084" title="Permanent link to Rule084">Rule084</a></td>
 <td>A CIM enumeration shall be a UML class with the &lt;&lt;enumeration&gt;&gt; stereotype.</td>
 </tr>
 <tr class="even">
-<td>Rule085</td>
+<td class="cmm-rule-id" id="Rule085"><a class="cmm-rule-permalink" href="#Rule085" title="Permanent link to Rule085">Rule085</a></td>
 <td>All enumeration classes shall have unique names.</td>
 </tr>
 <tr class="odd">
-<td>Rule086</td>
+<td class="cmm-rule-id" id="Rule086"><a class="cmm-rule-permalink" href="#Rule086" title="Permanent link to Rule086">Rule086</a></td>
 <td>Names for enumeration literals shall use the Lower Camel Case naming convention.</td>
 </tr>
 <tr class="even">
-<td>Rule087</td>
+<td class="cmm-rule-id" id="Rule087"><a class="cmm-rule-permalink" href="#Rule087" title="Permanent link to Rule087">Rule087</a></td>
 <td>Names for enumeration literals shall be British English names.</td>
 </tr>
 <tr class="odd">
-<td>Rule088</td>
+<td class="cmm-rule-id" id="Rule088"><a class="cmm-rule-permalink" href="#Rule088" title="Permanent link to Rule088">Rule088</a></td>
 <td>Enumeration literal names must always be used.</td>
 </tr>
 <tr class="even">
-<td>Rule089</td>
+<td class="cmm-rule-id" id="Rule089"><a class="cmm-rule-permalink" href="#Rule089" title="Permanent link to Rule089">Rule089</a></td>
 <td>Enumeration literals must be unique among all levels of specialisation.</td>
 </tr>
 <tr class="odd">
-<td>Rule090</td>
+<td class="cmm-rule-id" id="Rule090"><a class="cmm-rule-permalink" href="#Rule090" title="Permanent link to Rule090">Rule090</a></td>
 <td>All enumeration literals shall use the stereotype &lt;&lt;enum&gt;&gt;.</td>
 </tr>
 <tr class="even">
-<td>Rule091</td>
+<td class="cmm-rule-id" id="Rule091"><a class="cmm-rule-permalink" href="#Rule091" title="Permanent link to Rule091">Rule091</a></td>
 <td>Enumeration literals shall have no datatype (by UML definition).</td>
 </tr>
 <tr class="odd">
-<td>Rule092</td>
+<td class="cmm-rule-id" id="Rule092"><a class="cmm-rule-permalink" href="#Rule092" title="Permanent link to Rule092">Rule092</a></td>
 <td>Enumeration literals scope is public (by UML definition).</td>
 </tr>
 <tr class="even">
-<td>Rule093</td>
+<td class="cmm-rule-id" id="Rule093"><a class="cmm-rule-permalink" href="#Rule093" title="Permanent link to Rule093">Rule093</a></td>
 <td>Enumeration literals have no multiplicity (by UML definition).</td>
 </tr>
 <tr class="odd">
-<td>Rule094</td>
+<td class="cmm-rule-id" id="Rule094"><a class="cmm-rule-permalink" href="#Rule094" title="Permanent link to Rule094">Rule094</a></td>
 <td>In instances where an initial value for enumeration literals is used, they shall denote a code that has semantic binding.</td>
 </tr>
 <tr class="even">
-<td>Rule095</td>
+<td class="cmm-rule-id" id="Rule095"><a class="cmm-rule-permalink" href="#Rule095" title="Permanent link to Rule095">Rule095</a></td>
 <td>In instances where an initial value for enumeration literals is used, the code must be unique among all the codes for enumeration literals within the containing CIM class.</td>
 </tr>
 <tr class="odd">
-<td>Rule096</td>
+<td class="cmm-rule-id" id="Rule096"><a class="cmm-rule-permalink" href="#Rule096" title="Permanent link to Rule096">Rule096</a></td>
 <td><p>Either all or no enumeration literals within a CIM type shall have a code.</p>
 <p>NOTE: Some of the existing CIM UML enumerations do not comply with this rule because changes would break existing integrations.</p></td>
 </tr>
@@ -1413,31 +1413,31 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule097</td>
+<td class="cmm-rule-id" id="Rule097"><a class="cmm-rule-permalink" href="#Rule097" title="Permanent link to Rule097">Rule097</a></td>
 <td>Names for diagrams shall use the Upper Camel Case naming convention.</td>
 </tr>
 <tr>
-<td>Rule098</td>
+<td class="cmm-rule-id" id="Rule098"><a class="cmm-rule-permalink" href="#Rule098" title="Permanent link to Rule098">Rule098</a></td>
 <td>All diagrams shall have unique names. The package containment hierarchy shall not be used in uniquely identifying a diagram (i.e., diagram names shall be unique across the whole CIM model).</td>
 </tr>
 <tr>
-<td>Rule099</td>
+<td class="cmm-rule-id" id="Rule099"><a class="cmm-rule-permalink" href="#Rule099" title="Permanent link to Rule099">Rule099</a></td>
 <td>Names for diagrams shall be British English names.</td>
 </tr>
 <tr>
-<td>Rule100</td>
+<td class="cmm-rule-id" id="Rule100"><a class="cmm-rule-permalink" href="#Rule100" title="Permanent link to Rule100">Rule100</a></td>
 <td>Diagrams shall only include associations from packages upon which the containing package depends</td>
 </tr>
 <tr>
-<td>Rule101</td>
+<td class="cmm-rule-id" id="Rule101"><a class="cmm-rule-permalink" href="#Rule101" title="Permanent link to Rule101">Rule101</a></td>
 <td>Diagrams should use A4 page size.</td>
 </tr>
 <tr>
-<td>Rule102</td>
+<td class="cmm-rule-id" id="Rule102"><a class="cmm-rule-permalink" href="#Rule102" title="Permanent link to Rule102">Rule102</a></td>
 <td>Diagrams should be placed inside of packages (the normal case) or classes (e.g. in Dynamics package).</td>
 </tr>
 <tr>
-<td>Rule103</td>
+<td class="cmm-rule-id" id="Rule103"><a class="cmm-rule-permalink" href="#Rule103" title="Permanent link to Rule103">Rule103</a></td>
 <td>The order of diagrams in the package should be from most general to most specific.</td>
 </tr>
 </tbody>
@@ -1464,48 +1464,48 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule104</td>
+<td class="cmm-rule-id" id="Rule104"><a class="cmm-rule-permalink" href="#Rule104" title="Permanent link to Rule104">Rule104</a></td>
 <td>All CIM packages, classes, and attributes shall contain a description in the 'Element Notes' field in Enterprise Architect (i.e. the 'Element Notes' field shall not be blank).</td>
 </tr>
 <tr class="even">
-<td>Rule105</td>
+<td class="cmm-rule-id" id="Rule105"><a class="cmm-rule-permalink" href="#Rule105" title="Permanent link to Rule105">Rule105</a></td>
 <td><p>The description shall explain the meaning of the model element as clearly as possible.</p>
 <p>NOTE: If the existing description is ambiguous or unclear, immediately file a CIM issue.</p></td>
 </tr>
 <tr class="odd">
-<td>Rule106</td>
+<td class="cmm-rule-id" id="Rule106"><a class="cmm-rule-permalink" href="#Rule106" title="Permanent link to Rule106">Rule106</a></td>
 <td>Element descriptions shall use full sentences with proper uppercase words and ending with a period.</td>
 </tr>
 <tr class="even">
-<td>Rule107</td>
+<td class="cmm-rule-id" id="Rule107"><a class="cmm-rule-permalink" href="#Rule107" title="Permanent link to Rule107">Rule107</a></td>
 <td>Any references to standards should be specified in a manner compatible with inclusion in IEC documents. The same is true of units, variable names, or other IEC editorial policies.</td>
 </tr>
 <tr class="odd">
-<td>Rule108</td>
+<td class="cmm-rule-id" id="Rule108"><a class="cmm-rule-permalink" href="#Rule108" title="Permanent link to Rule108">Rule108</a></td>
 <td>Element descriptions shall be updated every time a modification is made to existing model elements (e.g., when changing name of an association end or a class, do extended search in the overall model and ensure to update the in-text references to the element whose name changes).</td>
 </tr>
 <tr class="even">
-<td>Rule109</td>
+<td class="cmm-rule-id" id="Rule109"><a class="cmm-rule-permalink" href="#Rule109" title="Permanent link to Rule109">Rule109</a></td>
 <td>Element descriptions shall describe the element itself, not its related or contained elements (e.g., descriptions of attributes should be documented with the attributes themselves, rather than with the description of the class that contains them).</td>
 </tr>
 <tr class="odd">
-<td>Rule110</td>
+<td class="cmm-rule-id" id="Rule110"><a class="cmm-rule-permalink" href="#Rule110" title="Permanent link to Rule110">Rule110</a></td>
 <td>Attribute descriptions shall describe the purpose of the attribute. Avoid describing how the attribute is used.</td>
 </tr>
 <tr class="even">
-<td>Rule111</td>
+<td class="cmm-rule-id" id="Rule111"><a class="cmm-rule-permalink" href="#Rule111" title="Permanent link to Rule111">Rule111</a></td>
 <td>Association descriptions shall describe the purpose of association ends. Avoid "A is related to one or more B" since the diagrams already show the relationship.</td>
 </tr>
 <tr class="odd">
-<td>Rule112</td>
+<td class="cmm-rule-id" id="Rule112"><a class="cmm-rule-permalink" href="#Rule112" title="Permanent link to Rule112">Rule112</a></td>
 <td>The use of CIM class names in element descriptions shall be avoided. For example, use “usage point” instead of “UsagePoint”.</td>
 </tr>
 <tr class="even">
-<td>Rule113</td>
+<td class="cmm-rule-id" id="Rule113"><a class="cmm-rule-permalink" href="#Rule113" title="Permanent link to Rule113">Rule113</a></td>
 <td>In some rare cases an explicit reference to an attribute may be required for clarity (e.g., “phase information is available in ‘Terminal.phases’.”), but such references create data synchronization challenges.</td>
 </tr>
 <tr class="odd">
-<td>Rule114</td>
+<td class="cmm-rule-id" id="Rule114"><a class="cmm-rule-permalink" href="#Rule114" title="Permanent link to Rule114">Rule114</a></td>
 <td><p>Avoid using mark-up in element descriptions (e.g., bold, lists, superscripts).</p>
 <p>NOTE: this means avoid using variable names in equations in the text to also conform to the IEC documentation rules which require italic type for variable names.</p></td>
 </tr>
@@ -1525,23 +1525,23 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule115</td>
+<td class="cmm-rule-id" id="Rule115"><a class="cmm-rule-permalink" href="#Rule115" title="Permanent link to Rule115">Rule115</a></td>
 <td>Multiple inheritance shall not be used.</td>
 </tr>
 <tr>
-<td>Rule116</td>
+<td class="cmm-rule-id" id="Rule116"><a class="cmm-rule-permalink" href="#Rule116" title="Permanent link to Rule116">Rule116</a></td>
 <td>Inheritance relationships must be drawn from the more specific class to the more general class.</td>
 </tr>
 <tr>
-<td>Rule117</td>
+<td class="cmm-rule-id" id="Rule117"><a class="cmm-rule-permalink" href="#Rule117" title="Permanent link to Rule117">Rule117</a></td>
 <td>In case the classes from two top-level packages are involved, the subclass must be in the dependent package, and inherit from the class in a package upon which it depends.</td>
 </tr>
 <tr>
-<td>Rule118</td>
+<td class="cmm-rule-id" id="Rule118"><a class="cmm-rule-permalink" href="#Rule118" title="Permanent link to Rule118">Rule118</a></td>
 <td>Inheritance should never create situations where attribute names or role names are duplicated or “override” within the inheritance lineage.</td>
 </tr>
 <tr>
-<td>Rule119</td>
+<td class="cmm-rule-id" id="Rule119"><a class="cmm-rule-permalink" href="#Rule119" title="Permanent link to Rule119">Rule119</a></td>
 <td>Inheritance shall not be used with stereotyped classes.</td>
 </tr>
 </tbody>
@@ -1560,27 +1560,27 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule120</td>
+<td class="cmm-rule-id" id="Rule120"><a class="cmm-rule-permalink" href="#Rule120" title="Permanent link to Rule120">Rule120</a></td>
 <td>CIM elements may have multiple stereotypes.</td>
 </tr>
 <tr>
-<td>Rule121</td>
+<td class="cmm-rule-id" id="Rule121"><a class="cmm-rule-permalink" href="#Rule121" title="Permanent link to Rule121">Rule121</a></td>
 <td>The <strong>&lt;&lt;deprecated&gt;&gt;</strong> stereotype may be used on attributes, associations, classes, packages, and diagrams in the CIM.</td>
 </tr>
 <tr>
-<td>Rule122</td>
+<td class="cmm-rule-id" id="Rule122"><a class="cmm-rule-permalink" href="#Rule122" title="Permanent link to Rule122">Rule122</a></td>
 <td>The <strong>&lt;&lt;deprecated&gt;&gt;</strong> stereotype should be used when it is desired to deprecate a package and all its contained classes as well.</td>
 </tr>
 <tr>
-<td>Rule123</td>
+<td class="cmm-rule-id" id="Rule123"><a class="cmm-rule-permalink" href="#Rule123" title="Permanent link to Rule123">Rule123</a></td>
 <td>The <strong>&lt;&lt;deprecated&gt;&gt;</strong> stereotype should be used when it is desired to deprecate a class and all associations in which it is involved and all its native attributes.</td>
 </tr>
 <tr>
-<td>Rule124</td>
+<td class="cmm-rule-id" id="Rule124"><a class="cmm-rule-permalink" href="#Rule124" title="Permanent link to Rule124">Rule124</a></td>
 <td>Usage of the <strong>&lt;&lt;deprecated&gt;&gt;</strong> stereotype should be for the purpose of preserving backwards compatibility for normative, already published content.</td>
 </tr>
 <tr>
-<td>Rule125</td>
+<td class="cmm-rule-id" id="Rule125"><a class="cmm-rule-permalink" href="#Rule125" title="Permanent link to Rule125">Rule125</a></td>
 <td>The <strong>&lt;&lt;deprecated&gt;&gt;</strong> stereotype should be used for no more than two (2) releases of the CIM.</td>
 </tr>
 </tbody>
@@ -1595,7 +1595,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule126</td>
+<td class="cmm-rule-id" id="Rule126"><a class="cmm-rule-permalink" href="#Rule126" title="Permanent link to Rule126">Rule126</a></td>
 <td>A package stereotype may be used temporarily to describe the development state of the package, e.g. <strong>&lt;&lt;Work in progress&gt;&gt;</strong>. Once the package is fully incorporated in the model the stereotype shall be removed.</td>
 </tr>
 </tbody>
@@ -1610,24 +1610,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule127</td>
+<td class="cmm-rule-id" id="Rule127"><a class="cmm-rule-permalink" href="#Rule127" title="Permanent link to Rule127">Rule127</a></td>
 <td>The <strong>&lt;&lt;CIMDatatype&gt;&gt;</strong> stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain data type.</td>
 </tr>
 <tr>
-<td>Rule128</td>
+<td class="cmm-rule-id" id="Rule128"><a class="cmm-rule-permalink" href="#Rule128" title="Permanent link to Rule128">Rule128</a></td>
 <td>The <strong>&lt;&lt;Primitive&gt;&gt;</strong> stereotype shall be used to extend the semantics of the UML class element to represent the following data types: 1. Boolean; 2. Date; 3. DateTime; 4. Decimal; 5. Duration; 6. Float; 7. Integer; 8. MonthDay; 9. String; 10. Time; and 11. URI.</td>
 </tr>
 <tr>
-<td>Rule129</td>
+<td class="cmm-rule-id" id="Rule129"><a class="cmm-rule-permalink" href="#Rule129" title="Permanent link to Rule129">Rule129</a></td>
 <td>The <strong>&lt;&lt;Compound&gt;&gt;</strong> stereotype shall be used to extend the semantics of the UML class element to represent an electric utility domain datatype that is a collection of related class attributes.</td>
 </tr>
 <tr>
-<td>Rule130</td>
+<td class="cmm-rule-id" id="Rule130"><a class="cmm-rule-permalink" href="#Rule130" title="Permanent link to Rule130">Rule130</a></td>
 <td>The <strong>&lt;&lt;enumeration&gt;&gt;</strong> stereotype shall be used to extend the semantics of the UML class element to represent a data type whose instances form a list of named literal values.</td>
 </tr>
 <tr>
-<td>Rule131</td>
-<td>A CIM class that represents a domain object that participates in inheritance and / or association relationships shall not use a stereotype with the exception of the <strong>&lt;&lt;deprecated&gt;&gt;</strong> stereotype specified in [Rule 124].</td>
+<td class="cmm-rule-id" id="Rule131"><a class="cmm-rule-permalink" href="#Rule131" title="Permanent link to Rule131">Rule131</a></td>
+<td>A CIM class that represents a domain object that participates in inheritance and / or association relationships shall not use a stereotype with the exception of the <strong>&lt;&lt;deprecated&gt;&gt;</strong> stereotype specified in [<a class="cmm-rule-ref" href="#Rule124">Rule 124</a>].</td>
 </tr>
 </tbody>
 </table>
@@ -1658,105 +1658,105 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule132</td>
+<td class="cmm-rule-id" id="Rule132"><a class="cmm-rule-permalink" href="#Rule132" title="Permanent link to Rule132">Rule132</a></td>
 <td>CIM Namespace specifications shall consist of two (2) namespaces: 1) a CIM Universal Resource Identifier (URI) namespace; and 2) a CIM XML prefix.</td>
 </tr>
 <tr class="even">
-<td>Rule133</td>
+<td class="cmm-rule-id" id="Rule133"><a class="cmm-rule-permalink" href="#Rule133" title="Permanent link to Rule133">Rule133</a></td>
 <td>CIM Namespaces shall be stored in Enterprise Architect as tagged values.</td>
 </tr>
 <tr class="odd">
-<td>Rule134</td>
+<td class="cmm-rule-id" id="Rule134"><a class="cmm-rule-permalink" href="#Rule134" title="Permanent link to Rule134">Rule134</a></td>
 <td>The tagged value name for the CIM URI namespace shall be “nsuri”.</td>
 </tr>
 <tr class="even">
-<td>Rule135</td>
+<td class="cmm-rule-id" id="Rule135"><a class="cmm-rule-permalink" href="#Rule135" title="Permanent link to Rule135">Rule135</a></td>
 <td>The tagged value name for the CIM XML prefix shall be “nsprefix”.</td>
 </tr>
 <tr class="odd">
-<td>Rule136</td>
+<td class="cmm-rule-id" id="Rule136"><a class="cmm-rule-permalink" href="#Rule136" title="Permanent link to Rule136">Rule136</a></td>
 <td>Namespaces shall be specified at the package level in the CIM UML model.</td>
 </tr>
 <tr class="even">
-<td>Rule137</td>
+<td class="cmm-rule-id" id="Rule137"><a class="cmm-rule-permalink" href="#Rule137" title="Permanent link to Rule137">Rule137</a></td>
 <td>Namespaces shall apply to classes, attributes, association ends, datatypes (&lt;&lt;CIMDatatype&gt;&gt;, &lt;&lt;Compound&gt;&gt;, &lt;&lt;Primitive&gt;&gt;, and &lt;&lt;enumeration&gt;&gt;) and enumerations.</td>
 </tr>
 <tr class="odd">
-<td>Rule138</td>
+<td class="cmm-rule-id" id="Rule138"><a class="cmm-rule-permalink" href="#Rule138" title="Permanent link to Rule138">Rule138</a></td>
 <td>Namespaces specified at the package level shall propagate to sub-packages without both specified namespaces and any contained classes.</td>
 </tr>
 <tr class="even">
-<td>Rule139</td>
+<td class="cmm-rule-id" id="Rule139"><a class="cmm-rule-permalink" href="#Rule139" title="Permanent link to Rule139">Rule139</a></td>
 <td>Namespaces on classes shall propagate to contained attributes.</td>
 </tr>
 <tr class="odd">
-<td>Rule140</td>
+<td class="cmm-rule-id" id="Rule140"><a class="cmm-rule-permalink" href="#Rule140" title="Permanent link to Rule140">Rule140</a></td>
 <td>Namespaces on classes shall propagate to both ends of a connected association if the association is owned by the same package.</td>
 </tr>
 <tr class="even">
-<td>Rule141</td>
+<td class="cmm-rule-id" id="Rule141"><a class="cmm-rule-permalink" href="#Rule141" title="Permanent link to Rule141">Rule141</a></td>
 <td>Namespaces on cross package associations shall be propagated from the owning class.</td>
 </tr>
 <tr class="odd">
-<td>Rule142</td>
+<td class="cmm-rule-id" id="Rule142"><a class="cmm-rule-permalink" href="#Rule142" title="Permanent link to Rule142">Rule142</a></td>
 <td>If a namespace is specified at a sub-package level, it shall take precedence over the containing package’s specified namespace.</td>
 </tr>
 <tr class="even">
-<td>Rule143</td>
+<td class="cmm-rule-id" id="Rule143"><a class="cmm-rule-permalink" href="#Rule143" title="Permanent link to Rule143">Rule143</a></td>
 <td>The CIM top-level package shall have a namespace specification.</td>
 </tr>
 <tr class="odd">
-<td>Rule144</td>
+<td class="cmm-rule-id" id="Rule144"><a class="cmm-rule-permalink" href="#Rule144" title="Permanent link to Rule144">Rule144</a></td>
 <td><p>The value of the CIM (formerly TC57CIM) top-level package nsuri tag shall be: http://iec.ch/TC57/CIM&lt;version&gt;# where:</p>
 <p>&lt;version&gt; = the version number of the CIM.</p></td>
 </tr>
 <tr class="even">
-<td>Rule145</td>
+<td class="cmm-rule-id" id="Rule145"><a class="cmm-rule-permalink" href="#Rule145" title="Permanent link to Rule145">Rule145</a></td>
 <td>The value of the TC57CIM package nsprefix tag shall be “cim”.</td>
 </tr>
 <tr class="odd">
-<td>Rule146</td>
+<td class="cmm-rule-id" id="Rule146"><a class="cmm-rule-permalink" href="#Rule146" title="Permanent link to Rule146">Rule146</a></td>
 <td>The IEC61970 package shall have a namespace specification.</td>
 </tr>
 <tr class="even">
-<td>Rule147</td>
+<td class="cmm-rule-id" id="Rule147"><a class="cmm-rule-permalink" href="#Rule147" title="Permanent link to Rule147">Rule147</a></td>
 <td><p>The value of the IEC61970 package nsuri tag shall be:</p>
 <p>http://iec.ch/TC57/61970/CIM&lt;XX&gt;.&lt;YY&gt;]# where:</p>
 <p>&lt;XX&gt; = the major version number of the IEC61970 package; and</p>
 <p>&lt;YY&gt; = the minor version number of the IEC61970 package.</p></td>
 </tr>
 <tr class="odd">
-<td>Rule148</td>
+<td class="cmm-rule-id" id="Rule148"><a class="cmm-rule-permalink" href="#Rule148" title="Permanent link to Rule148">Rule148</a></td>
 <td>The value of the IEC61970 package nsprefix tag shall be “cim61970”.</td>
 </tr>
 <tr class="even">
-<td>Rule149</td>
+<td class="cmm-rule-id" id="Rule149"><a class="cmm-rule-permalink" href="#Rule149" title="Permanent link to Rule149">Rule149</a></td>
 <td>The IEC61968 package shall have a namespace specification.</td>
 </tr>
 <tr class="odd">
-<td>Rule150</td>
+<td class="cmm-rule-id" id="Rule150"><a class="cmm-rule-permalink" href="#Rule150" title="Permanent link to Rule150">Rule150</a></td>
 <td><p>The value of the IEC61968 package nsuri tag shall be:</p>
 <p>http://iec.ch/TC57/61968/CIM&lt;XX&gt;.&lt;YY&gt;]# where:</p>
 <p>&lt;XX&gt; = the major version number of the IEC61968 package; and</p>
 <p>&lt;YY&gt; = the minor version number of the IEC61968 package.</p></td>
 </tr>
 <tr class="even">
-<td>Rule151</td>
+<td class="cmm-rule-id" id="Rule151"><a class="cmm-rule-permalink" href="#Rule151" title="Permanent link to Rule151">Rule151</a></td>
 <td>The value of the IEC61968 package nsprefix tag shall be “cim61968”.</td>
 </tr>
 <tr class="odd">
-<td>Rule152</td>
+<td class="cmm-rule-id" id="Rule152"><a class="cmm-rule-permalink" href="#Rule152" title="Permanent link to Rule152">Rule152</a></td>
 <td>The IEC62325 package shall have a namespace specification.</td>
 </tr>
 <tr class="even">
-<td>Rule153</td>
+<td class="cmm-rule-id" id="Rule153"><a class="cmm-rule-permalink" href="#Rule153" title="Permanent link to Rule153">Rule153</a></td>
 <td><p>The value of the IEC62325 package nsuri tag shall be:</p>
 <p>http://iec.ch/TC57/62325/CIM&lt;XX&gt;.&lt;YY&gt;]# where:</p>
 <p>&lt;XX&gt; = the major version number of the IEC62325 package; and</p>
 <p>&lt;YY&gt; = the minor version number of the IEC62325 package.</p></td>
 </tr>
 <tr class="odd">
-<td>Rule154</td>
+<td class="cmm-rule-id" id="Rule154"><a class="cmm-rule-permalink" href="#Rule154" title="Permanent link to Rule154">Rule154</a></td>
 <td>The value of the IEC62325 package nsprefix tag shall be “cim62325”.</td>
 </tr>
 </tbody>
@@ -1771,35 +1771,35 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule155</td>
+<td class="cmm-rule-id" id="Rule155"><a class="cmm-rule-permalink" href="#Rule155" title="Permanent link to Rule155">Rule155</a></td>
 <td>Diagrams contained in packages with the “Doc” prefix will not be printed as part of the model content information, but will be printed as part of a document template’s static (boilerplate) information in CIM documentation.</td>
 </tr>
 <tr>
-<td>Rule156</td>
+<td class="cmm-rule-id" id="Rule156"><a class="cmm-rule-permalink" href="#Rule156" title="Permanent link to Rule156">Rule156</a></td>
 <td>Documentation will use the package order to determine the order for printing model information.</td>
 </tr>
 <tr>
-<td>Rule157</td>
+<td class="cmm-rule-id" id="Rule157"><a class="cmm-rule-permalink" href="#Rule157" title="Permanent link to Rule157">Rule157</a></td>
 <td>Documentation will use the class order within a package to determine the order for printing class information.</td>
 </tr>
 <tr>
-<td>Rule158</td>
+<td class="cmm-rule-id" id="Rule158"><a class="cmm-rule-permalink" href="#Rule158" title="Permanent link to Rule158">Rule158</a></td>
 <td>Documentation will use the attribute order within a class to determine the order for printing attribute information.</td>
 </tr>
 <tr>
-<td>Rule159</td>
+<td class="cmm-rule-id" id="Rule159"><a class="cmm-rule-permalink" href="#Rule159" title="Permanent link to Rule159">Rule159</a></td>
 <td>Documentation will use the enumeration order within a package to determine the order for printing enumeration information.</td>
 </tr>
 <tr>
-<td>Rule160</td>
+<td class="cmm-rule-id" id="Rule160"><a class="cmm-rule-permalink" href="#Rule160" title="Permanent link to Rule160">Rule160</a></td>
 <td>Documentation will use the enumeration literal order within an enumeration class to determine the order for printing enumeration literal information.</td>
 </tr>
 <tr>
-<td>Rule161</td>
+<td class="cmm-rule-id" id="Rule161"><a class="cmm-rule-permalink" href="#Rule161" title="Permanent link to Rule161">Rule161</a></td>
 <td>The content of the informative package, including any sub-packages and its content, recursively, is considered as informative in the sense of IEC documents and is therefore by default excluded from the document generation.</td>
 </tr>
 <tr>
-<td>Rule162</td>
+<td class="cmm-rule-id" id="Rule162"><a class="cmm-rule-permalink" href="#Rule162" title="Permanent link to Rule162">Rule162</a></td>
 <td>Diagrams should not use shadows, colours or diagram frames when printing model documents.</td>
 </tr>
 </tbody>
