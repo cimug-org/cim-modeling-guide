@@ -13,7 +13,7 @@
 <title>8. CIM UML Version Control Rules - CIM Modeling Guide</title>
 <link href="../assets/stylesheets/main.bcfcd587.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<link href="../stylesheets/extra.css?v=20261020.2" rel="stylesheet"/>
+<link href="../stylesheets/extra.css?v=20261026.1" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <meta content="website" property="og:type"/>
 <meta content="CIM Modeling Guide" property="og:site_name"/>
@@ -613,11 +613,11 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule225</td>
+<td class="cmm-rule-id" id="Rule225"><a class="cmm-rule-permalink" href="#Rule225" title="Permanent link to Rule225">Rule225</a></td>
 <td>A new version of a top-level package shall be created when the contents of the top-level package (which includes any of its normative sub-packages) has been changed, and the change has been verified by the appropriate CIM model manager.</td>
 </tr>
 <tr>
-<td>Rule226</td>
+<td class="cmm-rule-id" id="Rule226"><a class="cmm-rule-permalink" href="#Rule226" title="Permanent link to Rule226">Rule226</a></td>
 <td>A new version of the CIM UML shall be created when a new version of a top-level package has been created.</td>
 </tr>
 </tbody>
@@ -632,11 +632,11 @@
 </thead>
 <tbody>
 <tr>
-<td>Rule227</td>
+<td class="cmm-rule-id" id="Rule227"><a class="cmm-rule-permalink" href="#Rule227" title="Permanent link to Rule227">Rule227</a></td>
 <td>A new version of the CIM UML shall be considered backwards-compatible if it continues to support CIM Profiles designed to work with the old version of the CIM UML (i.e. the changes incorporated in the new version of the CIM UML are compatible changes).</td>
 </tr>
 <tr>
-<td>Rule228</td>
+<td class="cmm-rule-id" id="Rule228"><a class="cmm-rule-permalink" href="#Rule228" title="Permanent link to Rule228">Rule228</a></td>
 <td>A new version of the CIM UML shall be considered not backwards-compatible if it does not support CIM Profiles designed to work with the old version of the CIM UML.</td>
 </tr>
 </tbody>
@@ -659,45 +659,45 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Rule229</td>
+<td class="cmm-rule-id" id="Rule229"><a class="cmm-rule-permalink" href="#Rule229" title="Permanent link to Rule229">Rule229</a></td>
 <td>There shall be one and only one class in the PackageDependencies package that contains date and version information about the combined CIM (hereinafter referred to as the “CIM Version Class”).</td>
 </tr>
 <tr class="even">
-<td>Rule230</td>
+<td class="cmm-rule-id" id="Rule230"><a class="cmm-rule-permalink" href="#Rule230" title="Permanent link to Rule230">Rule230</a></td>
 <td>The name of the CIM Version Class shall be “PackageDependenciesCIMVersion”.</td>
 </tr>
 <tr class="odd">
-<td>Rule231</td>
+<td class="cmm-rule-id" id="Rule231"><a class="cmm-rule-permalink" href="#Rule231" title="Permanent link to Rule231">Rule231</a></td>
 <td>The CIM Version Class shall contain two (2) and only two mandatory read only attributes: “date” and “version”.</td>
 </tr>
 <tr class="even">
-<td>Rule232</td>
+<td class="cmm-rule-id" id="Rule232"><a class="cmm-rule-permalink" href="#Rule232" title="Permanent link to Rule232">Rule232</a></td>
 <td>The value of the “date” attribute of the CIM Version Class shall be the effective date of the CIM UML.</td>
 </tr>
 <tr class="odd">
-<td>Rule233</td>
+<td class="cmm-rule-id" id="Rule233"><a class="cmm-rule-permalink" href="#Rule233" title="Permanent link to Rule233">Rule233</a></td>
 <td><p>The value of the “version” attribute of the CIM Version Class shall comply with the following version identification pattern when the CIM UML is deployed for public use:</p>
 <p>“CIM&lt;XX&gt;.&lt;YY&gt;”</p>
 <p>where “XX” stands for the CIM UML major version number and “YY” stands for the minor version number.</p></td>
 </tr>
 <tr class="even">
-<td>Rule234</td>
+<td class="cmm-rule-id" id="Rule234"><a class="cmm-rule-permalink" href="#Rule234" title="Permanent link to Rule234">Rule234</a></td>
 <td>The CIM UML major version number for versions deployed for public use shall be incremented when either: 1) a significant amount of new model content has been added; or 2) the new version is not backwards compatible.</td>
 </tr>
 <tr class="odd">
-<td>Rule235</td>
+<td class="cmm-rule-id" id="Rule235"><a class="cmm-rule-permalink" href="#Rule235" title="Permanent link to Rule235">Rule235</a></td>
 <td>The CIM UML minor version number for versions deployed for public use shall be incremented when minor compatible changes have been incorporated into the old version of the CIM UML.</td>
 </tr>
 <tr class="even">
-<td>Rule236</td>
+<td class="cmm-rule-id" id="Rule236"><a class="cmm-rule-permalink" href="#Rule236" title="Permanent link to Rule236">Rule236</a></td>
 <td>Each working group and its respective model manager shall determine what is a “significant” amount of new model content and what constitutes “minor” compatible changes in order to specify a new CIM UML version number.</td>
 </tr>
 <tr class="odd">
-<td>Rule237</td>
+<td class="cmm-rule-id" id="Rule237"><a class="cmm-rule-permalink" href="#Rule237" title="Permanent link to Rule237">Rule237</a></td>
 <td>The initial value for the CIM UML minor version number for versions deployed for public use shall be “0” (e.g. “CIM100.0”).</td>
 </tr>
 <tr class="even">
-<td>Rule238</td>
+<td class="cmm-rule-id" id="Rule238"><a class="cmm-rule-permalink" href="#Rule238" title="Permanent link to Rule238">Rule238</a></td>
 <td><p>The value of the “version” attribute of the CIM Version Class shall comply with the following version identification pattern when the CIM UML is deployed for working group use:</p>
 <p>“CIM&lt;XX1&gt;.&lt;YY1&gt;.&lt;XX2&gt;.&lt;YY2&gt;.&lt;XX3&gt;.&lt;YY3&gt;”</p>
 <p>Where</p>
@@ -710,24 +710,24 @@
 <p>Example: CIM17.34.13.12.03.17a</p></td>
 </tr>
 <tr class="odd">
-<td>Rule239</td>
+<td class="cmm-rule-id" id="Rule239"><a class="cmm-rule-permalink" href="#Rule239" title="Permanent link to Rule239">Rule239</a></td>
 <td>Each top-level package shall contain one and only one class (referred to as the “IEC Version Class”) that contains date and version information about the CIM UML for the working group.</td>
 </tr>
 <tr class="even">
-<td>Rule240</td>
+<td class="cmm-rule-id" id="Rule240"><a class="cmm-rule-permalink" href="#Rule240" title="Permanent link to Rule240">Rule240</a></td>
 <td><p>The name of the IEC Version Class shall comply with the following version identification pattern:</p>
 <p>“&lt;top-level package name&gt;CIMVersion&gt;”.</p></td>
 </tr>
 <tr class="odd">
-<td>Rule241</td>
+<td class="cmm-rule-id" id="Rule241"><a class="cmm-rule-permalink" href="#Rule241" title="Permanent link to Rule241">Rule241</a></td>
 <td>The IEC Version Class shall contain two (2) and only two mandatory read only attributes: “date” and “version”.</td>
 </tr>
 <tr class="even">
-<td>Rule242</td>
+<td class="cmm-rule-id" id="Rule242"><a class="cmm-rule-permalink" href="#Rule242" title="Permanent link to Rule242">Rule242</a></td>
 <td>The value of the “date” attribute of the IEC Version Class shall be the effective date of the CIM UML contained in the top-level package.</td>
 </tr>
 <tr class="odd">
-<td>Rule243</td>
+<td class="cmm-rule-id" id="Rule243"><a class="cmm-rule-permalink" href="#Rule243" title="Permanent link to Rule243">Rule243</a></td>
 <td><p>The value of the “version” attribute of the IEC Version Class shall comply with the following version identification pattern:</p>
 <p>“&lt;top-level-package-name&gt;CIM&lt;XX&gt;v&lt;YY&gt;”</p>
 <p>where “XX” stands for the top-level CIM package release number (major version), “YY” stands for the top-level CIM package minor version (update). The release corresponds to a major change in the model while a version is used to keep track of work in progress changes.</p></td>
