@@ -385,3 +385,30 @@
 @media screen and (max-width: 44.9375em) {
   .md-content__inner:has(> p > img[src$="image1.png"]) > p:nth-of-type(1)::after { width: 7rem; height: 10rem; background-size: 10rem 10rem; }
 }
+
+/* =============================================================================
+   Per-rule anchors (hooks/rule_anchors.py): every rule ID cell is a link target,
+   e.g. section5-.../#Rule049, and the ID itself links to it (tap on a phone, or
+   click, to put the rule's URL in the address bar). Material supplies the scroll
+   offset under the sticky header.
+   ========================================================================== */
+.md-typeset td.cmm-rule-id { white-space: nowrap; }
+.md-typeset a.cmm-rule-permalink,
+.md-typeset a.cmm-rule-permalink:hover { color: inherit; }
+.md-typeset a.cmm-rule-permalink:hover,
+.md-typeset a.cmm-rule-permalink:focus-visible { text-decoration: underline; }
+/* "¶" on hover/focus and on the rule a link lands on, as on headings */
+.md-typeset a.cmm-rule-permalink::after {
+  content: "\00B6";
+  margin-left: 0.3rem;
+  color: var(--md-default-fg-color--lighter);
+  opacity: 0;
+  transition: opacity 125ms;
+}
+.md-typeset td.cmm-rule-id:hover > a.cmm-rule-permalink::after,
+.md-typeset a.cmm-rule-permalink:focus-visible::after,
+.md-typeset td.cmm-rule-id:target > a.cmm-rule-permalink::after { opacity: 1; color: var(--md-accent-fg-color); }
+/* the rule a link lands on: the table hover band with a teal bar, in both schemes */
+.md-typeset table:not([class]) tbody tr:has(> td.cmm-rule-id:target) { background: var(--cmm-table-hover); }
+.md-typeset td.cmm-rule-id:target { font-weight: 700; box-shadow: inset 4px 0 0 var(--md-accent-fg-color); }
+@media print { .md-typeset a.cmm-rule-permalink::after { display: none; } }
