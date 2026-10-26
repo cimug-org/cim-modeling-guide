@@ -28,7 +28,10 @@ theme:
 copyright: Copyright &copy; 2019 - 2024. All rights reserved by the UCA International CIM Users Group
 extra_css:
   # Bump ?v= whenever extra.css changes, so browsers and the Pages CDN fetch the new file
-  - stylesheets/extra.css?v=20261020.2
+  - stylesheets/extra.css?v=20261026.1
+hooks:
+  # Per-rule anchors (#rule049) and links on rule mentions; rendered HTML only, Markdown untouched
+  - hooks/rule_anchors.py
 markdown_extensions:
   - footnotes
   - admonition
